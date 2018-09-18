@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>视频详情</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page page-current">
+        <div class="content">
+          <div class="video-box">
+            <video class="video-obj" autoplay="autoplay" src="http://video.eenet.com/resourse/gkzx/01gxx.mp4" x5-playsinline="" playsinline="" -webkit-playsinline="" controls=""></video>
+          </div>
+          <div class="buttons-tab video-tab">
+            <a href="#tab1" class="tab-link active button">互动交流</a>
+            <a href="#tab2" class="tab-link button">已参与同学(187)</a>
+          </div>
+          <div class="tabs video-tab-content">
+            <div id="tab1" class="tab active">
+              <div class="react-chat-box">
+                <ul class="react-chat-list unstyle-list" data-id="commments">
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side padding-r10">
+                        <img src="http://tp1.sinaimg.cn/2610758132/180/5621398122/0" class="circle" width="40" height="40">
+                      </div>
+                      <div class="media-body vertical-middle">
+                        <span class="name padding-r15">李三一</span>
+                        <small class="dark-label">2天前</small>
+                      </div>
+                    </div>
+                    <div class="txt">
+                      好细心的咯0.0不过如果外壳也可以拆就更好了 哈哈 我家狗狗总是出去玩的脏兮兮的
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side padding-r10">
+                        <img src="http://tp1.sinaimg.cn/2610758132/180/5621398122/0" class="circle" width="40" height="40">
+                      </div>
+                      <div class="media-body vertical-middle">
+                        <span class="name padding-r15">李三一</span>
+                        <small class="dark-label">2天前</small>
+                      </div>
+                    </div>
+                    <div class="txt">
+                      好细心的咯0.0不过如果外壳也可以拆就更好了 哈哈 我家狗狗总是出去玩的脏兮兮的
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side padding-r10">
+                        <img src="http://tp1.sinaimg.cn/2610758132/180/5621398122/0" class="circle" width="40" height="40">
+                      </div>
+                      <div class="media-body vertical-middle">
+                        <span class="name padding-r15">李三一</span>
+                        <small class="dark-label">2天前</small>
+                      </div>
+                    </div>
+                    <div class="txt">
+                      好细心的咯0.0不过如果外壳也可以拆就更好了 哈哈 我家狗狗总是出去玩的脏兮兮的
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="form-btm-bar">
+                <div class="media">
+                  <div class="media-side text-nowrap">
+                    <div class="emote-btn">
+                      <span class="icon icon-emoji"></span>
+                    </div>
+                  </div>
+                  <div class="media-body vertical-middle">
+                    <textarea class="comment-textarea" placeholder="我也来参与互动"></textarea>
+                  </div>
+                  <div class="media-side vertical-top">
+                      <button type="button" class="button button-fill comment-btn">发送</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab2" class="tab" data-id="per-list-box">
+              
+              <div data-id="per-list" style="padding:1px 0;">
+                <ul class="react-chat-list unstyle-list" data-id="per-list-ul">
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side padding-r10">
+                        <img src="http://tp1.sinaimg.cn/2610758132/180/5621398122/0" class="circle" width="40" height="40">
+                      </div>
+                      <div class="media-body vertical-middle padding-r10">
+                        <div class="name">李三一</div>
+                        <div class="dark-label margin-t5">
+                          行政管理（专科）
+                        </div>
+                      </div>
+                      <div class="media-side vertical-top text-nowrap">
+                        <div class="dark-label padding-t10">2天前参与</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side padding-r10">
+                        <img src="http://tp1.sinaimg.cn/2610758132/180/5621398122/0" class="circle" width="40" height="40">
+                      </div>
+                      <div class="media-body vertical-middle padding-r10">
+                        <div class="name">李三一</div>
+                        <div class="dark-label margin-t5">
+                          行政管理（专科）
+                        </div>
+                      </div>
+                      <div class="media-side vertical-top text-nowrap">
+                        <div class="dark-label padding-t10">2天前参与</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side padding-r10">
+                        <img src="http://tp1.sinaimg.cn/2610758132/180/5621398122/0" class="circle" width="40" height="40">
+                      </div>
+                      <div class="media-body vertical-middle padding-r10">
+                        <div class="name">李三一</div>
+                        <div class="dark-label margin-t5">
+                          行政管理（专科）
+                        </div>
+                      </div>
+                      <div class="media-side vertical-top text-nowrap">
+                        <div class="dark-label padding-t10">2天前参与</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side padding-r10">
+                        <img src="http://tp1.sinaimg.cn/2610758132/180/5621398122/0" class="circle" width="40" height="40">
+                      </div>
+                      <div class="media-body vertical-middle padding-r10">
+                        <div class="name">李三一</div>
+                        <div class="dark-label margin-t5">
+                          行政管理（专科）
+                        </div>
+                      </div>
+                      <div class="media-side vertical-top text-nowrap">
+                        <div class="dark-label padding-t10">2天前参与</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side padding-r10">
+                        <img src="http://tp1.sinaimg.cn/2610758132/180/5621398122/0" class="circle" width="40" height="40">
+                      </div>
+                      <div class="media-body vertical-middle padding-r10">
+                        <div class="name">李三一</div>
+                        <div class="dark-label margin-t5">
+                          行政管理（专科）
+                        </div>
+                      </div>
+                      <div class="media-side vertical-top text-nowrap">
+                        <div class="dark-label padding-t10">2天前参与</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side padding-r10">
+                        <img src="http://tp1.sinaimg.cn/2610758132/180/5621398122/0" class="circle" width="40" height="40">
+                      </div>
+                      <div class="media-body vertical-middle padding-r10">
+                        <div class="name">李三一</div>
+                        <div class="dark-label margin-t5">
+                          行政管理（专科）
+                        </div>
+                      </div>
+                      <div class="media-side vertical-top text-nowrap">
+                        <div class="dark-label padding-t10">2天前参与</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              
+                <div class="infinite-scroll-preloader" style="margin:10px;">
+                    <div class="preloader vertical-middle" style="width:30px;height:30px;"></div>
+                </div>
+              </div>
+              <!--无数据显示的时候用于提示
+              <div class="media" style="height:100%;">
+                <div class="media-body vertical-middle">
+                  <div class="no-data">
+                    <img src="images/no-data.png">
+                    <div class="no-data-txt">
+                      暂无文档信息
+                    </div>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>
+          </div>
+        </div> 
+    </div>
+</div>
+
+<div class="widget-layer-mark" style="margin:10px;"></div>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/sm.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+<link rel="stylesheet" href="js/emoticons/emoticons.css">
+<script type="text/javascript" src="js/emoticons/jquery.emoticons.js"></script>
+
+<script type="text/javascript">
+//qq表情
+$.emoticons({
+  'triggerCls':'emote-btn',
+  'activeCls':'trigger-active',
+  'publisherCls':'form-btm-bar',
+  'path':'js/emoticons/image/',
+  'onShow':function(){
+    $('.widget-layer-mark').show();
+  },
+  'onHide':function(){
+    $('.widget-layer-mark').hide();
+  }
+},function(api){
+  var $content = $('.comment-textarea');
+  var $result = $('[data-id="commments"]');
+  
+  //插入评论
+  $('.comment-btn').click(function(){
+    var comments=$.trim($content.val());
+    if(comments==''){
+      $.toast('留言内容不能为空');
+
+      return;
+    }
+
+    var html='\
+      <li class="item">\
+        <div class="media">\
+          <div class="media-side padding-r10">\
+            <img src="http://tp1.sinaimg.cn/2610758132/180/5621398122/0" class="circle" width="40" height="40">\
+          </div>\
+          <div class="media-body vertical-middle">\
+            <span class="name padding-r15">李三四</span>\
+            <small class="dark-label">2天前</small>\
+          </div>\
+        </div>\
+        <div class="txt">'+comments+'</div>\
+      </li>\
+    ';
+    $result.prepend(api.format(html));
+    $('.react-chat-box').scrollTop(0);
+
+    $content.val('')
+  });
+});
+
+//滚动加载
+var isLoading=false;//是否加载
+$('[data-id="per-list-box"]').scroll(function(event) {
+  if(isLoading) return;
+
+  var  $container=$('[data-id="per-list"]');
+
+  if( $(this).scrollTop()+$(this).height()>$container.height()-30 ){
+    isLoading=true;
+    //模拟异步加载
+    setTimeout(function(){
+      var tpl='\
+        <li class="item">\
+          <div class="media">\
+            <div class="media-side padding-r10">\
+              <img src="http://tp1.sinaimg.cn/2610758132/180/5621398122/0" class="circle" width="40" height="40">\
+            </div>\
+            <div class="media-body vertical-middle padding-r10">\
+              <div class="name">李三一</div>\
+              <div class="dark-label margin-t5">\
+                行政管理（专科）\
+              </div>\
+            </div>\
+            <div class="media-side vertical-top text-nowrap">\
+              <div class="dark-label padding-t10">2天前参与</div>\
+            </div>\
+          </div>\
+        </li>\
+      ';
+
+      var arr=[];
+      for (var i = 0; i < 5; i++) {
+        arr.push(tpl);
+      };
+
+      $('[data-id="per-list-ul"]').append(arr.join(''));
+
+      isLoading=false;
+
+    },1000);
+  }
+});
+</script>
+</body>
+</html>

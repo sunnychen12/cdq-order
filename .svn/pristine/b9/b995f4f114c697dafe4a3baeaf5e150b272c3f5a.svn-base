@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>框架页</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+<style type="text/css">
+html,body{
+  height: 100%;
+}
+</style>
+</head>
+<body>
+<div class="pop-footer">
+  <div class="padding10 text-right">
+    <button type="button" class="layui-btn layui-btn-danger min-width-100" data-role="confirm">
+      确认选择
+    </button>
+  </div>
+</div>
+
+<div class="pop-content">
+    <table width="100%" height="100%">
+      <tbody>
+        <tr>
+          <td width="45%" valign="top">
+            <div data-id="header">
+              <fieldset class="layui-elem-field layui-field-title margin-b5">
+                <legend class="f16">待选择学生列表</legend>
+              </fieldset>
+              <div class="padding10">
+                <div class="box margin-none">
+                  <div class="box-body">
+                    <div class="layui-row layui-col-space15 layui-form">
+                      <div class="layui-col-xs6">
+                        <div class="layui-row layui-col-space15">
+                          <div class="layui-col-xs3">
+                            <div class="control-label">
+                              <label>
+                                标签
+                              </label>
+                            </div>
+                          </div>
+                          <div class="layui-col-xs9">
+                            <input type="text" class="layui-input full-width">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="layui-col-xs6">
+                        <div class="layui-row layui-col-space15">
+                          <div class="layui-col-xs3">
+                            <div class="control-label">
+                              <label>
+                                标签
+                              </label>
+                            </div>
+                          </div>
+                          <div class="layui-col-xs9">
+                            <input type="text" class="layui-input full-width">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="layui-col-xs6">
+                        <div class="layui-row layui-col-space15">
+                          <div class="layui-col-xs3">
+                            <div class="control-label">
+                              <label>
+                                标签
+                              </label>
+                            </div>
+                          </div>
+                          <div class="layui-col-xs9">
+                            <select name="modules" lay-search>
+                              <option value="">直接选择或搜索选择</option>
+                              <option value="1">layer</option>
+                              <option value="2">form</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="layui-col-xs6">
+                        <div class="layui-row layui-col-space15">
+                          <div class="layui-col-xs3">
+                            <div class="control-label">
+                              <label>
+                                标签
+                              </label>
+                            </div>
+                          </div>
+                          <div class="layui-col-xs9">
+                            <select name="modules" lay-search>
+                              <option value="">直接选择或搜索选择</option>
+                              <option value="1">layer</option>
+                              <option value="2">form</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-footer text-right">
+                    <button class="layui-btn layui-btn-sm min-width-80">查询</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="scroll-box" data-id="body" data-type="adder">
+              <div class="padding-l10 padding-r10 padding-b10">
+                <table class="layui-table margin-none">
+                  <colgroup>
+                    <col width="10%"></col>
+                    <col width="30%"></col>
+                    <col width="60%"></col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th class="text-center">
+                        <input type="checkbox" data-role="sel-all">
+                      </th>
+                      <th>xxxx</th>
+                      <th>xxxx</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">
+                        <input type="checkbox" data-role="ck-item">
+                      </td>
+                      <td>
+                        <ul>
+                          <li>XXX：XXXX</li>
+                          <li>XXX：XXXXX</li>
+                          <li>XXX：XXXX</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>XXX：XXXX</li>
+                          <li>XXX：XXXXXXXXXXXXX</li>
+                          <li>XXXX：XXXXXXXXXXXXXXXXXXXXXXXX</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">
+                        <input type="checkbox" data-role="ck-item">
+                      </td>
+                      <td>
+                        <ul>
+                          <li>XXX：XXXX</li>
+                          <li>XXX：XXXXX</li>
+                          <li>XXX：XXXX</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>XXX：XXXX</li>
+                          <li>XXX：XXXXXXXXXXXXX</li>
+                          <li>XXXX：XXXXXXXXXXXXXXXXXXXXXXXX</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </td>
+          <td valign="middle" align="center" class="border-left border-right">
+            <div class="padding10">
+              <div>
+                <button class="layui-btn layui-btn-normal layui-btn-sm layui-btn-fluid" data-role="add">添加左侧已选择&gt;&gt;</button>
+              </div>
+              <div class="margin-t10">
+                <button class="layui-btn layui-btn-normal layui-btn-sm layui-btn-fluid" data-role="remove">&lt;&lt;移除右侧已选择</button>
+              </div>
+            </div>
+          </td>
+          <td width="45%" valign="top">
+            <div data-id="header">
+              <fieldset class="layui-elem-field layui-field-title margin-b5">
+                <legend class="f16">已选择学生列表</legend>
+              </fieldset>
+              <div class="padding10">
+                <div class="box margin-none">
+                  <div class="box-body">
+                    <div class="layui-row layui-col-space15 layui-form">
+                      <div class="layui-col-xs6">
+                        <div class="layui-row layui-col-space15">
+                          <div class="layui-col-xs3">
+                            <div class="control-label">
+                              <label>
+                                标签
+                              </label>
+                            </div>
+                          </div>
+                          <div class="layui-col-xs9">
+                            <input type="text" class="layui-input full-width">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="layui-col-xs6">
+                        <div class="layui-row layui-col-space15">
+                          <div class="layui-col-xs3">
+                            <div class="control-label">
+                              <label>
+                                标签
+                              </label>
+                            </div>
+                          </div>
+                          <div class="layui-col-xs9">
+                            <input type="text" class="layui-input full-width">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="layui-col-xs6">
+                        <div class="layui-row layui-col-space15">
+                          <div class="layui-col-xs3">
+                            <div class="control-label">
+                              <label>
+                                标签
+                              </label>
+                            </div>
+                          </div>
+                          <div class="layui-col-xs9">
+                            <select name="modules" lay-search>
+                              <option value="">直接选择或搜索选择</option>
+                              <option value="1">layer</option>
+                              <option value="2">form</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="layui-col-xs6">
+                        <div class="layui-row layui-col-space15">
+                          <div class="layui-col-xs3">
+                            <div class="control-label">
+                              <label>
+                                标签
+                              </label>
+                            </div>
+                          </div>
+                          <div class="layui-col-xs9">
+                            <select name="modules" lay-search>
+                              <option value="">直接选择或搜索选择</option>
+                              <option value="1">layer</option>
+                              <option value="2">form</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                              <option value="3">layim</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-footer text-right">
+                    <button class="layui-btn layui-btn-sm min-width-80">查询</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="scroll-box" data-id="body" data-type="receiver">
+              <div class="padding-l10 padding-r10 padding-b10">
+                <table class="layui-table margin-none">
+                  <colgroup>
+                    <col width="10%"></col>
+                    <col width="30%"></col>
+                    <col width="60%"></col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th class="text-center">
+                        <input type="checkbox" data-role="sel-all">
+                      </th>
+                      <th>xxxx</th>
+                      <th>xxxx</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">
+                        <input type="checkbox" data-role="ck-item">
+                      </td>
+                      <td>
+                        <ul>
+                          <li>XXX：XXXX</li>
+                          <li>XXX：XXXXX</li>
+                          <li>XXX：XXXX</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>XXX：XXXX</li>
+                          <li>XXX：XXXXXXXXXXXXX</li>
+                          <li>XXXX：XXXXXXXXXXXXXXXXXXXXXXXX</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">
+                        <input type="checkbox" data-role="ck-item">
+                      </td>
+                      <td>
+                        <ul>
+                          <li>XXX：XXXX</li>
+                          <li>XXX：XXXXX</li>
+                          <li>XXX：XXXX</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>XXX：XXXX</li>
+                          <li>XXX：XXXXXXXXXXXXX</li>
+                          <li>XXXX：XXXXXXXXXXXXXXXXXXXXXXXX</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+
+<script type="text/javascript">
+layui.use(['form','layer','slimScroll'], function(){
+  var form = layui.form,
+      layer = layui.layer;
+  var vHeight=$('.pop-content').height();
+
+    //滚动条
+  function resizeBar(){
+    $('[data-id="body"]').each(function(index, el) {
+      var h=vHeight-$(this).siblings('[data-id="header"]').height();
+
+      $(this).slimScroll({destroy: true}).height('auto');
+
+      $(this).slimscroll({
+        height: h-10,
+        color: "#747474",
+        alwaysVisible:true,
+        size: "6px"
+      });
+    });
+  }
+
+  resizeBar();
+
+  $(document)
+  //全选
+  .on('click', '[data-role="sel-all"]', function(event) {
+    var $tbl=$(this).closest('table')
+        ,$cks=$('[data-role="ck-item"]',$tbl);
+
+    if(this.checked){
+      $cks.prop('checked',true);
+    }
+    else{
+      $cks.prop('checked',false);
+    }
+  })
+
+  //向右添加
+  .on('click', '[data-role="add"]', function(event) {
+    var $adderBox=$('[data-type="adder"]')
+        ,$receiverBox=$('[data-type="receiver"]');
+
+    var $adder=$adderBox.find('tbody tr').filter(function(index) {
+        var $cks=$(this).find('[data-role="ck-item"]')
+            ,r=$cks.prop('checked');
+        $cks.prop('checked',false);
+        return r;
+    });
+
+    if($adder.length>0){
+        $receiverBox.find('tbody').prepend($adder);
+    }
+  })
+
+  //向左移除
+  .on('click', '[data-role="remove"]', function(event) {
+    var $adderBox=$('[data-type="adder"]')
+        ,$receiverBox=$('[data-type="receiver"]');
+
+    var $receiver=$receiverBox.find('tbody tr').filter(function(index) {
+        var $cks=$(this).find('[data-role="ck-item"]')
+            ,r=$cks.prop('checked');
+        $cks.prop('checked',false);
+        return r;
+    });
+
+    if($receiver.length>0){
+        $adderBox.find('tbody').prepend($receiver);
+    }
+  });
+
+  //确定添加
+  $('[data-role="confirm"]').on('click', function(event) {
+    var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+
+    parent.layer.close(index); //再执行关闭  
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>课程建设</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+</head>
+<body class="cdq-body">
+  <!-- 面包屑 start-->
+  <div class="cdq-breadcrumb-box">
+    <div class="pull-right">
+      <button type="button" class="layui-btn layui-btn-primary layui-btn-sm min-width-80">返回</button>
+    </div>
+    <span class="layui-breadcrumb visible">
+      <a href="">课程管理</a><span lay-separator>&gt;</span>
+      <a><cite>课程建设</cite></a>
+    </span>
+  </div>
+  <!-- 面包屑 start-->
+
+
+  <!-- 内容主体区域 start-->
+  <div class="cdq-content">
+
+    <div class="box padding20">
+        <div class="table-responsive">
+          <table class="layui-table text-center margin-none" height="150">
+            <colgroup>
+              <col width="25%"></col>
+              <col width="25%"></col>
+              <col width="25%"></col>
+              <col width="25%"></col>
+            </colgroup>
+            <tbody>
+              <tr class="no-bg">
+                <td>
+                  <div class="f28 text-orange">KC001</div>
+                  <div class="margin-t20">课程编号</div>
+                </td>
+                <td>
+                  <div class="f28 text-orange">营销基础理论</div>
+                  <div class="margin-t20">课程名称</div>
+                </td>
+                <td>
+                  <div class="f28 text-orange">张三</div>
+                  <div class="margin-t20">课程建设者</div>
+                </td>
+                <td>
+                  <div class="f28 text-orange">建设中</div>
+                  <div class="margin-t20">课程状态</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="layui-tab layui-tab-brief">
+          <ul class="layui-tab-title" >
+            <li class="layui-this padding-none">
+              <a class="block padding-l15 padding-r15" href="course-construction.html">课程内容</a>
+            </li>
+            <li class="padding-none">
+              <a class="block padding-l15 padding-r15" href="course-question-bank.html">课程题库</a>
+            </li>
+          </ul>
+          <div class="layui-tab-content padding-none margin-t15">
+            <div class="layui-tab-item layui-show">
+              <div class="layui-tab layui-tab-card no-shadow margin-none">
+                <ul class="layui-tab-disabled">
+                  <li class="layui-this">第一步：设置课程基础信息</li>
+                  <li>第二步：添加课程内容</li>
+                  <li>第三步：发布课程</li>
+                </ul>
+                <div class="layui-tab-content padding-none">
+                  <div class="layui-tab-item layui-show" data-id="cnt">
+                    <div class="padding10">
+                      <table class="layui-table margin-none" table-no-hover>
+                        <colgroup>
+                          <col width="20%"></col>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th class="text-center">课程简介</th>
+                            <td>
+                              <img src="dist/images/temp/editor.png" class="img-responsive" width="100%" height="300">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="text-center">课程封面</th>
+                            <td>
+                              <div class="inline-block">
+                                <div>
+                                  <img src="dist/images/temp/timg.jpg" class="img-responsive" width="240" height="160">
+                                </div>
+                                <div class="margin-t10">
+                                  <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid layui-btn-sm">
+                                    <i class="layui-icon">&#xe67c;</i>
+                                    上传课程封面
+                                  </button>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="border-top layui-bg-gray">
+                      <div class="padding10 text-right">
+                        <button type="button" class="layui-btn layui-btn-danger min-width-100">
+                        确认提交，进入下一步
+                      </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layui-tab-content padding-none margin-t15">
+            <div class="layui-tab-item layui-show">
+              <div class="layui-tab layui-tab-card no-shadow margin-none">
+                <ul class="layui-tab-disabled">
+                  <li>第一步：设置课程基础信息</li>
+                  <li class="layui-this">第二步：添加课程内容</li>
+                  <li>第三步：发布课程</li>
+                </ul>
+                <div class="layui-tab-content padding-none">
+                  <div class="layui-tab-item layui-show" data-id="cnt">
+                    <div class="padding10">
+                      <div class="border padding15">
+                        <div class="text-right">
+                          <span class="layui-btn layui-btn-normal">批量导入课程结构</span>
+                          <span class="layui-btn layui-btn-normal" data-role="add-chapter">添加课程章</span>
+                        </div>
+                      </div>
+
+                      <ul class="chapter-list margin-t20">
+                        <li>
+                          <div class="item-header">
+                            <div class="media">
+                              <div class="media-side text-nowrap toggle-list">
+                                <i class="fa fa-fw fa-minus-circle" data-role="toggle"></i>
+                              </div>
+                              <div class="media-body">
+                                第一章
+                              </div>
+                              <div class="media-side text-nowrap oper-control">
+                                <span role="button" title="添加" data-role="add-section"><i role="button" class="layui-icon">&#xe654;</i></span>
+                                <span role="button" title="修改" data-role="edit-chapter"><i role="button" class="layui-icon">&#xe642;</i></span>
+                                <span role="button" title="删除" data-oper="remove" data-type="chapter" data-label="第一章"><i role="button" class="layui-icon">&#xe640;</i></span>
+                              </div>
+                            </div>
+                          </div>
+                          <ul>
+                            <li>
+                              <div class="item-header">
+                                <div class="media">
+                                  <div class="media-side text-nowrap toggle-list">
+                                    <i class="fa fa-fw fa-minus-circle" data-role="toggle"></i>
+                                  </div>
+                                  <div class="media-body">
+                                    第一节
+                                  </div>
+                                  <div class="media-side text-nowrap oper-control">
+                                    <span title="添加" class="dropdown" data-role="add-activity">
+                                      <i role="button" class="layui-icon">&#xe654;</i>
+                                      <div class="dropdown-menu">
+                                        <ul>
+                                          <li data-activity-type="video" data-oper-type="add" data-label="视频学习">
+                                            <i class="fa fa-fw fa-play-circle-o f18 vertical-middle"></i>
+                                            视频学习
+                                          </li>
+                                          <li data-activity-type="text" data-oper-type="add" data-label="文本学习">
+                                            <i class="fa fa-fw fa-file-text-o f18 vertical-middle"></i>
+                                            文本学习
+                                          </li>
+                                          <li data-activity-type="test" data-oper-type="add" data-label="模拟测试">
+                                            <i class="fa fa-fw fa-edit f18 vertical-middle"></i>
+                                            模拟测试
+                                          </li>
+                                          <li data-activity-type="discussion" data-oper-type="add" data-label="互动讨论">
+                                            <i class="fa fa-fw fa-commenting-o f18 vertical-middle"></i>
+                                            互动讨论
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </span>
+                                    <span role="button" title="修改" data-role="edit-section"><i role="button" class="layui-icon">&#xe642;</i></span>
+                                    <span role="button" title="删除" data-oper="remove" data-type="section" data-label="第一节"><i role="button" class="layui-icon">&#xe640;</i></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <ul>
+                                <li>
+                                  <div class="item-header">
+                                    <div class="media">
+                                      <div class="media-side text-nowrap toggle-list">
+                                        <i class="fa fa-fw fa-play-circle-o"></i>
+                                      </div>
+                                      <div class="media-body">
+                                        【视频学习】XXXX的定义的定义
+                                      </div>
+                                      <div class="media-side act-input">
+                                        <input type="text" class="layui-input layui-input-sm" placeholder="活动分值">
+                                      </div>
+                                      <div class="media-side text-nowrap oper-control">
+                                        <a href="#" title="修改" data-activity-type="video" data-oper-type="edit" data-label="视频学习"><i role="button" class="layui-icon">&#xe642;</i></a>
+                                        <a href="#" title="删除" data-oper="remove" data-type="activity" data-label="【视频学习】XXXX的定义的定义"><i role="button" class="layui-icon">&#xe640;</i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-header">
+                                    <div class="media">
+                                      <div class="media-side text-nowrap toggle-list">
+                                        <i class="fa fa-fw fa-file-text-o"></i>
+                                      </div>
+                                      <div class="media-body">
+                                        【文本学习】XXXX的定义
+                                      </div>
+                                      <div class="media-side act-input">
+                                        <input type="text" class="layui-input layui-input-sm" placeholder="活动分值">
+                                      </div>
+                                      <div class="media-side text-nowrap oper-control">
+                                        <a href="#" title="修改" data-activity-type="text" data-oper-type="edit" data-label="文本学习"><i role="button" class="layui-icon">&#xe642;</i></a>
+                                        <a href="#" title="删除" data-oper="remove" data-type="activity" data-label="【文本学习】XXXX的定义"><i role="button" class="layui-icon">&#xe640;</i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-header">
+                                    <div class="media">
+                                      <div class="media-side text-nowrap toggle-list">
+                                        <i class="fa fa-fw fa-edit"></i>
+                                      </div>
+                                      <div class="media-body">
+                                        【模拟测试】XXXX的定义
+                                      </div>
+                                      <div class="media-side act-input">
+                                        <input type="text" class="layui-input layui-input-sm" placeholder="活动分值">
+                                      </div>
+                                      <div class="media-side text-nowrap oper-control">
+                                        <a href="#" title="修改" data-activity-type="test" data-oper-type="edit" data-label="模拟测试"><i role="button" class="layui-icon">&#xe642;</i></a>
+                                        <a href="#" title="删除" data-oper="remove" data-type="activity" data-label="【模拟测试】XXXX的定义"><i role="button" class="layui-icon">&#xe640;</i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-header">
+                                    <div class="media">
+                                      <div class="media-side text-nowrap toggle-list">
+                                        <i class="fa fa-fw fa-commenting-o"></i>
+                                      </div>
+                                      <div class="media-body">
+                                        【互动讨论】XXXX的定义
+                                      </div>
+                                      <div class="media-side act-input">
+                                        <input type="text" class="layui-input layui-input-sm" placeholder="活动分值">
+                                      </div>
+                                      <div class="media-side text-nowrap oper-control">
+                                        <a href="#" title="修改" data-activity-type="discussion" data-oper-type="edit" data-label="互动讨论"><i role="button" class="layui-icon">&#xe642;</i></a>
+                                        <a href="#" title="删除" data-oper="remove" data-type="activity" data-label="【互动讨论】XXXX的定义"><i role="button" class="layui-icon">&#xe640;</i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </li>
+                        <li>
+                          <div class="item-header">
+                            <div class="media">
+                              <div class="media-side text-nowrap toggle-list">
+                                <i class="fa fa-fw fa-plus-circle" data-role="toggle"></i>
+                              </div>
+                              <div class="media-body">
+                                第一章
+                              </div>
+                              <div class="media-side text-nowrap oper-control">
+                                <span role="button" title="添加" data-role="add-section"><i role="button" class="layui-icon">&#xe654;</i></span>
+                                <span role="button" title="修改" data-role="edit-chapter"><i role="button" class="layui-icon">&#xe642;</i></span>
+                                <span role="button" title="删除" data-oper="remove" data-type="chapter" data-label="第一章"><i role="button" class="layui-icon">&#xe640;</i></span>
+                              </div>
+                            </div>
+                          </div>
+                          <ul style="display:none;">
+                            <li>
+                              <div class="item-header">
+                                <div class="media">
+                                  <div class="media-side text-nowrap toggle-list">
+                                    <i class="fa fa-fw fa-minus-circle" data-role="toggle"></i>
+                                  </div>
+                                  <div class="media-body">
+                                    第一节
+                                  </div>
+                                  <div class="media-side text-nowrap oper-control">
+                                    <span title="添加" class="dropdown" data-role="add-activity">
+                                      <i role="button" class="layui-icon">&#xe654;</i>
+                                      <div class="dropdown-menu">
+                                        <ul>
+                                          <li data-activity-type="video" data-oper-type="add" data-label="视频学习">
+                                            <i class="fa fa-fw fa-play-circle-o f18 vertical-middle"></i>
+                                            视频学习
+                                          </li>
+                                          <li data-activity-type="text" data-oper-type="add" data-label="文本学习">
+                                            <i class="fa fa-fw fa-file-text-o f18 vertical-middle"></i>
+                                            文本学习
+                                          </li>
+                                          <li data-activity-type="test" data-oper-type="add" data-label="模拟测试">
+                                            <i class="fa fa-fw fa-edit f18 vertical-middle"></i>
+                                            模拟测试
+                                          </li>
+                                          <li data-activity-type="discussion" data-oper-type="add" data-label="互动讨论">
+                                            <i class="fa fa-fw fa-commenting-o f18 vertical-middle"></i>
+                                            互动讨论
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </span>
+                                    <span role="button" title="修改" data-role="edit-section"><i role="button" class="layui-icon">&#xe642;</i></span>
+                                    <span role="button" title="删除" data-oper="remove" data-type="section" data-label="第一节"><i role="button" class="layui-icon">&#xe640;</i></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <ul>
+                                <li>
+                                  <div class="item-header">
+                                    <div class="media">
+                                      <div class="media-side text-nowrap toggle-list">
+                                        <i class="fa fa-fw fa-play-circle-o"></i>
+                                      </div>
+                                      <div class="media-body">
+                                        【视频学习】XXXX的定义的定义
+                                      </div>
+                                      <div class="media-side act-input">
+                                        <input type="text" class="layui-input layui-input-sm" placeholder="活动分值">
+                                      </div>
+                                      <div class="media-side text-nowrap oper-control">
+                                        <a href="#" title="修改" data-activity-type="video" data-oper-type="edit" data-label="视频学习"><i role="button" class="layui-icon">&#xe642;</i></a>
+                                        <a href="#" title="删除" data-oper="remove" data-type="activity" data-label="【视频学习】XXXX的定义的定义"><i role="button" class="layui-icon">&#xe640;</i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-header">
+                                    <div class="media">
+                                      <div class="media-side text-nowrap toggle-list">
+                                        <i class="fa fa-fw fa-file-text-o"></i>
+                                      </div>
+                                      <div class="media-body">
+                                        【文本学习】XXXX的定义
+                                      </div>
+                                      <div class="media-side act-input">
+                                        <input type="text" class="layui-input layui-input-sm" placeholder="活动分值">
+                                      </div>
+                                      <div class="media-side text-nowrap oper-control">
+                                        <a href="#" title="修改" data-activity-type="text" data-oper-type="edit" data-label="文本学习"><i role="button" class="layui-icon">&#xe642;</i></a>
+                                        <a href="#" title="删除" data-oper="remove" data-type="activity" data-label="【文本学习】XXXX的定义"><i role="button" class="layui-icon">&#xe640;</i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-header">
+                                    <div class="media">
+                                      <div class="media-side text-nowrap toggle-list">
+                                        <i class="fa fa-fw fa-edit"></i>
+                                      </div>
+                                      <div class="media-body">
+                                        【模拟测试】XXXX的定义
+                                      </div>
+                                      <div class="media-side act-input">
+                                        <input type="text" class="layui-input layui-input-sm" placeholder="活动分值">
+                                      </div>
+                                      <div class="media-side text-nowrap oper-control">
+                                        <a href="#" title="修改" data-activity-type="test" data-oper-type="edit" data-label="模拟测试"><i role="button" class="layui-icon">&#xe642;</i></a>
+                                        <a href="#" title="删除" data-oper="remove" data-type="activity" data-label="【模拟测试】XXXX的定义"><i role="button" class="layui-icon">&#xe640;</i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-header">
+                                    <div class="media">
+                                      <div class="media-side text-nowrap toggle-list">
+                                        <i class="fa fa-fw fa-commenting-o"></i>
+                                      </div>
+                                      <div class="media-body">
+                                        【互动讨论】XXXX的定义
+                                      </div>
+                                      <div class="media-side act-input">
+                                        <input type="text" class="layui-input layui-input-sm" placeholder="活动分值">
+                                      </div>
+                                      <div class="media-side text-nowrap oper-control">
+                                        <a href="#" title="修改" data-activity-type="discussion" data-oper-type="edit" data-label="互动讨论"><i role="button" class="layui-icon">&#xe642;</i></a>
+                                        <a href="#" title="删除" data-oper="remove" data-type="activity" data-label="【互动讨论】XXXX的定义"><i role="button" class="layui-icon">&#xe640;</i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <div class="border-top layui-bg-gray">
+                      <div class="padding10 text-right">
+                        <button type="button" class="layui-btn layui-btn-danger min-width-100">
+                        确认提交，进入下一步
+                      </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layui-tab-content padding-none margin-t15">
+            <div class="layui-tab-item layui-show">
+              <div class="layui-tab layui-tab-card no-shadow margin-none">
+                <ul class="layui-tab-disabled">
+                  <li>第一步：设置课程基础信息</li>
+                  <li>第二步：添加课程内容</li>
+                  <li class="layui-this">第三步：发布课程</li>
+                </ul>
+                <div class="layui-tab-content padding-none">
+                  <div class="layui-tab-item layui-show" data-id="cnt">
+                    <div class="text-center text-dark-green" style="padding:80px 10px;">
+                        <i class="fa fa-fw fa-exclamation-circle" style="font-size:48px;"></i>
+                        <div class=" f24">已完成本课程建设！</div>
+                    </div>
+                    <div class="border-top layui-bg-gray">
+                      <div class="padding10 text-right">
+                        <button type="button" class="layui-btn layui-btn-danger min-width-100">
+                          返回，修改
+                        </button>
+                        <button type="button" class="layui-btn layui-btn-normal min-width-100">
+                          预览课程
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- 内容主体区域 end-->
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+
+<script type="text/template" id="cnt-tpl">
+  {{# if(d.tabId==0){ }}
+    
+  {{# } else if(d.tabId==1){ }}
+    
+
+  {{# } else if(d.tabId==2){ }}
+
+
+  {{# } }}
+</script>
+
+<script type="text/javascript">
+layui.use(['util','element','form','laytpl','layer'], function(){
+  var util = layui.util,
+      form = layui.form,
+      laytpl = layui.laytpl,
+      layer = layui.layer,
+      element = layui.element;
+
+  var $container=$('[data-id="cnt"]');
+  /*
+  
+  laytpl($('#cnt-tpl').html()).render({tabId:0}, function(html){
+    $container.html(html);
+  });
+  */
+
+  $container
+  //分类 收缩/展开
+  .on('click', '[data-role="toggle"]', function(event) {
+    var $cate=$(this).closest('.item-header').next('ul');
+
+    if($cate.is(':hidden')){
+      $(this).addClass('fa-minus-circle').removeClass('fa-plus-circle');
+      $cate.slideDown();
+    }
+    else{
+      
+      $(this).addClass('fa-plus-circle').removeClass('fa-minus-circle');
+      $cate.slideUp();
+    }
+    
+  })
+
+  //添加课程章
+  .on('click', '[data-role="add-chapter"]', function(event) {
+    var $w=$(window);
+    layer.open({
+      id: 'add-chapter',
+      title:'添加课程章',
+      type: 2,
+      maxHeight:400, 
+      scrollbar:false,
+      area: [$w.width()+'px', $w.height()+'px'],
+      content: 'add-course-chapter-pop-page.html' //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+    }); 
+  })
+
+  //编辑课程章
+  .on('click', '[data-role="edit-chapter"]', function(event) {
+    var $w=$(window);
+    layer.open({
+      id: 'add-chapter',
+      title:'编辑课程章',
+      type: 2,
+      scrollbar:false,
+      area: [$w.width()+'px', $w.height()+'px'],
+      content: 'add-course-chapter-pop-page.html' //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+    }); 
+  })
+
+  //添加课程节
+  .on('click', '[data-role="add-section"]', function(event) {
+    var $w=$(window);
+    layer.open({
+      id: 'add-section',
+      title:'添加课程节',
+      type: 2,
+      scrollbar:false,
+      area: [$w.width()+'px', $w.height()+'px'],
+      content: 'add-course-section-pop-page.html' //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+    }); 
+  })
+
+  //编辑课程章
+  .on('click', '[data-role="edit-section"]', function(event) {
+    var $w=$(window);
+    layer.open({
+      id: 'add-section',
+      title:'编辑课程节',
+      type: 2,
+      scrollbar:false,
+      area: [$w.width()+'px', $w.height()+'px'],
+      content: 'add-course-section-pop-page.html' //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+    }); 
+  })
+
+  //活动 操作
+  .on('click', '[data-activity-type]', function(event) {
+    event.preventDefault();
+    var $w=$(window),
+        type=$(this).data('activity-type'),
+        typeLabel=$.trim($(this).data('label')),
+        oper=$(this).data('oper-type'),
+        operLabel=oper=='add'?'添加':'编辑';
+
+    layer.open({
+      id: 'activity-oper',
+      title:(operLabel+typeLabel),
+      type: 2,
+      scrollbar:false,
+      area: [$w.width()+'px', $w.height()+'px'],
+      content: ('add-course-activity-'+type+'-pop-page.html')
+    }); 
+  })
+
+  //删除 章 节 活动
+  .on('click', '[data-oper="remove"]', function(event) {
+    event.preventDefault();
+    var _this=this;
+        type=$(this).data('type'),
+        label=$(this).data('label');
+
+    //询问框
+    layer.confirm('\
+        <div class="text-center text-orange f16">\
+          <i class="fa fa-fw fa-exclamation-triangle f24"></i> \
+          确定删除"'+label+'"？\
+        </div>\
+      '
+    , {
+      title:'删除',
+      btn: ['确定','取消'] //按钮
+    }, function(index){
+      $(_this).closest('li').remove();
+      layer.close(index);
+    }, function(index){
+      layer.close(index);
+    });
+  });
+  
+})
+</script>
+</body>
+</html>

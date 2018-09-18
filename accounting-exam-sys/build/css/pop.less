@@ -1,0 +1,120 @@
+/*iframe 弹窗 */
+.pop-content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+}
+//的底部 工具条
+.pop-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color: #F8F8F8;
+    border-top: 1px solid #ddd;
+    +.pop-content{
+        bottom: 59px;
+    }
+}
+
+.face-reg-pop{
+    background: none !important;
+    .layui-layer-title{
+        height: 60px;
+        line-height: 60px;
+        font-size: 22px;
+        text-align: center;
+        padding: 0 10px;
+        color: #fff;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .layui-layer-content{
+        background: #fff;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    &.face-reg-pop-red{
+        .layui-layer-title{
+            .generate-linear-gradient(#fd7a40, #f95a3a);
+        }
+        .face-reg-grid{
+            .face-btn{
+                .generate-linear-gradient(#fd7a40, #f95a3a);
+            }
+        }
+    }
+    &.face-reg-pop-blue{
+        .layui-layer-title{
+            .generate-linear-gradient(#5faafa, #617ef7);
+        }
+        .face-reg-grid{
+            .face-btn{
+                .generate-linear-gradient(#5faafa, #617ef7);
+            }
+        }
+    }
+    &.face-reg-pop-green{
+        .layui-layer-title{
+            .generate-linear-gradient(#57c99a, #2abda9);
+        }
+        .face-reg-grid{
+            .face-btn{
+                .generate-linear-gradient(#57c99a, #2abda9);
+            }
+        }
+    }
+    .face-reg-grid{
+        padding: 20px;
+        .media-side{
+            width: 32%;
+            max-width: 300px;
+            
+        }
+        .media-body{
+            padding-left: 40px;
+             vertical-align: top;
+        }
+        .reg-obj-box{
+            border-radius: 10px;
+            background: #e5e4e9;
+            overflow: hidden;
+        }
+        .face-btn{
+            height: 72px;
+            line-height: 72px;
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+            padding: 0 10px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+    }
+    .f-tips{
+        font-size: 16px;
+        line-height: 24px; 
+    }
+}
+
+@media (max-width: 600px){
+    .face-reg-pop{
+        .face-reg-grid{
+            .media{
+                display: block;
+                .media-side,
+                .media-body{
+                    display: block;
+                    width: 100%;
+                    max-width: none;
+                }
+                .media-body{
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

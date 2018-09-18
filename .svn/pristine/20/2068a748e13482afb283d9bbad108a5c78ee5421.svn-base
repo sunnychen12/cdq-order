@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="ie67"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if gte IE 9]><html><![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <title>门户站</title>
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/style.css" rel="stylesheet">
+    <script src="dist/js/loadcss.js"></script>
+  </head>
+
+  <body class="inner-page-body">
+    <div class="header header-spec">
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="other-logo">
+            <div class="inner vercial-middle">
+              <img src="dist/images/hh-logo.png">
+            </div>
+          </div>
+
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <img src="dist/images/logo.png" class="vercial-middle">
+              <span class="vercial-middle inline-block subtitle text-nowrap">
+                <div class="inner">
+                  XXXXXX分校
+                </div>
+              </span>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+
+    <div class="container main">
+      <div class="spec-page bg-white">
+        <dl class="spec-sch-item">
+          <dt>
+            <span>XXX企业大学</span>
+          </dt>
+          <dd>
+            <div class="row">
+              <div class="col-sm-5 text-center">
+                <img src="dist/images/hh-img1.jpg" class="sch-cover">
+              </div>
+              <div class="col-sm-7">
+                 <p>韩后秉承“天然造”理念，致力为肌肤补充绿色能量，结合黄金选材、智慧配比、绿色智造技术，打造生态美肌。明星产品韩后熬夜眼霜甄选处于休眠状态的夏雪片莲、水仙等多种植物精粹，能深度催眠黑色素，起到缓解黑眼圈的功效。配合韩后护肤特质的沁凉晶瓷按摩头，由内向外轻柔、均匀地将熬夜眼霜精华涂抹在眼周肌肤上，能卓效缓解“潜在”的黑眼圈，淡化黑眼圈，提亮眼周，改善熬夜倦容，熬夜不熬熊猫眼。</p>
+                 <p>
+                 韩后达人面膜，运用“超高压植物提炼技术”，从多种植物中提取植物精华，分子更小、密度更高、更有效，更易渗透至肌底层。韩后成为《女神新装》追求“时尚范、自然美”理念的高度契合者，达人面膜也得以继《最美和声》结束后，成为随着《女神新装》话题持续发酵的受益者。</p>
+       
+                  <div class="btn-top">
+                    <a href="#" class="btn btn-danger btn-lg">立即报读</a>
+                  </div>
+              </div>
+            </div>
+          </dd>
+        </dl>
+        <dl class="spec-sch-item">
+          <dt>
+            <span>XXX企业大学</span>
+          </dt>
+          <dd>
+            <div class="row">
+              <div class="col-sm-5 text-center">
+                <img src="dist/images/hh-img2.jpg" class="sch-cover">
+              </div>
+              <div class="col-sm-7">
+                 <p>国家开放大学（英文：The Open University of China）是中华人民共和国教育部直属的，以现代信息技术为支撑，学历教育与非学历教育并举，实施远程开放教育的新型高等学校。学校在中央广播电视大学基础上组建，面向全体社会成员，强调优质教育资源的集聚、整合和共享，强调以现代信息技术为支撑，探索现代信息技术与教育的深度融合。学校有权授予学士学位，由学校向北京市学位委员会申请并获批后，报国务院学位委员会备案。</p>
+                 <p>
+                 国家开放大学是在中央广播电视大学和地方广播电视大学的基础上组建，以现代信息技术为支撑，办学网络立体覆盖全国城乡，学历与非学历教育并重，面向全体社会成员，没有围墙的新型大学。注册在籍学生359万人，其中本科学生105万人。</p>
+       
+                  <div class="btn-top">
+                    <a href="#" class="btn btn-danger btn-lg">了解更多</a>
+                  </div>
+              </div>
+            </div>
+          </dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="footer footer-spec">
+      <div class="container">
+        <div class="clearfix">
+          <div class="col-sm-7">
+            <p class="clearfix">
+              <span class="pull-left">
+                版权所有：
+              </span>
+              <span class="show oh">
+                xxxxxxxxxx分校
+              </span>
+            </p>
+            <p class="clearfix">
+              <span class="pull-left">
+                联系地址：
+              </span>
+              <span class="show oh">
+                XXXXXXXXXXXXXXXXXXXXXXXXXX
+              </span>
+            </p>
+            <p>粤ICP备17125036号-1</p>
+          </div>
+          <div class="col-sm-5 text-right margin-t20">
+            <p>全国统一服务热线</p>
+            <p>40000000000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/require.js" data-require-path="dist/js/"></script>
+    <script src="dist/js/loadjs.js"></script>
+    <script type="text/javascript">
+      
+    </script>
+  </body>
+</html>

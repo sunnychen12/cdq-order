@@ -1,0 +1,97 @@
+body{
+	font: 14px/1.75em "microsoft yahei",SimSun,"Helvetica Neue",Helvetica,"PingFang SC",Tahoma,Arial,sans-serif;
+	color: #333;
+	background-color: #eeeeee;
+}
+button, input, select, textarea{
+	color: #333;
+}
+
+::-webkit-input-placeholder{color: #999;}    /* 使用webkit内核的浏览器 */
+:-moz-placeholder{color: #999;}                  /* Firefox版本4-18 */
+::-moz-placeholder{color: #999;}                  /* Firefox版本19+ */
+:-ms-input-placeholder{color: #999;}           /* IE浏览器 */
+
+.box-center{
+	//width: 1200px;
+	padding-left: 20px;
+	padding-right: 20px;
+	min-width: 960px;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.site-header{
+	background-color: #2f3440;
+	>.box-center{
+		height: 70px;
+		position: relative;
+	}
+	.layui-nav{
+		background: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+		.layui-nav-item{
+			line-height: 70px;
+			.layui-nav-child{
+				top: 75px;
+			}
+		}
+	}
+	+.site-footer{
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.site-footer{
+	height: 120px;
+	background-color: #474443;
+	color: #fff;
+}
+
+.site-main{
+	margin: 20px 0;
+}
+.direction-main{
+	margin: 0;
+	position: fixed;
+	width: 100%;
+	top: 90px;
+	bottom: 140px;
+	+.site-footer{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
+}
+
+.site-content{
+	float: left;
+	width: 100%;
+}
+
+.site-content-inner{
+	margin-left: 215px;
+}
+
+.site-tree{
+	width: 196px;
+	float: left;
+	margin-right: -100%;
+	position: relative;
+}
+
+.grid-left{
+	width: 280px;
+	float: right;
+	margin-left: -100%;
+	position: relative;
+}
+.grid-content-inner{
+	margin-right: 300px;
+}

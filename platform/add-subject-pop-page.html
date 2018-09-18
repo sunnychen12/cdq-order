@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>框架页</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+<style type="text/css">
+html,body{
+  height: 100%;
+}
+</style>
+</head>
+<body>
+<div class="pop-footer">
+  <div class="padding10 text-right">
+    <button type="button" class="layui-btn layui-btn-danger min-width-100" data-role="confirm">
+      确认添加
+    </button>
+  </div>
+</div>
+
+<div class="pop-content">
+    <div class="padding10">
+      <div class="box">
+        <div class="box-body padding15">
+          <form class="layui-form" lay-filter="form1">
+            <div class="layui-row layui-col-space15">
+              <div class="layui-col-xs6 layui-col-sm4">
+                <div class="layui-row layui-col-space15">
+                  <div class="layui-col-xs3">
+                    <div class="control-label">
+                      <label>
+                        题目类型
+                      </label>
+                    </div>
+                  </div>
+                  <div class="layui-col-xs9">
+                    <select name="modules" lay-search>
+                      <option value="">直接选择或搜索选择</option>
+                      <option value="1">单选题</option>
+                      <option value="2">多选题</option>
+                      <option value="3">问答题</option>
+                      <option value="3">填空题</option>
+                      <option value="3">材料题</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="layui-col-xs6 layui-col-sm4">
+                <div class="layui-row layui-col-space15">
+                  <div class="layui-col-xs3">
+                    <div class="control-label">
+                      <label>
+                        题目标题
+                      </label>
+                    </div>
+                  </div>
+                  <div class="layui-col-xs9">
+                    <input type="text" class="layui-input full-width">
+                  </div>
+                </div>
+              </div>
+              <div class="layui-col-xs6 layui-col-sm4">
+                <div class="layui-row layui-col-space15">
+                  <div class="layui-col-xs3">
+                    <div class="control-label">
+                      <label>
+                        题目标签
+                      </label>
+                    </div>
+                  </div>
+                  <div class="layui-col-xs9">
+                    <input type="text" class="layui-input full-width">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="box-footer text-right padding-r15 padding-l15">
+            <button type="button" class="layui-btn layui-btn-normal min-width-100">查询</button>
+        </div>
+      </div>
+
+      <form class="layui-form" lay-filter="form2">
+        <table class="layui-table text-center" data-role="tbl">
+            <thead>
+              <tr>
+                <th>
+                  <input type="checkbox" name="ck-all" title="全选" lay-skin="primary" lay-filter="sel-all"> 
+                </th>
+                <th>题目类型</th>
+                <th>题目内容</th>
+                <th>题目标签</th>
+              </tr> 
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="checkbox" name="ck-item" lay-skin="primary"> 
+                </td>
+                <td item-to-add>单选题</td>
+                <td item-to-add>
+                  <div class="text-left">
+                    <div>
+                      婴幼儿保育与教育的教育对象除了0~3岁婴幼儿之外，还包括（    ）。
+                    </div>
+                    <ul class="margin-t10 sel-item-list">
+                      <li>
+                        <label>
+                          <div class="media">
+                            <div class="media-side">
+                              <input type="radio" name="r1" lay-ignore>
+                            </div>
+                            <div class="media-body">
+                              <div class="item-title">
+                                母乳喂养
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <div class="media">
+                            <div class="media-side">
+                              <input type="radio" name="r1" lay-ignore>
+                            </div>
+                            <div class="media-body">
+                              <div class="item-title">
+                                计划免疫
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <div class="media">
+                            <div class="media-side">
+                              <input type="radio" name="r1" lay-ignore>
+                            </div>
+                            <div class="media-body">
+                              <div class="item-title">
+                                思维发展
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <div class="media">
+                            <div class="media-side">
+                              <input type="radio" name="r1" lay-ignore>
+                            </div>
+                            <div class="media-body">
+                              <div class="item-title">
+                                日常护理
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td item-to-add>
+                  基础概念、幼儿保育
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="ck-item" lay-skin="primary"> 
+                </td>
+                <td item-to-add>单选题</td>
+                <td item-to-add>
+                  <div class="text-left">
+                    <div>
+                      婴幼儿保育与教育的教育对象除了0~3岁婴幼儿之外，还包括（    ）。
+                    </div>
+                    <ul class="margin-t10 sel-item-list">
+                      <li>
+                        <label>
+                          <div class="media">
+                            <div class="media-side">
+                              <input type="radio" name="r1" lay-ignore>
+                            </div>
+                            <div class="media-body">
+                              <div class="item-title">
+                                母乳喂养
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <div class="media">
+                            <div class="media-side">
+                              <input type="radio" name="r1" lay-ignore>
+                            </div>
+                            <div class="media-body">
+                              <div class="item-title">
+                                计划免疫
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <div class="media">
+                            <div class="media-side">
+                              <input type="radio" name="r1" lay-ignore>
+                            </div>
+                            <div class="media-body">
+                              <div class="item-title">
+                                思维发展
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <div class="media">
+                            <div class="media-side">
+                              <input type="radio" name="r1" lay-ignore>
+                            </div>
+                            <div class="media-body">
+                              <div class="item-title">
+                                日常护理
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td item-to-add>
+                  基础概念、幼儿保育
+                </td>
+              </tr>
+            </tbody>
+        </table>
+        <div>
+          你已经选择了<u class="text-orange">10</u> 道题目，确认后，请点确认添加按钮
+        </div>
+      </form>
+    </div>
+</div>
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+
+<script type="text/javascript">
+layui.use(['form','layer'], function(){
+  var form = layui.form,
+      layer = layui.layer;
+
+
+  //监听提交
+  form.on('checkbox(sel-all)', function(data){
+    /*
+    console.log(data.elem); //得到checkbox原始DOM对象
+    console.log(data.elem.checked); //是否被选中，true或者false
+    console.log(data.value); //复选框value值，也可以通过data.elem.value得到
+    console.log(data.othis); //得到美化后的DOM对象
+    */
+    if(data.elem.checked){
+      $('[name="ck-item"]').prop('checked',true);
+    }
+    else{
+      $('[name="ck-item"]').prop('checked',false);
+    }
+
+    form.render('checkbox', 'form2')
+  });
+
+  //确定添加
+  $('[data-role="confirm"]').on('click', function(event) {
+    var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+
+    var $box=parent.$('#activity-oper').children('iframe').contents().find('.subject-cate-item.actived');
+
+    var $tbody=$box.find('tbody');
+
+    var addTpl='\
+      <tr>\
+        <td>\
+          <input class="layui-input layui-input-sm padding-r10 text-center" value="{order}">\
+        </td>\
+        {cnt}\
+        <td>\
+          <input class="layui-input layui-input-sm padding-r10 text-center">\
+        </td>\
+        <td>\
+          <a href="#" title="删除" data-role="remove-subject"><i role="button" class="layui-icon f20">&#xe640;</i></a>\
+        </td>\
+      </tr>\
+    '
+
+    var $tr=$('[data-role="tbl"] tbody tr');
+
+    var arr=[];
+
+    $tr.filter(function(index) {
+      return $(this).find('[name="ck-item"]').prop('checked');
+    }).each(function(){
+      var _this=this;
+      arr.push(
+          $.map($(_this).children('[item-to-add]'),function(e){
+            return '<td>'+$(e).html()+'</td>';
+          }
+        )
+      )
+    });
+
+    if(arr.length>0){
+
+      var append=[];
+      $.each(arr, function(i, n) {
+         append.push(
+          addTpl.replace(/\{cnt\}/g,n.join('')).replace(/\{order\}/g,$tbody.children().length+1+i)
+         )
+      });
+
+      if($tbody.length>0){
+        $tbody.append(append.join(''));
+      }
+      else{
+        var tpl='\
+          <table class="layui-table text-center margin-none" table-no-hover>\
+            <colgroup>\
+              <col width="8%"></col>\
+              <col width="15%"></col>\
+              <col></col>\
+              <col width="20%"></col>\
+              <col width="12%"></col>\
+              <col width="8%"></col>\
+            </colgroup>\
+            <thead>\
+              <tr>\
+                <th>序号</th>\
+                <th>题目类型</th>\
+                <th>题目内容</th>\
+                <th>题目标签</th>\
+                <th>题目分值</th>\
+                <th>操作</th>\
+              </tr>\
+            </thead>\
+            <tbody>'+append.join('')+'</tbody>\
+          </table>\
+        ';
+
+        $box.children('.subject-cate-body').append(tpl);
+      }
+    }
+
+    parent.layer.close(index); //再执行关闭  
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>框架页</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+<style type="text/css">
+html,body{
+  height: 100%;
+}
+</style>
+</head>
+<body>
+<form class="layui-form" action="">
+<div class="pop-footer">
+  <div class="padding10 text-right">
+    <button class="layui-btn layui-btn-danger min-width-100" lay-filter="form" lay-submit>
+      确认添加
+    </button>
+  </div>
+</div>
+
+<div class="pop-content">
+    <div class="padding10">
+      <table class="layui-table margin-none" table-no-hover>
+        <colgroup>
+          <col width="20%"></col>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th class="text-center">题型</th>
+            <td>
+              <input type="text" name="title" class="layui-input" autocomplete="off" lay-verify="verify-control" placeholder="请输入题型" value="材料分析题"
+                data-regexp="*1"
+                null-msg="请输入题型"
+                error-msg="请输入题型"
+              >
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">题目标题</th>
+            <td>
+              <textarea placeholder="请输入题目标题" class="layui-textarea" rows="5" lay-verify="verify-control"
+                data-regexp="*1"
+                null-msg="请输入题目标题"
+                error-msg="请输入题目标题"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">题目标签</th>
+            <td>
+              <input type="text" name="title" class="layui-input" autocomplete="off" lay-verify="verify-control" placeholder="可以在这里为题目定义标签或分类属性，便于通过标签查找题目，多个标签用、号隔开。例如：第一章、第二节、练习题"
+                data-regexp="/^[^、]+(、[^、]+)*$/"
+                null-msg="请输入题目标题"
+                error-msg="多个标签用、号隔开"
+              >
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">题目解析</th>
+            <td>
+              <textarea placeholder="请输入题目解析" class="layui-textarea" rows="8"></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="box margin-t15">
+        <div class="box-header">
+          <div class="media">
+            <div class="media-side text-nowrap vertical-middle f16">试卷题目</div>
+            <div class="media-body">
+              <div class="text-right">
+                <span class="dropdown inline-block margin-l10">
+                  <span class="layui-btn layui-btn-normal">
+                    新增题目
+                  </span>
+                  <div class="dropdown-menu" style="left:auto;right:0;">
+                    <ul>
+                      <li data-subject-type="radio" data-oper-type="add" data-label="单选题">
+                        单选题
+                      </li>
+                      <li data-subject-type="checkbox" data-oper-type="add" data-label="多选题">
+                        多选题
+                      </li>
+                      <li data-subject-type="judge" data-oper-type="add" data-label="判断题">
+                        判断题
+                      </li>
+                      <li data-subject-type="faq" data-oper-type="add" data-label="问答题">
+                        问答题
+                      </li>
+                      <li data-subject-type="filling" data-oper-type="add" data-label="填空题">
+                        填空题
+                      </li>
+                    </ul>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin:-1px;">
+          <table class="layui-table text-center margin-none" table-no-hover>
+            <colgroup>
+              <col width="8%"></col>
+              <col width="15%"></col>
+              <col></col>
+              <col width="20%"></col>
+              <col width="8%"></col>
+
+            </colgroup>
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>题目类型</th>
+                <th>题目内容</th>
+                <th>题目标签</th>
+                <th>操作</th>
+              </tr> 
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input class="layui-input layui-input-sm padding-r10 text-center" value="1">
+                </td>
+                <td>单选题</td>
+                <td>
+                  <div class="text-left">
+                    （    ）不属于0~3岁婴幼儿保育的内容
+                  </div>
+                </td>
+                <td>
+                  基础概念、幼儿保育
+                </td>
+                <td>
+                    <span role="button" title="删除" data-oper="remove"><i role="button" class="layui-icon f24">&#xe640;</i></span>
+                    <span role="button" title="查看" data-subject-type="radio" data-oper-type="view" data-label="多选题"><i class="icomoon-icon im-w f20">&#xe901;</i></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="layui-input layui-input-sm padding-r10 text-center" value="2">
+                </td>
+                <td>多选题</td>
+                <td>
+                  <div class="text-left">
+                    婴幼儿保育与教育的教育对象除了0~3岁婴幼儿之外，还包括（    ）。
+                  </div>
+                </td>
+                <td>
+                  基础概念、幼儿保育
+                </td>
+                <td>
+                    <span role="button" title="删除" data-oper="remove"><i role="button" class="layui-icon f24">&#xe640;</i></span>
+                    <span role="button" title="查看" data-subject-type="checkbox" data-oper-type="view" data-label="多选题"><i class="icomoon-icon im-w f20">&#xe901;</i></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+</div>
+</form>
+<script type="text/javascript" src='dist/loadjs.js'></script>
+
+<script type="text/javascript">
+layui.use(['form','layer'], function(){
+  var form = layui.form,
+      layer = layui.layer;
+
+  //监听提交
+  form.on('submit', function(data){
+    
+    var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+    parent.layer.close(index); //再执行关闭  
+
+    return false;
+  });
+
+  $(document)
+  //题目 操作
+  .on('click', '[data-subject-type]', function(event) {
+    event.preventDefault();
+    var $w=$(window),
+        type=$(this).data('subject-type'),
+        typeLabel=$.trim($(this).data('label')),
+        oper=$(this).data('oper-type');
+
+        switch(oper){
+          case 'add':
+            operLabel='添加';
+            break;
+          case 'edit':
+            operLabel='编辑';
+            break;
+          case 'view':
+            operLabel='查看';
+            break;
+        }
+
+    layer.open({
+      id: 'subject-oper',
+      title:(operLabel+typeLabel),
+      type: 2,
+      scrollbar:false,
+      area: [$w.width()+'px', $w.height()+'px'],
+      content: ('oper-subject-'+type+'-pop-page.html')
+    }); 
+  })
+
+  //删除 题目
+  .on('click', '[data-oper="remove"]', function(event) {
+    event.preventDefault();
+    var _this=this;
+
+    //询问框
+    layer.confirm('\
+        <div class="text-center text-orange f16">\
+          <i class="fa fa-fw fa-exclamation-triangle f24"></i> \
+          确定删除该题目？\
+        </div>\
+      '
+    , {
+      title:'删除',
+      btn: ['确定','取消'] //按钮
+    }, function(index){
+      $(_this).closest('tr').remove();
+      layer.close(index);
+    }, function(index){
+      layer.close(index);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

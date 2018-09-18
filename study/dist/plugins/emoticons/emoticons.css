@@ -1,0 +1,61 @@
+.widget-layer{
+	position: relative;
+	width: 410px;
+	margin-top: 8px;
+	background: #fff;
+	border: 1px solid #dbdbdb;
+	border-radius: 2px;
+	z-index: 100;
+}
+.widget-layer:before,
+.widget-layer:after{
+	left: 127px;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 8px solid transparent;
+	position: absolute;
+}
+.widget-layer:before{
+	bottom: -16px;
+	border-top-color: #dbdbdb;
+}
+.widget-layer:after{
+	bottom: -15px;
+	border-top-color: #f0f0f0;
+}
+.widget-layer .widget-tool{
+	height: 28px;
+	background: #f0f0f0;
+}
+.widget-layer .widget-close{
+	float: right;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	font-family: Arial;
+}
+.widget-layer ul{
+	width: 372px;
+	margin: 0 auto;
+	padding: 15px 5px 20px;
+	overflow: hidden;
+}
+.widget-layer li{
+	position: relative;
+	z-index: 8;
+	float: left;
+	width: 22px;
+	height: 22px;
+	padding: 4px;
+	margin-left: -1px;
+	margin-top: -1px;
+	border: 1px solid #e8e8e8;
+	cursor: pointer;
+}
+.widget-layer li:hover{
+	z-index: 9;
+	border-color: #eb7350;
+}

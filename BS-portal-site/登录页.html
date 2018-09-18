@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="ie67"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if gte IE 9]><html><![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <title>门户站</title>
+
+    <script src="dist/js/loadcss.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <nav class="navbar margin-bottom-none">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <img src="dist/images/logo.png" class="vercial-middle">
+              <span class="vercial-middle inline-block subtitle text-nowrap">
+                百胜学院
+              </span>
+            </div>
+          </div>
+          <div class="sub-logo">
+            <img src="dist/images/logo2.png">
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="login-index">
+      <div class="container center-block">
+        <div class="login-index-wrap">
+          <h1 class="title">学生登录平台</h1>
+          <div class="margin-t5" style="height: 18px;">
+            <div class="error-tips" style="display: none; line-height: 1;">
+              <img src="dist/css/images/error.png">
+              <span class="text-red f12">验证提示</span>
+            </div>
+          </div>
+          <div class="media login-control-group">
+            <div class="media-left">
+              <i class="icomoon icomoon-user"></i>
+            </div>
+            <div class="media-body">
+              <input type="text" class="form-control" placeholder="请输入用户名">
+            </div>
+          </div>
+
+          <div class="media login-control-group">
+            <div class="media-left">
+              <i class="icomoon icomoon-psw"></i>
+            </div>
+            <div class="media-body">
+              <input type="password" class="form-control" placeholder="请输入密码">
+            </div>
+          </div>
+
+          <div class="media login-control-group">
+            <div class="media-left">
+              <i class="icomoon icomoon-yzm"></i>
+            </div>
+            <div class="media-body">
+              <input type="text" class="form-control" placeholder="请输入验证码">
+            </div>
+            <div class="media-right ymz-box">
+              <div style="width:71px;">
+                <img src="dist/images/yzm.png" width="100%" height="36">
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" class="btn btn-md btn-block btn-primary" data-loading-text="登录中..." data-complete-text="登录" autocomplete="off" data-role="submit">登录</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-footer">
+      <div class="container full-height">
+        <div class="media full-height">
+          <div class="media-body vertical-middle text-center gray9">
+            <span class="margin-r30">
+              版权所有：xxxxxxxxxx分校
+            </span>
+            <span>
+              <img src="dist/images/icp-icon.png" class="margin-r5">
+              粤ICP备17125036号-1
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="dist/js/require.js" data-require-path="dist/js/"></script>
+ 
+    <script type="text/javascript">
+      require(['jquery','common'],function($){
+        $('[data-role="submit"]').click(function(event) {
+            var $btn=$(this);
+
+            $btn.button('loading');
+
+            setTimeout(function(){
+              $btn.button('complete');
+            },1000)
+        });
+      })
+    </script>
+  </body>
+</html>

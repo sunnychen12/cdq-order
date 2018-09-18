@@ -1,0 +1,88 @@
+/*弹性媒体*/
+.embed-responsive{
+	position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 65%;
+    .embed-responsive-item{
+    	position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    border: 0;
+    }
+}
+
+/*上下居中*/
+.elem-middle-align{
+	display: table;
+    width: 100%;
+    height: 120px;
+	>.inner{
+		display: table-cell;
+		vertical-align: middle;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.img-panel{
+	position: relative;
+	>.img-txt-mark{
+		position: absolute;
+		right: 0;
+		top: 0;
+		>.mark{
+			opacity: .6;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			content: '';
+			left: 0;
+			top: 0;
+			position: absolute;
+		}
+		>.label{
+			position: relative;
+			z-index: 2;
+			padding: 7px;
+			color: #fff;
+			line-height: 1;
+			font-size: 12px;
+		}
+	}
+	
+}
+
+ul,ol{
+	&.upper-latin{
+		>li{
+			position: relative;
+			counter-increment: order;
+			padding-left: 1.5em;
+			margin-top: 10px;
+			&:first-child{
+				margin-top: 0;
+			}
+			&:before{
+				content: counter(order,upper-alpha);
+				position: absolute;
+				left: 0;
+				top: 50%;
+				margin-top: -7px;
+				font-size: 14px;
+				line-height: 1;
+			}
+		}
+	}
+}
+
+
+.scroll-box{
+	overflow-y: auto;
+	overflow-x: hidden;
+}

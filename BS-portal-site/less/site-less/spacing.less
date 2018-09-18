@@ -1,0 +1,27 @@
+//元素 边距
+.generate-spacing(@label,@n: 5) when (@n =< 30) {
+  .@{label}-l@{n}{
+  	@{label}-left:~'@{n}px !important';
+  }
+  .@{label}-r@{n}{
+  	@{label}-right:~'@{n}px !important';
+  }
+  .@{label}-t@{n}{
+  	@{label}-top:~'@{n}px !important';
+  }
+  .@{label}-b@{n}{
+  	@{label}-bottom:~'@{n}px !important';
+  }
+  .@{label}@{n}{
+  	@{label}:~'@{n}px !important';
+  }
+  .generate-spacing(@label,(@n + 5));
+}
+
+/*例子
+.padding-l5{padding-left:5px !important;}
+.padding-r5{padding-right:5px !important;}
+.padding-t5{padding-top:5px !important;}
+.padding-b5{padding-bottom:5px !important;}
+.padding5{padding:5px !important;}
+*/

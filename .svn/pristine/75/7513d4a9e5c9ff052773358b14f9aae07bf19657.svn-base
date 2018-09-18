@@ -1,0 +1,156 @@
+<div class="box-style box">
+  <div class="box-header colum-tit">
+    <i class="fa">&#xf0ca;</i>
+    <h2 class="inline-block txt f18">我的学籍</h2>
+  </div>
+  <div class="box-body padding15">
+    <div class="layui-row layui-col-space20">
+      <div class="layui-col-sm4">
+        <div class="media">
+          <div class="media-side text-center padding-l10 padding-r20">
+            <img src="http://t.cn/RCzsdCq" width="120" height="120" class="layui-circle">
+          </div>
+          <div class="media-body vertical-middle">
+            <dl class="text-word-break">
+              <dt class="f24 margin-b10">XXXXXX</dt>
+              <dd class="margin-t5">XXXXXXXXXXXXX</dd>
+              <dd class="margin-t5">XXXXXXXXXXXXXXX</dd>
+              <dd class="margin-t5">XXXXXXXXXXXXXXXX</dd>
+              <dd class="margin-t5">XXXXXXXXXX</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="layui-col-sm8">
+        <table class="layui-table text-center border-none margin-none" height="160" lay-skin="row">
+          <tbody>
+            <tr class="no-bg">
+              <td class="border-left">
+                <div class="f28 text-orange">XXXX</div>
+                <div class="f16 margin-t10">XXXXXXX</div>
+              </td>
+              <td>
+                <div class="f28 text-orange">XXXX</div>
+                <div class="f16 margin-t10">XXXXXXX</div>
+              </td>
+              <td>
+                <div class="f28 text-orange">XXXX</div>
+                <div class="f16 margin-t10">XXXXXXX</div>
+              </td>
+              <td class="border-none">
+                <div class="f28 text-orange">XXXX</div>
+                <div class="f16 margin-t10">XXXXXXX</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="box-style box margin-none">
+  <div class="box-header colum-tit">
+    <i class="fa">&#xf0ca;</i>
+    <h2 class="inline-block txt f18">资料信息</h2>
+  </div>
+  <div class="box-body padding15">
+    <fieldset class="layui-elem-field layui-field-title margin-top-none margin-b15">
+      <legend class="f16 text-bold text-green2">xxx标题</legend>
+    </fieldset>
+    <table class="layui-table margin-none text-center">
+      <tbody>
+        <tr>
+          <th>xxx</th>
+          <td>
+            <div class="text-left">xxxx</div>
+          </td>
+          <th>xxx</th>
+          <td>
+            <div class="text-left">xxxx</div>
+          </td>
+        </tr>
+        <tr>
+          <th>xxx</th>
+          <td>
+            <div class="text-left">xxxx</div>
+          </td>
+          <th>xxx</th>
+          <td>
+            <div class="text-left">xxxx</div>
+          </td>
+        </tr>
+        <tr>
+          <th>xxx</th>
+          <td>
+            <div class="text-left">xxxx</div>
+          </td>
+          <th>xxx</th>
+          <td>
+            <div class="text-left">xxxx</div>
+          </td>
+        </tr>
+        <tr>
+          <th>xxx</th>
+          <td colspan="3">
+            <div class="text-left">xxxx</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <fieldset class="layui-elem-field layui-field-title margin-t30 margin-b15">
+      <legend class="f16 text-bold text-green2">xxx标题</legend>
+    </fieldset>
+    <div class="text-center">
+      <div class="inline-block">
+        <div>
+          <img src="dist/images/temp/timg.jpg" class="img-responsive" width="300" height="200">
+        </div>
+        <div class="margin-t10 text-center">
+          XXXXXXXXXX
+        </div>
+      </div>
+    </div>
+
+    <fieldset class="layui-elem-field layui-field-title margin-t30 margin-b15">
+      <legend class="f16 text-bold text-green2">xxx标题</legend>
+    </fieldset>
+    <div class="layui-row layui-col-space20">
+      <div class="layui-col-sm6">
+        <div class="layui-row">
+          <div class="layui-col-sm7 center-block float-none">
+            <div>
+              <img src="dist/images/temp/timg.jpg" width="300" height="200">
+            </div>
+            <div class="margin-t10 text-center">
+              文字文字文字文字文字文字文字文
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layui-col-sm6">
+        <div class="layui-row">
+          <div class="layui-col-sm7 center-block float-none">
+            <div>
+              <img src="dist/images/temp/timg.jpg" width="300" height="200">
+            </div>
+            <div class="margin-t10 text-center">
+              文字文字文字文字文字文字文字文
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+layui.use(['element'], function(){
+  var element = layui.element;
+  
+});
+</script>
+</body>
+</html>

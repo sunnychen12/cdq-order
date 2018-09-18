@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="ie67"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if gte IE 9]><html><![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>学习平台</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+<link rel="stylesheet" href="dist/css/login2.css">
+</head>
+<body>
+<div class="login-wrapper">
+  <div class="login-header">
+    <div class="box-center login-header-in">
+      <div class="media full-height">
+        <div class="media-side vertical-middle">
+          <img src="dist/images/login2-logo.png" class="vertical-middle">
+          <span class="sub-title">珠江新城分校</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="login-main">
+    <div class="box-center full-height">
+      <div class="position-relative full-height">
+        <div class="media full-height">
+          <div class="media-body vertical-middle">
+            <div class="login-container pull-right">
+              <div class="login-con-in padding30">
+                <form class="layui-form">
+                  <div class="text-center f24 gray6">学习平台 | 学生登录</div>
+                  <div class="margin-t30 login-form-group">
+                    <i class="icomoon-icon">&#xe902;</i>
+                    <input type="text" class="layui-input" lay-verType="tips" autocomplete="off" lay-verify="verify-control" placeholder="请输入学号或身份证号"
+                      data-regexp="*1"
+                      null-msg="请输入学号或身份证号"
+                    >
+                  </div>
+                  <div class="margin-t15 login-form-group">
+                    <i class="icomoon-icon">&#xe900;</i>
+                    <input type="password" class="layui-input" lay-verType="tips" autocomplete="off" lay-verify="verify-control" placeholder="请输入密码"
+                      data-regexp="*1"
+                      null-msg="请输入密码"
+                    >
+                  </div>
+                  <div class="media margin-t15">
+                    <div class="media-body">
+                      <div class="login-form-group">
+                        <i class="icomoon-icon">&#xe901;</i>
+                        <input type="password" class="layui-input" lay-verType="tips" autocomplete="off" lay-verify="verify-control" placeholder="请输入验证码"
+                          data-regexp="*1"
+                          null-msg="请输入验证码"
+                        >
+                      </div>
+                    </div>
+                    <div class="media-side vertical-top padding-l15">
+                      <img src="dist/images/temp/login2-qrcode.png" height="38" role="button">
+                    </div>
+                    <div class="media-side vertical-top padding-l15 text-nowrap">
+                      <a href="#" class="inline-block line-height-1_4">
+                        <u class="text-blue">看不清<br>换一张</u>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="margin-t15">
+                    <button class="layui-btn layui-btn-fluid login-btn" lay-submit>登录</button>
+                  </div>
+
+                  <div class="margin-t15 layui-clear">
+                    <!--
+                    <div class="pull-right">
+                      <span role="button">忘记密码</span>
+                    </div>
+                    -->
+                    <input type="checkbox" title="记住用户名" lay-skin="primary">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="login-footer">
+    <div class="box-center full-height">
+      <div class="media full-height">
+        <div class="media-body vertical-middle text-center gray9">
+          <span class="margin-r30">
+            主办单位：广东省广州市XXXXXXXXXX
+          </span>
+          <span class="margin-l30">
+            <img src="dist/images/icp-icon.png" class="margin-r5">
+            粤ICP备17125036号-1
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['util','form'], function(){
+  var util = layui.util
+      , form = layui.form;
+
+});
+//浏览器适配
+;(function(){
+  var $html=$('html');
+  if( $html.hasClass('ie67') || $html.hasClass('ie8') ){
+    $(window).resize(function(event) {
+      if($(window).height()>=900){
+        $('.login-wrapper').addClass('ie-adjust');
+      }
+      else{
+        $('.login-wrapper').removeClass('ie-adjust');
+      }
+    }).trigger('resize');
+  }
+})();
+</script>
+</body>
+</html>

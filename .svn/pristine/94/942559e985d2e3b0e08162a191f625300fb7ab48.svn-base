@@ -1,0 +1,33 @@
+@media (max-width: 767px){
+	.header{
+		.container {
+		    >.navbar-header{
+		    	margin-left: 0;
+		    }
+		}
+	}
+}
+
+@media (min-width: 800px){
+	.container {
+	    width: 95%;
+	}
+}
+@media (min-width: 992px){
+	.container {
+	    width: 95%;
+	}
+}
+@media (min-width: 1200px){
+	.container {
+	    width: 1170px;
+	}
+}
+@media (min-width: 1300px){
+	.container {
+	    width: 1230px;
+	}
+}
+
+
+

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>课程建设</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+</head>
+<body class="cdq-body">
+  <!-- 面包屑 start-->
+  <div class="cdq-breadcrumb-box">
+    <div class="pull-right">
+      <button type="button" class="layui-btn layui-btn-primary layui-btn-sm min-width-80">返回</button>
+    </div>
+    <span class="layui-breadcrumb visible">
+      <a href="">课程管理</a><span lay-separator>&gt;</span>
+      <a><cite>课程建设</cite></a>
+    </span>
+  </div>
+  <!-- 面包屑 start-->
+
+
+  <!-- 内容主体区域 start-->
+  <div class="cdq-content">
+
+    <div class="box padding20">
+      <div class="table-responsive">
+        <table class="layui-table text-center margin-none" height="150">
+          <colgroup>
+            <col width="25%"></col>
+            <col width="25%"></col>
+            <col width="25%"></col>
+            <col width="25%"></col>
+          </colgroup>
+          <tbody>
+            <tr class="no-bg">
+              <td>
+                <div class="f28 text-orange">KC001</div>
+                <div class="margin-t20">课程编号</div>
+              </td>
+              <td>
+                <div class="f28 text-orange">营销基础理论</div>
+                <div class="margin-t20">课程名称</div>
+              </td>
+              <td>
+                <div class="f28 text-orange">张三</div>
+                <div class="margin-t20">课程建设者</div>
+              </td>
+              <td>
+                <div class="f28 text-orange">建设中</div>
+                <div class="margin-t20">课程状态</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title" >
+          <li class="padding-none">
+            <a class="block padding-l15 padding-r15" href="course-construction.html">课程内容</a>
+          </li>
+          <li class="layui-this padding-none">
+            <a class="block padding-l15 padding-r15" href="course-question-bank.html">课程题库</a>
+          </li>
+        </ul>
+        <div class="layui-tab-content padding-none margin-t15">
+          <div class="layui-tab-item layui-show">
+            <div class="box">
+              <div class="box-body padding15">
+                <form class="layui-form" lay-filter="form1">
+                  <div class="layui-row layui-col-space15">
+                    <div class="layui-col-xs6 layui-col-sm4">
+                      <div class="layui-row layui-col-space15">
+                        <div class="layui-col-xs3">
+                          <div class="control-label">
+                            <label>
+                              题目类型
+                            </label>
+                          </div>
+                        </div>
+                        <div class="layui-col-xs9">
+                          <select lay-search="">
+                            <option value="">直接选择或搜索选择</option>
+                            <option value="1">单选题</option>
+                            <option value="2">多选题</option>
+                            <option value="3">问答题</option>
+                            <option value="3">填空题</option>
+                            <option value="3">材料题</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="layui-col-xs6 layui-col-sm4">
+                      <div class="layui-row layui-col-space15">
+                        <div class="layui-col-xs3">
+                          <div class="control-label">
+                            <label>
+                              题目标题
+                            </label>
+                          </div>
+                        </div>
+                        <div class="layui-col-xs9">
+                          <input type="text" class="layui-input full-width">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="layui-col-xs6 layui-col-sm4">
+                      <div class="layui-row layui-col-space15">
+                        <div class="layui-col-xs3">
+                          <div class="control-label">
+                            <label>
+                              题目标签
+                            </label>
+                          </div>
+                        </div>
+                        <div class="layui-col-xs9">
+                          <input type="text" class="layui-input full-width">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="box-footer text-right padding-r15 padding-l15">
+                  <button type="button" class="layui-btn layui-btn-normal min-width-100">查询</button>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-header">
+                <div class="pull-right">
+                  <span class="layui-btn layui-btn-normal" data-role="batch-remove">批量删除题目</span>
+                  <span class="layui-btn layui-btn-normal">批量导出题目</span>
+                  <span class="layui-btn layui-btn-normal" data-role="import">批量导入题目</span>
+                  <span class="dropdown inline-block margin-l10">
+                    <span class="layui-btn layui-btn-normal">
+                      新增题目
+                    </span>
+                    <div class="dropdown-menu" style="left:auto;right:0;">
+                      <ul>
+                        <li data-subject-type="radio" data-oper-type="add" data-label="单选题">
+                          单选题
+                        </li>
+                        <li data-subject-type="checkbox" data-oper-type="add" data-label="多选题">
+                          多选题
+                        </li>
+                        <li data-subject-type="judge" data-oper-type="add" data-label="判断题">
+                          判断题
+                        </li>
+                        <li data-subject-type="faq" data-oper-type="add" data-label="问答题">
+                          问答题
+                        </li>
+                        <li data-subject-type="filling" data-oper-type="add" data-label="填空题">
+                          填空题
+                        </li>
+                        <li data-subject-type="analysis" data-oper-type="add" data-label="材料分析题">
+                          材料分析题
+                        </li>
+                      </ul>
+                    </div>
+                  </span>
+                </div>
+              </div>
+              <div class="box-body">
+                <form class="layui-form" lay-filter="form2">
+                  <div class="table-responsive">
+                    <table class="layui-table text-center" data-id="tbl">
+                        <thead>
+                          <tr>
+                            <th>
+                              <input type="checkbox" name="ck-all" title="全选" lay-skin="primary" lay-filter="sel-all"> 
+                            </th>
+                            <th>题目类型</th>
+                            <th>题目内容</th>
+                            <th>题目标签</th>
+                            <th>操作</th>
+                          </tr> 
+                        </thead>
+                        <tbody >
+                          <tr>
+                            <td>
+                              <input type="checkbox" name="ck-item" lay-skin="primary"> 
+                            </td>
+                            <td>单选题</td>
+                            <td>
+                              （    ）不属于0~3岁婴幼儿保育的内容
+                            </td>
+                            <td>
+                              基础概念、幼儿保育
+                            </td>
+                            <td>
+                                <span role="button" title="删除"><i role="button" class="layui-icon f24">&#xe640;</i></span>
+                                <span role="button" title="修改" data-subject-type="radio" data-oper-type="edit" data-label="单选题"><i role="button" class="layui-icon f22">&#xe642;</i></span>
+                                <span role="button" title="查看" data-subject-type="radio" data-oper-type="view" data-label="单选题"><i class="icomoon-icon im-w f20">&#xe901;</i></span>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 内容主体区域 end-->
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+
+<script type="text/javascript">
+layui.use(['util','element','form','layer'], function(){
+  var util = layui.util,
+      form = layui.form,
+      layer = layui.layer,
+      element = layui.element;
+
+  //window.globalLayForm=form;
+
+  //监听提交
+  form.on('checkbox(sel-all)', function(data){
+    /*
+    console.log(data.elem); //得到checkbox原始DOM对象
+    console.log(data.elem.checked); //是否被选中，true或者false
+    console.log(data.value); //复选框value值，也可以通过data.elem.value得到
+    console.log(data.othis); //得到美化后的DOM对象
+    */
+    if(data.elem.checked){
+      $('[name="ck-item"]').prop('checked',true);
+    }
+    else{
+      $('[name="ck-item"]').prop('checked',false);
+    }
+
+    form.render('checkbox', 'form2');
+  });
+
+  $(document)
+  //题目 操作
+  .on('click', '[data-subject-type]', function(event) {
+    event.preventDefault();
+    var $w=$(window),
+        type=$(this).data('subject-type'),
+        typeLabel=$.trim($(this).data('label')),
+        oper=$(this).data('oper-type');
+
+        switch(oper){
+          case 'add':
+            operLabel='添加';
+            break;
+          case 'edit':
+            operLabel='编辑';
+            break;
+          case 'view':
+            operLabel='查看';
+            break;
+        }
+
+    layer.open({
+      id: 'subject-oper',
+      title:(operLabel+typeLabel),
+      type: 2,
+      scrollbar:false,
+      area: [$w.width()+'px', $w.height()+'px'],
+      content: ('oper-subject-'+type+'-pop-page.html')
+    }); 
+  })
+
+  //批量删除题目
+  .on('click', '[data-role="batch-remove"]', function(event) {
+    event.preventDefault();
+    var $tr=$('[data-id="tbl"] tbody tr').filter(function(index) {
+      return $(this).find(':checkbox').prop('checked');
+    });
+
+    if($tr.length>0){
+      //询问框
+      layer.confirm('\
+          <div class="text-center text-orange f16">\
+            <i class="fa fa-fw fa-exclamation-triangle f24"></i> \
+            确定删除该所选题目？\
+          </div>\
+        '
+      , {
+        title:'删除',
+        btn: ['确定','取消'] //按钮
+      }, function(index){
+        $tr.remove();
+        layer.close(index);
+      }, function(index){
+        layer.close(index);
+      });
+    }
+    else{
+      layer.msg('请选择要删除的题目');
+    }
+  })
+
+  //批量导入题目
+  .on('click', '[data-role="import"]', function(event) {
+    event.preventDefault();
+    layer.open({
+      id: 'import-oper',
+      title:false,
+      type: 2,
+      scrollbar:false,
+      area: ['700px', '450px'],
+      content: 'import-subject-pop-page.html'
+    }); 
+  });
+  
+})
+</script>
+</body>
+</html>

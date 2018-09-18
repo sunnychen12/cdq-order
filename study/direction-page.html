@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>学习平台</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+</head>
+<body>
+
+<div class="site-header">
+  <div class="box-center">
+    <div class="elem-middle-align full-height">
+      <div class="inner">
+        <a href="#" class="logo"><img src="dist/images/logo.png"></a>
+      </div>
+    </div>
+
+    <ul class="layui-nav">
+      <li class="layui-nav-item">
+        <a href=""><img src="http://t.cn/RCzsdCq" class="layui-nav-img">廖小姐</a>
+        <dl class="layui-nav-child">
+          <dd><a href="javascript:;">退出</a></dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="site-main direction-main">
+  <div class="box-center full-height scroll-box">
+    <table width="100%" height="100%">
+      <tr>
+        <td>
+          <ul class="direction-list layui-row layui-col-space30">
+            <li class="layui-col-sm6">
+              <a href="#" class="layui-btn layui-btn-lg layui-btn-fluid">全国网警平台</a>
+            </li>
+            <li class="layui-col-sm6">
+              <a href="#" class="layui-btn layui-btn-lg layui-btn-fluid">全国网警平台</a>
+            </li>
+            <li class="layui-col-sm6">
+              <a href="#" class="layui-btn layui-btn-lg layui-btn-fluid">全国网警平台</a>
+            </li>
+            <li class="layui-col-sm6">
+              <a href="#" class="layui-btn layui-btn-lg layui-btn-fluid">全国网警平台</a>
+            </li>
+            <li class="layui-col-sm6">
+              <a href="#" class="layui-btn layui-btn-lg layui-btn-fluid">全国网警平台</a>
+            </li>
+            <li class="layui-col-sm6">
+              <a href="#" class="layui-btn layui-btn-lg layui-btn-fluid">全国网警平台</a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    
+  </div>
+</div>
+
+<div class="site-footer">
+  <div class="box-center full-height">
+    <table width="100%" height="100%">
+      <tr>
+        <td>
+          <img src="dist/images/footer-logo.png">
+        </td>
+        <td align="right" class="f12">
+          <span class="padding-r30">主办单位：广东省广州市学习教育培训机构
+          </span>
+          <span>技术支持：广东省广州市学习教育培训机构</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['jquery','raphael'], function(){
+  
+  //扇形进度
+  $('.radial')
+  .each(function() {
+      var _this=this;
+      var percent = $(_this).data('percent');
+
+      $(this).svgCircle({
+        w:24
+        ,borderSize:1
+        ,borderColor:'#0aa770'
+        ,fillColor: "#fff"
+        ,sectorFillColor:'#0aa770'
+        ,percent:percent
+      });
+
+      if(percent==100){
+        $(this).append('<i class="layui-icon">&#xe618;</i>')
+      }
+  })
+
+  //分类 收缩/展开
+  $('.chapter-list').on('click', '[data-role="toggle"]', function(event) {
+    var $cate=$(this).closest('.item-header').next('ul');
+
+    if($cate.is(':hidden')){
+      $(this).addClass('fa-minus-circle').removeClass('fa-plus-circle');
+      $cate.slideDown();
+    }
+    else{
+      
+      $(this).addClass('fa-plus-circle').removeClass('fa-minus-circle');
+      $cate.slideUp();
+    }
+  });
+
+  
+
+});
+</script>
+</body>
+</html>

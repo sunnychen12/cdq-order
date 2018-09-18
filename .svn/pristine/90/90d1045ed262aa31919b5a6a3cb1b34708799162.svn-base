@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>练习题</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+</head>
+<body>
+
+<div class="site-header">
+  <div class="layui-container">
+    <div class="layui-clear">
+      <h1 class="site-title">
+        xxx系统
+        <!--会计职称考试练题系统-->
+      </h1>
+      <ul class="layui-nav">
+        <li class="layui-nav-item">
+          <a href="javascript:;"><img src="http://t.cn/RCzsdCq" class="layui-nav-img">hi,王小波</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">退出</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="site-main">
+  <div class="layui-container layui-clear">
+    <div class="practice-center">
+      <div class="box">
+        <div class="box-header practice-header">
+          <ul class="breadcrumb">
+            <li><span>练题中心</span></li>
+          </ul>
+        </div>
+        <div class="box-body practice-body">
+          <div class="layui-row">
+            <div class="layui-col-md10 layui-col-md-offset1">
+              <div class="layui-row layui-col-space30">
+                <div class="layui-col-md6">
+                  <div class="practice-center-panel pcp-1">
+                    <div class="p-header">
+                      中级会计实务
+                    </div>
+                    <div class="p-body">
+                      <div class="p-bar-list">
+                        <div class="p-bar">
+                          <div class="media">
+                            <div class="media-body">
+                              <div class="txt1">科目题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  500
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <div class="txt1">已练题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  300
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-bar">
+                          <div class="media">
+                            <div class="media-body">
+                              <div class="txt1">答对题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  216
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <div class="txt1">答错题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  84
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-bar">
+                          <div class="media">
+                            <div class="media-body">
+                              <div class="txt1">正确率</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  67
+                                </span>
+                                <span class="txt2-2">
+                                  %
+                                </span>
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <div class="txt1">完成率</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  60
+                                </span>
+                                <span class="txt2-2">
+                                  %
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-fluid">进入练题</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="layui-col-md6">
+                  <div class="practice-center-panel pcp-2">
+                    <div class="p-header">
+                      财务管理
+                    </div>
+                    <div class="p-body">
+                      <div class="p-bar-list">
+                        <div class="p-bar">
+                          <div class="media">
+                            <div class="media-body">
+                              <div class="txt1">科目题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  500
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <div class="txt1">已练题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  300
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-bar">
+                          <div class="media">
+                            <div class="media-body">
+                              <div class="txt1">答对题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  216
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <div class="txt1">答错题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  84
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-bar">
+                          <div class="media">
+                            <div class="media-body">
+                              <div class="txt1">正确率</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  67
+                                </span>
+                                <span class="txt2-2">
+                                  %
+                                </span>
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <div class="txt1">完成率</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  60
+                                </span>
+                                <span class="txt2-2">
+                                  %
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-fluid">进入练题</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="layui-col-md6">
+                  <div class="practice-center-panel pcp-3">
+                    <div class="p-header">
+                      中级会计实务
+                    </div>
+                    <div class="p-body">
+                      <div class="p-bar-list">
+                        <div class="p-bar">
+                          <div class="media">
+                            <div class="media-body">
+                              <div class="txt1">科目题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  500
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <div class="txt1">已练题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  300
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-bar">
+                          <div class="media">
+                            <div class="media-body">
+                              <div class="txt1">答对题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  216
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <div class="txt1">答错题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  84
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-bar">
+                          <div class="media">
+                            <div class="media-body">
+                              <div class="txt1">正确率</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  67
+                                </span>
+                                <span class="txt2-2">
+                                  %
+                                </span>
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <div class="txt1">完成率</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  60
+                                </span>
+                                <span class="txt2-2">
+                                  %
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-fluid">进入练题</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="layui-col-md6">
+                  <div class="practice-center-panel pcp-4">
+                    <div class="p-header">
+                      财务管理
+                    </div>
+                    <div class="p-body">
+                      <div class="p-bar-list">
+                        <div class="p-bar">
+                          <div class="media">
+                            <div class="media-body">
+                              <div class="txt1">科目题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  500
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <div class="txt1">已练题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  300
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-bar">
+                          <div class="media">
+                            <div class="media-body">
+                              <div class="txt1">答对题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  216
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <div class="txt1">答错题数</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  84
+                                </span>
+                                <span class="txt2-2">
+                                  道
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-bar">
+                          <div class="media">
+                            <div class="media-body">
+                              <div class="txt1">正确率</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  67
+                                </span>
+                                <span class="txt2-2">
+                                  %
+                                </span>
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <div class="txt1">完成率</div>
+                              <div class="txt2">
+                                <span class="txt2-1">
+                                  60
+                                </span>
+                                <span class="txt2-2">
+                                  %
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-fluid">进入练题</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/template" id="pop-tpl">
+  <div class="face-reg-grid">
+    <div class="media">
+      <div class="media-side">
+        <div>
+          <div class="reg-obj-box">
+            <img src="dist/images/camera-pic2.jpg" width="100%">
+          </div>
+          <div class="f16 margin-t5 text-center">
+            本人身份照片
+          </div>
+        </div>
+        <div class="margin-t15">
+          <div class="reg-obj-box">
+            <img src="dist/images/camera-pic2.jpg" width="100%">
+          </div>
+          <div class="f16 margin-t5 text-center">
+            系统抓拍照片
+          </div>
+        </div>
+      </div>
+      <div class="media-body">
+        <ul class="f-tips">
+          <li>1、为了保障你的使用权益，系统在使用过程中实时监控你的视频画面进行人脸识别匹对，匹对不成功的将无法继续练题，请先完成人脸识别匹对再进入练题。</li>
+          <li>2、人脸识别需要使用到电脑浏览器的FLASH插件，如果浏览器不支持flash导致右侧视频画面显示不出来，请自行安装，安装地址：<br><a style="color:#6097f9;text-transform: uppercase;" href="#https://get.adobe.com/cn/flashplayer/?no_redirect">https://get.adobe.com/cn/flashplayer/?no_redirect</a></li>
+          <li>3、为了避免兼容问题，请使用谷歌浏览器、360浏览器、QQ浏览器中的其中一种。</li>
+          <li>4、浏览器在调用摄像头时，有些浏览器会询问是否允许，请一定要点 “允许”</li>
+          <li>5、如以上办法无法解决，还是无法通过人脸识别，请联系系统管理员QQ：XXXXXXXXXX</li>
+        </ul>
+        <div class="face-btn-box">
+          <button type="button" class="layui-btn layui-btn-fluid face-btn"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['layer','form'], function(){
+  var form = layui.form,
+      layer = layui.layer;
+
+  function faceRegPop(type){
+    var winWidth=$(window).width(),
+        winHeight=$(window).height();
+    var pW=winWidth>1050?940:winWidth*0.92,
+        pH=winHeight>600?580:winHeight*0.92;
+
+    var defaultOpts={
+      title: '人脸识别验证'
+      ,closeBtn:false
+      ,btn:false
+      ,area: [pW+'px', pH+'px']
+      ,content: $("#pop-tpl").html()
+    }
+    switch(type){
+      case -1://验证失败
+        layer.open(
+          $.extend({}, defaultOpts,{
+            skin: 'face-reg-pop face-reg-pop-red'
+            ,success: function(layero, index){
+              layero.find('.face-btn').html('人脸识别验证失败，点击重试')
+            }
+          })
+        );
+        break;
+      case 0://正常状态
+        layer.open(
+          $.extend({}, defaultOpts,{
+            skin: 'face-reg-pop face-reg-pop-blue'
+            ,success: function(layero, index){
+              layero.find('.face-btn').html('开始验证')
+            }
+          })
+        );
+        break;
+      case 1://验证成功
+        layer.open(
+          $.extend({}, defaultOpts,{
+            skin: 'face-reg-pop face-reg-pop-green'
+            ,success: function(layero, index){
+              layero.find('.face-btn').html('人脸识别验证成功，点击开始答题（5S）')
+            }
+          })
+        );
+        break;
+      default:
+        break;
+    }
+  }
+  
+  faceRegPop(0);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>学习平台</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+</head>
+<body no-fixbar>
+
+<div class="padding20">
+  <div class="box-style">
+    <div class="layui-tab layui-tab-brief margin-none bg-white">
+      <ul class="layui-tab-title layui-tab-title-lg padding-l20">
+        <li class="layui-this">第1次：65分</li>
+        <li>第2次：73分</li>
+        <li>第3次：95分</li>
+      </ul>
+      <div class="layui-tab-content">
+        <div class="layui-tab-item layui-show">
+          <div class="text-center margin-b30">
+            <img src="dist/images/fail.jpg">
+            <div class="text-red f18">本次得分 45分，很遗憾，未通过本次测试！</div>
+            <div class="margin-t5">要求得分：60分，当前最高得分：95分，已测次数：3次，剩余次数：不限</div>
+          </div>
+
+          <div class="text-center margin-b30">
+            <img src="dist/images/success.jpg">
+            <div class="text-green f18">本次得分 65分，恭喜你，通过本次测试！</div>
+            <div class="margin-t5">当前测试目前最高得分是：95分，做题次数剩余：无限次</div>
+          </div>
+
+          <table class="layui-table text-center ">
+            <colgroup>
+              <col width="30%">
+              <col width="30%">
+              <col width="40%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>分类</th>
+                <th>结果</th>
+                <th>
+                  答题卡
+                </th>
+              </tr> 
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="text-left">
+                    单项选题，请选择一个答案（共20题，每题2分，共40分）
+                  </div>
+                </td>
+                <td>
+                  答对 <b class="text-green">10</b> 题，答错 <b class="text-red">10</b> 题，得 <b class="text-orange">20</b> 分
+                </td>
+                <td>
+                  <ul class="subject-paging layui-clear list-inline">
+                    <li><span class="layui-bg-green">1</span></li>
+                    <li><span class="layui-bg-green">1</span></li>
+                    <li><span class="layui-bg-green">1</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-green">1</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-green">1</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-green">1</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-green">1</span></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-left">
+                    多项选题，请选择一个答案（共20题，每题2分，共40分）
+                  </div>
+                </td>
+                <td>
+                  答对 <b class="text-green">10</b> 题，答错 <b class="text-red">10</b> 题，得 <b class="text-orange">20</b> 分
+                </td>
+                <td>
+                  <ul class="subject-paging layui-clear list-inline">
+                    <li><span class="layui-bg-green">1</span></li>
+                    <li><span class="layui-bg-green">1</span></li>
+                    <li><span class="layui-bg-green">1</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-green">1</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-green">1</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-green">1</span></li>
+                    <li><span class="layui-bg-red">2</span></li>
+                    <li><span class="layui-bg-green">1</span></li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="margin-t30 text-center padding-b20">
+            <a href="test-study-iframe.html" class="layui-btn layui-btn-primary">
+              <i class="layui-icon">&#x1002;</i>
+              重做一次
+            </a>
+            <a href="test-study-details-iframe.html" class="layui-btn">
+              <i class="layui-icon">&#xe615;</i>
+              查看答题详情
+            </a>
+          </div>
+        </div>
+        <div class="layui-tab-item">2</div>
+        <div class="layui-tab-item">3</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['element'], function(){
+  var element = layui.element;
+
+  
+});
+</script>
+</body>
+</html>

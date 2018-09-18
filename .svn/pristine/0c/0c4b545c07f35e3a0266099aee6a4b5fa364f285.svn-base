@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>框架页</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+<style type="text/css">
+html,body{
+  height: 100%;
+}
+</style>
+</head>
+<body>
+<form class="layui-form" action="">
+<div class="pop-footer">
+  <div class="padding10 text-right">
+    <button type="button" class="layui-btn layui-btn-default min-width-100">
+      预览
+    </button>
+    <button class="layui-btn layui-btn-danger min-width-100" lay-filter="form" lay-submit>
+      确认添加
+    </button>
+  </div>
+</div>
+
+<div class="pop-content">
+    <div class="padding10">
+      <table class="layui-table margin-none" table-no-hover>
+        <colgroup>
+          <col width="20%"></col>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th class="text-center">测验标题</th>
+            <td>
+              <div class="media">
+                <div class="media-side padding-r10">
+                  <input type="text" name="title" class="layui-input" autocomplete="off" lay-verify="required" placeholder="模拟测验" style="width:150px;">
+                </div>
+                <div class="media-body">
+                  <input type="text" name="title" class="layui-input" autocomplete="off" lay-verify="verify-control" placeholder="请输入测验活动标题，字数不能超过15个字"
+                    data-regexp="*1-15"
+                    null-msg="请输入测验活动标题"
+                    error-msg="测验活动标题字数不能超过15个字"
+                  >
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">测验说明</th>
+            <td>
+              <textarea placeholder="请输入测验活动简介，字数不能超过200个字" class="layui-textarea" rows="8" lay-verify="verify-control"
+                data-regexp="*1-200"
+                null-msg="请输入测验活动简介"
+                error-msg="测验活动简介字数不能超过200个字"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">试卷满分</th>
+            <td>
+              <div class="media">
+                <div class="media-side padding-r10">
+                  <input type="text" name="title" class="layui-input" autocomplete="off" placeholder="分数" lay-verify="required|number" value="100" style="width:150px;">
+                </div>
+                <div class="media-side padding-r30">分</div>
+                <div class="media-body">
+                  <span class="gray9">请输入数字，默认100分</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">答题时限</th>
+            <td>
+              <div class="media">
+                <div class="media-side padding-r10">
+                  <input type="text" name="title" class="layui-input" autocomplete="off" placeholder="请输入时长" style="width:150px;">
+                </div>
+                <div class="media-body">
+                  <span class="gray9">请输入数字，默认为空不限时长</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">抽题组卷</th>
+            <td>
+              <div class="layui-tab layui-tab-card no-shadow margin-none">
+                <ul class="layui-tab-title">
+                  <li class="layui-this">固定抽题</li>
+                  <li>随机抽题</li>
+                </ul>
+                <div class="layui-tab-content">
+                  <div class="layui-tab-item layui-show">
+                    <div class="box padding15">
+                      <div class="media">
+                        <div class="media-side text-nowrap vertical-middle">试卷题目</div>
+                        <div class="media-body">
+                          <div class="text-right">
+                            <span class="layui-btn layui-btn-normal" data-role="add-type">添加试卷类别</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="subject-cate-list">
+                      <div class="subject-cate-item">
+                        <div class="subject-cate-header">
+                          <div class="layui-row">
+                            <div class="layui-col-sm7">
+                              <input class="layui-input layui-input-sm" placeholder="请输入试卷类别描述，例如：单项选题，请选择一个答案（共20题，每题2分，共40分）">
+                            </div>
+                            <div class="layui-col-sm5 text-right">
+                              <a href="#" title="添加" data-role="add-subject-1"><i role="button" class="layui-icon f20">&#xe654;</i></a>
+                              <a href="#" title="修改"><i role="button" class="layui-icon f20">&#xe642;</i></a>
+                              <a href="#" title="删除" data-role="remove-subject-type"><i role="button" class="layui-icon f20">&#xe640;</i></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="subject-cate-body">
+                          <table class="layui-table text-center margin-none" table-no-hover>
+                            <colgroup>
+                              <col width="8%"></col>
+                              <col width="15%"></col>
+                              <col></col>
+                              <col width="20%"></col>
+                              <col width="12%"></col>
+                              <col width="8%"></col>
+
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th>序号</th>
+                                <th>题目类型</th>
+                                <th>题目内容</th>
+                                <th>题目标签</th>
+                                <th>题目分值</th>
+                                <th>操作</th>
+                              </tr> 
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <input class="layui-input layui-input-sm padding-r10 text-center" value="1">
+                                </td>
+                                <td>单选题</td>
+                                <td>
+                                  <div class="text-left">
+                                    <div>
+                                      婴幼儿保育与教育的教育对象除了0~3岁婴幼儿之外，还包括（    ）。
+                                    </div>
+                                    <ul class="margin-t10 sel-item-list">
+                                      <li>
+                                        <label>
+                                          <div class="media">
+                                            <div class="media-side">
+                                              <input type="radio" name="r1" lay-ignore>
+                                            </div>
+                                            <div class="media-body">
+                                              <div class="item-title">
+                                                母乳喂养
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </label>
+                                      </li>
+                                      <li>
+                                        <label>
+                                          <div class="media">
+                                            <div class="media-side">
+                                              <input type="radio" name="r1" lay-ignore>
+                                            </div>
+                                            <div class="media-body">
+                                              <div class="item-title">
+                                                计划免疫
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </label>
+                                      </li>
+                                      <li>
+                                        <label>
+                                          <div class="media">
+                                            <div class="media-side">
+                                              <input type="radio" name="r1" lay-ignore>
+                                            </div>
+                                            <div class="media-body">
+                                              <div class="item-title">
+                                                思维发展
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </label>
+                                      </li>
+                                      <li>
+                                        <label>
+                                          <div class="media">
+                                            <div class="media-side">
+                                              <input type="radio" name="r1" lay-ignore>
+                                            </div>
+                                            <div class="media-body">
+                                              <div class="item-title">
+                                                日常护理
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </label>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </td>
+                                <td>
+                                  基础概念、幼儿保育
+                                </td>
+                                <td>
+                                  <input class="layui-input layui-input-sm padding-r10 text-center">
+                                </td>
+                                <td>
+                                  <a href="#" title="删除" data-role="remove-subject"><i role="button" class="layui-icon f20">&#xe640;</i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <input class="layui-input layui-input-sm padding-r10 text-center" value="2">
+                                </td>
+                                <td>单选题</td>
+                                <td>
+                                  <div class="text-left">
+                                    <div>
+                                      婴幼儿保育与教育的教育对象除了0~3岁婴幼儿之外，还包括（    ）。
+                                    </div>
+                                    <ul class="margin-t10 sel-item-list">
+                                      <li>
+                                        <label>
+                                          <div class="media">
+                                            <div class="media-side">
+                                              <input type="radio" name="r1" lay-ignore>
+                                            </div>
+                                            <div class="media-body">
+                                              <div class="item-title">
+                                                母乳喂养
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </label>
+                                      </li>
+                                      <li>
+                                        <label>
+                                          <div class="media">
+                                            <div class="media-side">
+                                              <input type="radio" name="r1" lay-ignore>
+                                            </div>
+                                            <div class="media-body">
+                                              <div class="item-title">
+                                                计划免疫
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </label>
+                                      </li>
+                                      <li>
+                                        <label>
+                                          <div class="media">
+                                            <div class="media-side">
+                                              <input type="radio" name="r1" lay-ignore>
+                                            </div>
+                                            <div class="media-body">
+                                              <div class="item-title">
+                                                思维发展
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </label>
+                                      </li>
+                                      <li>
+                                        <label>
+                                          <div class="media">
+                                            <div class="media-side">
+                                              <input type="radio" name="r1" lay-ignore>
+                                            </div>
+                                            <div class="media-body">
+                                              <div class="item-title">
+                                                日常护理
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </label>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </td>
+                                <td>
+                                  基础概念、幼儿保育
+                                </td>
+                                <td>
+                                  <input class="layui-input layui-input-sm padding-r10 text-center">
+                                </td>
+                                <td>
+                                  <a href="#" title="删除" data-role="remove-subject"><i role="button" class="layui-icon f20">&#xe640;</i></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layui-tab-item">
+                    <div class="box padding15">
+                      <div class="media">
+                        <div class="media-side text-nowrap vertical-middle">试卷题目</div>
+                        <div class="media-body">
+                          <div class="text-right">
+                            <span class="layui-btn layui-btn-normal" data-role="add-type">添加试卷类别</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="subject-cate-list">
+                      <div class="subject-cate-item">
+                        <div class="subject-cate-header">
+                          <div class="layui-row">
+                            <div class="layui-col-sm7">
+                              <div class="padding-t5">
+                                单项选题，请选择一个答案（共20题，每题2分，共40分）
+                              </div>
+                            </div>
+                            <div class="layui-col-sm5 text-right">
+                              <a href="#" title="添加" data-role="add-subject-2"><i role="button" class="layui-icon f20">&#xe654;</i></a>
+                              <a href="#" title="修改"><i role="button" class="layui-icon f20">&#xe642;</i></a>
+                              <a href="#" title="删除" data-role="remove-subject-type"><i role="button" class="layui-icon f20">&#xe640;</i></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="subject-cate-body">
+                          <table class="layui-table text-center margin-none" table-no-hover>
+                            <colgroup>
+                              <col width="15%"></col>
+                              <col></col>
+                              <col width="12%"></col>
+                              <col width="15%"></col>
+                              <col width="15%"></col>
+                              <col width="10%"></col>
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th>题目类型</th>
+                                <th>题目标签</th>
+                                <th>题目数</th>
+                                <th>抽题道数</th>
+                                <th>每题分值</th>
+                                <th>操作</th>
+                              </tr> 
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>单选题</td>
+                                <td>基础概念、幼儿保育</td>
+                                <td>30</td>
+                                <td>
+                                  <input class="layui-input layui-input-sm padding-r10 text-center" value="20">
+                                </td>
+                                <td>
+                                  <input class="layui-input layui-input-sm padding-r10 text-center" value="2">
+                                </td>
+                                <td>
+                                  <a href="#" title="删除" data-role="remove-subject"><i role="button" class="layui-icon f20">&#xe640;</i></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+</form>
+<script type="text/javascript" src='dist/loadjs.js'></script>
+
+<script type="text/javascript">
+layui.use(['form','layer'], function(){
+  var form = layui.form,
+      layer = layui.layer;
+
+  $(document)
+  //从题库中搜索题目-固定抽题
+  .on('click', '[data-role="add-subject-1"]', function(event) {
+    event.preventDefault();
+    var $w=$(parent.window);
+    parent.layer.open({
+      id: 'add-subject',
+      title:'从题库中搜索题目',
+      type: 2,
+      scrollbar:false,
+      area: [$w.width()+'px', $w.height()+'px'],
+      content: 'add-subject-pop-page.html' //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+    });
+
+    $('.subject-cate-item').removeClass('actived')
+    $(this).closest('.subject-cate-item').addClass('actived');
+  })
+
+  //从题库中搜索题目-随机抽题
+  .on('click', '[data-role="add-subject-2"]', function(event) {
+    event.preventDefault();
+    var $w=$(parent.window);
+    parent.layer.open({
+      id: 'add-subject',
+      title:'从题库中搜索题目',
+      type: 2,
+      scrollbar:false,
+      area: [$w.width()+'px', $w.height()+'px'],
+      content: 'add-subject-2-pop-page.html' //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+    });
+
+    $('.subject-cate-item').removeClass('actived')
+    $(this).closest('.subject-cate-item').addClass('actived');
+  })
+
+  //添加试卷类别
+  .on('click', '[data-role="add-type"]', function(event) {
+    var index=$('.subject-cate-list').index($('.subject-cate-list:visible'))
+
+    var tpl='\
+      <div class="subject-cate-item">\
+        <div class="subject-cate-header">\
+          <div class="layui-row">\
+            <div class="layui-col-sm7">\
+              <input class="layui-input layui-input-sm" placeholder="请输入试卷类别描述，例如：单项选题，请选择一个答案（共20题，每题2分，共40分）">\
+            </div>\
+            <div class="layui-col-sm5 text-right">\
+              <a href="#" title="添加" data-role="add-subject-'+(index+1)+'"><i role="button" class="layui-icon f20">&#xe654;</i></a>\
+              <a href="#" title="修改"><i role="button" class="layui-icon f20">&#xe642;</i></a>\
+              <a href="#" title="删除" data-role="remove-subject-type"><i role="button" class="layui-icon f20">&#xe640;</i></a>\
+            </div>\
+          </div>\
+        </div>\
+        <div class="subject-cate-body"></div>\
+      </div>\
+    ';
+    $('.subject-cate-list:visible').append(tpl);
+
+    $('.pop-content').scrollTop(100000);
+  })
+
+  //删除试卷类别
+  .on('click', '[data-role="remove-subject-type"]', function(event) {
+    event.preventDefault();
+    $(this).closest('.subject-cate-item').remove();
+  })
+
+  //删除题目
+  .on('click', '[data-role="remove-subject"]', function(event) {
+    event.preventDefault();
+    $(this).closest('tr').remove();
+  });
+
+  //监听提交
+  form.on('submit(form)', function(data){
+
+    var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+    parent.layer.close(index); //再执行关闭  
+
+    return false;
+  });
+});
+</script>
+
+</body>
+</html>

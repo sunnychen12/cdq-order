@@ -1,0 +1,123 @@
+.control-label{
+	text-align: right;
+	line-height: 18px;
+	display: table;
+    width: 100%;
+	overflow: hidden;
+	>label{
+		display: table-cell;
+		vertical-align: middle;
+		width: 100%;
+		height: 38px;
+	}
+}
+
+.layui-btn-gray{
+	background-color: #c2c2c2;
+}
+
+.layui-input-sm{
+	height: 28px;
+	font-size: 12px;
+}
+
+/*输入框级*/
+.input-group{
+	>.media-body{
+		>.layui-input{
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+		+.media-side{
+			>.layui-btn{
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
+	}
+
+	>.media-side{
+		>.layui-btn{
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+		+.media-body{
+			>.layui-input{
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
+	}
+}
+
+/*下拉多选*/
+select[multiple]+.layui-form-select{
+	&>.layui-select-title>input.layui-input {
+	    border-bottom: 0;
+	}
+	dd {
+	    padding: 0;
+	}
+	.layui-form-checkbox[lay-skin=primary] {
+	    margin: 0 !important;
+	    display: block;
+	    line-height: 36px !important;
+	    position: relative;
+	    padding-left: 26px;
+	    span {
+		    line-height: 36px !important;
+		    float: none;
+		}
+		i {
+		    position: absolute;
+		    left: 10px;
+		    top: 0;
+		    margin-top: 9px;
+		}
+	}
+}
+
+.multiSelect {
+    line-height: normal;
+    height: auto;
+    padding: 4px 10px;
+    overflow: hidden;
+    min-height: 38px;
+    margin-top: -38px;
+    left: 0;
+    z-index: 99;
+    position: relative;
+    background: none;
+    a {
+	    padding: 2px 6px 2px 8px;
+	    background: #908e8e;
+	    border-radius: 2px;
+	    color: #fff;
+	    display: block;
+	    line-height: 20px;
+	    height: 20px;
+	    margin: 2px 5px 2px 0;
+	    float: left;
+	    span {
+		    float: left;
+		}
+		i {
+		    float: left;
+		    display: block;
+		    margin: 2px 0 0 5px;
+		    border-radius: 2px;
+		    font-family: layui-icon!important;
+		    font-size: 16px;
+		    height: 18px;
+		    font-style: normal;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		    &:before {
+			    content: "\1006";
+			}
+			&:hover {
+			    background-color: #545556;
+			}
+		}
+	}
+}

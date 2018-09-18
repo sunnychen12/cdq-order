@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>报读详情页</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page page-current">
+        <header class="bar bar-nav bar-nav-top">
+          <a class="icon icon-left pull-left external button-link"></a>
+          <h1 class="title">我的报读信息</h1>
+        </header>
+        <nav class="bar bar-footer padding-none">
+          <div class="grid-flex footer-btn-group">
+            <button type="button" class="item btn-orange" data-id="submit">立即缴费</button>
+            <button type="button" class="item btn-blue" data-id="submit">完善学籍资料</button>
+          </div>
+        </nav>
+        <div class="content">
+          <div class="panel-box">
+            <div class="panel-box-body">
+              <div class="list-block margin-none">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">
+                          <span class="f-label">姓名</span>
+                        </div>
+                        <div class="item-input text-right">
+                          赵雅来
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">
+                          <span class="f-label">手机号码</span>
+                        </div>
+                        <div class="item-input text-right">
+                          189228811983
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">
+                          
+                          <span class="f-label">证件类型</span>
+                        </div>
+                        <div class="item-input text-right">
+                          身份证
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">
+                          
+                          <span class="f-label">证件号码</span>
+                        </div>
+                        <div class="item-input text-right">
+                          4311081900819981981
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">
+                          <span class="f-label">报读学期</span>
+                        </div>
+                        <div class="item-input text-right">
+                          2018春
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">
+                          <span class="f-label">专业层次</span>
+                        </div>
+                        <div class="item-input text-right">
+                          专科
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">
+                          <span class="f-label">专业名称</span>
+                        </div>
+                        <div class="item-input text-right">
+                          工商管理
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">
+                          <span class="f-label">缴费状态</span>
+                        </div>
+                        <div class="item-input text-right">
+                          <span class="text-orange">
+                            待缴费
+                          </span>
+                          <!--
+                            <span class="text-green">
+                              已缴一年
+                            </span>
+                          -->
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">
+                          <span class="f-label">资料状态</span>
+                        </div>
+                        <div class="item-input text-right">
+                          <span class="text-orange">
+                            待提交
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">
+                          <span class="f-label">学籍状态</span>
+                        </div>
+                        <div class="item-input text-right">
+                          <span class="text-orange">
+                            待注册
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/sm.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+<script type="text/javascript">
+
+$(document)
+//提交
+.on('click', '[data-id="submit"]', function(event) {
+  if( !checkform( $('.page') ) ) return;
+})
+//获取手机验证码
+.on('click', '[data-role="get-ver-code"]', function(event) {
+  var that=$(this);
+  that.addClass("disabled").prop('disabled', true).html('重新获取<span class="count-down2">(60s)</span>');
+
+  var timer,i = 60;
+  var fn = function () {
+      if(i<=0){
+        that.removeClass("disabled").prop('disabled', false).find(".count-down2").html("");
+        clearInterval(timer);
+      }
+      else{
+        that.find(".count-down2").html("("+i+"s)");
+        i --;
+      }
+  };
+  timer = setInterval(fn, 1000);
+  fn();
+});
+</script>
+</body>
+</html>

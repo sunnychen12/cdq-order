@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page page-current">
+        <header class="bar bar-nav bar-nav-top">
+          <a class="icon icon-left pull-left external button-link"></a>
+          <h1 class="title">上传学籍资料</h1>
+        </header>
+        <nav class="bar bar-footer padding-none">
+          <div class="grid-flex footer-btn-group">
+            <button type="button" class="item btn-gray">返回，修改学籍资料</button>
+            <button type="button" class="item btn-blue">开始学习</button>
+          </div>
+        </nav>
+        <div class="content bg-white">
+          <div class="media" style="height:80%;">
+              <div class="media-body vertical-middle text-center text-orange">
+                  <i class="icomoon-icon" style="font-size:2.5rem;">&#xe908;</i>
+                  <div style="margin-top:.75rem;padding:0 1rem;">
+                    你的资料已经提交上传成功，请耐心等待审核结果！！
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/sm.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+<script type="text/javascript">
+//显示图片
+$('.uploader-input').on('change', function(e) {
+  var src, url = window.URL || window.webkitURL || window.mozURL, files = e.target.files;
+
+  if (url) {
+      src = url.createObjectURL(files[0]);
+  } else {
+      src = e.target.result;
+  }
+
+  var $p=$(this).parent();
+
+  $p.find('img').attr('src',src);
+
+});
+
+$(document)
+//查看“学历证书电子注册备案表或学历认证报告”指南
+.on('click','[data-role="open-pop"]', function (e) {
+  e.preventDefault();
+  var href=$(this).data('url');
+  var $ifrBox=$('[data-id="pop-iframe-box"]');
+  
+  $ifrBox.html('<div class="preloader" style="position:absolute;left:50%;top:50%;margin:-2.7rem 0 0 -.5rem"></div>');
+
+  $.popup('.popup-about');
+
+  $('[data-id="popup-box"]')
+  .off('opened').on('opened', function(event) {
+    $ifrBox.html('<iframe src="'+href+'" name="page-pop-iframe" class="full-screen" frameborder="0" scrolling="auto" ></iframe>');
+  })
+  .off('closed').on('closed', function(event) {
+    $(this).find('iframe').remove();
+  });
+})
+
+
+//生成base64图片
+function createBase64Img(file){
+  var def=$.Deferred()
+  var reader=new FileReader();
+  reader.readAsDataURL(files[0]);
+  reader.onload=function(){
+   def.resolve(this.result)
+  }
+  return def;
+}
+</script>
+</body>
+</html>

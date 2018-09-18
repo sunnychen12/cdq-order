@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="ie67"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if gte IE 9]><html><![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <title>门户站</title>
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/style.css" rel="stylesheet">
+    <script src="dist/js/loadcss.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-header-nav" aria-expanded="false">
+              <span class="sr-only">站点导航</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+              <img src="dist/images/logo.png" class="vercial-middle">
+              <span class="vercial-middle inline-block subtitle text-nowrap">
+                <div class="inner">
+                  XXXXXX分校
+                </div>
+              </span>
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse site-header-nav" id="site-header-nav">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">首页</a></li>
+              <li><a href="#">学校概况</a></li>
+              <li><a href="#">招生工作</a></li>
+              <li><a href="#">教务工作</a></li>
+              <li><a href="#">教学工作</a></li>
+              <li><a href="#">校园活动</a></li>
+              <li><a href="#">在线学生会</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+    <!--
+    <div class="slideshow" style="height: 0; overflow: hidden">
+      <div class="slide">
+        <a href="http://baidu.com">
+          <img src="dist/images/banner.jpg">
+        </a>
+      </div>
+      <div class="slide">
+        <a href="http://163.com">
+          <img src="dist/images/banner.jpg">
+        </a>
+      </div>
+      <div class="slide">
+        <a href="http://hao123.com">
+          <img src="dist/images/banner.jpg">
+        </a>
+      </div>
+    </div>
+    -->
+    <div class="banner" style="height:100px;overflow:hidden;position:relative;">
+      <ul class="bxslider list-unstyled">
+        <li><a href="http://baidu.com"><img src="dist/images/banner.jpg" class="full-width" /></a></li>
+        <li><a href="#"><img src="dist/images/banner.jpg" class="full-width" /></a></li>
+        <li><a href="#"><img src="dist/images/banner.jpg" class="full-width" /></a></li>
+      </ul>
+    </div>
+
+    <div class="container main">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="nav nav-tab">
+            <li role="presentation" class="active"><a href="#tab1-1" role="tab" data-toggle="tab">学校动态</a></li>
+            <li role="presentation"><a href="#tab1-2" role="tab" data-toggle="tab">通知公告</a></li>
+          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="tab1-1">
+              <div class="top-news clearfix">
+                <div class="pull-left padding-r10">
+                  <a href="#">
+                    <img src="dist/images/img1.jpg" class="pic">
+                  </a>
+                </div>
+                <div class="oh">
+                  <h5>
+                    <a href="#">十九大精神进云课堂 千名村官学员同步观看</a>
+                  </h5>
+                  <div class="txt">
+                    好时代，人人赞，撸起袖子加油干……”2月12日上午，
+                    射洪县沱牌镇青岗村，党的十九大精神进农民夜校网络直
+                    播示范课返乡农民工专场正式开讲。示范课通过院坝宣讲、
+                    视频连线、微信授课等形式展开。
+                  </div>
+                </div>
+              </div>
+              <ul class="list-unstyled top-news-list">
+                <li class="item clearfix">
+                  <span class="time">03-21</span>
+                  <a href="#">
+                    十九大精神进云课堂 千名村官学员会堂集体同步观看
+                  </a>
+                </li>
+                <li class="item clearfix">
+                  <span class="time">03-21</span>
+                  <a href="#">
+                    农民夜校返乡农民工专场示范课开讲 返乡农民工同步收看
+                  </a>
+                </li>
+                <li class="item clearfix">
+                  <span class="time">03-21</span>
+                  <a href="#">
+                    生态环境部督查组来张家界市督查饮用水源地环境整治情况
+                  </a>
+                </li>
+                <li class="item clearfix">
+                  <span class="time">03-21</span>
+                  <a href="#">
+                    十九大精神进云课堂 千名村官学员会堂集体同步观看
+                  </a>
+                </li>
+                <li class="item clearfix">
+                  <span class="time">03-21</span>
+                  <a href="#">
+                    农民夜校返乡农民工专场示范课开讲 返乡农民工同步收看
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tab1-2">
+              <div class="top-news clearfix">
+                <div class="pull-left padding-r10">
+                  <a href="#">
+                    <img src="dist/images/img1.jpg" class="pic">
+                  </a>
+                </div>
+                <div class="oh">
+                  <h5>
+                    <a href="#">十九大精神进云课堂 千名村官学员同步观看2</a>
+                  </h5>
+                  <div class="txt">
+                    好时代，人人赞，撸起袖子加油干……”2月12日上午，
+                    射洪县沱牌镇青岗村，党的十九大精神进农民夜校网络直
+                    播示范课返乡农民工专场正式开讲。示范课通过院坝宣讲、
+                    视频连线、微信授课等形式展开。
+                  </div>
+                </div>
+              </div>
+              <ul class="list-unstyled top-news-list">
+                <li class="item clearfix">
+                  <span class="time">03-21</span>
+                  <a href="#">
+                    十九大精神进云课堂 千名村官学员会堂集体同步观看
+                  </a>
+                </li>
+                <li class="item clearfix">
+                  <span class="time">03-21</span>
+                  <a href="#">
+                    农民夜校返乡农民工专场示范课开讲 返乡农民工同步收看
+                  </a>
+                </li>
+                <li class="item clearfix">
+                  <span class="time">03-21</span>
+                  <a href="#">
+                    生态环境部督查组来张家界市督查饮用水源地环境整治情况
+                  </a>
+                </li>
+                <li class="item clearfix">
+                  <span class="time">03-21</span>
+                  <a href="#">
+                    十九大精神进云课堂 千名村官学员会堂集体同步观看
+                  </a>
+                </li>
+                <li class="item clearfix">
+                  <span class="time">03-21</span>
+                  <a href="#">
+                    农民夜校返乡农民工专场示范课开讲 返乡农民工同步收看
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="login-entr-wrap" style="margin-top:40px;">
+            <div class="bg"></div>
+            <div class="oh login-entr">
+              <ul class="nav login-tab">
+                <li class="active">
+                  <a href="#tab2-1" role="tab" data-toggle="tab">学生登录</a>
+                </li>
+                <li>
+                  <a href="#tab2-2" role="tab" data-toggle="tab">组织管理登录</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="tab2-1">
+                  <ul class="list-unstyled login-entr-list">
+                    <li class="item">
+                      <a href="#">
+                        <i class="icon icon-0x0"></i>
+                        <span class="inline-block vertical-middle">在线学习平台</span>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="#">
+                        <i class="icon icon-46x0"></i>
+                        <span class="inline-block vertical-middle">易考通（在线考试系统）</span>
+                      </a>
+                    </li>
+                    <li class="item item-colum-2">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <a href="#">
+                            <i class="icon icon-87x2"></i>
+                            <span class="inline-block vertical-middle">报读缴费</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 text-center padding-right-none" style="border-left:#e2e2e2 1px solid;">
+                          <a href="#">
+                            <i class="icon icon-135x1"></i>
+                            <span class="inline-block vertical-middle">报读咨询</span>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="tab2-2">
+                  <ul class="list-unstyled login-entr-list">
+                    <li class="item">
+                      <a href="#">
+                        <i class="icon icon-0x48"></i>
+                        <span class="inline-block vertical-middle">教务管理平台</span>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="#">
+                        <i class="icon icon-46x48"></i>
+                        <span class="inline-block vertical-middle">教学管理平台</span>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="#">
+                        <i class="icon icon-87x49"></i>
+                        <span class="inline-block vertical-middle">招生服务平台</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="margin-t20">
+        <div class="clearfix">
+          <a href="#" class="pull-right padding-t10 colum-more">查看更多</a>
+          <ul class="nav nav-tab margin-bottom-none">
+            <li role="presentation" class="active"><a href="javascipt:;">热门专业</a></li>
+          </ul>
+        </div>
+
+        <ul class="row list-unstyled top-list margin-bottom-none">
+          <li class="item col-xs-6 col-sm-3">
+            <a href="#">
+              <figure class="embed-responsive">
+                <img src="dist/images/img2.jpg" class="embed-responsive-item">
+                <figcaption>行政管理（本科）</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="item col-xs-6 col-sm-3">
+            <a href="#">
+              <figure class="embed-responsive">
+                <img src="dist/images/img3.jpg" class="embed-responsive-item">
+                <figcaption>工商管理（专科）</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="item col-xs-6 col-sm-3">
+            <a href="#">
+              <figure class="embed-responsive">
+                <img src="dist/images/img4.jpg" class="embed-responsive-item">
+                <figcaption>市场营销（本科）</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="item col-xs-6 col-sm-3">
+            <a href="#">
+              <figure class="embed-responsive">
+                <img src="dist/images/img5.jpg" class="embed-responsive-item">
+                <figcaption>行政管理（本科）</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 margin-t20">
+          <div class="clearfix">
+            <a href="#" class="pull-right padding-t10 colum-more">查看更多</a>
+            <ul class="nav nav-tab">
+              <li role="presentation" class="active"><a href="javascript:;">招生工作</a></li>
+            </ul>
+          </div>
+
+          <div class="top-news clearfix">
+            <div class="pull-left padding-r10">
+              <a href="#">
+                <img src="dist/images/img1.jpg" class="pic">
+              </a>
+            </div>
+            <div class="oh">
+              <h5>
+                <a href="#">十九大精神进云课堂 千名村官学员同步观看</a>
+              </h5>
+              <div class="txt">
+                好时代，人人赞，撸起袖子加油干……”2月12日上午，
+                射洪县沱牌镇青岗村，党的十九大精神进农民夜校网络直
+                播示范课返乡农民工专场正式开讲。示范课通过院坝宣讲、
+                视频连线、微信授课等形式展开。
+              </div>
+            </div>
+          </div>
+          <ul class="list-unstyled top-news-list">
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                十九大精神进云课堂 千名村官学员会堂集体同步观看
+              </a>
+            </li>
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                农民夜校返乡农民工专场示范课开讲 返乡农民工同步收看
+              </a>
+            </li>
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                生态环境部督查组来张家界市督查饮用水源地环境整治情况
+              </a>
+            </li>
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                十九大精神进云课堂 千名村官学员会堂集体同步观看
+              </a>
+            </li>
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                农民夜校返乡农民工专场示范课开讲 返乡农民工同步收看
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 margin-t20">
+          <div class="login-entr-wrap login-entr-wrap2" style="margin-top:40px;">
+            <div class="bg"></div>
+            <div class="oh login-entr">
+              <ul class="list-unstyled case-list">
+                <li class="item">
+                  <a href="#">如何报读？</a>
+                </li>
+                <li class="item">
+                  <a href="#">报读需要哪些条件？</a>
+                </li>
+                <li class="item">
+                  <a href="#">报读费用是多少？</a>
+                </li>
+                <li class="item">
+                  <a href="#">国家开放大学证书有用？</a>
+                </li>
+                <li class="item">
+                  <a href="#">要学习多久，多久能拿到毕业证？</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 margin-t20">
+          <div class="clearfix">
+            <a href="#" class="pull-right padding-t10 colum-more">查看更多</a>
+            <ul class="nav nav-tab">
+              <li role="presentation" class="active"><a href="javascript:;">教务工作</a></li>
+            </ul>
+          </div>
+
+          <div class="top-news clearfix">
+            <div class="pull-left padding-r10">
+              <a href="#">
+                <img src="dist/images/img1.jpg" class="pic">
+              </a>
+            </div>
+            <div class="oh">
+              <h5>
+                <a href="#">十九大精神进云课堂 千名村官学员同步观看</a>
+              </h5>
+              <div class="txt">
+                好时代，人人赞，撸起袖子加油干……”2月12日上午，
+                射洪县沱牌镇青岗村，党的十九大精神进农民夜校网络直
+                播示范课返乡农民工专场正式开讲。示范课通过院坝宣讲、
+                视频连线、微信授课等形式展开。
+              </div>
+            </div>
+          </div>
+          <ul class="list-unstyled top-news-list">
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                十九大精神进云课堂 千名村官学员会堂集体同步观看
+              </a>
+            </li>
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                农民夜校返乡农民工专场示范课开讲 返乡农民工同步收看
+              </a>
+            </li>
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                生态环境部督查组来张家界市督查饮用水源地环境整治情况
+              </a>
+            </li>
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                十九大精神进云课堂 千名村官学员会堂集体同步观看
+              </a>
+            </li>
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                农民夜校返乡农民工专场示范课开讲 返乡农民工同步收看
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 margin-t20">
+          <div class="clearfix">
+            <a href="#" class="pull-right padding-t10 colum-more">查看更多</a>
+            <ul class="nav nav-tab">
+              <li role="presentation" class="active"><a href="javascript:;">教学工作</a></li>
+            </ul>
+          </div>
+
+          <div class="top-news clearfix">
+            <div class="pull-left padding-r10">
+              <a href="#">
+                <img src="dist/images/img1.jpg" class="pic">
+              </a>
+            </div>
+            <div class="oh">
+              <h5>
+                <a href="#">十九大精神进云课堂 千名村官学员同步观看</a>
+              </h5>
+              <div class="txt">
+                好时代，人人赞，撸起袖子加油干……”2月12日上午，
+                射洪县沱牌镇青岗村，党的十九大精神进农民夜校网络直
+                播示范课返乡农民工专场正式开讲。示范课通过院坝宣讲、
+                视频连线、微信授课等形式展开。
+              </div>
+            </div>
+          </div>
+          <ul class="list-unstyled top-news-list">
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                十九大精神进云课堂 千名村官学员会堂集体同步观看
+              </a>
+            </li>
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                农民夜校返乡农民工专场示范课开讲 返乡农民工同步收看
+              </a>
+            </li>
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                生态环境部督查组来张家界市督查饮用水源地环境整治情况
+              </a>
+            </li>
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                十九大精神进云课堂 千名村官学员会堂集体同步观看
+              </a>
+            </li>
+            <li class="item clearfix">
+              <span class="time">03-21</span>
+              <a href="#">
+                农民夜校返乡农民工专场示范课开讲 返乡农民工同步收看
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="margin-t20">
+        <div class="clearfix">
+          <a href="#" class="pull-right padding-t10 colum-more">查看更多</a>
+          <ul class="nav nav-tab margin-bottom-none">
+            <li role="presentation" class="active"><a href="javascipt:;">校园活动</a></li>
+          </ul>
+        </div>
+
+        <ul class="row list-unstyled top-list margin-bottom-none">
+          <li class="item col-xs-6 col-sm-3">
+            <a href="#">
+              <figure class="embed-responsive">
+                <img src="dist/images/img2.jpg" class="embed-responsive-item">
+                <figcaption>2018春开学典礼</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="item col-xs-6 col-sm-3">
+            <a href="#">
+              <figure class="embed-responsive">
+                <img src="dist/images/img3.jpg" class="embed-responsive-item">
+                <figcaption>2018教学启动大会</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="item col-xs-6 col-sm-3">
+            <a href="#">
+              <figure class="embed-responsive">
+                <img src="dist/images/img4.jpg" class="embed-responsive-item">
+                <figcaption>2018春季踏青活动</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="item col-xs-6 col-sm-3">
+            <a href="#">
+              <figure class="embed-responsive">
+                <img src="dist/images/img5.jpg" class="embed-responsive-item">
+                <figcaption>2018春开学典礼</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="margin-t20">
+        <div class="clearfix">
+          <a href="#" class="pull-right padding-t10 colum-more">查看更多</a>
+          <ul class="nav nav-tab margin-bottom-none">
+            <li role="presentation" class="active"><a href="javascipt:;">友情链接</a></li>
+          </ul>
+        </div>
+
+        <ul class="row list-unstyled top-list friend-link margin-bottom-none">
+          <li class="item col-xs-6 col-sm-3">
+            <a href="#">
+              <figure class="embed-responsive">
+                <img src="dist/images/img6.jpg" class="embed-responsive-item">
+              </figure>
+            </a>
+          </li>
+          <li class="item col-xs-6 col-sm-3">
+            <a href="#">
+              <figure class="embed-responsive">
+                <img src="dist/images/img7.jpg" class="embed-responsive-item">
+              </figure>
+            </a>
+          </li>
+          <li class="item col-xs-6 col-sm-3">
+            <a href="#">
+              <figure class="embed-responsive">
+                <img src="dist/images/img8.jpg" class="embed-responsive-item">
+              </figure>
+            </a>
+          </li>
+          <li class="item col-xs-6 col-sm-3">
+            <a href="#">
+              <figure class="embed-responsive">
+                <img src="dist/images/img9.jpg" class="embed-responsive-item">
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="clearfix">
+          <div class="col-sm-7">
+            <p class="clearfix">
+              <span class="pull-left">
+                版权所有：
+              </span>
+              <span class="show oh">
+                xxxxxxxxxx分校
+              </span>
+            </p>
+            <p class="clearfix">
+              <span class="pull-left">
+                联系地址：
+              </span>
+              <span class="show oh">
+                XXXXXXXXXXXXXXXXXXXXXXXXXX
+              </span>
+            </p>
+            <p>粤ICP备17125036号-1</p>
+          </div>
+          <div class="col-sm-5 text-right margin-t20">
+            <p>全国统一服务热线</p>
+            <p>40000000000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/require.js" data-require-path="dist/js/"></script>
+    <script src="dist/js/loadjs.js"></script>
+    <script type="text/javascript">
+      require(['jquery','bxslider'],function($){
+        /*
+        $('.slideshow').each(function() {
+          var $slideshow = $(this);
+          $slideshow.imagesLoaded(function() {
+              $slideshow.skidder({
+                slideClass    : '.slide',
+                animationType : 'css',
+                scaleSlides   : true,
+                maxWidth : 1200,
+                maxHeight: 500,
+                paging        : true,
+                autoPaging    : true,
+                pagingWrapper : ".skidder-pager",
+                pagingElement : ".skidder-pager-dot",
+                leftaligned   : false,
+                cycle         : true,
+                jumpback      : false,
+                speed         : 400,
+                autoplay      : true,
+                autoplayResume: false,
+                interval      : 4000,
+                transition    : "slide",
+                afterSliding  : function() {},
+                afterInit     : function() {}
+              });
+          });
+        });
+        $(window).smartresize(function() {
+            $('.slideshow').skidder('resize');
+        });
+        */
+        //图片切换
+        $('.bxslider').bxSlider({
+          wrapperClass:'bx-wrapper my-bx-wrapper',
+          infiniteLoop: true,
+          auto:true,
+          autoHover:true,
+          pager:true,
+          speed: 800,
+          onSlideAfter:function(){
+            this.startAuto();
+          },
+          onSlideBefore:function(event){
+
+          },
+          onSliderLoad:function(){
+            $('.banner').removeAttr('style')
+          }
+        });
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+/* *common css */
+
+//滚动条美化
+::-webkit-scrollbar-track{
+	background-color: #ddd;
+}
+::-webkit-scrollbar{width: 8px;height:8px;background-color: #ddd	;}
+::-webkit-scrollbar-thumb{background-color: #888;}
+
+
+/* float */
+.pull-left{float:left;}
+.pull-right{float:right;}
+.float-none{float:none !important;}
+/* position */
+.position-relative{
+	position:relative;
+}
+.position-absolute{
+	position:absolute !important;
+}
+/* color */
+.gray{color:#333;}
+.gray6{color:#666;}
+.gray9{color:#999;}
+.text-white{color: #fff;}
+
+/* font size */
+.f12{font-size:12px !important;}
+.f14{font-size:14px !important;}
+.f16{font-size:16px !important;}
+.f18{font-size:18px !important;}
+.f20{font-size:20px !important;}
+.f22{font-size:22px !important;}
+.f24{font-size:24px !important;}
+.f26{font-size:26px !important;}
+.f28{font-size:28px !important;}
+.f30{font-size:30px !important;}
+/* font style */
+.text-no-bold{font-weight:normal !important}
+.text-bold{font-weight:bold !important}
+.text-center{
+	text-align: center;
+	table&{
+		th,td{
+			text-align: center;
+		}
+	}
+	th&,td&{
+		text-align: center !important;
+	}
+}
+.text-left{
+	text-align: left;
+	th&,td&{
+		text-align: left !important;
+	}
+}
+.text-right{
+	text-align: right;
+	th&,td&{
+		text-align: right !important;
+	}
+}
+
+.text-underline{
+	text-decoration: underline !important;
+}
+.text-overflow{
+	text-overflow: ellipsis;
+}
+.text-word-break{
+	word-break:break-all;
+}
+.text-nowrap{
+	white-space: nowrap;
+}
+.text-style-normal{
+	font-style: normal !important;
+}
+.text-red{
+	color: @color-red;
+}
+.text-orange{
+	color: @color-orange;
+}
+.text-green{
+	color: @color-green;
+}
+.text-dark-green{
+	color: darken(@color-green, 15%);
+}
+.text-blue{color: @color-blue;}
+
+/* padding */
+	//.padding-l5{padding-left:5px !important;}
+	//.padding-r5{padding-right:5px !important;}
+	//.padding-t5{padding-top:5px !important;}
+	//.padding-b5{padding-bottom:5px !important;}
+	//.padding5{padding:5px !important;}
+	.generate-spacing(padding);//生成类似以上的
+
+	.padding-none{padding: 0 !important;}
+	.padding-left-none{padding-left:0 !important}
+	.padding-right-none{padding-right:0 !important}
+	.padding-top-none{padding-top:0 !important}
+	.padding-bottom-none{padding-bottom:0 !important}
+
+/* margin */
+	.generate-spacing(margin);
+
+	.margin-none{margin:0 !important}
+	.margin-left-none{margin-left:0 !important}
+	.margin-right-none{margin-right:0 !important}
+	.margin-top-none{margin-top:0 !important}
+	.margin-bottom-none{margin-bottom:0 !important}
+
+//对齐
+.center-block{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.vertical-middle{
+	vertical-align:middle !important;
+	table&{
+		>thead>td,
+		>tbody>th,
+		>tbody>td{
+			vertical-align: middle;
+		}
+	}
+}
+.vertical-top{
+	vertical-align: top !important;
+}
+
+//背景
+.no-bg{
+	background: none !important;
+}
+.bg-white{
+	background-color: #fff;
+}
+
+//边框
+.border{
+	border: 1px solid @border-color !important;
+}
+.border-top{
+	border-top: 1px solid @border-color !important;
+}
+.border-bottom{
+	border-bottom: 1px solid @border-color !important;
+}
+.border-left{
+	border-left: 1px solid @border-color !important;
+}
+.border-right{
+	border-right: 1px solid @border-color !important;
+}
+.border-none{
+	border: 0 none !important;
+}
+
+//尺寸
+.min-width-80{
+	min-width: 80px;
+}
+.min-width-100{
+	min-width: 100px;
+}
+.min-width-120{
+	min-width: 120px;
+}
+.min-width-150{
+	min-width: 150px;
+}
+.full-width{
+	width: 100% !important;
+}
+.full-height{
+	height: 100% !important;
+}
+
+//其它
+[role="button"]{
+	cursor: pointer;
+}
+[role="move"]{
+	cursor: move !important;
+}
+[required-mark]{
+	position: relative;
+	display: inline-block;
+	&:after{
+		position: absolute;
+		content: '*';
+		right: -10px;
+		top: 50%;
+		font-size: 18px;
+		line-height: 10px;
+		margin-top: -2px;
+		color: @color-red;
+	}
+}
+.inline-block{
+	display: inline-block;
+	display: inline !ie;
+	zoom: 1 !ie;
+}
+.block{
+	display: block !important;
+}
+.visible {
+	visibility: visible !important;
+}
+.oh{
+	overflow: hidden;
+	zoom: 1;
+}
+.flat{
+	border-radius: 0 !important;
+}
+.no-shadow{
+	box-shadow: none !important;
+}
+.img-responsive{
+	max-width: 100%;
+	.layui-table &{
+		max-width: 100%;
+	}
+}

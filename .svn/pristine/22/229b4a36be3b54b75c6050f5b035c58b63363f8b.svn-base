@@ -1,0 +1,12 @@
+.media{
+	display: table;
+	width: 100%;
+    >.media-body{
+    	//width: 100%;
+    	display: table-cell;
+    }
+	>.media-side{
+		display: table-cell;
+    	width: 1%;
+	}
+}

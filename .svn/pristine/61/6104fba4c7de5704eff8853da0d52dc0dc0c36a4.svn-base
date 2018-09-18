@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page page-current login2-page">
+        <div class="content">
+          <div class="media" style="height:100%;">
+            <div class="media-body vertical-middle">
+              <div class="text-center" style="margin-top: -.6rem;">
+                <img src="images/login2-logo.png" class="login-logo" style="margin-top:0;">
+              </div>
+              <div class="login-sub-title" style="margin:0;">
+                珠江新城分校
+              </div>
+              <div class="login2-title">学习平台 丨 学生登录</div>
+              <div class="login-wrap">
+                <div class="login-form-group">
+                  <div class="media">
+                    <div class="media-side vertical-middle">
+                      <i class="icomoon-icon">&#xe902;</i>
+                    </div>
+                    <div class="media-body vertical-middle">
+                      <input type="text" class="login-input" placeholder="请输入学号或身份证号"
+                        data-check="1"
+                        data-rule=".+" 
+                        data-msg-empty="请输入学号或身份证号" 
+                        data-msg-error="请输入学号或身份证号"
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="login-form-group">
+                  <div class="media">
+                    <div class="media-side vertical-middle">
+                      <i class="icomoon-icon">&#xe900;</i>
+                    </div>
+                    <div class="media-body vertical-middle">
+                      <input type="password" class="login-input" placeholder="请输入密码"
+                        data-check="1"
+                        data-rule=".+" 
+                        data-msg-empty="请输入密码" 
+                        data-msg-error="请输入密码"
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="login-form-group">
+                  <div class="media">
+                    <div class="media-side vertical-middle">
+                      <i class="icomoon-icon">&#xe901;</i>
+                    </div>
+                    <div class="media-body vertical-middle">
+                      <input type="text" class="login-input" placeholder="请输入验证码"
+                        data-check="1"
+                        data-rule=".+" 
+                        data-msg-empty="请输入验证码" 
+                        data-msg-error="请输入验证码"
+                      >
+                    </div>
+                    <div class="media-side vertical-middle">
+                      <img src="images/qrcode.png" class="login-qrcode">
+                    </div>
+                    <div class="media-side vertical-middle">
+                      <u class="login-change-text" style="color:#1479de">看不清<br>换一张</u>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="login-btn-wrap">
+                  <button class="login-btn login2-btn" type="button">立即登录</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/sm.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+<script type="text/javascript">
+$('.login-btn').click(function(event) {
+  var $formBox=$('.login-wrap');
+  if( checkform( $formBox ) ){
+    $.showPreloader('数据提交中...');
+    setTimeout(function(){
+      $.hidePreloader();
+      $.toast("操作成功");
+    },2000)
+  }
+});
+
+</script>
+</body>
+</html>

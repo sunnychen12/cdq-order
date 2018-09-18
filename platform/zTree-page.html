@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>树形结构</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+</head>
+<body class="cdq-body">
+  <!-- 面包屑 start-->
+  <div class="cdq-breadcrumb-box">
+    <span class="layui-breadcrumb visible">
+      <a href="">首页</a><span lay-separator>&gt;</span>
+      <a><cite>树形结构</cite></a>
+    </span>
+  </div>
+  <!-- 面包屑 start-->
+
+
+  <!-- 内容主体区域 start-->
+  <div class="cdq-content">
+
+    <div class="box">
+      <div class="box-header">
+        <div class="f18">树形结构</div>
+      </div>
+      <div class="box-body">
+        <ul id="menuTree" class="ztree"></ul>
+      </div>
+    </div>
+
+  </div>
+  <!-- 内容主体区域 end-->
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['zTree'], function(){
+  var setting = {
+    data: {
+      simpleData: {
+        enable: true,
+        idKey: "id",
+        pIdKey: "pId"
+      }
+    },
+    check:{
+      enable:true,
+      nocheckInherit:true
+    }
+  };
+
+  var r={
+    "menuList": [
+      {
+        "id": 1,
+        "name": "系统管理",
+        "pId": 0
+      },
+      {
+        "id": 24,
+        "name": "新增",
+        "pId": 4
+      },
+      {
+        "id": 13,
+        "name": "立即执行",
+        "pId": 6
+      },
+      {
+        "id": 12,
+        "name": "恢复",
+        "pId": 6
+      },
+      {
+        "id": 11,
+        "name": "暂停",
+        "pId": 6
+      },
+      {
+        "id": 10,
+        "name": "删除",
+        "pId": 6
+      },
+      {
+        "id": 9,
+        "name": "修改",
+        "pId": 6
+      },
+      {
+        "id": 8,
+        "name": "新增",
+        "pId": 6
+      },
+      {
+        "id": 7,
+        "name": "查看",
+        "pId": 6
+      },
+      {
+        "id": 26,
+        "name": "删除",
+        "pId": 4
+      },
+      {
+        "id": 15,
+        "name": "查看",
+        "pId": 2
+      },
+      {
+        "id": 16,
+        "name": "新增",
+        "pId": 2
+      },
+      {
+        "id": 17,
+        "name": "修改",
+        "pId": 2
+      },
+      {
+        "id": 18,
+        "name": "删除",
+        "pId": 2
+      },
+      {
+        "id": 19,
+        "name": "查看",
+        "pId": 3
+      },
+      {
+        "id": 20,
+        "name": "新增",
+        "pId": 3
+      },
+      {
+        "id": 21,
+        "name": "修改",
+        "pId": 3
+      },
+      {
+        "id": 22,
+        "name": "删除",
+        "pId": 3
+      },
+      {
+        "id": 23,
+        "name": "查看",
+        "pId": 4
+      },
+      {
+        "id": 14,
+        "name": "日志列表",
+        "pId": 6
+      },
+      {
+        "id": 25,
+        "name": "修改",
+        "pId": 4
+      },
+      {
+        "id": 2,
+        "name": "管理员列表",
+        "pId": 1
+      },
+      {
+        "id": 3,
+        "name": "角色管理",
+        "pId": 1
+      },
+      {
+        "id": 4,
+        "name": "菜单管理",
+        "pId": 1
+      },
+      {
+        "id": 5,
+        "name": "SQL监控",
+        "pId": 1
+      },
+      {
+        "id": 6,
+        "name": "定时任务",
+        "pId": 1
+      },
+      {
+        "id": 30,
+        "name": "文件上传",
+        "pId": 1
+      },
+      {
+        "id": 27,
+        "name": "参数管理",
+        "pId": 1
+      },
+      {
+        "id": 29,
+        "name": "系统日志",
+        "pId": 1
+      },
+      {
+        "id": 28,
+        "name": "代码生成器",
+        "pId": 1
+      }
+    ]
+  }
+  var ztree = $.fn.zTree.init($("#menuTree"), setting, r.menuList);
+  //展开所有节点
+  ztree.expandAll(true);
+});
+</script>
+
+</body>
+</html>

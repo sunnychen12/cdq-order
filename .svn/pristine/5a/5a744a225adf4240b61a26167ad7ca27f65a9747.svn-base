@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>学习平台</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+</head>
+<body>
+
+<div class="site-header">
+  <div class="box-center">
+    <div class="elem-middle-align full-height">
+      <div class="inner">
+        <a href="#" class="logo"><img src="dist/images/logo.png"></a>
+      </div>
+    </div>
+
+    <ul class="layui-nav">
+      <li class="layui-nav-item">
+        <a href=""><img src="http://t.cn/RCzsdCq" class="layui-nav-img">廖小姐</a>
+        <dl class="layui-nav-child">
+          <dd><a href="javascript:;">退出</a></dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="site-main layui-clear">
+  <div class="box-center">
+    <div class="site-tree box-style">
+      <ul class="side-tree-menu">
+        <li class="cur">
+          <a href="my-study-ajax-page.html">
+            <span>
+              <u>我的学习</u>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="list-ajax-page.html">
+            <span>
+              <u>列表页面</u>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="details-ajax-page.html">
+            <span>
+              <u>信息页面</u>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <u>xxxxxx</u>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <u>XXXXXX</u>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <u>XXXXXX</u>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="address-ajax-page.html">
+            <span>
+              <u>我的班级</u>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="notes-ajax-page.html">
+            <span>
+              <u>通知公告</u>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="site-content">
+      <div class="site-content-inner overlay-wrapper">
+        <div data-id="menu-content">
+          <div class="box-style min-height-300">
+          </div>
+        </div>
+
+        <div class="overlay" style="display:none">
+          <i class="layui-icon layui-anim layui-anim-rotate layui-anim-loop f32">&#xe63d;</i>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="site-footer">
+  <div class="box-center full-height">
+    <table width="100%" height="100%">
+      <tr>
+        <td>
+          <img src="dist/images/footer-logo.png">
+        </td>
+        <td align="right" class="f12">
+          <span class="padding-r30">主办单位：广东省广州市学习教育培训机构
+          </span>
+          <span>技术支持：广东省广州市学习教育培训机构</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['jquery'], function(){
+  //侧边导航加载内容
+  window.loadSideMenuCnt=function (url){
+    var $siteContentInner=$('[data-id="menu-content"]');
+    var $loading=$siteContentInner.next('.overlay');
+    $loading.show();
+    $.ajax({
+      url: url,
+      cache: false,
+      type: 'GET',
+      dataType: 'html',
+    })
+    .done(function(data) {
+      $siteContentInner.html(data);
+    })
+    .fail(function() {
+      $siteContentInner.html("error");
+    })
+    .always(function(){
+      $loading.hide();
+    });
+  }
+
+  $('.side-tree-menu').on('click', 'a', function(event) {
+    event.preventDefault();
+    var url=$(this).attr('href');
+
+    if(url!='#'){
+      loadSideMenuCnt($(this).attr('href'));
+    }
+
+    $(this).parent().addClass('cur').siblings().removeClass('cur');
+    
+  });
+
+  loadSideMenuCnt('my-study-ajax-page.html');
+});
+</script>
+</body>
+</html>

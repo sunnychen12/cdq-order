@@ -1,0 +1,51 @@
+.layui-table{
+	color: #333;
+	>tbody>tr>th{
+		background-color: #f2f2f2;
+	}
+	th,td{
+		line-height: 1.42857143;
+		border-color: darken(@border-color, 4%);
+	}
+}
+[table-no-hover]{
+	>tbody>tr:hover{
+		background: none;
+	}
+}
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+@media screen and (max-width: 767px) {
+	.table-responsive {
+	    width: 100%;
+	    margin-bottom: 15px;
+	    overflow-y: hidden;
+	    -ms-overflow-style: -ms-autohiding-scrollbar;
+	    border: 1px solid #ddd;
+	    &>.layui-table {
+		    border: 0;
+		    margin: 0;
+			&>thead>tr>*,
+			&>tbody>tr>*{
+				&:first-child {
+				    border-left: 0;
+				}
+				&:last-child{
+					border-right: 0;
+				}
+			}
+			&>*{
+				&>tr>td,
+				&>tr>th{
+					white-space: nowrap;
+				}
+				&:first-child>tr:first-child>* {
+				    border-top: 0;
+				}
+			}
+		}
+	}
+	
+}

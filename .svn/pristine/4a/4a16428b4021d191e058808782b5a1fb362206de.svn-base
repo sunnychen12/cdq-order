@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>框架页</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+</head>
+<body class="cdq-body">
+  <!-- 面包屑 start-->
+  <div class="cdq-breadcrumb-box">
+    <span class="layui-breadcrumb visible">
+      <a href="">首页</a><span lay-separator>&gt;</span>
+      <a><cite>打印学生证</cite></a>
+    </span>
+  </div>
+  <!-- 面包屑 start-->
+
+
+  <!-- 内容主体区域 start-->
+  <div class="cdq-content">
+
+    <div class="box">
+      <div class="box-header">
+        <div class="f18">打印学生证</div>
+      </div>
+      <div class="box-body padding20" data-id="print-area">
+        <div style="
+          /*
+            background:url(print.jpg) no-repeat center top/100% auto;
+            height: 16.55cm;
+          */
+          padding-left: 50%;
+        ">
+          <ul style="
+            list-style:none;
+            margin:0;
+            padding:0;
+            padding:1.1cm 0 0 1.7cm;
+            font-size: 0.5cm;
+            padding-top: 0cm;/*调整上边距请修改这里*/
+          ">
+            <li style="
+              margin-top:1cm;
+              padding-top:.2cm;
+            ">
+              欧阳振华
+            </li>
+            <li style="
+              margin-top:1cm;
+            ">
+              男
+            </li>
+            <li style="
+              margin-top:1cm;
+              padding-left:1cm;
+            ">
+              2000年01月
+            </li>
+            <li style="
+              margin-top:0.5cm;
+              padding-left:1.5cm;
+              max-width:10.2em;
+              line-height:1.2em;
+              height:2.4em;
+            ">
+              广州番禺教学点
+            </li>
+            <li style="
+              margin-top:.7cm;
+              padding-left:1cm;
+              max-width:10.2em;
+              line-height:1.2em;
+              height:2.4em;
+            ">
+              工商管理
+            </li>
+            <li style="
+              margin-top:.3cm;
+              padding-left:1cm;
+            ">
+              248521215485
+            </li>
+          </ul>
+          
+        </div>
+        <!--打印：页分割符-->
+        <div style="page-break-after:always;"></div>
+        <!--第二页内容-->
+      </div>
+      <div class="box-footer text-right">
+          <button type="button" class="layui-btn layui-btn-danger min-width-100" data-role="print">
+            确认打印
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- 内容主体区域 end-->
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['element'], function(){
+  var element=layui.element;
+
+  //打印内容
+  $('[data-role="print"]').click(function(event) {
+    var w=window.open('about:blank','print');
+    var doc=w.document;
+    doc.open();
+    doc.write($('[data-id="print-area"]').html());
+    doc.close();
+    w.print();
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+	color: #333;
+}
+button, input, select, textarea{
+	color: #333;
+}
+.@{cssPrefix}{
+	&body{
+		background-color: #ecf0f5;
+	}
+	&breadcrumb-box{
+		border-bottom: @border-color 1px solid;
+		background-color: #fff;
+		height: 45px;
+		width: 100%;
+		left: 0;
+		top: 0;
+		position: fixed;
+		z-index: 2;
+		line-height: 45px;
+		padding: 0 15px;
+		box-sizing: border-box;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+		&+.@{cssPrefix}content{
+			top: 45px;
+		}
+	}
+	&content{
+		margin-top: 45px;
+		padding: 15px;
+	}
+	&page-iframe{
+		height:100%;
+		width:100%;
+		border:0;
+	}
+}

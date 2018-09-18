@@ -1,0 +1,29 @@
+.box{
+	background-color: #fff;
+	box-sizing: border-box;
+	border: 1px solid @border-color;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	>*{
+		box-sizing: border-box;
+	}
+	>.box-header {
+	    border-bottom: 1px solid @border-color;
+	}
+	>.box-footer {
+	    border-top: 1px solid @border-color;
+	}
+
+	>.box-header,
+	>.box-footer,
+	>.box-body{
+		padding: 10px;
+		&:before,
+		&:after {
+		    content: '';
+		    display: block;
+		    clear: both;
+		}
+	}
+	
+}

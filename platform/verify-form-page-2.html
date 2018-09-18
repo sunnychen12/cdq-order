@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>自定义验证表单</title>
+
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+</head>
+<body class="cdq-body">
+  <!-- 面包屑 start-->
+  <div class="cdq-breadcrumb-box">
+    <div class="pull-right">
+      <button type="button" class="layui-btn layui-btn-primary layui-btn-sm min-width-80">返回</button>
+    </div>
+    <span class="layui-breadcrumb visible">
+      <a href="">首页</a><span lay-separator>&gt;</span>
+      <a><cite>自定义验证表单</cite></a>
+    </span>
+  </div>
+  <!-- 面包屑 start-->
+
+
+  <!-- 内容主体区域 start-->
+  <div class="cdq-content">
+
+    <div class="box" style="padding-bottom:70px;">
+      <div class="box-body">
+          <fieldset class="layui-elem-field layui-field-title">
+            <legend class="f16 text-bold">自定义验证表单</legend>
+          </fieldset>
+          <form class="layui-form">
+            <div class="table-responsive">
+              <table class="layui-table margin-none" table-no-hover>
+                <colgroup>
+                  <col width="17%"></col>
+                  <col width="33%"></col>
+                  <col width="17%"></col>
+                  <col width="33%"></col>
+                </colgroup>
+                <tbody>
+                  
+
+                  <tr>
+                    <th class="text-center">
+                      <span required-mark>
+                        任意字符
+                      </span>
+                    </th>
+                    <td>
+                      <input type="text" class="layui-input" placeholder="输入任意字符"
+                        lay-verify="verify-control" 
+                        data-regexp="*1-5"
+                        null-msg="输入任意字符"
+                        error-msg="输入1至5个任意字符"
+                      >
+                      <div class="margin-t10">
+                        规则：data-regexp="*1-5" 1至5个任意字符<br>
+                        而 data-regexp="*1" 代表至少1个任意字符
+                      </div>
+                    </td>
+
+                    <th class="text-center">
+                      例子
+                    </th>
+                    <td>
+                        <pre>
+                          <input type="text" class="layui-input" placeholder="输入任意字符"
+                            lay-verify="verify-control" 
+                            data-regexp="*1-5"
+                            null-msg="输入任意字符"
+                            error-msg="输入1至5个任意字符"
+                          >
+                        </pre>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="text-center">
+                      <span required-mark>
+                        数字
+                      </span>
+                    </th>
+                    <td>
+                      <input type="text" class="layui-input" placeholder="输入数字"
+                        lay-verify="verify-control" 
+                        data-regexp="n1-5"
+                        null-msg="输入数字"
+                        error-msg="输入1至5个数字"
+                      >
+                      <div class="margin-t10">
+                        规则：data-regexp="n1-5" 1至5个数字<br>
+                        而 data-regexp="n1" 代表至少1个数字
+                      </div>
+                    </td>
+
+                    <th class="text-center">
+                      例子
+                    </th>
+                    <td>
+                        <pre>
+                          <input type="text" class="layui-input" placeholder="输入数字"
+                            lay-verify="verify-control" 
+                            data-regexp="n1-5"
+                            null-msg="输入数字"
+                            error-msg="输入1至5个数字"
+                          >
+                        </pre>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="text-center">
+                      <span required-mark>
+                        非特殊字符
+                      </span>
+                      <div class="gray9 f12">（不能包含~!@#$%^+*\&amp;/?|:.\&lt;\&gt;{}()';=）</div>
+                    </th>
+                    <td>
+                      <input type="text" class="layui-input" placeholder="输入数字"
+                        lay-verify="verify-control" 
+                        data-regexp="s1-5"
+                        null-msg="输入非特殊字符"
+                        error-msg="输入非特殊字符1至5个"
+                      >
+                      <div class="margin-t10">
+                        规则：data-regexp="s1-5" 1至5个非特殊字符<br>
+                        而 data-regexp="s1" 代表至少1个非特殊字符<br>
+
+                      </div>
+                    </td>
+
+                    <th class="text-center">
+                      例子
+                    </th>
+                    <td>
+                        <pre>
+                          <input type="text" class="layui-input" placeholder="输入非特殊字符"
+                            lay-verify="verify-control" 
+                            data-regexp="s1-5"
+                            null-msg="输入非特殊字符"
+                            error-msg="输入非特殊字符1至5个"
+                          >
+                        </pre>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="text-center">
+                      <span required-mark>
+                        手机号
+                      </span>
+                    </th>
+                    <td>
+                      <input type="text" class="layui-input" placeholder="输入手机号"
+                        lay-verify="verify-control" 
+                        data-regexp="m"
+                        null-msg="输入手机号"
+                        error-msg="手机号格式不对"
+                      >
+                      <div class="margin-t10">
+                        规则：data-regexp="m" 手机号验证
+                      </div>
+                    </td>
+
+                    <th class="text-center">
+                      例子
+                    </th>
+                    <td>
+                        <pre>
+                          <input type="text" class="layui-input" placeholder="输入手机号"
+                            lay-verify="verify-control" 
+                            data-regexp="m"
+                            null-msg="输入手机号"
+                            error-msg="手机号格式不对"
+                          >
+                        </pre>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="text-center">
+                      <span required-mark>
+                        固话
+                      </span>
+                    </th>
+                    <td>
+                      <input type="text" class="layui-input" placeholder="格式：区号-电话-分机(可不加)"
+                        lay-verify="verify-control" 
+                        data-regexp="tel"
+                        null-msg="输入固话"
+                        error-msg="固话号格式不对"
+                      >
+                      <div class="margin-t10">
+                        规则：data-regexp="tel" 固话验证
+                      </div>
+                    </td>
+
+                    <th class="text-center">
+                      例子
+                    </th>
+                    <td>
+                        <pre>
+                          <input type="text" class="layui-input" placeholder="输入固话"
+                            lay-verify="verify-control" 
+                            data-regexp="tel"
+                            null-msg="输入固话"
+                            error-msg="固话号格式不对"
+                          >
+                        </pre>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="text-center">
+                      <span required-mark>
+                        邮箱
+                      </span>
+                    </th>
+                    <td>
+                      <input type="text" class="layui-input" placeholder="输入邮箱"
+                        lay-verify="verify-control" 
+                        data-regexp="e"
+                        null-msg="输入邮箱"
+                        error-msg="邮箱号格式不对"
+                      >
+                      <div class="margin-t10">
+                        规则：data-regexp="e" 邮箱验证
+                      </div>
+                    </td>
+
+                    <th class="text-center">
+                      例子
+                    </th>
+                    <td>
+                        <pre>
+                          <input type="text" class="layui-input" placeholder="输入邮箱"
+                            lay-verify="verify-control" 
+                            data-regexp="e"
+                            null-msg="输入邮箱"
+                            error-msg="邮箱号格式不对"
+                          >
+                        </pre>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="text-center">
+                      <span required-mark>
+                        网址
+                      </span>
+                    </th>
+                    <td>
+                      <input type="text" class="layui-input" placeholder="输入网址"
+                        lay-verify="verify-control" 
+                        data-regexp="url"
+                        null-msg="输入网址"
+                        error-msg="网址号格式不对"
+                      >
+                      <div class="margin-t10">
+                        规则：data-regexp="url" 网址验证
+                      </div>
+                    </td>
+
+                    <th class="text-center">
+                      例子
+                    </th>
+                    <td>
+                        <pre>
+                          <input type="text" class="layui-input" placeholder="输入网址"
+                            lay-verify="verify-control" 
+                            data-regexp="url"
+                            null-msg="输入网址"
+                            error-msg="网址号格式不对"
+                          >
+                        </pre>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="text-center">
+                      <span required-mark>
+                        身份证
+                      </span>
+                    </th>
+                    <td>
+                      <input type="text" class="layui-input" placeholder="身份证"
+                        lay-verify="verify-control" 
+                        data-regexp="id"
+                        null-msg="输入身份证号"
+                        error-msg="身份证号格式不对"
+                      >
+                      <div class="margin-t10">
+                        规则：data-regexp="id" 身份证证
+                      </div>
+                    </td>
+
+                    <th class="text-center">
+                      例子
+                    </th>
+                    <td>
+                        <pre>
+                          <input type="text" class="layui-input" placeholder="身份证"
+                            lay-verify="verify-control" 
+                            data-regexp="id"
+                            null-msg="输入身份证号"
+                            error-msg="身份证号格式不对"
+                          >
+                        </pre>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="text-center">
+                      <span required-mark>
+                        日期
+                      </span>
+                    </th>
+                    <td>
+                      <input type="text" class="layui-input" placeholder="格式：2014/01/21 或 2014-01-21"
+                        lay-verify="verify-control" 
+                        data-regexp="date"
+                        null-msg="输入日期"
+                        error-msg="日期格式不对"
+                      >
+                      <div class="margin-t10">
+                        规则：data-regexp="date" 日期验证
+                      </div>
+                    </td>
+
+                    <th class="text-center">
+                      例子
+                    </th>
+                    <td>
+                        <pre>
+                          <input type="text" class="layui-input" placeholder="输入日期"
+                            lay-verify="verify-control" 
+                            data-regexp="date"
+                            null-msg="输入日期"
+                            error-msg="日期格式不对"
+                          >
+                        </pre>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="text-center">
+                      <span required-mark>
+                        允许为空，<br>但如有输入就要符合规则
+                      </span>
+                    </th>
+                    <td>
+                      <input type="text" class="layui-input" placeholder="可为空或输入email"
+                        lay-verify="verify-control" 
+                        data-regexp="e"
+                        error-msg="邮箱格式不对"
+                        empty-ignore-verify
+                      >
+                      <ul class="margin-t10">
+                        <li>
+                          规则：data-regexp="e" 邮箱验证
+                        </li>
+                        <li>
+                          规则：empty-ignore-verify 允许为空
+                        </li>
+                      </div>
+                    </td>
+
+                    <th class="text-center">
+                      例子
+                    </th>
+                    <td>
+                        <pre>
+                          <input type="text" lay-verify="verify-control" class="layui-input" placeholder="可为空或输入email"
+                            data-regexp="e"
+                            error-msg="邮箱格式不对"
+                            empty-ignore-verify
+                          >
+                        </pre>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="text-center">
+                      <span required-mark>
+                        多条规则验证
+                      </span>
+                      <div class="text-red f12">
+                        
+                          多条规则是，格式为：<br>
+                          <b>[规则1, ... ,规则n]</b><br>
+                          用英文“,”逗号隔开
+                        
+                      </div>
+                    </th>
+                    <td>
+                      <input type="text" class="layui-input" placeholder="输入手机号或固话"
+                        lay-verify="verify-control" 
+                        data-regexp="[m,tel]"
+                        null-msg="输入手机号或固话"
+                        error-msg="手机号或固话格式不对"
+                      >
+                      <div class="margin-t10">
+                        规则：data-regexp="[m,tel]" 手机号或固话验证
+                      </div>
+                    </td>
+
+                    <th class="text-center">
+                      例子
+                    </th>
+                    <td>
+                        <pre>
+                          <input type="text" class="layui-input" placeholder="输入手机号或固话"
+                            lay-verify="verify-control" 
+                            data-regexp="[m,tel]"
+                            null-msg="输入手机号或固话"
+                            error-msg="手机号或固话格式不对"
+                          >
+                        </pre>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <div class="text-center pop-footer">
+              <div class="padding-l15 padding-r15 padding-t5 padding-b5">
+                <div class="media">
+                  <div class="media-side text-nowrap vertical-middle">
+                    打印状态：
+                  </div>
+                  <div class="media-body text-left vertical-middle">
+                    <div class="inline-block border-right">
+                      <table>
+                        <colgroup>
+                          <col width="100">
+                          <col width="100">
+                          <col width="100">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="padding-l5 padding-r5 padding-b5">
+                              <label>
+                                <input type="checkbox" class="vertical-middle" lay-ignore>
+                                <span>报名表</span>
+                              </label>
+                            </td>
+                            <td class="padding-l5 padding-r5 padding-b5">
+                              <label>
+                                <input type="checkbox" class="vertical-middle" lay-ignore>
+                                <span>承诺书</span>
+                              </label>
+                            </td>
+                            <td class="padding-l5 padding-r5 padding-b5">
+                              <label>
+                                <input type="checkbox" class="vertical-middle" lay-ignore>
+                                <span>身份证</span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="padding-l5 padding-r5">
+                              <label>
+                                <input type="checkbox" class="vertical-middle" lay-ignore>
+                                <span>学历证明</span>
+                              </label>
+                            </td>
+                            <td class="padding-l5 padding-r5">
+                              <label>
+                                <input type="checkbox" class="vertical-middle" lay-ignore>
+                                <span>区域证明</span>
+                              </label>
+                            </td>
+                            <td class="padding-l5 padding-r5">
+                              
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="media-side text-nowrap vertical-middle padding-l10 padding-l15">
+                    <button type="button" class="layui-btn layui-btn-danger min-width-100" lay-filter="form" lay-submit>
+                      打印全部
+                    </button>
+                    <button type="button" class="layui-btn min-width-100" lay-filter="form" lay-submit>
+                      打印报名表
+                    </button>
+                    <button type="button" class="layui-btn min-width-100" lay-filter="form" lay-submit>
+                      打印承诺书
+                    </button>
+                    <button type="button" class="layui-btn min-width-100" lay-filter="form" lay-submit>
+                      打印身份证
+                    </button>
+                    <button type="button" class="layui-btn min-width-100" lay-filter="form" lay-submit>
+                      打印学历证明
+                    </button>
+                    <button type="button" class="layui-btn min-width-100" lay-filter="form" lay-submit>
+                      打印区域证明
+                    </button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+
+  </div>
+  <!-- 内容主体区域 end-->
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['form'], function(){
+  var form = layui.form;
+
+  $('pre').each(function(index, el) {
+    var html=$(this).html();
+    $(this).html(htmlEncode($.trim(html)));
+  });
+});
+
+//html转义
+function htmlEncode(value) {
+    return $('<div/>').text(value).html().replace(/\s+/g,'<br>&nbsp;&nbsp;');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,539 @@
+@import (inline) "sm.min.css";
+@import (inline) "sm-extend.min.css";
+
+@import "font.less";
+@import "common.less";
+
+@import "login.less";
+
+@import "signup.less";
+
+.page-title{
+  font-size: 1rem;
+  line-height:2.5rem;
+  height:2.5rem;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  margin: 0;
+  &+.content{
+    top: 2.5rem;
+  }
+}
+
+.page-btn{
+    background: url(images/btn-bg.jpg) no-repeat center top/100% 100%;
+    font-size: .85rem;
+    width: 100%;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    color: #fff;
+    border: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    &:active{
+      opacity: .8;
+    }
+    &~.content{
+    bottom: 2.4rem;
+  }
+  }
+
+.page-bg{
+  background: url(images/title-bg.jpg) no-repeat center top/100% 100%;
+  position: absolute;
+  width: 100%;
+  top :0;
+  left: 0;
+  height: 4.5rem;
+}
+
+.form-box{
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: 0px 0px .5rem rgba(0, 0, 0, 0.2);
+  min-height: 5rem;
+  margin: .85rem;
+  padding:.85rem 0;
+  position: relative;
+  >.form-box-title{
+    font-size: 0.85rem;
+    border-left: 2px solid #333;
+    padding-left: .4rem;
+    line-height: 1;
+  }
+  .box-cnt{
+    padding:.6rem;
+  }
+}
+
+.form-group-item{
+  margin-top: .6rem;
+  &:first-child{
+    margin-top: 0;
+  }
+}
+.form-group{
+  background: #f8f8f8;
+  border-radius: .3rem;
+  padding: .5rem .7rem;
+
+  .control-label{
+    color: #b4b4b4;
+    font-size: .75rem;
+  }
+  .txt{
+    text-align: right;
+    font-size: .75rem;
+  }
+  .input-control{
+    width: 100%;
+    display: block;
+    border: 0 none;
+    padding: 0;
+    background-color: transparent;
+    text-align: right;
+    font-size: .75rem;
+    outline: 0;
+  }
+  select.input-control{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    direction: rtl;
+  }
+}
+
+.scroll-x{
+  overflow-x: auto;
+  overflow-y: hidden;
+  .scroll-tbl{
+    font-size: .75rem;
+    white-space: nowrap;
+    border-top: 1px solid #e7e7e7;
+    color: #b4b4b4;
+    padding: .75rem 0;
+    &:first-child{
+      border-top: 0 none;
+      padding-top:0;
+    }
+    &:last-child{
+      padding-bottom:0;
+    }
+  }
+}
+
+.result-tips{
+  padding:.5rem 1rem;
+  img{
+    width: 2.5rem;
+    height: 2.5rem;
+    vertical-align: middle;
+  }
+  .txt{
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-left: .5rem;
+  }
+}
+
+.payment-style{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  >li{
+    padding: .7rem 0;
+    border-bottom: 1px solid #eee;
+    &:last-child{
+      border-bottom: 0 none;
+      padding-bottom: 0;
+    }
+  }
+  .custom-checkbox{
+    display: block;
+  }
+}
+
+.payment-detail-list{
+  >li{
+    font-size: 14px;
+    padding: .7rem 0;
+    border-bottom: 1px solid #eee;
+    &:last-child{
+      border-bottom: 0 none;
+      padding-bottom: 0;
+    }
+  }
+  .media-side{
+    width: 18%;
+  }
+  .media-body{
+    background-color: #f8f8f8;
+    padding: .5rem;
+  }
+}
+
+//直播列表
+.living-broadcast-list{
+  .broadcast-link{
+    display: block;
+  }
+  >.item{
+    position: relative;
+    .label{
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      line-height: 1;
+      padding: 10px;
+      font-size: .5rem;
+      &.text-orange{
+        background-color: rgba(255, 102, 0, 0.7);
+      }
+    }
+  }
+}
+.living-broadcast-content{
+  .content-block{
+    padding: .5rem 0rem;
+    margin: 0;
+  }
+  .card{
+    margin: 1rem;
+  }
+}
+
+//直播详情
+.video-box{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 230px;
+  border-bottom: #eee 1px solid;
+  .video-obj{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #000;
+  }
+}
+.video-tab{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 230px;
+    .tab-link{
+      height: 40px;
+      line-height: 40px;
+    }
+}
+.video-tab-content{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 270px;
+  bottom: 0;
+  //background-color: #fff;
+  >.tab{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+  }
+}
+
+
+.react-chat-list{
+  img{
+    vertical-align: middle;
+  }
+  >.item{
+    padding: .75rem;
+    margin: .75rem 0;
+    line-height: 1.5;
+    background: #fff;
+
+  }
+  .dark-label{
+    color: #999;
+    font-size: .7rem;
+  }
+  .txt{
+    color: #999;
+    font-size: .7rem;
+    margin-top: .8em;
+  }
+}
+
+.react-chat-box{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 50px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.form-btm-bar{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  overflow: hidden;
+  &:after{
+    content:' ';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    background-color: #eee;
+  }
+  .comment-textarea{
+    padding: 7px 10px;
+    height: 50px;
+    font-size: 12px;
+    line-height: 18px;
+    border: 0 none;
+    overflow-y: auto;
+    resize:none;
+    background-color: #fff;
+    width: 100%;
+  }
+  .comment-btn{
+    height: 50px;
+    width: 60px;
+    border-radius: 0;
+  }
+  .emote-btn{
+      width: 50px;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      font-size: 28px;
+  }
+}
+
+.no-data{
+  text-align: center;
+  >img{
+    width: 45%;
+  }
+  >.no-data-txt{
+    color: #999;
+    font-size: 18px;
+    margin-top: 1em;
+  }
+}
+
+/*上传学籍资料*/
+.bar-nav-top{
+  background-color: @color-blue;
+  .title{
+    color: #fff;
+  }
+  .button-link{
+    color: #fff;
+  }
+}
+.footer-btn-group{
+  height: 100%;
+  >button.item{
+    padding: 0 .5rem;
+    border: 0 none;
+    font-size: .75rem;
+    line-height: 2.2rem;
+    height: 2.2rem;
+    &.btn-gray{
+      background-color: #ddd;
+      color: #999;
+    }
+    &.btn-blue{
+      background-color: @color-blue;
+      color: #fff;
+    }
+    &.btn-orange{
+      background-color: @color-orange;
+      color: #fff;
+    }
+  }
+}
+
+.uploader-input-box {
+    position: relative;
+    width: 77px;
+    height: 77px;
+    border: 1px solid #D9D9D9;
+    img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      &+.mark{
+        display: block;
+      }
+    }
+
+    .mark{
+      display: none;
+      background-color: rgba(0,0,0,.2);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+    }
+
+    &:before, &:after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      z-index: 3;
+    }
+    &:before {
+        width: 4px;
+        height: 39.5px;
+    }
+    &:after {
+        width: 39.5px;
+        height: 4px;
+    }
+    &:active{
+      border-color:#D9D9D9;
+      &:before, &:after{
+          background-color: #D9D9D9;
+      }
+    }
+
+    .uploader-input {
+        position: absolute;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+}
+
+.upload-tips{
+  li{
+    line-height: 1.2;
+    margin: .5rem 0;
+    color: #999;
+  }
+}
+
+.rest-card{
+  box-shadow: none;
+}
+
+.width-rem{
+  width: 1.2rem !important;
+}
+.panel-box{
+  margin: .8rem 0;
+  background-color: #fff;
+  .list-block{
+    font-size: 0.75rem;
+    select,
+    textarea,
+    input{
+      font-size: 0.75rem;
+      &::-webkit-input-placeholder{font-size: .65rem;}
+      &:-moz-placeholder{font-size: .65rem;}                  /* Firefox版本4-18 */
+      &::-moz-placeholder{font-size: .65rem;}                  /* Firefox版本19+ */
+      &:-ms-input-placeholder{font-size: .65rem;} 
+    }
+    .item-content{
+      padding-right: .75rem;
+    }
+  }
+  .panel-box-header{
+    padding: .5rem .75rem;
+    > h3{
+      font-size: .8rem;
+      margin: 0;
+      color: #666;
+    }
+    .icon-down:before{
+      content: "\e612";
+    }
+    .view-sample{
+      float: right;
+      color: #fff;
+      margin-top: .1rem;
+      & + h3{
+          float: none;
+          margin-right: 5em;
+          overflow: hidden;
+          //white-space: nowrap;
+          //text-overflow: ellipsis;
+      }
+    }
+  }
+  .panel-box-body{
+    &.with-pad{
+      padding: .75rem;
+    }
+    .icon-right{
+      color: @color-gray;
+    }
+    .item-input{
+      white-space: nowrap;
+      text-overflow:ellipsis;
+      overflow: hidden;
+      color: #777;
+      input,textarea,select{
+        color: #777 !important;
+         
+      }
+    }
+    .item-title{
+      white-space: normal;
+      .text-orange-dark{
+        vertical-align: middle;
+        display: inline-block;
+        line-height: 1;
+      }
+    }
+  }
+  &.closed{
+    .panel-box-header{
+      .icon-down{
+        &:before{
+          content: "\e611";
+        }
+      }
+    }
+    .panel-box-body{
+      display: none;
+    }
+  }
+}

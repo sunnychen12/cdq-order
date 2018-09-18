@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>新增通知</title>
+
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+</head>
+<body class="cdq-body">
+  <!-- 面包屑 start-->
+  <div class="cdq-breadcrumb-box">
+    <div class="pull-right">
+      <button type="button" class="layui-btn layui-btn-primary layui-btn-sm min-width-80">返回</button>
+    </div>
+    <span class="layui-breadcrumb visible">
+      <a href="">首页</a><span lay-separator>&gt;</span>
+      <a><cite>新增直播</cite></a>
+    </span>
+  </div>
+  <!-- 面包屑 start-->
+
+
+  <!-- 内容主体区域 start-->
+  <div class="cdq-content">
+    <form class="layui-form">
+      <div class="box">
+        <div class="box-body">
+          <div class="table-responsive">
+            <table class="layui-table" lay-skin="nob" table-no-hover>
+              <colgroup>
+                <col width="90"></col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td class="padding-right-none">
+                    直播主题：
+                  </td>
+                  <td>
+                      <input type="text" class="layui-input" placeholder="输入直播主题"
+                        lay-verify="verify-control" 
+                        data-regexp="*1"
+                        null-msg="输入直播主题"
+                        error-msg="输入直播主题"
+                      >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="padding-right-none">
+                    参与对象：
+                  </td>
+                  <td>
+                    <span class="margin-r10">已选择  <a href="#" class="text-blue text-underline">10</a>  名学生做作为参与对象</span>
+                    <button type="button" class="layui-btn layui-btn-primary" data-role="add-receiver">选择接收学生</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="padding-right-none vertical-top">
+                    <div class="padding-t5">
+                      直播简介：
+                    </div>
+                  </td>
+                  <td>
+                    <img src="dist/images/temp/editor.png" class="img-responsive" width="100%" height="300">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="padding-right-none">
+                    主讲：
+                  </td>
+                  <td>
+                    <ul class="layui-btn-container">
+                      <li class="layui-btn layui-btn-sm">
+                        赵继海
+                        <i class="layui-icon margin-right-none margin-l5" data-role="person-remove">&#x1006;</i>
+                      </li>
+
+                      <li class="layui-btn layui-btn-primary layui-btn-sm" data-role="add-receiver">
+                        <i class="layui-icon">&#xe654;</i>
+                        选择主讲
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="padding-right-none">
+                    助教：
+                  </td>
+                  <td>
+                    <ul class="layui-btn-container">
+                      <li class="layui-btn layui-btn-sm">
+                        刘明书
+                        <i class="layui-icon margin-right-none margin-l5" data-role="person-remove">&#x1006;</i>
+                      </li>
+
+                      <li class="layui-btn layui-btn-primary layui-btn-sm" data-role="add-receiver">
+                        <i class="layui-icon">&#xe654;</i>
+                        选择助教
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="padding-right-none">
+                    主讲口令：
+                  </td>
+                  <td>
+                      <input type="text" class="layui-input" placeholder="可以自由设置，不设置就默认随机生成">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="padding-right-none">
+                    助教口令：
+                  </td>
+                  <td>
+                      <input type="text" class="layui-input" placeholder="可以自由设置，不设置就默认随机生成">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="padding-right-none">
+                    观看口令：
+                  </td>
+                  <td>
+                      <input type="text" class="layui-input" placeholder="可以自由设置，不设置则无须验证，可随意观看">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="padding-right-none">
+                    分享观看：
+                  </td>
+                  <td>
+                      <input type="radio" name="r1" value="nv" title="允许" checked>
+                      <input type="radio" name="r1" value="nv" title="不允许">
+                      <div class="layui-gray gray9 f12">
+                        注：如果设置了允许，则可以分享到微信、QQ、微博，允许游客观看如果设置不允许，则必须设置观看口令，只允许受邀请的参与对象观看
+                      </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="padding-right-none">
+                    直播封面：
+                  </td>
+                  <td>
+                      <div class="layui-row layui-col-space15">
+                        <div class="layui-col-sm3" data-id="img-upload-helper">
+                          <div class="layui-upload-drag full-width padding-none" id="upload">
+                            <div class="embed-responsive">
+                              <div class="embed-responsive-item">
+                                <div class="elem-middle-align full-height position-absolute">
+                                  <div class="inner">
+                                    <i class="layui-icon">&#xe67c;</i>
+                                    <p>上传直播封面</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="layui-col-sm3" data-id="cover-img">
+                          <div class="embed-responsive img-panel" data-id="fancy-img">
+                            <img class="img-responsive embed-responsive-item" role="button" layer-src="dist/images/temp/timg.jpg" src="dist/images/temp/timg.jpg" alt="图片名">
+                            <i class="layui-icon position-absolute text-white f30" title="删除" data-role="img-remove" role="button" style="right:5px;">&#x1007;</i>
+                            <!--
+                              <img layer-src="大图地址" src="缩略图" alt="图片名">
+                            -->
+                          </div>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div> 
+        </div>
+        <div class="box-footer text-right">
+            <button type="button" class="layui-btn layui-btn-danger min-width-100" lay-filter="form" lay-submit>
+            确认发布
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- 内容主体区域 end-->
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['form','layer'], function(){
+  var form = layui.form
+      , layer=layui.layer;
+
+  //图片放大效果
+  layer.photos({
+    photos: '[data-id="fancy-img"]'
+    ,anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+  });
+
+  $(document)
+  //删除封面图
+  .on('click', '[data-role="img-remove"]', function(event) {
+    $(this).closest('[data-id="cover-img"]').fadeOut(100, function() {
+      $(this).remove()
+    });
+  })
+  //删除所选“主讲/助教”
+  .on('click', '[data-role="person-remove"]', function(event) {
+    $(this).parent().remove();
+  });
+
+  //添加接收对象
+  $('[data-role="add-receiver"]').on('click', function(event) {
+    var $w=$(window);
+    layer.open({
+      id: 'add-receiver',
+      title:'选择发送对象',
+      type: 2,
+      scrollbar:false,
+      area: [$w.width()+'px', $w.height()+'px'],
+      content: 'add-receiver.html'
+    }); 
+  });
+});
+
+</script>
+</body>
+</html>

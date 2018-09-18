@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="ie67"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if gte IE 9]><html><![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>登录页</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+<link rel="stylesheet" href="dist/css/login.css">
+</head>
+<body>
+
+<div class="stu-login-page login-page">
+  <div class="login-container center-block">
+    <div class="media full-height">
+      <div class="media-body vertical-middle">
+        <div class="login-index-wrap">
+          <div class="login-index-inner">
+            <h1 class="title">学生登录平台</h1>
+            <div class="margin-t5" style="height: 18px;">
+              <div class="error-tips" style="display: none; line-height: 1;">
+                <img src="dist/css/images/error.png">
+                <span class="text-red f12">验证提示</span>
+              </div>
+            </div>
+            <div class="media login-control-group">
+              <div class="media-side">
+                <i class="icomoon-icon">&#xe902;</i>
+              </div>
+              <div class="media-body">
+                <input type="text" class="layui-input" placeholder="请输入手机号码">
+              </div>
+            </div>
+            <div class="media login-control-group">
+              <div class="media-side">
+                <i class="icomoon-icon">&#xe901;</i>
+              </div>
+              <div class="media-body">
+                <input type="text" class="layui-input" placeholder="请输入验证码">
+              </div>
+              <div class="media-side ymz-box text-nowrap">
+                <div style="min-width:71px;">
+                  <div role="button" class="get-qrcode" data-role="yz">获取验证码</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <button type="button" class="layui-btn layui-btn-fluid layui-btn-lg" data-role="submit">登录</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['util','form'], function(){
+  var util = layui.util
+      , form = layui.form;
+
+  //发送验证码
+  $('[data-role="yz"]').click(function(event) {
+      var _this=this;
+      if( $(this).hasClass('disabled') ) return;
+
+      var nowTime=new Date().getTime()
+          , endTime = nowTime+60*1000;
+
+      $(_this).addClass('disabled');
+       
+      util.countdown(endTime, nowTime, function(date, serverTime, timer){
+        //date[0] '天' date[1] '时' date[2] '分' date[3] '秒'
+        if(date[2]==1){
+          $(_this).html('重新发送(60)');
+        }
+        else if(date[3]==0){
+          $(_this).html('发送验证码').removeClass('disabled');
+        }
+        else{
+          $(_this).html('重新发送('+ date[3]+')');
+        }
+      });
+  });
+});
+</script>
+</body>
+</html>

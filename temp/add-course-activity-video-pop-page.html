@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>框架页</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+<style type="text/css">
+html,body{
+  height: 100%;
+}
+</style>
+</head>
+<body>
+<form class="layui-form" action="">
+<div class="pop-footer">
+  <div class="padding10 text-right">
+    <button type="button" class="layui-btn layui-btn-default min-width-100">
+      预览
+    </button>
+    <button class="layui-btn layui-btn-danger min-width-100" lay-filter="form" lay-submit>
+      确认添加
+    </button>
+  </div>
+</div>
+
+<div class="pop-content">
+    <div class="padding10">
+      <table class="layui-table margin-none" table-no-hover>
+        <colgroup>
+          <col width="20%"></col>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th class="text-center">视频标题</th>
+            <td>
+              <div class="media">
+                <div class="media-side padding-r10">
+                  <input type="text" name="title" class="layui-input" autocomplete="off" lay-verify="required" placeholder="视频学习" style="width:150px;">
+                </div>
+                <div class="media-body">
+                  <!--verify-control 自己定义规则-->
+                  <input type="text" name="title" class="layui-input" autocomplete="off" lay-verify="verify-control" placeholder="请输入视频活动标题，字数不能超过15个字"
+                    data-regexp="*1-15"
+                    null-msg="请输入视频活动标题"
+                    error-msg="视频活动标题字数不能超过15个字"
+                  >
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">视频简介</th>
+            <td>
+              <textarea placeholder="请输入视频活动简介，字数不能超过200个字" class="layui-textarea" rows="8" lay-verify="verify-control"
+                data-regexp="*1-200"
+                null-msg="请输入视频活动简介"
+                error-msg="活动简介字数不能超过200个字"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">视频文件</th>
+            <td>
+              <div class="layui-row layui-col-space15">
+                <div class="layui-col-sm3">
+                  <div class="layui-upload-drag full-width padding-none" id="upload">
+                    <div class="embed-responsive">
+                      <div class="embed-responsive-item">
+                        <div class="elem-middle-align full-height position-absolute">
+                          <div class="inner">
+                            <i class="layui-icon">&#xe67c;</i>
+                            <p>上传视频文件</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="layui-col-sm3">
+                  <div class="embed-responsive img-panel">
+                    <img src="dist/images/temp/timg.jpg" class="img-responsive embed-responsive-item">
+                    <div class="img-txt-mark">
+                      <div class="img-label layui-clear padding10">
+                        <div class="pull-right padding-l10">已完成</div>
+                        <div class="oh text-overflow text-nowrap">
+                          XXXXX.MP4
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="layui-col-sm3">
+                  <div class="embed-responsive img-panel">
+                    <img src="dist/images/temp/timg.jpg" class="img-responsive embed-responsive-item">
+                    <div class="img-txt-mark">
+                      <div class="img-label layui-clear padding10">
+                        <div class="pull-right padding-l10">上传中</div>
+                        <div class="oh text-overflow text-nowrap">
+                          XXXXX.MP4
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="layui-col-sm3">
+                  <div class="embed-responsive img-panel">
+                    <img src="dist/images/temp/timg.jpg" class="img-responsive embed-responsive-item">
+                    <div class="img-txt-mark">
+                      <div class="img-label layui-clear padding10">
+                        <div class="pull-right padding-l10">转码中</div>
+                        <div class="oh text-overflow text-nowrap">
+                          XXXXX.MP4
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">视频讲义</th>
+            <td>
+              <img src="dist/images/temp/editor.png" class="img-responsive" width="100%" height="300">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+</form>
+<script type="text/javascript" src='dist/loadjs.js'></script>
+
+<script type="text/javascript">
+layui.use(['form','layer','upload'], function(){
+  var form = layui.form,
+      upload = layui.upload,
+      layer = layui.layer;
+
+  //拖拽上传
+  upload.render({
+    elem: '#upload'
+    ,url: ''
+    ,done: function(res){
+      console.log(res)
+    }
+  });
+
+  //监听提交
+  form.on('submit(form)', function(data){
+
+    var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+    parent.layer.close(index); //再执行关闭  
+
+    return false;
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>学习平台</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+</head>
+<body no-fixbar>
+
+<div class="test-page-side flow-full-height bg-white">
+  <div class="layui-btn layui-btn-danger btn-fixed-bottom flat position-absolute" data-btn="submit-paper">提交试卷</div>
+
+  <div class="test-page-header">
+    <div class="media full-height">
+      <div class="media-body vertical-middle gray6">
+        完成 6/60 题
+      </div>
+      <div class="media-side vertical-middle text-nowrap">
+        <i class="fa fa-fw fa-clock-o f24 vertical-middle gray9"></i>
+        <span class="inline-block vertical-middle">00:67:25</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="test-page-content flow-full-height full-width">
+    <div ele-scroll>
+      <div class="padding-l20 padding-r20 padding-t15 padding-b20">
+        <ul class="subject-paging layui-clear oh" style="max-height:200px;" id="itemContainer">
+          <li class="actived"><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li class="actived"><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li class="actived"><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li class="actived"><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li class="actived"><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li class="actived"><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li class="actived"><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li class="actived"><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li class="actived"><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li class="actived"><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li class="actived"><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li class="actived"><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+        </ul>
+        <div class="holder text-center margin-t15"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="test-page-main flow-full-height bg-white">
+  <div class="test-page-header">
+    <div class="media full-height">
+      <div class="media-body vertical-middle gray6">
+        单项选题，请选择一个答案（共20题，每题2分，共40分）
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-fixed-bottom position-absolute">
+    <div class="text-right border-top" style="padding:4px 10px 3px;">
+      <button type="button" class="layui-btn layui-btn-sm" data-role="prev-topic">上一题</button>
+      <button type="button" class="layui-btn layui-btn-sm" data-role="next-topic">下一题</button>
+    </div>
+  </div>
+
+  <div class="test-page-content flow-full-height full-width">
+    <div ele-scroll data-role="content-scroll">
+      <div class="padding-b20">
+        <form class="layui-form">
+          <ul class="subject-list position-relative">
+            <li class="item">
+              <div class="item-title">
+                <div class="media">
+                  <div class="media-side text-nowrap order">
+                    <span class="layui-bg-blue">1</span>
+                  </div>
+                  <div class="media-body txt">
+                      【单选题】婴幼儿保育与教育的教育对象除了0~3岁婴幼儿之外，还包括（    ）。
+                      <span class="layui-badge margin-l10">3 分</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-body">
+                <ol>
+                  <li><input type="radio" name="r1" checked title="A. 政府管理部门"></li>
+                  <li><input type="radio" name="r1" title="B. 教养人"></li>
+                  <li><input type="radio" name="r1" title="C. 早教教师"></li>
+                  <li><input type="radio" name="r1" title="D. 社区自愿者"></li>
+                </ol>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item-title">
+                <div class="media">
+                  <div class="media-side text-nowrap order">
+                    <span>2</span>
+                  </div>
+                  <div class="media-body txt">
+                      【多选题】婴幼儿保育与教育的教育对象除了0~3岁婴幼儿之外，还包括（    ）。
+                      <span class="layui-badge margin-l10">3 分</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-body">
+                <ol>
+                  <li><input type="checkbox" name="ck1" checked title="A. 政府管理部门" lay-skin="primary"></li>
+                  <li><input type="checkbox" name="ck1" title="B. 教养人" lay-skin="primary"></li>
+                  <li><input type="checkbox" name="ck1" title="C. 早教教师" lay-skin="primary"></li>
+                  <li><input type="checkbox" name="ck1" title="D. 社区自愿者" lay-skin="primary"></li>
+                </ol>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="item-title">
+                <div class="media">
+                  <div class="media-side text-nowrap order">
+                    <span>3</span>
+                  </div>
+                  <div class="media-body txt">
+                      【填空题】迎着
+                      <input type="text" class="subject-input f14 no-bg">，他快速的向我
+                      <input type="text" class="subject-input f14 no-bg">
+
+                      <span class="layui-badge margin-l10">3 分</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="item-title">
+                <div class="media">
+                  <div class="media-side text-nowrap order">
+                    <span>4</span>
+                  </div>
+                  <div class="media-body txt">
+                      【问答题】请用一段文字描述今天的心情
+                      <span class="layui-badge margin-l10">3 分</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-body">
+                <textarea placeholder="请在此填写你的答案" class="layui-textarea" rows="5"></textarea>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="item-title">
+                <div class="media">
+                  <div class="media-side text-nowrap order">
+                    <span>5</span>
+                  </div>
+                  <div class="media-body txt">
+                    【材料分析题】内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+                  </div>
+                  <div class="media-side text-nowrap vertical-middle padding-l15">
+                    <span class="layui-badge">共5小题，20分</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-body">
+                <ul>
+                  <li class="item">
+                    <div class="item-title">
+                      <div class="media">
+                        <div class="media-side text-nowrap order">
+                          <span>1</span>
+                        </div>
+                        <div class="media-body">
+                            <span class="txt">
+                              【单选题】婴幼儿保育与教育的教育对象除了0~3岁婴幼儿之外，还包括（    ）。
+                            </span>
+                            <span class="layui-badge margin-l10">3 分</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ol>
+                        <li><input type="radio" name="r2" checked title="A. 政府管理部门"></li>
+                        <li><input type="radio" name="r2" title="B. 教养人"></li>
+                        <li><input type="radio" name="r2" title="C. 早教教师"></li>
+                        <li><input type="radio" name="r2" title="D. 社区自愿者"></li>
+                      </ol>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="item-title">
+                      <div class="media">
+                        <div class="media-side text-nowrap order">
+                          <span>2</span>
+                        </div>
+                        <div class="media-body">
+                            <span class="txt">
+                              【多选题】婴幼儿保育与教育的教育对象除了0~3岁婴幼儿之外，还包括（    ）。
+                            </span>
+                            <span class="layui-badge margin-l10">3 分</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ol>
+                        <li><input type="checkbox" name="ck2" checked title="A. 政府管理部门" lay-skin="primary"></li>
+                        <li><input type="checkbox" name="ck2" title="B. 教养人" lay-skin="primary"></li>
+                        <li><input type="checkbox" name="ck2" title="C. 早教教师" lay-skin="primary"></li>
+                        <li><input type="checkbox" name="ck2" title="D. 社区自愿者" lay-skin="primary"></li>
+                      </ol>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="item-title">
+                      <div class="media">
+                        <div class="media-side text-nowrap order">
+                          <span>3</span>
+                        </div>
+                        <div class="media-body">
+                            <span class="txt">
+                              【填空题】迎着
+                              <input type="text" class="subject-input f14 no-bg">，他快速的向我
+                              <input type="text" class="subject-input f14 no-bg">
+                            </span>
+                            <span class="layui-badge margin-l10">3 分</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="item-title">
+                      <div class="media">
+                        <div class="media-side text-nowrap order">
+                          <span>4</span>
+                        </div>
+                        <div class="media-body">
+                            <span class="txt">【问答题】请用一段文字描述今天的心情</span>
+                            <span class="layui-badge margin-l10">3 分</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <textarea placeholder="请在此填写你的答案" class="layui-textarea" rows="5"></textarea>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['element','form','jPages','slimScroll','layer'], function(){
+  var element=layui.element
+      ,form = layui.form
+      ,layer = layui.layer;
+
+  //滚动条
+  function resizeBar(){
+    $("[ele-scroll]:visible").each(function(index, el) {
+      $(this).slimScroll({destroy: true}).height('auto');
+      $(this).slimscroll({
+        height: 'auto',
+        color: "#747474",
+        alwaysVisible:true,
+        size: "6px"
+      });
+    });
+  }
+  $(window).on('resize', function(event) {
+    resizeBar();
+  }).trigger('resize');
+
+  //页码索引 分页
+  $("div.holder").jPages({
+    containerID  : "itemContainer",
+    perPage      : 7*5,
+    midRange     : 4,
+    previous     : '',
+    next         : '',
+    delay        : 0
+  });
+
+
+  $(document)
+  //提交试卷
+  .on('click', '[data-btn="submit-paper"]', function(event) {
+    layer.confirm('你尚有18题未做完，未做的题目将无法得分，确定要提交？', {
+      icon: 0
+    }, function(index){
+      window.location.href="test-study-result-page.html";
+      layer.close(index);//关闭弹窗
+    }, function(index){
+      layer.close(index);//关闭弹窗
+    });
+  })
+  //点击试卷页码
+  .on('click', '.subject-paging li', function(event) {
+    event.preventDefault();
+    var index=$(this).index();
+    var $item=$('.subject-list > .item').eq(index);
+    if($item.length>0){
+      var scrollTop=$item.position().top+(index==0?0:20);
+      $('[data-role="content-scroll"]').slimscroll({ scrollTo: scrollTop })
+    }
+    
+  })
+  //上一题
+  .on('click', '[data-role="prev-topic"]', function(event) {
+    event.preventDefault();
+    /* Act on the event */
+  })
+  //下一题
+  .on('click', '[data-role="next-topic"]', function(event) {
+    event.preventDefault();
+    /* Act on the event */
+  });
+
+
+  //准备做题 提示
+  layer.confirm('\
+    <div>本测试，有以下三种题型，共60题，答题时间90分钟，满分100分，60分以上算及格，请认真答题！</div>\
+    <ul>\
+      <li>1、单项选题，请选择一个答案（共20题，每题2分，共40分）</li>\
+      <li>2、多项选题，请选择一个答案（共20题，每题2分，共40分）</li>\
+      <li>3、判断题，请选择一个答案（共20题，每题1分，共20分）</li>\
+    </ul>\
+  ', {
+    title:'准备做题',
+    area: '500px',
+    btn: ['开始答题','我再想想'] //按钮
+  }, function(index){
+    layer.close(index);
+  }, function(index){
+    layer.close(index);
+  });
+});
+</script>
+</body>
+</html>

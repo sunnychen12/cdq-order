@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>框架页</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+<style type="text/css">
+html,body{
+  height: 100%;
+}
+</style>
+</head>
+<body>
+<form class="layui-form" action="">
+<div class="pop-footer">
+  <div class="padding10 text-right">
+    <button type="button" class="layui-btn layui-btn-default min-width-100">
+      预览
+    </button>
+    <button class="layui-btn layui-btn-danger min-width-100" lay-filter="form" lay-submit>
+      确认添加
+    </button>
+  </div>
+</div>
+
+<div class="pop-content">
+    <div class="padding10">
+      <table class="layui-table margin-none" table-no-hover>
+        <colgroup>
+          <col width="20%"></col>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th class="text-center">文本标题</th>
+            <td>
+              <div class="media">
+                <div class="media-side padding-r10">
+                  <input type="text" name="title" class="layui-input" autocomplete="off" lay-verify="required" placeholder="文本学习" style="width:150px;">
+                </div>
+                <div class="media-body">
+                  <input type="text" name="title" class="layui-input" autocomplete="off" lay-verify="verify-control" placeholder="请输入文本活动标题，字数不能超过15个字"
+                    data-regexp="*1-15"
+                    null-msg="请输入文本活动标题"
+                    error-msg="文本活动标题数不能超过15个字"
+                  >
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">文本简介</th>
+            <td>
+              <textarea placeholder="请输入文本活动简介，字数不能超过200个字" class="layui-textarea" rows="8" lay-verify="verify-control"
+                data-regexp="*1-200"
+                null-msg="请输入文本简介"
+                error-msg="文本简介字数不能超过200个字"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">文本内容</th>
+            <td>
+              <img src="dist/images/temp/editor.png" class="img-responsive" width="100%" height="300">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+</form>
+<script type="text/javascript" src='dist/loadjs.js'></script>
+
+<script type="text/javascript">
+layui.use(['form','layer'], function(){
+  var form = layui.form,
+      layer = layui.layer;
+
+  //监听提交
+  form.on('submit(form)', function(data){
+
+    var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+    parent.layer.close(index); //再执行关闭  
+
+    return false;
+  });
+});
+</script>
+
+</body>
+</html>

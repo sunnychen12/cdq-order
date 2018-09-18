@@ -1,0 +1,22 @@
+.subject-btn{
+	font-size: 16px;
+	border: @border-color 1px solid;
+	border-radius: 3px;
+	height: 42px;
+	line-height: 42px;
+	padding: 0 10px;
+	min-width: 120px;
+	color: #666666;
+	cursor: pointer;
+	margin-left: 10px;
+	.generate-linear-gradient-bottom(#fdfdfd,#f1f1f1);
+	&:hover{
+		.generate-linear-gradient-bottom(#f1f1f1,#fdfdfd);
+	}
+	&.subject-btn-sm{
+		height: 32px;
+		line-height: 32px;
+		font-size: 14px;
+		min-width: 92px;
+	}
+}

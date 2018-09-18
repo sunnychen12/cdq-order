@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>练习题</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+</head>
+<body>
+
+<div class="site-header">
+  <div class="layui-container">
+    <div class="layui-clear">
+      <h1 class="site-title">
+        xxx系统
+        <!--会计职称考试练题系统-->
+      </h1>
+      <ul class="layui-nav">
+        <li class="layui-nav-item">
+          <a href="javascript:;"><img src="http://t.cn/RCzsdCq" class="layui-nav-img">hi,王小波</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">退出</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="site-main">
+  <div class="layui-container layui-clear">
+    <div class="site-side">
+      <div class="box">
+        <div class="box-header">
+          答题卡
+        </div>
+        <div class="box-body">
+          <ul class="ans-card">
+            <li class="ans-card-green"><span>1</span></li>
+            <li class="ans-card-green"><span>2</span></li>
+            <li class="ans-card-orange"><span>3</span></li>
+            <li class="ans-card-orange"><span>4</span></li>
+            <li class="ans-card-green"><span>5</span></li>
+            <li class="ans-card-green"><span>6</span></li>
+            <li class="ans-card-orange"><span>7</span></li>
+            <li class="ans-card-green"><span>8</span></li>
+            <li><span>9</span></li>
+            <li><span>10</span></li>
+            <li><span>11</span></li>
+            <li><span>12</span></li>
+            <li><span>13</span></li>
+            <li><span>14</span></li>
+            <li><span>15</span></li>
+            <li><span>16</span></li>
+            <li><span>17</span></li>
+            <li><span>18</span></li>
+            <li><span>19</span></li>
+            <li><span>20</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-header">
+          答题监测
+        </div>
+        <div class="box-body padding20">
+          <div class="camera-box">
+            <img src="dist/images/camera-pic.jpg" width="100%">
+          </div>
+          <div class="camera-tips margin-t15">
+            注：为了保障你的使用权益，系统将会实时监控你的视频画面，进行人脸匹对，如果匹对失败，将会暂停练题。请保持摄像头开启并能够拍摄到你的头部
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-content">
+      <div class="site-content-inner">
+        <form class="layui-form">
+          <div class="box margin-none subject-wrap">
+            <div class="box-body">
+              <div class="subject-box">
+                <div class="subject-type-name">
+                  <span>
+                    单选题 第1题
+                  </span>
+                </div>
+                <div class="subject-list">
+                  <div class="subject-item">
+                    <div class="subject-main-item">
+                      <div class="subject-title">
+                        3. 我国企业会计准则分为三个层次，它们是（      ）
+                      </div>
+                      <div class="subject-body">
+                        <ul class="sel-list">
+                          <li>
+                            <input type="radio" name="r1" value="nv" title="A. 基本准则、具体准则和应用指南" checked>
+                          </li>
+                          <li>
+                            <input type="radio" name="r1" value="nv" title="B. 一般准则、特殊准则和通用准则">
+                          </li>
+                          <li>
+                            <input type="radio" name="r1" value="nv" title="C. 一般准则、通用业务准则和特殊业务准则">
+                          </li>
+                          <li>
+                            <input type="radio" name="r1" value="nv" title="D. 基本准则、会计要素准则和会计报表准则">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="subject-ans-panel subject-error">
+                        <div class="media">
+                          <div class="media-side">
+                            答题情况
+                          </div>
+                          <div class="media-body">
+                            <ul>
+                              <li>
+                                正确答案：<span class="tips">A</span>
+                              </li>
+                              <li>
+                                你选择了：<span class="tips">B</span>
+                              </li>
+                              <li>
+                                <div class="tips">很遗憾，答错了！</div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-footer text-right">
+              <div class="padding-r30 padding-l30">
+                <button type="button" class="subject-btn">下一题</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['form'], function(){
+  var form = layui.form;
+
+  ;(function(){
+    var $side=$('.site-side:visible');
+    if($side.length>0){
+      $('.subject-wrap > .box-body').css('min-height', $side.height()-$('.subject-wrap > .box-footer').outerHeight()-2);
+    }
+  })();
+});
+</script>
+</body>
+</html>

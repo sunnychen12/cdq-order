@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>学习平台</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+</head>
+<body no-fixbar>
+
+<div class="test-page-side flow-full-height bg-white">
+  <div class="layui-btn layui-btn-danger btn-fixed-bottom flat position-absolute" data-btn="submit-paper">返回</div>
+
+  <div class="test-page-header">
+    <div class="media full-height">
+      <div class="media-body vertical-middle gray6">
+        完成 6/60 题
+      </div>
+      <div class="media-side vertical-middle text-nowrap">
+        <i class="fa fa-fw fa-clock-o f24 vertical-middle gray9"></i>
+        <span class="inline-block vertical-middle">00:67:25</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="test-page-content flow-full-height full-width">
+    <div ele-scroll>
+      <div class="padding-l20 padding-r20 padding-t15 padding-b20">
+        <ul class="subject-paging layui-clear oh" style="max-height:200px;" id="itemContainer">
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-green">2</span></li>
+          <li><span class="layui-bg-red">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-green">2</span></li>
+          <li><span class="layui-bg-red">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-green">2</span></li>
+          <li><span class="layui-bg-red">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-green">2</span></li>
+          <li><span class="layui-bg-red">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-green">2</span></li>
+          <li><span class="layui-bg-red">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-green">2</span></li>
+          <li><span class="layui-bg-red">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+          <li><span class="layui-bg-green">2</span></li>
+          <li><span class="layui-bg-red">1</span></li>
+          <li><span class="layui-bg-red">2</span></li>
+          <li><span class="layui-bg-green">1</span></li>
+        </ul>
+        <div class="holder text-center margin-t15"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="test-page-main flow-full-height bg-white">
+  <div class="test-page-header">
+    <div class="media full-height">
+      <div class="media-body vertical-middle gray6">
+        单项选题，请选择一个答案（共20题，每题2分，共40分）
+      </div>
+    </div>
+  </div>
+
+  <div class="test-page-content flow-full-height full-width">
+    <div ele-scroll>
+      <div class="padding-b20">
+        <form class="layui-form">
+          <ul class="subject-list">
+            <li class="item">
+              <div class="item-title">
+                <div class="media">
+                  <div class="media-side text-nowrap order">
+                    <span class="layui-bg-green">1</span>
+                  </div>
+                  <div class="media-body txt">
+                      【单选题】婴幼儿保育与教育的教育对象除了0~3岁婴幼儿之外，还包括（    ）。
+                      <span class="layui-badge margin-l10">3 分</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-body">
+                <ol>
+                  <li><input type="radio" name="r1" checked title="A. 政府管理部门"></li>
+                  <li><input type="radio" name="r1" title="B. 教养人"></li>
+                  <li><input type="radio" name="r1" title="C. 早教教师"></li>
+                  <li><input type="radio" name="r1" title="D. 社区自愿者"></li>
+                </ol>
+
+                <table class="layui-table" table-no-hover>
+                  <colgroup>
+                    <col width="25%"></col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="text-center">答题结果</th>
+                      <td>
+                        <span class="text-green">本题正确答案为 A，你答对了</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center">得分</th>
+                      <td>2 分</td>
+                    </tr>
+                    <tr>
+                      <th class="text-center">解析</th>
+                      <td>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字内容字内容字内容字内容字内容字内容字内容</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item-title">
+                <div class="media">
+                  <div class="media-side text-nowrap order">
+                    <span class="layui-bg-red">2</span>
+                  </div>
+                  <div class="media-body txt">
+                      【多选题】婴幼儿保育与教育的教育对象除了0~3岁婴幼儿之外，还包括（    ）。
+                      <span class="layui-badge margin-l10">3 分</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-body">
+                <ol>
+                  <li><input type="checkbox" name="ck1" checked title="A. 政府管理部门" lay-skin="primary"></li>
+                  <li><input type="checkbox" name="ck1" title="B. 教养人" lay-skin="primary"></li>
+                  <li><input type="checkbox" name="ck1" title="C. 早教教师" lay-skin="primary"></li>
+                  <li><input type="checkbox" name="ck1" title="D. 社区自愿者" lay-skin="primary"></li>
+                </ol>
+                <table class="layui-table" table-no-hover>
+                  <colgroup>
+                    <col width="25%"></col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="text-center">答题结果</th>
+                      <td>
+                        <span class="text-red">本题正确答案为 AB，你答错了</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center">得分</th>
+                      <td>2 分</td>
+                    </tr>
+                    <tr>
+                      <th class="text-center">解析</th>
+                      <td>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字内容字内容字内容字内容字内容字内容字内容</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="item-title">
+                <div class="media">
+                  <div class="media-side text-nowrap order">
+                    <span class="layui-bg-red">3</span>
+                  </div>
+                  <div class="media-body txt">
+                      【填空题】迎着
+                      <input type="text" class="subject-input f14 no-bg text-green" value="夕阳">，他快速的向我
+                      <input type="text" class="subject-input f14 no-bg text-red" value="走来">
+
+                      <span class="layui-badge margin-l10">3 分</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-body">
+                <table class="layui-table" table-no-hover>
+                  <colgroup>
+                    <col width="25%"></col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="text-center">答题结果</th>
+                      <td>
+                        <div>
+                          你的答案：第1空：<span class="text-green">答对</span>，第2空：走来：<span class="text-red">答错</span>
+                        </div>
+                        <div class="margin-t5">
+                          正确答案：第1空：夕阳，第2空：奔跑而来
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center">得分</th>
+                      <td>
+                        <span class="text-red">0 分</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center">解析</th>
+                      <td>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字内容字内容字内容字内容字内容字内容字内容</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="item-title">
+                <div class="media">
+                  <div class="media-side text-nowrap order">
+                    <span>4</span>
+                  </div>
+                  <div class="media-body txt">
+                      【问答题】请用一段文字描述今天的心情
+                      <span class="layui-badge margin-l10">3 分</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-body">
+                <textarea placeholder="请在此填写你的答案" class="layui-textarea" rows="5">今天心情很一般，非常一般，非常非常一般</textarea>
+                <table class="layui-table" table-no-hover>
+                  <colgroup>
+                    <col width="25%"></col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="text-center">得分</th>
+                      <td>
+                        请自行核对解析的答案，给自己评分
+                        <div class="layui-input-inline">
+                          <input class="layui-input layui-input-sm" placeholder="请填写0~20分，要诚实哦！" style="width:170px;">
+                        </div>
+                        <button class="layui-btn layui-btn-sm">确定</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center">解析</th>
+                      <td>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字内容字内容字内容字内容字内容字内容字内容</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="item-title">
+                <div class="media">
+                  <div class="media-side text-nowrap order">
+                    <span>5</span>
+                  </div>
+                  <div class="media-body txt">
+                      【问答题】请用一段文字描述今天的心情
+                      <span class="layui-badge margin-l10">3 分</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-body">
+                <textarea placeholder="请在此填写你的答案" class="layui-textarea" rows="5">今天心情很一般，非常一般，非常非常一般</textarea>
+                <table class="layui-table" table-no-hover>
+                  <colgroup>
+                    <col width="25%"></col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="text-center">得分</th>
+                      <td>
+                        请耐心等待老师的评分
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center">解析</th>
+                      <td>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字内容字内容字内容字内容字内容字内容字内容</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['element','form','jPages'], function(){
+  var element=layui.element;
+
+  //页码索引 分页
+  $("div.holder").jPages({
+    containerID  : "itemContainer",
+    perPage      : 7*5,
+    midRange     : 4,
+    previous     : '',
+    next         : '',
+    delay        : 0
+  });
+
+
+  $(document)
+  //提交试卷
+  .on('click', '[data-btn="submit-paper"]', function(event) {
+    history.back();
+  });
+});
+</script>
+</body>
+</html>

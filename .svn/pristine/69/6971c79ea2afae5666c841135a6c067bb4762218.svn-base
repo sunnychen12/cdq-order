@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>学习平台</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+</head>
+<body no-fixbar>
+
+<div class="act-page">
+  <div class="act-page-main flow-full-height">
+    <div class="act-page-main-header layui-clear">
+      <div class="page-back">
+        <i class="layui-icon f24">&#xe603;</i>
+      </div>
+
+      <div data-id="header">
+        <div class="radial-wrap">
+          <div class="radial" data-percent="20"></div>
+          <div class="data-tips gray9 padding-l5">
+            <span class="f12">已学</span>
+            <i class="data_num f12">20</i>
+            <i class="data_unit f12">%</i>
+          </div>
+        </div>
+
+        <div class="title-main">
+          <table height="60">
+            <tr>
+              <td>
+                <div class="title">
+                【视频学习】XXXX的定义
+                </div>
+              </td>
+              <td class="text-nowrap padding-l20">
+                <span class="layui-badge">3 分</span>
+                <a href="video-study-summary-iframe.html" class="gray9 margin-l15" data-role="view-desc">
+                  <i class="fa fa-fw fa-info-circle f16 vertical-middle"></i> 
+                  <u class="f12">查看简介</u>
+                </a>
+                <a href="video-study-summary-iframe.html" class="gray9 margin-l15" data-role="view-desc">
+                  <i class="fa fa-fw fa-newspaper-o f16 vertical-middle"></i>
+                  <u class="f12">查看讲义</u>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="act-page-main-content flow-full-height full-width overlay-wrapper">
+      <iframe src="video-study-iframe.html" name="page-iframe" width="100%" height="100%" id="page-iframe" frameborder="0" scrolling="auto"></iframe>
+      <div class="overlay" style="display: none;" loading>
+        <i class="layui-icon layui-anim layui-anim-rotate layui-anim-loop f32">&#xe63d;</i>
+      </div>
+    </div>
+  </div>
+  <div class="act-page-side flow-full-height">
+    <div class="layui-tab layui-tab-brief margin-none" lay-filter="act-side-tab">
+      <ul class="layui-tab-title act-side-tab">
+        <li class="layui-this"><i class="fa fa-fw fa-list"></i>目录</li>
+        <li><i class="fa fa-fw fa-comments-o"></i>评论</li>
+        <li><i class="fa fa-fw fa-edit"></i>笔记</li>
+      </ul>
+      <div class="layui-tab-content flow-full-height act-side-tab-content full-width padding-none">
+        <div class="layui-tab-item layui-show flow-full-height full-width">
+          <div class="tab-content flow-full-height full-width">
+            <ul class="chapter-list chapter-list-reset">
+              <li>
+                <div class="item-header">
+                  <div class="media">
+                    <div class="media-side text-nowrap toggle-list">
+                      <i class="fa fa-fw fa-minus-circle" data-role="toggle"></i>
+                    </div>
+                    <div class="media-body">
+                      第一章
+                    </div>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    <div class="item-header">
+                      <div class="media">
+                        <div class="media-side text-nowrap toggle-list">
+                          <i class="fa fa-fw fa-minus-circle" data-role="toggle"></i>
+                        </div>
+                        <div class="media-body">
+                          第一节
+                        </div>
+                      </div>
+                    </div>
+                    <ul>
+                      <li data-ifm-url="video-study-iframe.html" data-param='{
+                        "name":"XXXX的定义的定义",
+                        "score":"3",
+                        "activityType":"视频学习",
+                        "percent":"40"
+                      }'>
+                        <div class="item-header">
+                          <div class="media">
+                            <div class="media-side text-nowrap toggle-list">
+                              <i class="fa fa-play-circle-o"></i>
+                            </div>
+                            <div class="media-body">
+                              XXXX的定义的定义
+                            </div>
+                            <div class="media-side text-nowrap">
+                              <span class="layui-badge margin-l10">+3</span>
+                              <div class="radial margin-l5" data-percent="40"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="cur" data-ifm-url="text-study-iframe.html" data-param='{
+                        "name":"XXXX的定义的定义",
+                        "score":"0",
+                        "activityType":"文本学习",
+                        "percent":"50"
+                      }'>
+                        <div class="item-header">
+                          <div class="media">
+                            <div class="media-side text-nowrap toggle-list">
+                              <i class="fa fa-file-text-o"></i>
+                            </div>
+                            <div class="media-body">
+                              XXXX的定义
+                            </div>
+                            
+                            <div class="media-side text-nowrap oper-control">
+                              <div class="radial" data-percent="50"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li data-ifm-url="test-study-iframe.html" data-param='{
+                        "name":"XXXX的定义的定义",
+                        "score":"0",
+                        "activityType":"模拟测试",
+                        "percent":"100"
+                      }'>
+                        <div class="item-header">
+                          <div class="media">
+                            <div class="media-side text-nowrap toggle-list">
+                              <i class="fa fa-edit"></i>
+                            </div>
+                            <div class="media-body">
+                              XXXX的定义
+                            </div>
+                            
+                            <div class="media-side text-nowrap oper-control">
+                              <div class="radial" data-percent="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li data-ifm-url="discussion-study-iframe.html" data-param='{
+                        "name":"XXXX的定义的定义",
+                        "score":"0",
+                        "activityType":"互动讨论",
+                        "percent":"0"
+                      }'>
+                        <div class="item-header">
+                          <div class="media">
+                            <div class="media-side text-nowrap toggle-list">
+                              <i class="fa fa-commenting-o"></i>
+                            </div>
+                            <div class="media-body">
+                              XXXX的定义
+                            </div>
+                            
+                            <div class="media-side text-nowrap oper-control">
+                              <div class="radial" data-percent="0"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="item-header">
+                  <div class="media">
+                    <div class="media-side text-nowrap toggle-list">
+                      <i class="fa fa-fw fa-minus-circle" data-role="toggle"></i>
+                    </div>
+                    <div class="media-body">
+                      第二章
+                    </div>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    <div class="item-header">
+                      <div class="media">
+                        <div class="media-side text-nowrap toggle-list">
+                          <i class="fa fa-fw fa-minus-circle" data-role="toggle"></i>
+                        </div>
+                        <div class="media-body">
+                          第一节
+                        </div>
+                      </div>
+                    </div>
+                    <ul>
+                      <li>
+                        <div class="item-header">
+                          <div class="media">
+                            <div class="media-side text-nowrap toggle-list">
+                              <i class="fa fa-play-circle-o"></i>
+                            </div>
+                            <div class="media-body">
+                              XXXX的定义的定义
+                            </div>
+                            <div class="media-side text-nowrap">
+                              <span class="layui-badge margin-l10">+3</span>
+                              <div class="radial margin-l5" data-percent="40"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-header">
+                          <div class="media">
+                            <div class="media-side text-nowrap toggle-list">
+                              <i class="fa fa-file-text-o"></i>
+                            </div>
+                            <div class="media-body">
+                              XXXX的定义
+                            </div>
+                            
+                            <div class="media-side text-nowrap oper-control">
+                              <div class="radial" data-percent="50"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-header">
+                          <div class="media">
+                            <div class="media-side text-nowrap toggle-list">
+                              <i class="fa fa-edit"></i>
+                            </div>
+                            <div class="media-body">
+                              XXXX的定义
+                            </div>
+                            
+                            <div class="media-side text-nowrap oper-control">
+                              <div class="radial" data-percent="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-header">
+                          <div class="media">
+                            <div class="media-side text-nowrap toggle-list">
+                              <i class="fa fa-commenting-o"></i>
+                            </div>
+                            <div class="media-body">
+                              XXXX的定义
+                            </div>
+                            
+                            <div class="media-side text-nowrap oper-control">
+                              <div class="radial" data-percent="0"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="item-header">
+                  <div class="media">
+                    <div class="media-side text-nowrap toggle-list">
+                      <i class="fa fa-fw fa-plus-circle" data-role="toggle"></i>
+                    </div>
+                    <div class="media-body">
+                      第三章
+                    </div>
+                  </div>
+                </div>
+                <ul style="display:none">
+                  <li>
+                    <div class="item-header">
+                      <div class="media">
+                        <div class="media-side text-nowrap toggle-list">
+                          <i class="fa fa-fw fa-minus-circle" data-role="toggle"></i>
+                        </div>
+                        <div class="media-body">
+                          第一节
+                        </div>
+                      </div>
+                    </div>
+                    <ul>
+                      <li>
+                        <div class="item-header">
+                          <div class="media">
+                            <div class="media-side text-nowrap toggle-list">
+                              <i class="fa fa-play-circle-o"></i>
+                            </div>
+                            <div class="media-body">
+                              XXXX的定义的定义
+                            </div>
+                            <div class="media-side text-nowrap">
+                              <span class="layui-badge margin-l10">+3</span>
+                              <div class="radial margin-l5" data-percent="40"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-header">
+                          <div class="media">
+                            <div class="media-side text-nowrap toggle-list">
+                              <i class="fa fa-file-text-o"></i>
+                            </div>
+                            <div class="media-body">
+                              XXXX的定义
+                            </div>
+                            
+                            <div class="media-side text-nowrap oper-control">
+                              <div class="radial" data-percent="50"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-header">
+                          <div class="media">
+                            <div class="media-side text-nowrap toggle-list">
+                              <i class="fa fa-edit"></i>
+                            </div>
+                            <div class="media-body">
+                              XXXX的定义
+                            </div>
+                            
+                            <div class="media-side text-nowrap oper-control">
+                              <div class="radial" data-percent="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-header">
+                          <div class="media">
+                            <div class="media-side text-nowrap toggle-list">
+                              <i class="fa fa-commenting-o"></i>
+                            </div>
+                            <div class="media-body">
+                              XXXX的定义
+                            </div>
+                            
+                            <div class="media-side text-nowrap oper-control">
+                              <div class="radial" data-percent="0"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="layui-tab-item flow-full-height full-width">
+          <a class="view-more" href="#">查看更多></a>
+          <div class="tab-content flow-full-height full-width">
+            <div class="box no-bg border-none margin-none">
+              <div class="box-body padding15">
+                <form class="layui-form">
+                  <textarea placeholder="在这里发表评论与同学互动吧" class="layui-textarea border-none textarea-resize-none f12 gray9" style="background:#363636" maxlength="100" rows="5" 
+                    data-rel-txt="input-char-num"
+                    lay-verType="tips"
+                    lay-verify="verify-control"
+                    data-regexp="*1-100"
+                    null-msg="评论不能为空"
+                    error-msg="评论文字最多100个字"
+                  ></textarea>
+                  <div class="media margin-t10">
+                    <div class="media-body f12 gray6">
+                      还可以输入<b class="text-orange" data-id="input-char-num">100</b>字
+                    </div>
+                    <div class="media-side">
+                      <button type="button" class="layui-btn layui-btn-sm" lay-filter="form" lay-submit>
+                        发表
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="box-footer padding-l15 padding-r15" style="border-top:#313131 1px solid;">
+                <ul class="c-comments-list">
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side vertical-middle">
+                        <img src="http://t.cn/RCzsdCq">
+                      </div>
+                      <div class="media-body padding-l10">
+                        <div class="name">哟哟呀</div>
+                        <div class="time">2018-01-28 发表</div>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      自从购买了课程后，就爱上了,这个课程，老师
+                      的讲课内容都很清晰，对自己现在的工作也特别
+                      有帮助。
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side vertical-middle">
+                        <img src="http://t.cn/RCzsdCq">
+                      </div>
+                      <div class="media-body padding-l10">
+                        <div class="name">哟哟呀</div>
+                        <div class="time">2018-01-28 发表</div>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      自从购买了课程后，就爱上了,这个课程，老师
+                      的讲课内容都很清晰，对自己现在的工作也特别
+                      有帮助。
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side vertical-middle">
+                        <img src="http://t.cn/RCzsdCq">
+                      </div>
+                      <div class="media-body padding-l10">
+                        <div class="name">哟哟呀</div>
+                        <div class="time">2018-01-28 发表</div>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      自从购买了课程后，就爱上了,这个课程，老师
+                      的讲课内容都很清晰，对自己现在的工作也特别
+                      有帮助。
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layui-tab-item flow-full-height full-width">
+          <a class="view-more" href="#">查看更多></a>
+          <div class="tab-content flow-full-height full-width">
+            <div class="box no-bg border-none margin-none">
+              <div class="box-body padding15">
+                <form class="layui-form">
+                  <textarea placeholder="在这里可以快速记录笔记哦" class="layui-textarea border-none textarea-resize-none f12 gray9" style="background:#363636" rows="5" 
+                    lay-verType="tips"
+                    lay-verify="verify-control"
+                    data-regexp="*1"
+                    null-msg="笔记内容不能为空"
+                    error-msg="笔记内容不能为空"
+                  ></textarea>
+                  <div class="media margin-t10">
+                    <div class="media-body f12 gray6">
+                      <label>
+                        <input type="checkbox" class="vertical-middle" lay-ignore> 添加时间标注点
+                        <span class="time-btn margin-l5">
+                          <i class="layui-icon f12" role="button">&#xe623;</i>
+                          <i class="txt text-style-normal f12">02:15</i>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="media-side">
+                      <button type="button" class="layui-btn layui-btn-sm" lay-filter="form2" lay-submit>
+                        发表
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="box-footer padding-l15 padding-r15" style="border-top:#313131 1px solid;">
+                <ul class="c-comments-list">
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side vertical-middle">
+                        <img src="http://t.cn/RCzsdCq">
+                      </div>
+                      <div class="media-body padding-l10">
+                        <div class="name">哟哟呀</div>
+                        <div class="time">2018-01-28 记录</div>
+                      </div>
+                      <div class="media-side text-nowrap">
+                        <span class="time-btn margin-l5">
+                          <i class="layui-icon f12" role="button">&#xe623;</i>
+                          <i class="txt text-style-normal f12">02:15</i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      自从购买了课程后，就爱上了,这个课程，老师
+                      的讲课内容都很清晰，对自己现在的工作也特别
+                      有帮助。
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side vertical-middle">
+                        <img src="http://t.cn/RCzsdCq">
+                      </div>
+                      <div class="media-body padding-l10">
+                        <div class="name">哟哟呀</div>
+                        <div class="time">2018-01-28 记录</div>
+                      </div>
+                      <div class="media-side text-nowrap">
+                        <span class="time-btn margin-l5">
+                          <i class="layui-icon f12" role="button">&#xe623;</i>
+                          <i class="txt text-style-normal f12">02:15</i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      自从购买了课程后，就爱上了,这个课程，老师
+                      的讲课内容都很清晰，对自己现在的工作也特别
+                      有帮助。
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="media">
+                      <div class="media-side vertical-middle">
+                        <img src="http://t.cn/RCzsdCq">
+                      </div>
+                      <div class="media-body padding-l10">
+                        <div class="name">哟哟呀</div>
+                        <div class="time">2018-01-28 记录</div>
+                      </div>
+                      <div class="media-side text-nowrap">
+                        <span class="time-btn margin-l5">
+                          <i class="layui-icon f12" role="button">&#xe623;</i>
+                          <i class="txt text-style-normal f12">02:15</i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      自从购买了课程后，就爱上了,这个课程，老师
+                      的讲课内容都很清晰，对自己现在的工作也特别
+                      有帮助。
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+
+<!--头部信息模板-->
+<script type="text/html" id="header-tpl">
+  <div class="radial-wrap">
+    <div class="radial" data-percent="{{ d.percent }}"></div>
+    <div class="data-tips gray9 padding-l5">
+      <span class="f12">已学</span>
+      <i class="data_num f12">{{ d.percent }}</i>
+      <i class="data_unit f12">%</i>
+    </div>
+  </div>
+
+  <div class="title-main">
+    <table height="60">
+      <tr>
+        <td>
+          <div class="title">
+            【{{ d.activityType }}】{{ d.name }}
+          </div>
+        </td>
+        <td class="text-nowrap padding-l20">
+          {{# if(d.score>0){ }}
+            <span class="layui-badge">{{ d.score }} 分</span>
+          {{#  } }}
+
+          <a href="video-study-summary-iframe.html" class="gray9 margin-l15" data-role="view-desc">
+            <i class="fa fa-fw fa-info-circle f16 vertical-middle"></i> 
+            <u class="f12">查看简介</u>
+          </a>
+          <a href="video-study-summary-iframe.html" class="gray9 margin-l15" data-role="view-desc">
+            <i class="fa fa-fw fa-newspaper-o f16 vertical-middle"></i>
+            <u class="f12">查看讲义</u>
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</script>
+
+<script type="text/javascript">
+layui.use(['element','raphael','slimScroll','laytpl'], function(){
+  var element = layui.element
+      ,laytpl = layui.laytpl;
+
+  //扇形进度 方法
+  function sectorProgress(ele){
+    var percent = $(ele).data('percent');
+
+    $(ele).svgCircle({
+      w:20
+      ,borderSize:1
+      ,borderColor:'#fff'
+      ,fillColor: "#464646"
+      ,sectorFillColor:'#169a70'
+      ,percent:percent
+      ,padding:2
+    });
+
+    if(percent==100){
+      $(ele).append('<i class="layui-icon">&#xe618;</i>')
+    }
+  }
+  //扇形进度
+  ;(function () {
+    $('.radial')
+    .each(function() {
+        sectorProgress(this);
+    })
+  })();
+  
+  //分类 收缩/展开
+  $('.chapter-list').on('click', '[data-role="toggle"]', function(event) {
+    var $cate=$(this).closest('.item-header').next('ul');
+
+    if($cate.is(':hidden')){
+      $(this).addClass('fa-minus-circle').removeClass('fa-plus-circle');
+      $cate.slideDown();
+    }
+    else{
+      
+      $(this).addClass('fa-plus-circle').removeClass('fa-minus-circle');
+      $cate.slideUp();
+    }
+  });
+
+  //滚动条
+  function resizeBar(){
+    $(".tab-content:visible").each(function(index, el) {
+      var $p=$(this).closest('.layui-tab-item')
+          ,$m=$p.children('.view-more')
+          ,h=$p.height()-$m.height();
+
+      $(this).slimScroll({destroy: true}).height('auto');
+
+      $(this).slimscroll({
+        height: h,
+        color: "#747474",
+        alwaysVisible:true,
+        size: "6px"
+      });
+    });
+    
+  }
+  $(window).on('resize', function(event) {
+    resizeBar();
+  }).trigger('resize');
+
+  //选项卡
+  element.on('tab(act-side-tab)', function(data){
+    console.log(data);
+
+    resizeBar();
+  });
+
+  var $loading=$('[loading]')
+      , ifm=document.getElementById('page-iframe')
+      , $header=$('[data-id="header"]')
+      , loadPage=function(url){//页面加载
+        $loading.show();
+        ifm.src=url;
+      };
+
+  ifm.onload=function(){
+    $loading.hide();
+  }
+
+  $(document)
+  //点击加载页面
+  .on('click','[data-ifm-url]',function(event){
+    var ifmUrl=$(this).attr('data-ifm-url')
+        , param=$(this).data('param');
+
+    $(this).addClass('cur').siblings().removeClass('cur');
+
+    laytpl($('#header-tpl').html()).render(param, function(html){
+      $header.html(html);
+      sectorProgress($header.find('.radial').get(0));
+    });
+
+    loadPage(ifmUrl);
+  })
+  //查看讲义/简介
+  .on('click', '[data-role="view-desc"]', function(event) {
+    event.preventDefault();
+    loadPage($(this).attr('href'));
+  });
+});
+</script>
+</body>
+</html>

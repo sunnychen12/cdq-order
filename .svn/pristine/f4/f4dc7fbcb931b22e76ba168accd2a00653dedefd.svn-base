@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>框架页</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+<style type="text/css">
+html,body{
+  height: 100%;
+}
+</style>
+</head>
+<body>
+<form class="layui-form" action="">
+<div class="pop-footer">
+  <div class="padding10 text-right">
+    <button class="layui-btn layui-btn-danger min-width-100" lay-filter="form" lay-submit>
+      确认添加
+    </button>
+  </div>
+</div>
+
+<div class="pop-content">
+    <div class="padding10">
+      <table class="layui-table margin-none" table-no-hover>
+        <colgroup>
+          <col width="20%"></col>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th class="text-center">题型</th>
+            <td>
+              <input type="text" name="title" class="layui-input" autocomplete="off" lay-verify="verify-control" placeholder="请输入题型" value="多选题"
+                data-regexp="*1"
+                null-msg="请输入题型"
+                error-msg="请输入题型"
+              >
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">题目标题</th>
+            <td>
+              <textarea placeholder="请输入题目标题" class="layui-textarea" rows="5" lay-verify="verify-control"
+                data-regexp="*1"
+                null-msg="请输入题目标题"
+                error-msg="请输入题目标题"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">
+              题目选项
+              <div>
+                <i class="layui-icon f26 gray6" role="button" data-role="add-sel-item" data-rel-id="s1">&#xe61f;</i>
+              </div>
+            </th>
+            <td>
+              <ul class="upper-latin" id="s1">
+                <li>
+                  <div class="media input-group">
+                    <div class="media-body">
+                      <input type="text" name="title" class="layui-input" autocomplete="off" lay-verify="verify-control" placeholder="请输入选项"
+                        data-regexp="*1"
+                        null-msg="请输入选项"
+                        error-msg="请输入选项"
+                      >
+                    </div>
+                    <div class="media-side vertical-middle">
+                      <button type="button" class="layui-btn layui-bg-gray" data-role="remove-item">
+                      <i class="layui-icon" role="button">&#x1006;</i>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media input-group">
+                    <div class="media-body">
+                      <input type="text" name="title" class="layui-input" autocomplete="off" lay-verify="verify-control" placeholder="请输入选项"
+                        data-regexp="*1"
+                        null-msg="请输入选项"
+                        error-msg="请输入选项"
+                      >
+                    </div>
+                    <div class="media-side vertical-middle">
+                      <button type="button" class="layui-btn layui-bg-gray" data-role="remove-item">
+                      <i class="layui-icon" role="button">&#x1006;</i>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">题目标签</th>
+            <td>
+              <input type="text" name="title" class="layui-input" autocomplete="off" lay-verify="verify-control" placeholder="可以在这里为题目定义标签或分类属性，便于通过标签查找题目，多个标签用、号隔开。例如：第一章、第二节、练习题"
+                data-regexp="/^[^、]+(、[^、]+)*$/"
+                null-msg="请输入题目标题"
+                error-msg="多个标签用、号隔开"
+              >
+            </td>
+          </tr>
+          <tr>
+            <th class="text-center">题目解析</th>
+            <td>
+              <textarea placeholder="请输入题目解析" class="layui-textarea" rows="8"></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+</form>
+<script type="text/javascript" src='dist/loadjs.js'></script>
+
+<script type="text/javascript">
+layui.use(['form','layer'], function(){
+  var form = layui.form,
+      layer = layui.layer;
+
+  //监听提交
+  form.on('submit', function(data){
+    /*
+    var tpl='\
+      <tr>\
+        <td>\
+          <input type="checkbox" name="ck-item" lay-skin="primary">\
+        </td>\
+        <td>单选题</td>\
+        <td>\
+          （    ）不属于0~3岁婴幼儿保育的内容\
+        </td>\
+        <td>\
+          基础概念、幼儿保育\
+        </td>\
+        <td>\
+            <span role="button" title="删除"><i role="button" class="layui-icon f24">&#xe640;</i></span>\
+            <span role="button" title="修改"><i role="button" class="layui-icon f22">&#xe642;</i></span>\
+            <span role="button" title="查看"><i class="icomoon-icon im-w f20">&#xe901;</i></span>\
+        </td>\
+      </tr>\
+    ';
+
+    parent.$('[data-id="tbl"] tbody').append(tpl);
+
+    parent.globalLayForm.render('checkbox', 'form2');
+    */
+
+    var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+    parent.layer.close(index); //再执行关闭  
+
+    return false;
+  });
+
+  $(document)
+
+  //添加单选 选项
+  .on('click', '[data-role="add-sel-item"]', function(event) {
+    var relId=$(this).data('rel-id');
+    $('#'+relId).append('\
+      <li>\
+        <div class="media input-group">\
+          <div class="media-body">\
+            <input type="text" name="title" class="layui-input" autocomplete="off" lay-verify="verify-control" placeholder="请输入选项"\
+              data-regexp="*1"\
+              null-msg="请输入选项"\
+              error-msg="请输入选项"\
+            >\
+          </div>\
+          <div class="media-side vertical-middle">\
+            <button type="button" class="layui-btn layui-bg-gray" data-role="remove-item">\
+            <i class="layui-icon" role="button">&#x1006;</i>\
+            </button>\
+          </div>\
+        </div>\
+      </li>\
+    ');
+  })
+
+  //删除选项
+  .on('click', '[data-role="remove-item"]', function(event) {
+    event.preventDefault();
+    var $li=$(this).closest('li');
+    if($li.parent().children().length>2){
+      $(this).closest('li').remove();
+    }
+    else{
+      layer.msg('至少保留有两个选项');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

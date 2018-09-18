@@ -1,0 +1,222 @@
+<div class="box-style box margin-none">
+  <div class="box-header colum-tit">
+    <i class="fa">&#xf0ca;</i>
+    <h2 class="inline-block txt f18">通讯录</h2>
+  </div>
+  <div class="box-body padding15">
+    <div class="media">
+      <div class="media-side">
+        <img src="dist/images/image-placeholder-160x100.png" width="220" height="140">
+      </div>
+      <div class="media-body padding-l20 vertical-top">
+        <div class="f28">XXXXXXXXXXX</div>
+        <div class="margin-t10">
+          班级群号：44256617
+          <a href="#" class="layui-btn layui-btn-xs margin-l15 min-width-80">立即加入</a>
+        </div>
+      </div>
+    </div>
+
+    <fieldset class="layui-elem-field layui-field-title margin-t30 margin-b15">
+      <legend class="f16 text-bold text-green2">我的班主任</legend>
+    </fieldset>
+    <div class="layui-clear">
+      <ul class="address-list layui-row layui-col-space15">
+        <li class="item layui-col-sm4">
+          <div class="inner">
+            <div class="media">
+              <div class="media-side vertical-top">
+                <img src="http://t.cn/RCzsdCq" width="80" height="80" class="layui-circle">
+              </div>
+              <div class="media-body padding-l10">
+                <dl>
+                  <dt>
+                    <span class="f18 vertical-middle">赵晓瑞</span>
+                    <i class="layui-icon f16 text-green2 vertical-middle">&#xe616;</i>
+                  </dt>
+                  <dd class="layui-clear">
+                    <label class="pull-left">手机：</label>
+                    <div class="oh text-word-break">18099901101</div>
+                  </dd>
+                  <dd class="layui-clear">
+                    <label class="pull-left">邮箱：</label>
+                    <div class="oh text-word-break">r301011@qq.com</div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <fieldset class="layui-elem-field layui-field-title margin-t30 margin-b15">
+      <legend class="f16 text-bold text-green2">我的同学</legend>
+    </fieldset>
+
+    <div class="layui-clear">
+      <ul class="address-list layui-row layui-col-space15">
+        <li class="item layui-col-sm4">
+          <div class="inner">
+            <div class="media">
+              <div class="media-side vertical-top">
+                <img src="http://t.cn/RCzsdCq" width="80" height="80" class="layui-circle">
+              </div>
+              <div class="media-body padding-l10">
+                <dl>
+                  <dt>
+                    <span class="f18 vertical-middle">赵晓瑞</span>
+                    <i class="layui-icon f16 text-green2 vertical-middle">&#xe616;</i>
+                  </dt>
+                  <dd class="layui-clear">
+                    <label class="pull-left">性别：</label>
+                    <div class="oh text-word-break">女</div>
+                  </dd>
+                  <dd class="layui-clear">
+                    <label class="pull-left">所在地：</label>
+                    <div class="oh text-word-break">广州</div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item layui-col-sm4">
+          <div class="inner">
+            <div class="media">
+              <div class="media-side vertical-top">
+                <img src="http://t.cn/RCzsdCq" width="80" height="80" class="layui-circle">
+              </div>
+              <div class="media-body padding-l10">
+                <dl>
+                  <dt>
+                    <span class="f18 vertical-middle">赵晓瑞</span>
+                    <i class="layui-icon f16 text-green2 vertical-middle">&#xe616;</i>
+                  </dt>
+                  <dd class="layui-clear">
+                    <label class="pull-left">性别：</label>
+                    <div class="oh text-word-break">女</div>
+                  </dd>
+                  <dd class="layui-clear">
+                    <label class="pull-left">所在地：</label>
+                    <div class="oh text-word-break">广州</div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item layui-col-sm4">
+          <div class="inner">
+            <div class="media">
+              <div class="media-side vertical-top">
+                <img src="http://t.cn/RCzsdCq" width="80" height="80" class="layui-circle">
+              </div>
+              <div class="media-body padding-l10">
+                <dl>
+                  <dt>
+                    <span class="f18 vertical-middle">赵晓瑞</span>
+                    <i class="layui-icon f16 text-green2 vertical-middle">&#xe616;</i>
+                  </dt>
+                  <dd class="layui-clear">
+                    <label class="pull-left">性别：</label>
+                    <div class="oh text-word-break">女</div>
+                  </dd>
+                  <dd class="layui-clear">
+                    <label class="pull-left">所在地：</label>
+                    <div class="oh text-word-break">广州</div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item layui-col-sm4">
+          <div class="inner">
+            <div class="media">
+              <div class="media-side vertical-top">
+                <img src="http://t.cn/RCzsdCq" width="80" height="80" class="layui-circle">
+              </div>
+              <div class="media-body padding-l10">
+                <dl>
+                  <dt>
+                    <span class="f18 vertical-middle">赵晓瑞</span>
+                    <i class="fa f16 gray9 vertical-middle">&#xf05c;</i>
+                  </dt>
+                  <dd class="layui-clear">
+                    <label class="pull-left">性别：</label>
+                    <div class="oh text-word-break">女</div>
+                  </dd>
+                  <dd class="layui-clear">
+                    <label class="pull-left">所在地：</label>
+                    <div class="oh text-word-break">广州</div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item layui-col-sm4">
+          <div class="inner">
+            <div class="media">
+              <div class="media-side vertical-top">
+                <img src="http://t.cn/RCzsdCq" width="80" height="80" class="layui-circle">
+              </div>
+              <div class="media-body padding-l10">
+                <dl>
+                  <dt>
+                    <span class="f18 vertical-middle">赵晓瑞</span>
+                    <i class="layui-icon f16 text-green2 vertical-middle">&#xe616;</i>
+                  </dt>
+                  <dd class="layui-clear">
+                    <label class="pull-left">性别：</label>
+                    <div class="oh text-word-break">女</div>
+                  </dd>
+                  <dd class="layui-clear">
+                    <label class="pull-left">所在地：</label>
+                    <div class="oh text-word-break">广州</div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item layui-col-sm4">
+          <div class="inner">
+            <div class="media">
+              <div class="media-side vertical-top">
+                <img src="http://t.cn/RCzsdCq" width="80" height="80" class="layui-circle">
+              </div>
+              <div class="media-body padding-l10">
+                <dl>
+                  <dt>
+                    <span class="f18 vertical-middle">赵晓瑞</span>
+                    <i class="fa f16 gray9 vertical-middle">&#xf05c;</i>
+                  </dt>
+                  <dd class="layui-clear">
+                    <label class="pull-left">性别：</label>
+                    <div class="oh text-word-break">女</div>
+                  </dd>
+                  <dd class="layui-clear">
+                    <label class="pull-left">所在地：</label>
+                    <div class="oh text-word-break">广州</div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+layui.use(['element'], function(){
+  var element = layui.element;
+  
+});
+</script>
+</body>
+</html>

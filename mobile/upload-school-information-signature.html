@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page page-current">
+        <header class="bar bar-nav bar-nav-top">
+          <a class="icon icon-left pull-left external button-link"></a>
+          <h1 class="title">上传学籍资料-签名确认</h1>
+        </header>
+        <nav class="bar bar-footer padding-none">
+          <div class="grid-flex footer-btn-group">
+            <button type="button" class="item btn-gray" id="reSign">重签一次</button>
+            <button type="button" class="item btn-blue" data-id="submit" id="confirm-btn">保存，签名确认</button>
+          </div>
+        </nav>
+        <div class="content">
+
+          <div class="alert alert-warning text-orange" style="margin-top: .5rem;">
+            <div class="media">
+              <div class="media-side padding-r10">
+                <i class="icomoon-icon" style="font-size:1.4rem;">&#xe907;</i>
+              </div>
+              <div class="media-body vertical-top">
+                <ul class="unstyle-list">
+                  <li>1、签名必须是你姓名的全称，尽量清晰，完整</li>
+                  <li style="margin-top:.3rem;">2、签名将用于学籍注册，请务必确保签名真实有效</li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="content-padded">
+            <div class="enroll_box_qianm">
+              <div id="signature" class="signature"></div>
+              <div class="tips">
+                请在上方输入框中进行手写签名
+              </div>
+              <div class="signature-mark" style="display:none;">
+                <table width="100%" height="100%">
+                  <tr>
+                    <td valign="middle" style="font-size:90%;">如需重签请点击“重签一次”</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<!--签名功能相关js-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">jQuery.noConflict();</script>
+<script type="text/javascript" src="js/jSignature.min.noconflict.js"></script>
+<!--签名功能相关js-->
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/sm.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+<script type="text/javascript">
+;(function($){
+  //初始化签名插件
+  $("#signature").jSignature({
+    width : '100%',
+    height : '100%'
+  });
+
+  //重新签名
+  $("#reSign").click(function(){
+    var $signArea=$("#signature");
+    $signArea.jSignature("enable");
+
+    $(".signature-mark").hide();
+
+    $('#confirm-btn').prop('disabled', false);
+
+    $signArea.jSignature("reset");
+  });
+
+  //确认签名
+  $('#confirm-btn').click(function(){
+      var base30 =$("#signature").jSignature("getData", "base30");
+
+      if(base30 && base30.length==2 && base30[1]==""){
+        Zepto.alert('请签名');
+
+        return;
+      }
+      else{
+        //待提交数据
+        var imageData=addSign();
+        
+        $(this).prop('disabled', true);
+        $(".signature-mark").show();
+
+        Zepto.showPreloader('数据提交中...');
+        setTimeout(function(){
+          Zepto.hidePreloader();
+        },1000)
+      }
+  });
+
+  //将写字板的内容添加至展示区
+  function addSign(){
+    var src='';
+    var $signArea=$("#signature");
+    var data = $signArea.jSignature("getData", "image");
+    if(data && data.length > 1){
+      src = "data:" + data[0] + "," + data[1];
+      console.log(src)
+      $signArea.jSignature("disable");
+    }
+
+    return src;
+  }
+
+})(jQuery);
+</script>
+</body>
+</html>

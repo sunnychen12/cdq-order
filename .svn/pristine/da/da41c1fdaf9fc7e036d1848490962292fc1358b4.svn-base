@@ -1,0 +1,416 @@
+
+<div class="box padding15">
+  <table class="layui-table border-none text-center margin-none" lay-skin="row" table-no-hover>
+    <colgroup>
+      <col width="30%"></col>
+      <col width="14%"></col>
+      <col width="14%"></col>
+      <col width="14%"></col>
+      <col width="14%"></col>
+      <col width="14%"></col>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>
+          <dl class="text-left">
+            <dt class="f24 margin-b5">课程名称</dt>
+            <dd>班级：班级名称</dd>
+            <dd>班主任：班主任名称</dd>
+          </dl>
+        </td>
+        <td>
+          <div class="text-green2 f32">
+            <span class="with-badge">
+              14
+              <b class="layui-badge layui-bg-orange">6</b>
+            </span>
+          </div>
+          <div>XXXXXXXX</div>
+        </td>
+        <td>
+          <div class="text-green2 f32">21</div>
+          <div>XXXXXXXX</div>
+        </td>
+        <td>
+          <div class="text-green2 f32">
+            <span class="with-badge">
+              5
+              <b class="layui-badge layui-bg-green">3</b>
+            </span>
+          </div>
+          <div>XXXXXXXX</div>
+        </td>
+        <td>
+          <div class="text-green2 f32">76</div>
+          <div>XXXXXXXX</div>
+        </td>
+        <td class="border-right-none">
+          <div class="text-green2 f32">16</div>
+          <div>XXXXXXXX</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="box">
+  <div class="layui-tab layui-tab-brief margin-none" lay-filter="tab-filter-2">
+    <ul class="layui-tab-title layui-tab-title-lg padding-l30" data-role="sub-tab">
+      <li class="layui-this">
+        标题切换
+        <span class="layui-badge no-bg padding-none f18 text-green">
+          <i class="fa fa-exclamation-circle"></i>
+        </span>
+      </li>
+      <li>
+        标题切换
+        <span class="layui-badge no-bg padding-none f18 text-orange">
+          <i class="fa fa-exclamation-circle"></i>
+        </span>
+      </li>
+      <li>
+        标题切换
+        <span class="layui-badge no-bg padding-none f18 text-orange">
+          <i class="fa fa-exclamation-circle"></i>
+        </span>
+      </li>
+      <li disabled>
+        标题切换
+        <span class="layui-badge no-bg padding-none f18 gray9">
+          <i class="fa fa-lock"></i>
+        </span>
+      </li>
+      <li disabled>
+        标题切换
+        <span class="layui-badge no-bg padding-none f18 gray9">
+          <i class="fa fa-lock"></i>
+        </span>
+      </li>
+      <li>
+        标题切换
+        <span class="layui-badge no-bg padding-none f18 text-orange">
+          <i class="fa fa-exclamation-circle"></i>
+        </span>
+      </li>
+    </ul>
+    <div class="layui-tab-content padding-l30 padding-r30 padding-t20 padding-b20">
+      <div class="layui-tab-item layui-show">
+        <div class="layui-bg-gray padding-t30 padding-b30">
+          <table class="layui-table border-none text-center margin-none no-bg" lay-skin="row" table-no-hover>
+            <colgroup>
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="f16">0000-00-01~<br>0000-00-01</div>
+                  <div class="f12 gray6">（剩余XX天结束）</div>
+                  <div>XXXXX</div>
+                </td>
+                <td>
+                  <div class="gray6 f32">
+                    22
+                  </div>
+                  <div>XXXXXXXX</div>
+                </td>
+                <td>
+                  <div class="gray6 f32">
+                    <span class="with-badge">
+                      5
+                      <b class="layui-badge layui-bg-green">3</b>
+                    </span>
+                  </div>
+                  <div>XXXXXXXX</div>
+                </td>
+                <td>
+                  <div class="gray6 f32">76</div>
+                  <div>XXXXXXXX</div>
+                </td>
+                <td class="border-right-none">
+                  <div class="gray6 f32">16</div>
+                  <div>XXXXXXXX</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="margin-t20">
+          <ul class="course-list-1">
+            <li class="item">
+              <table class="tbl-1">
+                <tbody>
+                  <tr>
+                    <td width="20%" class="td1">
+                      <div class="padding-r20">
+                        <a href="course-study-index.html">
+                          <img src="dist/images/image-placeholder-160x100.png" width="100%" height="100" class="vertical-middle">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="25%" valign="top" class="td2">
+                      <div class="f20 margin-b10 margin-r10">XXXXXXXXXX</div>
+                      <ul class="lb-list">
+                        <li class="on"><span>xx</span></li>
+                        <li><span>xx</span></li>
+                        <li><span>xx</span></li>
+                        <li><span>xx</span></li>
+                      </ul>
+                    </td>
+                    <td width="55%" class="td3">
+                      <table class="tb-1-1">
+                        <tbody>
+                          <tr>
+                            <td width="20%">
+                              <div class="f20">
+                                80
+                                <span class="f14">%</span>
+                              </div>
+                              <div class="margin-t5">XXXXXX</div>
+                            </td>
+                            <td width="20%">
+                              <div class="f20">
+                                56
+                              </div>
+                              <div class="margin-t5">XXXXXX</div>
+                            </td>
+                            <td width="20%">
+                              <div class="f20">
+                                --
+                              </div>
+                              <div class="margin-t5">XXXXXX</div>
+                            </td>
+                            <td width="20%">
+                              <div class="f20">
+                                --
+                              </div>
+                              <div class="margin-t5">XXXXXX</div>
+                            </td>
+                            <td width="20%" class="status-td">
+                              <a href="course-study-index.html" class="layui-btn layui-btn-normal layui-btn-sm layui-btn-fluid margin5 entry-study">
+                                进入学习
+                              </a>
+                              <div class="status">
+                                <div class="f20 text-orange">
+                                  状态
+                                </div>
+                                <div class="margin-t5">XXXXXX</div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="item">
+              <table class="tbl-1">
+                <tbody>
+                  <tr>
+                    <td width="20%" class="td1">
+                      <div class="padding-r20">
+                        <a href="#">
+                          <img src="dist/images/image-placeholder-160x100.png" width="100%" height="100" class="vertical-middle">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="25%" valign="top" class="td2">
+                      <div class="f20 margin-b10 margin-r10">XXXXXXXXXX</div>
+                      <ul class="lb-list">
+                        <li class="on"><span>xx</span></li>
+                        <li><span>xx</span></li>
+                        <li><span>xx</span></li>
+                        <li><span>xx</span></li>
+                      </ul>
+                    </td>
+                    <td width="55%" class="td3">
+                      <table class="tb-1-1">
+                        <tbody>
+                          <tr>
+                            <td width="20%">
+                              <div class="f20">
+                                80
+                                <span class="f14">%</span>
+                              </div>
+                              <div class="margin-t5">XXXXXX</div>
+                            </td>
+                            <td width="20%">
+                              <div class="f20">
+                                56
+                              </div>
+                              <div class="margin-t5">XXXXXX</div>
+                            </td>
+                            <td width="20%">
+                              <div class="f20">
+                                --
+                              </div>
+                              <div class="margin-t5">XXXXXX</div>
+                            </td>
+                            <td width="20%">
+                              <div class="f20">
+                                --
+                              </div>
+                              <div class="margin-t5">XXXXXX</div>
+                            </td>
+                            <td width="20%" class="status-td">
+                              <a href="course-study-index.html" class="layui-btn layui-btn-normal layui-btn-sm layui-btn-fluid margin5 entry-study">
+                                进入学习
+                              </a>
+                              <div class="status">
+                                <div class="f20 text-red">
+                                  状态
+                                </div>
+                                <div class="margin-t5">XXXXXX</div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="item">
+              <table class="tbl-1">
+                <tbody>
+                  <tr>
+                    <td width="20%" class="td1">
+                      <div class="padding-r20">
+                        <a href="#">
+                          <img src="dist/images/image-placeholder-160x100.png" width="100%" height="100" class="vertical-middle">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="25%" valign="top" class="td2">
+                      <div class="f20 margin-b10 margin-r10">XXXXXXXXXX</div>
+                      <ul class="lb-list">
+                        <li class="on"><span>xx</span></li>
+                        <li><span>xx</span></li>
+                        <li><span>xx</span></li>
+                        <li><span>xx</span></li>
+                      </ul>
+                    </td>
+                    <td width="55%" class="td3">
+                      <table class="tb-1-1">
+                        <tbody>
+                          <tr>
+                            <td width="20%">
+                              <div class="f20">
+                                80
+                                <span class="f14">%</span>
+                              </div>
+                              <div class="margin-t5">XXXXXX</div>
+                            </td>
+                            <td width="20%">
+                              <div class="f20">
+                                56
+                              </div>
+                              <div class="margin-t5">XXXXXX</div>
+                            </td>
+                            <td width="20%">
+                              <div class="f20">
+                                --
+                              </div>
+                              <div class="margin-t5">XXXXXX</div>
+                            </td>
+                            <td width="20%">
+                              <div class="f20">
+                                --
+                              </div>
+                              <div class="margin-t5">XXXXXX</div>
+                            </td>
+                            <td width="20%" class="status-td">
+                              <a href="course-study-index.html" class="layui-btn layui-btn-normal layui-btn-sm layui-btn-fluid margin5 entry-study">
+                                进入学习
+                              </a>
+                              <div class="status">
+                                <div class="f20 text-green">
+                                  状态
+                                </div>
+                                <div class="margin-t5">XXXXXX</div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="layui-tab-item">2</div>
+      <div class="layui-tab-item">3</div>
+      <div class="layui-tab-item">4</div>
+      <div class="layui-tab-item">5</div>
+      <div class="layui-tab-item">6</div>
+    </div>
+  </div>     
+</div>
+
+
+
+<script type="text/javascript">
+layui.use(['element'], function(){
+  var element = layui.element;
+  
+
+  //侧边导航加载内容
+  function loadMenuCnt(url){
+    var $container=$('[data-id="side-tree-menu-content"]');
+    var $loading=$('[data-id="menu-content"] > .overlay');
+
+    $loading.show();
+    $.ajax({
+      url: url,
+      cache: false,
+      type: 'GET',
+      dataType: 'html',
+    })
+    .done(function(data) {
+      $container.html(data);
+    })
+    .fail(function() {
+      $container.html("功能建设中，敬请期待！");
+    })
+    .always(function(){
+      $loading.hide();
+    });
+  }
+
+
+  element.on('tab(tab-filter-2)', function(data){
+    console.log(data);
+  });
+  /*
+    //自定义tab事件 start
+      $(document).off('click','.layui-tab-title li');
+                
+      element.tab({
+        headerElem: '.layui-tab-title>li:not([disabled])'//设置没有禁用的选项卡才能触发
+      }); 
+
+      layui.onevent('element', 'tab', function(){
+        var $p=$(this).parent();
+        var index=$p.children().index(this);
+        console.log(index);
+
+        $p.next('.layui-tab-content')
+        .children('.layui-tab-item')
+        .removeClass('layui-show')
+        .eq(index).addClass('layui-show');
+      });
+    //自定义tab事件 end
+  */
+});
+</script>
+</body>
+</html>

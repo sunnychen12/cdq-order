@@ -1,0 +1,151 @@
+<div class="box-style box margin-none" data-id="note-page">
+  <div class="box-header colum-tit">
+    <i class="fa">&#xf0ca;</i>
+    <h2 class="inline-block txt f18">通知公告</h2>
+  </div>
+  <div class="box-body padding15">
+    <form class="layui-form" lay-filter="form-box">
+      <div class="box margin-none">
+        <div class="box-body padding15">
+          <div class="layui-row layui-col-space15 layui-form">
+            <div class="layui-col-xs6 layui-col-sm4">
+              <div class="layui-row layui-col-space15">
+                <div class="layui-col-xs3">
+                  <div class="control-label">
+                    <label>
+                      表单标签
+                    </label>
+                  </div>
+                </div>
+                <div class="layui-col-xs9">
+                  <input type="text" class="layui-input full-width">
+                </div>
+              </div>
+            </div>
+
+            <div class="layui-col-xs6 layui-col-sm4">
+              <div class="layui-row layui-col-space15">
+                <div class="layui-col-xs3">
+                  <div class="control-label">
+                    <label>
+                      表单标签
+                    </label>
+                  </div>
+                </div>
+                <div class="layui-col-xs9">
+                  <select name="modules" lay-search>
+                    <option value="">直接选择或搜索选择</option>
+                    <option value="1">layer</option>
+                    <option value="2">form</option>
+                    <option value="3">layim</option>
+                    <option value="3">layim</option>
+                    <option value="3">layim</option>
+                    <option value="3">layim</option>
+                    <option value="3">layim</option>
+                    <option value="3">layim</option>
+                    <option value="3">layim</option>
+                    <option value="3">layim</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-footer padding-top-none padding-bottom-none">
+          <table class="layui-table margin-none" lay-skin="nob" lay-size="sm">
+            <tbody>
+              <tr class="no-bg" width="1%">
+                <td class="padding-left-none text-nowrap border-right f14">
+                  快速查询
+                </td>
+                <td width="100%">
+                  <div class="filter-list">
+                    <span class="layui-btn layui-btn-gray actived">全部（452）</span>
+                    <span class="layui-btn layui-btn-gray">未读（450）</span>
+                    <span class="layui-btn layui-btn-gray">已读（2）</span>
+                  </div>
+                </td>
+                <td class="padding-right-none" width="1%">
+                  <div class="text-right">
+                    <button type="button" class="layui-btn min-width-100 bg-green2">查询</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="box-footer padding-l15 padding-r15">
+    <ul class="notes-list">
+      <li class="item">
+        <a href="notes-details-ajax-page.html">
+          <div class="title">
+            <span class="notes-type">【教务通知】</span>
+            <span class="name">
+              关于明天放假的事宜说明
+            </span>
+            <span class="layui-badge">new</span>
+            <span class="layui-badge">未读</span>
+          </div>
+          <div class="info">赵志明（管理员）于  13分钟前  发布</div>
+          <div class="txt">
+            关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a href="notes-details-ajax-page.html">
+          <div class="title">
+            <span class="notes-type">【教务通知】</span>
+            <span class="name">
+              关于明天放假的事宜说明
+            </span>
+            <span class="layui-badge">new</span>
+            <span class="layui-badge layui-btn-gray">已读</span>
+          </div>
+          <div class="info">赵志明（管理员）于  13分钟前  发布</div>
+          <div class="txt">
+            关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a href="notes-details-ajax-page.html">
+          <div class="title">
+            <span class="notes-type">【教务通知】</span>
+            <span class="name">
+              关于明天放假的事宜说明
+            </span>
+            <span class="layui-badge layui-btn-gray">已读</span>
+          </div>
+          <div class="info">赵志明（管理员）于  13分钟前  发布</div>
+          <div class="txt">
+            关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明关于明天放假的事宜说明
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script type="text/javascript">
+layui.use(['element','form'], function(){
+  var element = layui.element
+      ,form = layui.form;
+  var $container=$('[data-id="note-page"]');
+
+  form.render(null,'form-box');//更新所在容器内的全部表单状态
+
+  $container
+  //查看通知公告详情
+  .on('click', '.notes-list a', function(event) {
+    event.preventDefault();
+    loadSideMenuCnt($(this).attr('href'));
+  });
+  
+});
+</script>
+</body>
+</html>

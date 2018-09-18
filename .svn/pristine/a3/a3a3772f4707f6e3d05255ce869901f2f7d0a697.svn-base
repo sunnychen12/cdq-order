@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>框架页</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+</head>
+<body class="cdq-body">
+  <!-- 面包屑 start-->
+  <div class="cdq-breadcrumb-box">
+    <span class="layui-breadcrumb visible">
+      <a href="">首页</a><span lay-separator>&gt;</span>
+      <a><cite>打印收据</cite></a>
+    </span>
+  </div>
+  <!-- 面包屑 start-->
+
+
+  <!-- 内容主体区域 start-->
+  <div class="cdq-content">
+
+    <div class="box">
+      <div class="box-header">
+        <div class="f18">打印收据</div>
+      </div>
+      <div class="box-body padding20" data-id="print-area">
+        <div style="position:relative;">
+          <table width="100%" style="margin-bottom:7px;">
+            <tbody>
+              <tr>
+                <td align="left" width="33%">客户名：刘来芳</td>
+                <td align="middle">2018年07月10日</td>
+                <td align="right" width="33%">收据编号：B2018040300001</td>
+              </tr>
+            </tbody>
+          </table>
+          <table border="1" width="100%" cellpadding="10" cellspacing="0" class="layui-table margin-none text-center" style="text-align:center">
+            <colgroup>
+              <col width="30%">
+              <col width="10%">
+              <col width="10%">
+              <col width="10%">
+              <col width="10%">
+              <col width="10%">
+              <col width="10%">
+              <col width="10%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>名称</th>
+                <th>单位</th>
+                <th>数量</th>
+                <th>单价</th>
+                <th>应收</th>
+                <th>优惠</th>
+                <th>实收</th>
+                <th>未收</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>国家开放大学.本科：会计学</td>
+                <td>科</td>
+                <td>1</td>
+                <td>8600</td>
+                <td>8600</td>
+                <td>860</td>
+                <td>7740</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>合计</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>7740</td>
+                <td>860</td>
+                <td>7740</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>合计金额（大写）</th>
+                <td colspan="7">
+                  <div align="left">
+                    柒仟柒佰肆拾元整
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>备注</th>
+                <td colspan="7">
+                  <div align="left">
+                    <!--内容-->
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table width="100%" style="margin-top:7px;">
+            <tbody>
+              <tr>
+                <td align="left" width="33%">收款人：彭志强</td>
+                <td align="middle">收款方式：支付宝</td>
+                <td align="right" width="33%">收款单位：XXXX分校</td>
+              </tr>
+            </tbody>
+          </table>
+          <img src="dist/images/stamper.png" style="
+              position:absolute;
+              bottom:-50px;
+              right:0;
+              width:160px;
+            ">
+        </div>
+      </div>
+      <div class="box-footer text-right">
+          <button type="button" class="layui-btn layui-btn-danger min-width-100" data-role="print">
+            确认打印
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- 内容主体区域 end-->
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['element'], function(){
+  var element=layui.element;
+
+  //打印内容
+  $('[data-role="print"]').click(function(event) {
+    var w=window.open('about:blank','print');
+    var doc=w.document;
+    doc.open();
+    
+      doc.write(
+        '<style type="text/css">\
+            .layui-table{\
+              border-collapse: collapse;\
+              border-spacing: 0;\
+              border:0 none;\
+            }\
+            .layui-table td,.layui-table th{\
+              border: #dbdbdb 1px solid;\
+            }\
+          </style>'+
+        $('[data-id="print-area"]').html()
+      );
+    
+    //doc.write( $('[data-id="print-area"]').html() );
+    doc.close();
+    w.print();
+  });
+});
+</script>
+</body>
+</html>

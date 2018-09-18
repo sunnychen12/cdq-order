@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>框架页</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+<style type="text/css">
+html,body{
+  height: 100%;
+}
+</style>
+</head>
+<body>
+<form class="layui-form" action="">
+
+<div class="layui-tab layui-tab-card no-shadow margin-none border-none"  data-id="cnt">
+  
+</div>
+
+</form>
+
+<script type="text/template" id="cnt-tpl">
+  {{# if(d.tabId==1){ }}
+    <ul class="layui-tab-disabled">
+      <li class="layui-this">第一步：下载导入模板</li>
+      <li>第二步：选择文件批量导入题目</li>
+      <li>第在步：查看批量导入结果</li>
+    </ul>
+    <div class="layui-tab-content">
+      <div class="layui-tab-item layui-show">
+          <div class="pop-footer">
+            <div class="padding10 text-right">
+              <button type="button" class="layui-btn layui-btn-danger min-width-100" data-role="step-jump" data-step="2">
+                进入下一步
+              </button>
+            </div>
+          </div>
+
+          <div class="pop-content" style="top:41px;">
+              <div class="embed-responsive padding-none" style="position:static">
+                <div class="embed-responsive-item">
+                  <div class="elem-middle-align full-height position-absolute">
+                    <div class="inner">
+                        <div class="media" style="width:70%;margin-left:auto;margin-right:auto">
+                          <div class="media-side vertical-top padding-r10">
+                            <i class="fa fa-fw fa-exclamation-triangle f30 text-orange margin-t5"></i>
+                          </div>
+                          <div class="media-body gray6">
+                            在批量导入题目前，您可以在这里下载批量导入题目的模板，按要求填写好后进入下一步进行批量导入题目，暂时只支持导入单选题、多选题、判断题三种题型
+                          </div>
+                        </div>
+                        <div class="text-center margin-t30">
+                          <a href="#" class="layui-btn layui-btn-normal">下载批量导入题目EXCEL模板</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  {{# } else if(d.tabId==2){ }}
+    <ul class="layui-tab-disabled">
+      <li>第一步：下载导入模板</li>
+      <li class="layui-this">第二步：选择文件批量导入题目</li>
+      <li>第在步：查看批量导入结果</li>
+    </ul>
+    <div class="layui-tab-content">
+      <div class="layui-tab-item layui-show">
+        <div class="pop-footer">
+          <div class="padding10 text-right">
+            <button type="button" class="layui-btn layui-btn-danger min-width-100" data-role="step-jump" data-step="3">
+              确认导入
+            </button>
+          </div>
+        </div>
+
+        <div class="pop-content" style="top:41px;">
+            <div class="embed-responsive padding-none" style="position:static">
+              <div class="embed-responsive-item">
+                <div class="elem-middle-align full-height position-absolute">
+                  <div class="inner">
+                      <div class="media" style="width:70%;margin-left:auto;margin-right:auto">
+                        <div class="media-side  padding-r10">
+                          <i class="fa fa-fw fa-exclamation-triangle f30 text-orange margin-t5"></i>
+                        </div>
+                        <div class="media-body gray6 vertical-middle">
+                          请选择你需要批量导入题目的EXCEL文件，选择后点下方的“确认导入”即可
+                        </div>
+                      </div>
+
+                      <div class="media margin-t20" style="width:50%;margin-left:auto;margin-right:auto;">
+                        <div class="media-side padding-r10 text-nowrap vertical-middle">
+                          学期：
+                        </div>
+                        <div class="media-body gray6 vertical-middle">
+                          <select name="city" lay-search>
+                            <option value="">请选择</option>
+                            <option value="0">第一学期</option>
+                            <option value="1">第二学期</option>
+                            <option value="2">第三学期</option>
+                            <option value="3">第四学期</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="media input-group margin-t20" style="width:50%;margin-left:auto;margin-right:auto;">
+                        <div class="media-body">
+                          <input type="text" name="title" class="layui-input">
+                        </div>
+                        <div class="media-side vertical-middle">
+                          <button type="button" class="layui-btn layui-btn-normal">
+                            选择文件
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  {{# } else if(d.tabId==3){ }}
+    <ul class="layui-tab-disabled">
+      <li>第一步：下载导入模板</li>
+      <li>第二步：选择文件批量导入题目</li>
+      <li class="layui-this">第在步：查看批量导入结果</li>
+    </ul>
+    <div class="layui-tab-content">
+      <div class="layui-tab-item layui-show">
+          <div class="pop-footer">
+            <div class="padding10 text-right">
+              <button type="button" class="layui-btn layui-btn-primary min-width-100" data-role="step-jump" data-step="2">
+                继续导入
+              </button>
+              <button type="button" class="layui-btn layui-btn-danger min-width-100" data-role="close">
+                返回
+              </button>
+            </div>
+          </div>
+
+          <div class="pop-content" style="top:41px;">
+              <div class="embed-responsive padding-none" style="position:static">
+                <div class="embed-responsive-item">
+                  <div class="elem-middle-align full-height position-absolute">
+                    <div class="inner">
+                        <div class="media" style="width:70%;margin-left:auto;margin-right:auto">
+                          <div class="media-side  padding-r10">
+                            <i class="fa fa-fw fa-exclamation-triangle f30 text-orange margin-t5"></i>
+                          </div>
+                          <div class="media-body gray6 vertical-middle">
+                            本次共导入了 <b class="text-orange">130</b> 条数据，成功 <b class="text-orange">100</b> 条，失败 <b class="text-orange">30</b> 条。失败记录可以点下面按钮下载查看失败原因。
+                          </div>
+                        </div>
+                        
+                        <div class="text-center margin-t30">
+                          <a href="#" class="layui-btn layui-btn-normal" style="width:230px">下载导入成功记录（100条）</a>
+                        </div>
+
+                        <div class="text-center margin-t30">
+                          <a href="#" class="layui-btn layui-btn-danger" style="width:230px">下载导入失败记录（30条）</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  {{# } }}
+</script>
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+
+<script type="text/javascript">
+layui.use(['form','layer','laytpl'], function(){
+  var form = layui.form,
+      laytpl = layui.laytpl,
+      layer = layui.layer;
+
+  var $container=$('[data-id="cnt"]');
+  var tpl=$('#cnt-tpl').html();
+
+  $(document)
+  //步骤跳转
+  .on('click', '[data-role="step-jump"]', function(event) {
+    var step=$(this).data('step');
+    stepJump(step);
+  })
+  //关闭弹窗
+  .on('click', '[data-role="close"]', function(event) {
+    var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+    parent.layer.close(index); //再执行关闭  
+  });
+  
+  //步骤跳转
+  function stepJump(step){
+    laytpl(tpl).render({tabId:step}, function(html){
+      $container.html(html);
+      form.render('select');
+    });
+  }
+
+  stepJump(1);
+
+});
+</script>
+
+</body>
+</html>

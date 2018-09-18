@@ -1,0 +1,146 @@
+/*登录样式*/
+@login-h:900px;
+.login-wrapper{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	left: 0;
+	top: 0;
+	background: #fff2f2;
+	overflow: hidden;
+}
+
+.login-main{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 80px;
+	background: url(images/login3-bg.jpg) no-repeat top center #1479de;
+	background-size: auto 100%;
+}
+@media (min-height: @login-h){
+	.login-main{
+		bottom: 100px;
+	}
+}
+.ie-adjust{
+	.login-main{
+		bottom: 100px;
+	}
+}
+
+.login-footer{
+	height: 80px;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	color: #fff;
+	background: #0f64a5;
+
+}
+@media (min-height: @login-h){
+	.login-footer{
+		height: 100px;
+	}
+}
+.ie-adjust{
+	.login-footer{
+		height: 100px;
+	}
+}
+
+.login-main-center{
+	position: absolute;
+	top: 10%;
+	bottom: 10%;
+	width: 100%;
+}
+
+.login-top{
+	.txt{
+		line-height: 1;
+		padding-left: 20px;
+		margin-left: 20px;
+		border-left: 2px solid #fff;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 24px;
+	}
+}
+
+.login-box{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 360px;
+	margin-left: -180px;
+	.ck{
+		span{
+			color: #fff !important;
+		}
+	}
+}
+
+.login-btn{
+	background:#66d354;
+	border-radius: 23px;
+	height: 46px;
+}
+
+.login-form-group{
+	position: relative;
+	.layui-input{
+		height: 46px;
+		border: 0 none;
+		border-radius: 23px;
+		padding-right: 20px;
+	}
+
+	.icomoon-icon{
+		position: absolute;
+		color: #999999;
+		font-size: 22px;
+		line-height: 1;
+		left: 12px;
+		top: 50%;
+		margin-top: -11px;
+		z-index: 2;
+		~ .layui-input{
+			padding-left: 40px;
+		}
+
+		~ .tips_par_box{
+			.layui-input{
+				padding-left: 40px;
+			}
+		}
+		~ .re-send-qr{
+			color: #00b386;
+			position: absolute;
+			z-index: 2;
+			font-size: 14px;
+			height: 38px;
+			line-height: 38px;
+			width: 102px;
+			text-align: center;
+			right: 0;
+			top: 0;
+			cursor: pointer;
+			&.disabled{
+				color: #999;
+				cursor: not-allowed;
+			}
+			~ .layui-input{
+				padding-right: 110px;
+			}
+			~ .tips_par_box{
+				.layui-input{
+					padding-right: 110px;
+				}
+			}
+		}
+	}
+}

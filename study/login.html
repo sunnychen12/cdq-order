@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="ie67"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if gte IE 9]><html><![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>学习平台</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+<link rel="stylesheet" href="dist/css/login.css">
+</head>
+<body>
+<div class="login-wrapper">
+  <div class="login-main">
+    <div class="box-center full-height position-relative padding-none">
+      <div class="login-main-center full-width position-absolute">
+        <div class="login-box">
+          <div class="login-container padding30">
+            <div class="login-con-in">
+              <div class="tab-panel">
+                <form class="layui-form">
+                  <div class="text-center f18">登录平台</div>
+                  <div class="margin-t30 login-form-group">
+                    <i class="icomoon-icon">&#xe902;</i>
+                    <input type="text" class="layui-input" lay-verType="tips" autocomplete="off" lay-verify="verify-control" placeholder="请输入账号"
+                      data-regexp="*1"
+                      null-msg="请输入账号"
+                    >
+                  </div>
+                  <div class="margin-t15 login-form-group">
+                    <i class="icomoon-icon">&#xe900;</i>
+                    <input type="password" class="layui-input" lay-verType="tips" autocomplete="off" lay-verify="verify-control" placeholder="请输入密码"
+                      data-regexp="*1"
+                      null-msg="请输入密码"
+                    >
+                  </div>
+                  <div class="margin-t10 text-right">
+                    <span role="button" class="gray9" data-role="f-psw">忘记密码?</span>
+                  </div>
+
+                  <button class="layui-btn login-btn" lay-submit>登录</button>
+                </form>
+              </div>
+              <div class="tab-panel" style="display:none">
+                <form class="layui-form">
+                  <div class="text-center f18">找回密码</div>
+                  <div class="margin-t30 login-form-group">
+                    <i class="icomoon-icon">&#xe902;</i>
+                    <input type="text" class="layui-input" lay-verType="tips" autocomplete="off" lay-verify="verify-control" placeholder="请输入手机号码"
+                      data-regexp="m"
+                      null-msg="请输入手机号码"
+                      error-msg="手机号码不格式不对"
+                    >
+                  </div>
+                  <div class="margin-t15 login-form-group">
+                    <i class="icomoon-icon">&#xe901;</i>
+                    <span class="re-send-qr" data-role="yz">发送验证码</span>
+                    <input type="text" class="layui-input" lay-verType="tips" autocomplete="off" lay-verify="verify-control" placeh autocomplete="off" lay-verify="verify-control" placeholder="请输入验证码"
+                      data-regexp="*1"
+                      null-msg="请输入验证码"
+                    >
+                  </div>
+
+                  <div class="margin-t15 login-form-group">
+                    <i class="icomoon-icon">&#xe900;</i>
+                    <input type="password" class="layui-input" lay-verType="tips" autocomplete="off" lay-verify="verify-control" placeholder="请输入新密码"
+                      data-regexp="*1"
+                      null-msg="请输入新密码"
+                    >
+                  </div>
+
+                  <button class="layui-btn login-btn" lay-submit>确认</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="login-footer">
+    <div class="box-center full-height">
+      <table width="100%" height="100%">
+        <tr>
+          <td>
+            <img src="dist/images/copy-logo.png">
+          </td>
+          <td align="right" class="f12">
+            <span class="padding-r30">主办单位：广东省广州市学习教育培训机构
+            </span>
+            <span>技术支持：广东省广州市学习教育培训机构</span>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['util','form'], function(){
+  var util = layui.util
+      , form = layui.form;
+
+  //发送验证码
+  $('[data-role="yz"]').click(function(event) {
+      var _this=this;
+      if( $(this).hasClass('disabled') ) return;
+
+      var nowTime=new Date().getTime()
+          , endTime = nowTime+60*1000;
+
+      $(_this).addClass('disabled');
+       
+      util.countdown(endTime, nowTime, function(date, serverTime, timer){
+        //date[0] '天' date[1] '时' date[2] '分' date[3] '秒'
+        if(date[2]==1){
+          $(_this).html('重新发送(60)');
+        }
+        else if(date[3]==0){
+          $(_this).html('发送验证码').removeClass('disabled');
+        }
+        else{
+          $(_this).html('重新发送('+ date[3]+')');
+        }
+      });
+  });
+
+  //找回密码
+  $('[data-role="f-psw"]').click(function(event) {
+    $('.tab-panel').eq(0).fadeOut(100, function() {
+      $('.tab-panel').eq(1).fadeIn(100,function(){
+        //兼容IE9其以下不兼容 placeholder 属性的问题
+        JPlaceHolder.init();
+      });
+    });
+  });
+});
+//浏览器适配
+;(function(){
+  var $html=$('html');
+  if( $html.hasClass('ie67') || $html.hasClass('ie8') ){
+    $(window).resize(function(event) {
+      if($(window).height()>=900){
+        $('.login-wrapper').addClass('ie-adjust');
+      }
+      else{
+        $('.login-wrapper').removeClass('ie-adjust');
+      }
+    }).trigger('resize');
+  }
+})();
+</script>
+</body>
+</html>

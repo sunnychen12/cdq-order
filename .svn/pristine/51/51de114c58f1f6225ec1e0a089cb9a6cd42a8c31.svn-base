@@ -1,0 +1,1373 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"on",
+				"onclick"
+			],
+			[
+				"data",
+				"data-role"
+			],
+			[
+				"out",
+				"outerWidth	.outerWidth()"
+			],
+			[
+				"border-t",
+				"border-top"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"ov",
+				"overflow-y"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"bor-co",
+				"border-color"
+			],
+			[
+				"m",
+				"margin-left"
+			],
+			[
+				"if",
+				"data-ifm-url"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"f",
+				"font-size"
+			],
+			[
+				"css",
+				"css	.css() - multiple"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"pd",
+				"padding-right"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"cur",
+				"course-study"
+			],
+			[
+				"mi",
+				"min-width"
+			],
+			[
+				"cont",
+				"content"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"fad",
+				"fadeIn	.fadeIn()"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"margin",
+				"margin-t5"
+			],
+			[
+				"check",
+				"checked"
+			],
+			[
+				"ea",
+				"each	$.each()"
+			],
+			[
+				"each",
+				"each	.each()"
+			],
+			[
+				"fil",
+				"filter	.filter() function"
+			],
+			[
+				"remove",
+				"remove	.remove()"
+			],
+			[
+				"border-bt",
+				"border-bottom-right-radius"
+			],
+			[
+				"remov",
+				"removeClass	.removeClass()"
+			],
+			[
+				"sc",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"chec",
+				"checked"
+			],
+			[
+				"daa",
+				"data-oper"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"sli",
+				"slideDown	.slideDown()"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"coun",
+				"counter-increment"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"has",
+				"hasClass	.hasClass()"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"la",
+				"layui"
+			],
+			[
+				"pre",
+				"prepend	.prepend()"
+			],
+			[
+				"ch",
+				"checked"
+			],
+			[
+				"for",
+				"format"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"text",
+				"text-left"
+			],
+			[
+				"cs",
+				"css	.css() - multiple"
+			],
+			[
+				"parse",
+				"parseJSON"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"scro",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"set",
+				"setOption"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"dat",
+				"data-time-id"
+			],
+			[
+				"sro",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"scroll",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"监考",
+				"监考老师"
+			],
+			[
+				"ac",
+				"active"
+			],
+			[
+				"adc",
+				"addback	.addBack()"
+			],
+			[
+				"cou",
+				"counter-increment"
+			],
+			[
+				"n",
+				"normal"
+			],
+			[
+				"eac",
+				"each	.each()"
+			],
+			[
+				"sele",
+				"select-img"
+			],
+			[
+				"审核",
+				"审核通过"
+			],
+			[
+				"fonts",
+				"font-style"
+			],
+			[
+				"删除",
+				"删除考试时间"
+			],
+			[
+				"map",
+				"map	$.map()"
+			],
+			[
+				"vi",
+				"minView"
+			],
+			[
+				"考试",
+				"考试时段"
+			],
+			[
+				"u",
+				"unique	$.unique()"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"sat",
+				"setStartDate"
+			],
+			[
+				"op",
+				"oper-edit"
+			],
+			[
+				"che",
+				"checked"
+			],
+			[
+				"da",
+				"data-role"
+			],
+			[
+				"prev",
+				"preventDefault"
+			],
+			[
+				"na",
+				"nav-tabs"
+			],
+			[
+				"请",
+				"请添加考试时间"
+			],
+			[
+				"too",
+				"tooltip-inner"
+			],
+			[
+				"clos",
+				"closest	.closest()"
+			],
+			[
+				"ha",
+				"hasClass	.hasClass()"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"remo",
+				"removeClass	.removeClass()"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"ke",
+				"keydown	.keydown()"
+			],
+			[
+				"html",
+				"htmlConfig"
+			],
+			[
+				"bordco",
+				"border-color"
+			],
+			[
+				"outer",
+				"outerHeight	.outerHeight()"
+			],
+			[
+				"k",
+				"ks-plan"
+			],
+			[
+				"view",
+				"view-more"
+			],
+			[
+				"app",
+				"appendChild"
+			],
+			[
+				"ck",
+				"checked"
+			],
+			[
+				"fo",
+				"focus	.focus()"
+			],
+			[
+				"str",
+				"date-start"
+			],
+			[
+				"time",
+				"time-group"
+			],
+			[
+				"si",
+				"siblings	.siblings()"
+			],
+			[
+				"start",
+				"date-start"
+			],
+			[
+				"data-",
+				"data-id"
+			],
+			[
+				"par",
+				"data-parent-index"
+			],
+			[
+				"attr",
+				"attr	.attr() - single"
+			],
+			[
+				"tri",
+				"trigger	.trigger()"
+			],
+			[
+				"ti",
+				"time-group"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"dis",
+				"distribute"
+			],
+			[
+				"dele",
+				"delete"
+			],
+			[
+				"default",
+				"defaultValue"
+			],
+			[
+				"conte",
+				"content"
+			],
+			[
+				"cha",
+				"barChart"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"rg",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"border-col",
+				"border-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "login.html",
+			"settings":
+			{
+				"buffer_size": 3843,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.less",
+			"settings":
+			{
+				"buffer_size": 3478,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/common.less",
+			"settings":
+			{
+				"buffer_size": 2347,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/login.less",
+			"settings":
+			{
+				"buffer_size": 1894,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": ".login-btn-wrap{\n    left: 2rem;\n    right: 2rem;\n    position: absolute;\n    bottom: -1.5rem;\n  }\n  .login-btn{\n    background: url(images/btn-bg.jpg) no-repeat center top/auto 100%;\n    font-size: 1rem;\n    width: 100%;\n    \n    height: 2rem;\n    line-height: 2rem;\n    color: #fff;\n    border: 0;\n    padding: 0;\n    \n  }",
+			"settings":
+			{
+				"buffer_size": 324,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/font.less",
+			"settings":
+			{
+				"buffer_size": 949,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/zepto.min.js",
+			"settings":
+			{
+				"buffer_size": 33195,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/common.js",
+			"settings":
+			{
+				"buffer_size": 1399,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remove package",
+				"Package Control: Remove Package"
+			],
+			[
+				"an",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"",
+				"AngularJS: Toggle - Enable data- Prefix"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntax:html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set",
+				"Set Syntax: HTML"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Repository"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 227.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/JspStudy/WWW/cdq-order/mobile/css/style.css",
+		"/E/git_repository/com.gzedu.xlims.new/gkApp/src/main/webapp/views/gkApp/js/plugs/require.js",
+		"/E/JspStudy/WWW/guokai-app/v2.0/js/jquery.mockjax/custom-ajax.js",
+		"/E/JspStudy/WWW/guokai-app/v2.0/js/jquery.mockjax/jquery.mockjax.js",
+		"/E/git_repository/com.gzedu.xlims.new/gkApp/src/main/webapp/views/gkApp/js/gk.js",
+		"/E/git_repository/com.gzedu.xlims.new/gkApp/src/main/webapp/views/gkApp/studentzone.vm",
+		"/E/git_repository/com.gzedu.xlims.new/gkApp/src/main/webapp/views/static/js/app.utils.js",
+		"/E/git_repository/com.gzedu.xlims.new/gkApp/src/main/webapp/views/static/js/CXJSBridge.js",
+		"/E/git_repository/com.gzedu.xlims.new/gkApp/src/main/webapp/views/static/js/OpenResourceUtil.js",
+		"/E/git_repository/com.gzedu.xlims.new/gkApp/src/main/webapp/views/static/js/methodsInvoke.min.js",
+		"/E/JspStudy/WWW/guokai-app/v2.0/test.html",
+		"/C/Users/dc/Desktop/projects/yzweb/views/gkApp/hp.vm",
+		"/E/JspStudy/WWW/guokai-app/v2.0/js/controllers/column.js",
+		"/E/JspStudy/WWW/guokai-app/v2.0/xueji.html",
+		"/E/JspStudy/WWW/cdq-order/study/login.html",
+		"/E/JspStudy/WWW/cdq-order/study/index.html",
+		"/E/JspStudy/WWW/cdq-order/study/notes-details-ajax-page.html",
+		"/E/JspStudy/WWW/cdq-order/study/notes-ajax-page.html",
+		"/E/JspStudy/WWW/cdq-order/study/direction-page.html",
+		"/E/JspStudy/WWW/cdq-order/study/list-ajax-page.html",
+		"/E/JspStudy/WWW/cdq-order/study/address-ajax-page.html",
+		"/E/JspStudy/WWW/cdq-order/study/course-study-ajax-page.html",
+		"/E/JspStudy/WWW/cdq-order/study/my-study-ajax-page.html",
+		"/E/JspStudy/WWW/cdq-order/study/details-ajax-page.html",
+		"/E/JspStudy/WWW/cdq-order/study/course-study-index.html",
+		"/E/JspStudy/WWW/cdq-order/study/study-page.html",
+		"/E/JspStudy/WWW/cdq-order/study/test-study-iframe.html",
+		"/E/JspStudy/WWW/cdq-order/study/test-study-result-page.html",
+		"/E/JspStudy/WWW/cdq-order/study/test-study-details-iframe.html",
+		"/E/JspStudy/WWW/cdq-order/study/discussion-study-iframe.html",
+		"/E/JspStudy/WWW/cdq-order/platform/dist/plugins/zTree/jquery.ztree.all.min.js",
+		"/E/JspStudy/WWW/cdq-order/platform/dist/plugins/jquery.slimscroll/jquery.slimscroll.min.js",
+		"/E/JspStudy/WWW/cdq-order/platform/list-page.html",
+		"/E/JspStudy/WWW/cdq-order/platform/dist/common.js",
+		"/E/JspStudy/WWW/cdq-order/study/build/css/box.less",
+		"/E/JspStudy/WWW/cdq-order/platform/verify-form-page.html",
+		"/E/JspStudy/WWW/cdq-order/study/dist/plugins/jPages/jPages.css",
+		"/E/JspStudy/WWW/cdq-order/platform/index.html",
+		"/E/JspStudy/WWW/cdq-order/platform/content-to-be-created.html",
+		"/E/JspStudy/WWW/cdq-order/study/dist/plugins/raphael/raphael.js",
+		"/E/JspStudy/WWW/cdq-order/study/dist/plugins/jquery.slimscroll/jquery.slimscroll.min.js",
+		"/E/JspStudy/WWW/cdq-order/study/dist/plugins/jPages/jPages.min.js",
+		"/E/JspStudy/WWW/cdq-order/platform/dist/loadcss.js",
+		"/E/JspStudy/WWW/cdq-order/study/video-study-summary-iframe.html",
+		"/E/JspStudy/WWW/cdq-order/study/video-study-iframe.html",
+		"/E/JspStudy/WWW/cdq-order/study/text-study-iframe.html",
+		"/E/JspStudy/WWW/cdq-order/study/build/css/login.less",
+		"/E/JspStudy/WWW/cdq-order/study/build/css/font.less",
+		"/E/JspStudy/WWW/cdq-order/study/build/css/form.less",
+		"/E/JspStudy/WWW/cdq-order/study/build/css/mixins.less",
+		"/E/JspStudy/WWW/cdq-order/platform/build/css/style.less",
+		"/E/JspStudy/WWW/cdq-order/platform/course-construction.html",
+		"/E/JspStudy/WWW/cdq-order/platform/dist/loadjs.js",
+		"/E/JspStudy/WWW/cdq-order/study/dist/loadjs.js",
+		"/E/JspStudy/WWW/cdq-order/study/dist/loadcss.js",
+		"/E/JspStudy/WWW/cdq-order/study/dist/plugins/Validform/Validform_v5.3.2_min.js",
+		"/E/JspStudy/WWW/cdq-order/study/dist/plugins/Validform/Validform_v5.3.2.js",
+		"/E/JspStudy/WWW/cdq-order/study/dist/plugins/zTree/jquery.ztree.all.min.js",
+		"/E/JspStudy/WWW/cdq-order/study/build/css/overlay.less",
+		"/E/JspStudy/WWW/cdq-order/study/dist/lay/modules/element.js",
+		"/E/JspStudy/WWW/cdq-order/study/course-study.html",
+		"/E/JspStudy/WWW/cdq-order/study/my-study.html",
+		"/E/JspStudy/WWW/cdq-order/platform/build/css/tabs.less",
+		"/E/JspStudy/WWW/cdq-order/study/dist/common.js",
+		"/E/JspStudy/WWW/cdq-order/index.html",
+		"/E/JspStudy/WWW/cdq-order/add-notice.html",
+		"/E/JspStudy/WWW/cdq-order/add-receiver.html",
+		"/E/JspStudy/WWW/cdq-order/verify-form-page.html",
+		"/E/JspStudy/WWW/cdq-order/add-course-activity-discussion-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/add-course-activity-text-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/add-course-section-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/add-course-chapter-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/add-course-activity-video-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/list-page.html",
+		"/E/JspStudy/WWW/cdq-order/details-page.html",
+		"/E/JspStudy/WWW/cdq-order/course-construction.html",
+		"/E/JspStudy/WWW/cdq-order/add-course-activity-test-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/add-subject-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/add-subject-2-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/course-question-bank.html",
+		"/E/JspStudy/WWW/cdq-order/import-subject-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/oper-subject-radio-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/oper-subject-checkbox-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/oper-subject-judge-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/oper-subject-faq-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/oper-subject-filling-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/oper-subject-analysis-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/build/css/style.less",
+		"/E/JspStudy/WWW/cdq-order/build/css/grid.less",
+		"/E/JspStudy/WWW/cdq-order/build/css/table.less",
+		"/E/JspStudy/WWW/cdq-order/build/css/box.less",
+		"/E/JspStudy/WWW/cdq-order/build/css/normalize.less",
+		"/E/JspStudy/WWW/cdq-order/build/css/pop.less",
+		"/E/JspStudy/WWW/cdq-order/build/css/mixins/spacing.less",
+		"/E/JspStudy/WWW/cdq-order/build/css/overlay.less",
+		"/E/JspStudy/WWW/cdq-order/build/css/media.less",
+		"/E/JspStudy/WWW/cdq-order/build/css/form.less",
+		"/E/JspStudy/WWW/cdq-order/build/css/variables.less",
+		"/E/JspStudy/WWW/cdq-order/dist/common.js",
+		"/E/JspStudy/WWW/cdq-order/build/css/tabs.less",
+		"/E/JspStudy/WWW/cdq-order/iframe-page.html",
+		"/E/JspStudy/WWW/cdq-order/zTree-page.html",
+		"/E/JspStudy/WWW/cdq-order/dist/plugins/zTree/jquery.ztree.all.min.js",
+		"/E/JspStudy/WWW/cdq-order/dist/plugins/Validform/Validform_v5.3.2_min.js",
+		"/E/JspStudy/WWW/cdq-order/build/css/font.less",
+		"/E/JspStudy/WWW/cdq-order/dist/lay/modules/element.js",
+		"/E/JspStudy/WWW/cdq-order/oper-subject-pop-page.html",
+		"/E/JspStudy/WWW/cdq-order/dist/lay/modules/form.js",
+		"/E/JspStudy/WWW/cdq-order/dist/loadjs.js",
+		"/E/JspStudy/WWW/cdq-order/dist/css/style.css",
+		"/E/JspStudy/WWW/cdq-order/dist/plugins/demo1.js",
+		"/E/JspStudy/WWW/cdq-order/dist/loadcss.js",
+		"/E/JspStudy/WWW/cdq-order/build/css/mixins.less",
+		"/E/JspStudy/WWW/cdq-order/dist/css/layui.css",
+		"/E/JspStudy/WWW/cdq-order/dist/lay/modules/jquery.js",
+		"/E/JspStudy/WWW/cdq-order/dist/plugins/Validform/Validform_v5.3.2.js",
+		"/E/JspStudy/WWW/cdq-order/dist/plugins/demo.js",
+		"/E/JspStudy/WWW/cdq-order/dist/plugins/demo",
+		"/E/JspStudy/WWW/kao-shi-zu-zhi-ping-tai/v3/index.html",
+		"/E/JspStudy/WWW/kao-shi-zu-zhi-ping-tai/v3/操作设置.html",
+		"/E/JspStudy/WWW/kao-shi-zu-zhi-ping-tai/v3/homepage.html",
+		"/E/JspStudy/WWW/kao-shi-zu-zhi-ping-tai/v3/考试监考.html",
+		"/E/JspStudy/WWW/kao-shi-zu-zhi-ping-tai/v3/违纪公告.html",
+		"/E/JspStudy/WWW/kao-shi-zu-zhi-ping-tai/v3/网考记录详情-审核不通过.html",
+		"/E/JspStudy/WWW/kao-shi-zu-zhi-ping-tai/v3/违纪公告详情.html",
+		"/E/JspStudy/WWW/kao-shi-zu-zhi-ping-tai/v3/新增违纪公告.html",
+		"/E/JspStudy/WWW/kao-shi-zu-zhi-ping-tai/v3/违纪公告-添加考生.html",
+		"/E/JspStudy/WWW/kao-shi-zu-zhi-ping-tai/v3/编辑考试计划.html"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"E:\\JspStudy\\WWW\\guokai-app\\v2.0,*.html",
+			"E:\\JspStudy\\WWW\\cdq-order,*.html",
+			"E:\\JspStudy\\WWW\\kao-shi-zu-zhi-ping-tai\\v3,*.html",
+			"E:\\JspStudy\\WWW\\kao-shi-zu-zhi-ping-tai\\v3",
+			"E:\\JspStudy\\WWW\\kao-shi-zu-zhi-ping-tai\\v2",
+			"E:\\JspStudy\\WWW\\xun-yuan-bao-kao-ping-tai",
+			"E:\\JspStudy\\WWW\\kao-shi-zu-zhi-ping-tai\\v2",
+			"<open files>,E:\\JspStudy\\WWW\\ban-zhu-ren",
+			"<open files>",
+			"",
+			"<script src=\"dist/js/app.min.js\"></script> ",
+			"\\\\172.16.170.119\\体验设计部管理\\demo\\chendeqiang\\dudao"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"http://css.gzedu.com/gzdd_ouchgzee_com/platform/student/mobile/",
+			"swiperElement",
+			"loadswiper",
+			"buildSwiper",
+			"tabsSwiper",
+			"loadswiper",
+			"showFolderResource",
+			"loadswiper",
+			"showFolderResource",
+			"/gkApp/teacher/SubjectBackZj",
+			"loadTabs",
+			"loadFolder",
+			"clickCircle",
+			"start",
+			"loadFolder",
+			"folders",
+			"loadFolder",
+			"clickCircle",
+			"loadChapter",
+			"chapterCover",
+			"/gkApp/teacher/%7BchapterCover%7D",
+			"basepath",
+			"loadFolder",
+			"clickCircle",
+			"tabsSwiper",
+			"clickCircle",
+			"fixPagesHeight",
+			"clickCircle",
+			"news-list",
+			"swiper-nav",
+			"activeHeight",
+			"kuandu_jisuan",
+			"zonetitle",
+			"tabs-container",
+			"swiperList",
+			"zonetitle",
+			"/<img/",
+			"<img",
+			"<li id=\"circle$velocityCount\" >\n	                        <a href=\"javascript:void(0);\" onClick = \"clickCircle(${c.id})\" >\n	                        	<img src=\"$!{c.appLogo}\" style=\"width:30px;height:30px;\">\n	                            <p>$!{c.name}</p>\n	                        </a>\n                    </li>",
+			"circle",
+			"activeHeight =",
+			"activeHeight=",
+			"activeHeight",
+			"clearClickStyle",
+			"showFolderResource",
+			"folderdiv",
+			"clickCircle",
+			"loadswiper",
+			"/gkApp/teacher/testzxsp",
+			"swiperElement",
+			"folders",
+			"loadFolder",
+			"openChapter",
+			"clickCircle",
+			"loadswiper",
+			"swiperList",
+			"tabsSwiper",
+			"loadTabs",
+			"swiperList",
+			".swiper",
+			"swiper",
+			"tabs-container",
+			"tabsSwiper",
+			"gongkai",
+			"tabs-container",
+			"swiper-slide",
+			"$circleList",
+			"zonetitle",
+			"swiper-pagination",
+			"getBannerListFn",
+			"newsListIndex",
+			"top_banner",
+			"openVideo",
+			"dsjd_mdl",
+			"openVideo",
+			"mryk_ctn",
+			"isFished",
+			"commentIndex",
+			"slideLoad",
+			"$('#loadingToast')",
+			"slideLoad",
+			"OpenResourceUtil",
+			"jsBridgeReady",
+			"JSBridge",
+			"openUrl",
+			"getBannerListFn",
+			"mryk_ctn",
+			"openVideo",
+			"mryk_ctn",
+			"getColumnDetailsFn",
+			"getColumnFn",
+			"GetQueryStringFn",
+			"jkUrl",
+			"GetQueryStringFn",
+			"getColumnDetailsFn",
+			"getColumnFn",
+			"commentListFn",
+			"discuss_list",
+			"notice_swiper",
+			"gktt_list",
+			"getBannerListFn",
+			"getnewsListFn",
+			"getColumnFn",
+			"getnewsListFn",
+			"getColumnDetailsFn",
+			"getColumnFn",
+			"column_ctn",
+			".html",
+			"<a",
+			"Swiper",
+			"newsSwiper",
+			"news-list",
+			"getBannerListFn",
+			"banner_swiper",
+			"getBannerListFn",
+			"banner_swiper",
+			"new Swiper",
+			"Swiper",
+			"getnewsListFn",
+			"openUrlLogin",
+			"openVideo",
+			"opencourselogin",
+			"getnewsListFn",
+			"大师经典",
+			"dsjd_mdl",
+			"大师经典",
+			"news",
+			"mryk_ctn"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"src=\"/views/",
+			"src=\"http://zjgk.oucapp.com/views/",
+			"f20 margin-b10 margin-r10",
+			"标签",
+			"<div class=\"layui-col-xs6\">",
+			"subject-input f14",
+			"<th class=\"text-center\">",
+			"<td>",
+			"",
+			"<a href=\"study-page.html\" class=\"layui-btn layui-btn-sm layui-btn-danger min-width-100 go-study\">进入学习</a>",
+			"<a href=\"#\" class=\"layui-btn layui-btn-sm layui-btn-danger min-width-100 go-study\">进入学习</a>",
+			"<div class=\"item-header\">",
+			"<legend class=\"f16 text-bold text-green2\">xxx标题</legend>",
+			"",
+			"pop-footer",
+			"",
+			"padding-",
+			"margin-",
+			"",
+			"<a href=\"#\" data-role=\"remove-item\">删除</a>",
+			"",
+			"<span>0</span>分钟",
+			"<span>60</span>分钟",
+			"<a href=\"#\" class=\"text-orange\" data-role=\"distribute\"><u>分配</u></a>",
+			"<u><a href=\"#\" class=\"text-orange\" data-role=\"distribute\">分配</a></u>",
+			"arrResultHtml",
+			"chart8",
+			"chart7",
+			"chart6",
+			"chart5",
+			"chart4",
+			"$(this)",
+			"chart3",
+			"chart2",
+			"$",
+			"http://172.16.170.119:801/exam_chinaeenet_com/exam_css/dist/img/images/",
+			"margin_t5",
+			"panel-title",
+			"<h3 class=\"panel-title\" data-toggle=\"collapse\" data-target=\"#info-box-1\" role=\"button\">",
+			"新增考场v3.html",
+			"新增考点v3.html",
+			"设置实施考试计划.html",
+			"user7-128x128.jpg",
+			"/img/",
+			"/dist/",
+			"user2-160x160.jpg",
+			"成绩管理统计",
+			"考试预约情况",
+			"考试实施计划统计",
+			"<img src=\"http://172.16.170.119:801/exam_chinaeenet_com/exam_css/dist/img/images/user-placehoder.png\" data-original=\"http://gd1.alicdn.com/bao/uploaded/i1/T1jazgXXdvXXcvNQwY_030250.jpg_400x400.jpg\" class=\"lazy\"/>",
+			"<img src=\"http://gd1.alicdn.com/bao/uploaded/i1/T1jazgXXdvXXcvNQwY_030250.jpg_400x400.jpg\" data-screen-time=\"2014-05-20 18:20\"/>",
+			"text-orange",
+			"status-bar bg-green",
+			"status-bar bg-orange",
+			"text-green",
+			"text-orange",
+			"status-bar",
+			"",
+			"<span role=\"button\" class=\"btn btn-default btn-xs\" data-role=\"minus-wk-yc\" data-toggle=\"tooltip\" title=\"删除该网考时段\" data-container=\"body\">",
+			"<span role=\"button\" class=\"btn btn-default btn-xs\" data-role=\"minus-wk-jz\" data-toggle=\"tooltip\" title=\"删除该网考时段\" data-container=\"body\">",
+			"<span role=\"button\" class=\"btn btn-default btn-xs margin_b5 margin_t5\" data-role=\"distribute\" data-toggle=\"tooltip\" title=\"添加监考老师\" data-container=\"body\">",
+			"<span role=\"button\" class=\"btn btn-default btn-xs\" data-role=\"add-wk-yc\" data-toggle=\"tooltip\" title=\"增加远程网考时段\" data-container=\"body\">",
+			"<span role=\"button\" class=\"btn btn-default btn-xs\" data-role=\"add-wk-jz\" data-toggle=\"tooltip\" title=\"增加集中网考时段\" data-container=\"body\">",
+			"<span role=\"button\" class=\"btn btn-default btn-xs\" data-role=\"minus-exam-time\" data-toggle=\"tooltip\" title=\"删除该考试日期\" data-container=\"body\" style=\"width:40px;\">",
+			"查看考试实施计划详情.html",
+			"point-",
+			"",
+			"data-role=\"oper\"",
+			"data-role=\"delete\"",
+			"data-role=\"add-place\"",
+			"<a href=\"编辑考试计划.html\" class=\"operion-item\" data-toggle=\"tooltip\" data-role=\"edit\" title=\"修改\" data-container=\"body\"><i class=\"fa fa-edit\"></i></a>",
+			"查看考试计划详情.html",
+			"",
+			"<a href=\"考点详情.html\" class=\"operion-item\" data-toggle=\"tooltip\" title=\"查看详情\" data-role=\"view-more\"><i class=\"fa fa-fw fa-view-more\"></i></a>",
+			"<a href=\"考点详情.html\" class=\"operion-item\" data-toggle=\"tooltip\" title=\"查看详情\"><i class=\"fa fa-fw fa-view-more\"></i></a>",
+			"<a href=\"考场管理.html\" class=\"operion-item\" data-toggle=\"tooltip\" title=\"考场管理\"><i class=\"fa fa-fw fa-user-md\"></i></a>",
+			"考点导入表",
+			"@color-orange",
+			"<a href=\"#\" class=\"operion-item\" data-toggle=\"tooltip\" title=\"查看详情\" data-container=\"body\"><i class=\"fa fa-view-more\"></i></a>",
+			"考生信息导入表",
+			"f32",
+			"报考学员导入表",
+			"<a href=\"排考明细.html\" class=\"operion-item\" data-toggle=\"tooltip\" title=\"查看详情\" data-role=\"view-more\"><i class=\"fa fa-fw fa-view-more\"></i></a>",
+			"<div class=\"col-sm-8",
+			"<div class=\"col-sm-7",
+			"<div class=\"col-sm-8",
+			"<label class=\"col-sm-2 control-label\">",
+			"timeFormat",
+			"input-xs",
+			"新增考试批次.html",
+			"<a href=\"批量分配试卷制作人.html\" class=\"operion-item\" data-toggle=\"tooltip\" data-role=\"distribute\" title=\"分配试卷制作人\"><i class=\"fa fa-fw fa-fpsj\"></i></a>",
+			"<script src=\"http://172.16.170.119:801/exam_chinaeenet_com/exam_css/dist/js/requirejs/require.js\" data-require-path=\"http://172.16.170.119:801/exam_chinaeenet_com/exam_css/\"></script>",
+			"<link rel=\"stylesheet\" href=\"http://172.16.170.119:801/exam_chinaeenet_com/exam_css/dist/css/skins/skin-blue.min.css\">",
+			"<link rel=\"stylesheet\" href=\"http://172.16.170.119:801/exam_chinaeenet_com/exam_css/font-awesome/4.4.0/css/font-awesome.min.css\">",
+			"<link rel=\"stylesheet\" href=\"http://172.16.170.119:801/exam_chinaeenet_com/exam_css/dist/css/reset.css\">",
+			"href=\"成绩与学分详情.html\"",
+			"href=\"学员反馈详情.html\"",
+			"box-title",
+			"table-cell-ver-mid",
+			"vertical-middle",
+			"",
+			"vertical-middle",
+			"--",
+			"",
+			"<td class=\"text-light-blue\">2</td>",
+			"<a href=\"#\" class=\"operion-item operion-del text-red\"><i class=\"fa fa-fw fa-trash-o\"></i></a>",
+			"<div class=\"radio\">",
+			"<input type=\"radio\" name=\"r1\">",
+			"",
+			"<a href=\"#\" class=\"operion-item operion-login\" data-toggle=\"tooltip\" title=\"模拟登录\"><i class=\"fa fa-fw fa-simulated-login\"></i></a>\n",
+			"",
+			"position-relative",
+			"vertical-middle",
+			"",
+			"pull-right gray9 text-no-bold f12",
+			"",
+			"<button class=\"btn btn-primary btn-lg cert-upload-btn cert-re-upload\">重新上传</button>",
+			"position-relative",
+			"@color-blue",
+			".text-center;",
+			".float-left;",
+			".text-white;",
+			".bg-white;",
+			".text-white;",
+			".vertical-middle;",
+			".text-center;",
+			".text-no-bold;"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "login.html",
+					"settings":
+					{
+						"buffer_size": 3843,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3333,
+								3333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1512.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "css/style.less",
+					"settings":
+					{
+						"buffer_size": 3478,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/common.less",
+					"settings":
+					{
+						"buffer_size": 2347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/login.less",
+					"settings":
+					{
+						"buffer_size": 1894,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 120.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "css/font.less",
+					"settings":
+					{
+						"buffer_size": 949,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								366,
+								366
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "js/zepto.min.js",
+					"settings":
+					{
+						"buffer_size": 33195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33195,
+								33195
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 17186.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "js/common.js",
+					"settings":
+					{
+						"buffer_size": 1399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.589678510998,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 134.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 173.0,
+	"status_bar_visible": true
+}

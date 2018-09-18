@@ -1,0 +1,51 @@
+.control-label{
+	text-align: right;
+	line-height: 18px;
+	display: table;
+    width: 100%;
+	overflow: hidden;
+	>label{
+		display: table-cell;
+		vertical-align: middle;
+		width: 100%;
+		height: 38px;
+	}
+}
+
+.layui-btn-gray{
+	background-color: #c2c2c2;
+}
+
+.layui-input-sm{
+	height: 28px;
+	font-size: 12px;
+}
+
+/*输入框级*/
+.input-group{
+	>.media-body{
+		>.layui-input{
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+		+.media-side{
+			>.layui-btn{
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
+	}
+
+	>.media-side{
+		>.layui-btn{
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+		+.media-body{
+			>.layui-input{
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
+	}
+}

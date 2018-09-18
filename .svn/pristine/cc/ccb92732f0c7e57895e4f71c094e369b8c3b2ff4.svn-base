@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>框架页</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+</head>
+<body class="cdq-body">
+  <!-- 面包屑 start-->
+  <div class="cdq-breadcrumb-box">
+    <span class="layui-breadcrumb visible">
+      <a href="">首页</a><span lay-separator>&gt;</span>
+      <a><cite>直播详情</cite></a>
+    </span>
+  </div>
+  <!-- 面包屑 start-->
+
+
+  <!-- 内容主体区域 start-->
+  <div class="cdq-content">
+
+    <div class="box padding-t15 padding-b15">
+      <div class="padding-l25 padding-r25">
+        <div class="layui-row">
+          <div class="layui-col-sm3">
+            <div class="padding-r25">
+              <img src="dist/images/temp/timg.jpg" alt="图片名" class="full-width" height="150">
+            </div>
+          </div>
+          
+          <div class="layui-col-sm7">
+            <div class="padding-r25">
+              <h1 class="f24 text-no-bold">趣味知识竞赛现场直播</h1>
+              <div class="margin-t5">
+                <span class="margin-r20">主讲：李晓明</span>
+                <span class="margin-r20">助教：李淑芬</span>
+                <span>时间：2018-4-15 10:00~11:00</span>
+              </div>
+              <div class="margin-t10 gray9">
+                  简介：介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容
+              </div>
+            </div>
+          </div>
+
+          <div class="layui-col-sm2 border-left">
+            <div class="media text-center" style="height:150px;">
+              <div class="media-body vertical-middle">
+                <div class="text-orange f28">进行中</div>
+                <div class="margin-t10">状态</div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="padding-t15">
+        <fieldset class="layui-elem-field layui-field-title">
+          <legend class="f16 text-bold">参与方式</legend>
+        </fieldset>
+        <div class="padding-l25 padding-r25">
+          <div class="layui-row layui-col-space15">
+            <div class="layui-col-sm4">
+              <div class="box">
+                <div class="box-header">
+                  <div class="f16">主讲参与方式</div>
+                </div>
+                <div class="box-body padding15">
+                  <div class="media" style="height:130px;">
+                    <div class="media-body vertical-middle">
+                      <div class="text-center f18">
+                        <p>频道号码：182986</p>
+                        <p class="f18 margin-t10">频道密码：549498</p>
+                      </div>
+                      <div class="gray9 f12 margin-t15">
+                        注：下载直播工具，安装后启动，输入频道号码、频道密码进入直播，若已下载无需重新下载，输入频道号码、频道密码进入直播即可
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-footer padding-none">
+                    <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid">
+                      下载直播工具
+                    </button>
+                </div>
+              </div>
+            </div>
+            <div class="layui-col-sm4">
+              <div class="box">
+                <div class="box-header">
+                  <div class="f16">主讲参与方式</div>
+                </div>
+                <div class="box-body padding15">
+                  <div class="media" style="height:130px;">
+                    <div class="media-body vertical-middle">
+                      <div class="text-center f18">
+                        <p>频道号码：182986</p>
+                        <p class="f18 margin-t10">频道密码：549498</p>
+                      </div>
+                      <div class="gray9 f12 margin-t15">
+                        注：下载直播工具，安装后启动，输入频道号码、频道密码进入直播，若已下载无需重新下载，输入频道号码、频道密码进入直播即可
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-footer padding-none">
+                    <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid">
+                      下载直播工具
+                    </button>
+                </div>
+              </div>
+            </div>
+            <div class="layui-col-sm4">
+              <div class="box">
+                <div class="box-header">
+                  <div class="f16">学生参与方式</div>
+                </div>
+                <div class="box-body padding15">
+                  <div class="media" style="height:130px;">
+                    <div class="media-body vertical-middle">
+                      <div class="text-center f18">
+                        <p>观看口令：182986</p>
+                      </div>
+                      <div class="gray9 f12 margin-t15">
+                        注：学生可以登录学习平台，在直播模块中找到直播进入观看直播；如果需要分享给其他人参与，可以复制直播地址和观看口令分享给需要观看的学生；
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-footer padding-none">
+                  <div class="layui-btn-group full-width">
+                    <button type="button" class="layui-btn layui-btn-normal" style="width:50%;">
+                      复制直播地址和观看口令
+                    </button>
+                    <button type="button" class="layui-btn layui-btn-normal" style="width:50%;">
+                      预览直播
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="padding-t15">
+        <fieldset class="layui-elem-field layui-field-title">
+          <legend class="f16 text-bold">参与对象</legend>
+        </fieldset>
+        <div class="padding-l25 padding-r25">
+          <div class="box">
+            <div class="box-body padding15">
+              <div class="layui-row layui-col-space15 layui-form">
+                <div class="layui-col-xs6 layui-col-sm4">
+                  <div class="layui-row layui-col-space15">
+                    <div class="layui-col-xs3">
+                      <div class="control-label">
+                        <label>
+                          姓名
+                        </label>
+                      </div>
+                    </div>
+                    <div class="layui-col-xs9">
+                      <input type="text" class="layui-input full-width">
+                    </div>
+                  </div>
+                </div>
+                <div class="layui-col-xs6 layui-col-sm4">
+                  <div class="layui-row layui-col-space15">
+                    <div class="layui-col-xs3">
+                      <div class="control-label">
+                        <label>
+                          学号
+                        </label>
+                      </div>
+                    </div>
+                    <div class="layui-col-xs9">
+                      <input type="text" class="layui-input full-width">
+                    </div>
+                  </div>
+                </div>
+                <div class="layui-col-xs6 layui-col-sm4">
+                  <div class="layui-row layui-col-space15">
+                    <div class="layui-col-xs3">
+                      <div class="control-label">
+                        <label>
+                          班级
+                        </label>
+                      </div>
+                    </div>
+                    <div class="layui-col-xs9">
+                      <select lay-search>
+                        <option value="">直接选择或搜索选择</option>
+                        <option value="1">layer</option>
+                        <option value="2">form</option>
+                        <option value="3">layim</option>
+                        <option value="3">layim</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="layui-col-xs6 layui-col-sm4">
+                  <div class="layui-row layui-col-space15">
+                    <div class="layui-col-xs3">
+                      <div class="control-label">
+                        <label>
+                          报读学期
+                        </label>
+                      </div>
+                    </div>
+                    <div class="layui-col-xs9">
+                      <select name="modules" lay-search>
+                        <option value="">直接选择或搜索选择</option>
+                        <option value="1">layer</option>
+                        <option value="2">form</option>
+                        <option value="3">layim</option>
+                        <option value="3">layim</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="layui-col-xs6 layui-col-sm4">
+                  <div class="layui-row layui-col-space15">
+                    <div class="layui-col-xs3">
+                      <div class="control-label">
+                        <label>
+                          层次
+                        </label>
+                      </div>
+                    </div>
+                    <div class="layui-col-xs9">
+                      <select name="modules" lay-search>
+                        <option value="">直接选择或搜索选择</option>
+                        <option value="1">layer</option>
+                        <option value="2">form</option>
+                        <option value="3">layim</option>
+                        <option value="3">layim</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="layui-col-xs6 layui-col-sm4">
+                  <div class="layui-row layui-col-space15">
+                    <div class="layui-col-xs3">
+                      <div class="control-label">
+                        <label>
+                          专业
+                        </label>
+                      </div>
+                    </div>
+                    <div class="layui-col-xs9">
+                      <select name="modules" lay-search>
+                        <option value="">直接选择或搜索选择</option>
+                        <option value="1">layer</option>
+                        <option value="2">form</option>
+                        <option value="3">layim</option>
+                        <option value="3">layim</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="layui-col-xs6 layui-col-sm4">
+                  <div class="layui-row layui-col-space15">
+                    <div class="layui-col-xs3">
+                      <div class="control-label">
+                        <label>
+                          所在机构
+                        </label>
+                      </div>
+                    </div>
+                    <div class="layui-col-xs9">
+                      <select name="modules" lay-search>
+                        <option value="">直接选择或搜索选择</option>
+                        <option value="1">layer</option>
+                        <option value="2">form</option>
+                        <option value="3">layim</option>
+                        <option value="3">layim</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-footer padding-top-none padding-bottom-none">
+              <table class="layui-table margin-none" lay-skin="nob" lay-size="sm">
+                <tbody>
+                  <tr class="no-bg" width="1%">
+                    <td class="padding-left-none text-nowrap border-right">
+                      快速查询
+                    </td>
+                    <td width="100%">
+                      <div class="filter-list">
+                        <span class="layui-btn layui-btn-gray actived">全部（452）</span>
+                        <span class="layui-btn layui-btn-gray">已参与（450）</span>
+                        <span class="layui-btn layui-btn-gray">未参与（450）</span>
+                      </div>
+                    </td>
+                    <td class="padding-right-none" width="1%">
+                      <div class="text-right">
+                        <button type="button" class="layui-btn layui-btn-normal min-width-100">查询</button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="box margin-bottom-none">
+            <div class="box-header text-right">
+              <span class="layui-btn layui-btn-normal layui-btn-sm">短信提醒未参与的学生参与直播</span>
+            </div>
+            <div class="box-body">
+              <table class="layui-table text-center margin-none">
+                <thead>
+                  <tr>
+                    <th>学生信息</th>
+                    <th width="30%">报读信息</th>
+                    <th width="18%">所在机构</th>
+                    <th width="18%">所在班级</th>
+                    <th width="12%">状态</th>
+                  </tr> 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <ul class="text-left">
+                        <li>姓名：刘智力</li>
+                        <li>学号：415122142215</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul class="text-left">
+                        <li>报读学期：2018春</li>
+                        <li>专业层次：专科</li>
+                        <li>专业名称：工商管理(工商企业管理方向)</li>
+                      </ul>
+                    </td>
+                    <td>XXX机构</td>
+                    <td>XXXX班级</td>
+                    <td>
+                      <div class="text-green">已参与</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 内容主体区域 end-->
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+
+
+</body>
+</html>

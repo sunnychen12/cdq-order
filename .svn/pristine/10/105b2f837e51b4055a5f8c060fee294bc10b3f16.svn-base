@@ -1,0 +1,134 @@
+<div class="box-style box margin-none" data-id="view-exam-ticket-page">
+  <div class="box-header colum-tit">
+    <i class="fa">&#xf0ca;</i>
+    <h2 class="inline-block txt f18">查看准考证</h2>
+    <div class="layui-btn layui-btn-sm layui-btn-primary pull-right min-width-80" onclick="loadSideMenuCnt('my-exam-ajax-page.html')" style="margin:-2px 0;">返回</div>
+  </div>
+  <div class="box-body padding15">
+    <div data-id="print-area">
+      <h1 class="text-center f24 padding-t20 padding-b30">国家开放大学（广州）2016年7月期末考试准考证</h1>
+      <div class="padding15 border">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td width="110">
+                <img src="dist/images/temp/img1.png" width="90" height="120" class="vertical-middle">
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    <strong>姓名：</strong>
+                    <span>赵晓敏</span>
+                  </li>
+                  <li>
+                    <strong>学号：</strong>
+                    <span>440118081981</span>
+                  </li>
+                  <li>
+                    <strong>所在分校：</strong>
+                    <span>国家开放大学（广州）金沙洲分校</span>
+                  </li>
+                  <li>
+                    <strong>所在考点：</strong>
+                    <span>金沙洲分校</span>
+                  </li>
+                  <li>
+                    <strong>考点地址：</strong>
+                    <span>广州市荔湾区金沙洲XX号</span>
+                  </li>
+                </ul>
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table class="layui-table text-center margin-t20">
+        <colgroup>
+          <col width="12%">
+          <col>
+          <col width="13%">
+          <col width="25%">
+          <col width="10%">
+          <col width="11%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>试卷号</th>
+            <th>考试科目</th>
+            <th>考试方式</th>
+            <th>考试时间</th>
+            <th>考场</th>
+            <th>座位号</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01870</td>
+            <td>计算机应用基础</td>
+            <td>机考</td>
+            <td>2017-07~08 10:30~11:30</td>
+            <td>205室</td>
+            <td>82号</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="padding20 margin-t20 margin-b20" style="background:#fdd4ab;border-radius:5px;">
+        <table width="100%" style="color: #FF6600;">
+          <tr>
+            <td width="30" valign="top">
+              <i class="layui-icon layui-icon-tips f20"></i>
+            </td>
+            <td>
+              <dl>
+                <dt>请仔细阅读以下几点考试注意事项</dt>
+                <dd>1、考试开始30分钟后，考试不得进入考场，请准时参加考试！</dd>
+                <dd>2、考生必须带齐准考证、身份证、学生证参加考试，否则不得进入考场</dd>
+                <dd>3、准考证考生可以自行打印，用A4纸打印即可</dd>
+                <dd>4、如果同一时间有多个科目连考的情况，请考完一科交卷后按科目的考试时间顺序继续进行下一科考试</dd>
+              </dl>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="box-footer padding-r20 padding-l20 text-center">
+    <button type="button" class="layui-btn min-width-80" data-role="print">打印准考证</button>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+layui.use(['element'], function(){
+  var element = layui.element;
+  var $container=$('[data-id="view-exam-ticket-page"]');
+
+  $container
+  //打印
+  .on('click', '[data-role="print"]', function(event) {
+    var w=window.open('about:blank');
+    var doc=w.document;
+    doc.open();
+    
+    doc.write(
+      '\
+        <link href="dist/css/layui.css" rel="stylesheet">\
+        <link href="dist/css/style.css" rel="stylesheet">\
+        <style type="text/css">\
+          body{background:#fff}\
+        </style>\
+      '+
+      $('[data-id="print-area"]',$container).html()
+    );
+    
+    doc.close();
+    w.onload=function(){
+      w.print();
+    }
+    
+  });
+});
+</script>
+</body>
+</html>

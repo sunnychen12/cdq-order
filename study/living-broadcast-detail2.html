@@ -1,0 +1,104 @@
+<div class="box-style box margin-none" data-id="broadcast-detail-page">
+  <div class="box-header padding-r20 padding-l20">
+    <div class="layui-btn layui-btn-sm layui-btn-primary pull-right min-width-80" data-role="rollback">返回</div>
+    <div class="layui-breadcrumb visible f12 padding-t5">
+      <a href="#">直播课堂</a><span lay-separator="">&gt;</span>
+      <a><cite>直播详情</cite></a>
+    </div>
+  </div>
+  <div class="box-body padding-none min-height-400">
+    <div class="padding20">
+      <div class="layui-row">
+        <div class="layui-col-sm4">
+          <div class="padding-r25">
+            <img src="dist/images/temp/timg.jpg" alt="图片名" class="full-width" height="170">
+          </div>
+        </div>
+        
+        <div class="layui-col-sm8">
+          <h1 class="f24 text-no-bold">
+            趣味知识竞赛现场直播
+            <span class="layui-bg-gray custom-badge margin-l5 vertical-middle">已结束</span>
+            <!--
+              <span class="bg-orange custom-badge margin-l5 vertical-middle">直播中（已有10人参与）</span>
+              <span class="bg-orange custom-badge margin-l5 vertical-middle">即将开始（1小时后开始）</span>
+              <span class="bg-gray custom-badge margin-l5 vertical-middle">未开始（3天后开始）</span>
+            -->
+          </h1>
+          <div class="margin-t5 f12">
+            <span class="margin-r20">主讲：李晓明</span>
+            <span class="margin-r20">助教：李淑芬</span>
+            <span class="margin-r20">时间：2018-4-15 10:00~11:00</span>
+            <span>观看口令：47693</span>
+          </div>
+          <div class="margin-t10 gray9 line-height-1_4">
+              简介：介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="box-footer padding-r20 padding-l20 text-center">
+    <button type="button" class="layui-btn min-width-80 layui-btn-normal" data-id="video">观看直播</button>
+  </div>
+</div>
+
+<script type="text/javascript">
+layui.use(['element'], function(){
+  var element = layui.element;
+  var $siteContentInner=$('[data-id="menu-content"]');
+  var $container=$('[data-id="broadcast-detail-page"]');
+
+  $container
+  //返回
+  .on('click', '[data-role="rollback"]', function(event) {
+    //缓存列表页面
+    $siteContentInner.html( $siteContentInner.data('living-broadcast-list') )
+  })
+  //查看详情
+  .on('click', '.living-broadcast-list a', function(event) {
+    event.preventDefault();
+
+    loadSideMenuCnt($(this).attr('href'));
+  })
+  //观看直播
+  .on('click', '[data-id="video"]', function(event) {
+    event.preventDefault();
+    var name=$.trim($(this).text());
+    var url=$(this).attr('href');
+    var type=$(this).data('type');
+    var tpl='\
+      <div class="page-pop" data-id="page-pop" style="opacity:0;">\
+        <div class="page-pop-title">\
+          <span class="as-link page-pop-close" role="button">\
+            <i class="layui-icon layui-icon-left f24">&#xe603;</i>\
+          </span>\
+          <span class="title">[courseName]</span>\
+        </div>\
+        <div class="page-pop-body">\
+          <iframe src="video-page-pop-iframe.html" name="page-pop-iframe" id="page-pop-iframe" frameborder="0" scrolling="no" class="page-pop-iframe"></iframe>\
+        </div>\
+      </div>\
+    ';
+
+    tpl=tpl.replace('[courseName]','趣味知识竞赛现场直播')
+    
+    $('body').addClass('page-pop-open').append(tpl);
+
+    var $pagePop=$('[data-id="page-pop"]');
+    $pagePop.animate({left: 0,opacity:1}, 'fast');
+  });
+
+  //关闭切屏
+  $('.page-pop-close').unbind('click');
+  
+  $('body').on('click', '.page-pop-close' , function(event) {
+    var $pagePop=$(this).closest('.page-pop');
+    $pagePop.animate({left: '-100%',opacity:0}, 'fast',function(){
+      $('body').removeClass('page-pop-open');
+      $pagePop.remove();
+    });
+  });
+});
+</script>

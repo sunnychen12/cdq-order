@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>学习平台</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+</head>
+<body no-fixbar>
+
+<div class="padding20">
+  <div class="box-style">
+    <div class="padding20">
+      <div class="article f16">
+        7年前，微信诞生了，如今月活用户数高达9.8亿，成为中国名副其实的第一大移动APP。
+        遥想当初，微信可谓四面受敌，比如米聊、易信、来往等等，如果不是借QQ这个巨无霸引流，微信突围之路绝不会如此顺利。
+
+        很针对以上案例，发表你的看法！
+      </div>
+    </div>
+    <div class="layui-tab margin-none">
+      <ul class="layui-tab-title layui-tab-title-lg padding-l20">
+        <li class="layui-this">全部讨论（10）</li>
+        <li>我发表的（2）</li>
+        <li>我点赞的（15）</li>
+      </ul>
+      <div class="padding-l20 padding-r20 padding-t15">
+      <div class="box">
+        <div class="box-body padding15">
+          <form class="layui-form">
+            <textarea placeholder="请再次发表你的看法" class="layui-textarea"
+              lay-verType="tips"
+              lay-verify="verify-control"
+              data-regexp="*1"
+              null-msg="内容不能为空"
+              error-msg="内容不能为空"
+            ></textarea>
+            <div class="margin-t10 text-right">
+              <button class="layui-btn" lay-submit lay-filter="form1">发表</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      </div>
+      <div class="layui-tab-content padding-l20 padding-r20 padding-top-none">
+        <div class="layui-tab-item layui-show">
+          <fieldset class="layui-elem-field layui-field-title margin-bottom-none">
+            <legend class="f18">全部讨论</legend>
+          </fieldset>
+          <div class="margin-t10">
+            <ul class="c-comments-list with-border">
+              <li class="item">
+                <div class="media">
+                  <div class="media-side vertical-middle">
+                    <img src="http://t.cn/RCzsdCq">
+                  </div>
+                  <div class="media-body padding-l10">
+                    <div class="name f16">赵志明</div>
+                    <div class="time margin-t5">10分钟前 发布</div>
+                  </div>
+                  <div class="media-side text-nowrap text-center">
+                    <div class="praise actived">
+                      <i class="fa fa-thumbs-up f18"></i>
+                      <div class="f12 line-height-1">+ 30</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc">
+                  自从购买了课程后，就爱上了,这个课程，老师
+                  的讲课内容都很清晰，对自己现在的工作也特别
+                  有帮助。自从购买了课程后，就爱上了,这个课程，老师
+                  的讲课内容都很清晰，对自己现在的工作也特别
+                  有帮助。
+                </div>
+              </li>
+              <li class="item">
+                <div class="media">
+                  <div class="media-side vertical-middle">
+                    <img src="http://t.cn/RCzsdCq">
+                  </div>
+                  <div class="media-body padding-l10">
+                    <div class="name f16">赵志明</div>
+                    <div class="time margin-t5">10分钟前 发布</div>
+                  </div>
+                  <div class="media-side text-nowrap text-center">
+                    <div class="praise">
+                      <i class="fa fa-thumbs-up f18"></i>
+                      <div class="f12 line-height-1">+ 30</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc">
+                  自从购买了课程后，就爱上了,这个课程，老师
+                  的讲课内容都很清晰，对自己现在的工作也特别
+                  有帮助。自从购买了课程后，就爱上了,这个课程，老师
+                  的讲课内容都很清晰，对自己现在的工作也特别
+                  有帮助。
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="layui-tab-item">
+          <fieldset class="layui-elem-field layui-field-title margin-bottom-none">
+            <legend class="f18">我发表的</legend>
+          </fieldset>
+          <div class="margin-t10">
+            <ul class="c-comments-list with-border">
+              <li class="item">
+                <div class="media">
+                  <div class="media-side vertical-middle">
+                    <img src="http://t.cn/RCzsdCq">
+                  </div>
+                  <div class="media-body padding-l10">
+                    <div class="name f16">赵志明</div>
+                    <div class="time margin-t5">10分钟前 发布</div>
+                  </div>
+                  <div class="media-side text-nowrap text-center">
+                    <div class="praise">
+                      <i class="fa fa-thumbs-up f18"></i>
+                      <div class="f12 line-height-1">+ 30</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc">
+                  自从购买了课程后，就爱上了,这个课程，老师
+                  的讲课内容都很清晰，对自己现在的工作也特别
+                  有帮助。自从购买了课程后，就爱上了,这个课程，老师
+                  的讲课内容都很清晰，对自己现在的工作也特别
+                  有帮助。
+                </div>
+              </li>
+              <li class="item">
+                <div class="media">
+                  <div class="media-side vertical-middle">
+                    <img src="http://t.cn/RCzsdCq">
+                  </div>
+                  <div class="media-body padding-l10">
+                    <div class="name f16">赵志明</div>
+                    <div class="time margin-t5">10分钟前 发布</div>
+                  </div>
+                  <div class="media-side text-nowrap text-center">
+                    <div class="praise">
+                      <i class="fa fa-thumbs-up f18"></i>
+                      <div class="f12 line-height-1">+ 30</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc">
+                  自从购买了课程后，就爱上了,这个课程，老师
+                  的讲课内容都很清晰，对自己现在的工作也特别
+                  有帮助。自从购买了课程后，就爱上了,这个课程，老师
+                  的讲课内容都很清晰，对自己现在的工作也特别
+                  有帮助。
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="layui-tab-item">
+          <fieldset class="layui-elem-field layui-field-title margin-bottom-none">
+            <legend class="f18">我点赞的</legend>
+          </fieldset>
+          <div class="margin-t10">
+            <ul class="c-comments-list with-border">
+              <li class="item">
+                <div class="media">
+                  <div class="media-side vertical-middle">
+                    <img src="http://t.cn/RCzsdCq">
+                  </div>
+                  <div class="media-body padding-l10">
+                    <div class="name f16">赵志明</div>
+                    <div class="time margin-t5">10分钟前 发布</div>
+                  </div>
+                  <div class="media-side text-nowrap text-center">
+                    <div class="praise actived">
+                      <i class="fa fa-thumbs-up f18"></i>
+                      <div class="f12 line-height-1">+ 30</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc">
+                  自从购买了课程后，就爱上了,这个课程，老师
+                  的讲课内容都很清晰，对自己现在的工作也特别
+                  有帮助。自从购买了课程后，就爱上了,这个课程，老师
+                  的讲课内容都很清晰，对自己现在的工作也特别
+                  有帮助。
+                </div>
+              </li>
+              <li class="item">
+                <div class="media">
+                  <div class="media-side vertical-middle">
+                    <img src="http://t.cn/RCzsdCq">
+                  </div>
+                  <div class="media-body padding-l10">
+                    <div class="name f16">赵志明</div>
+                    <div class="time margin-t5">10分钟前 发布</div>
+                  </div>
+                  <div class="media-side text-nowrap text-center">
+                    <div class="praise actived">
+                      <i class="fa fa-thumbs-up f18"></i>
+                      <div class="f12 line-height-1">+ 30</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc">
+                  自从购买了课程后，就爱上了,这个课程，老师
+                  的讲课内容都很清晰，对自己现在的工作也特别
+                  有帮助。自从购买了课程后，就爱上了,这个课程，老师
+                  的讲课内容都很清晰，对自己现在的工作也特别
+                  有帮助。
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['element'], function(){
+  var element = layui.element;
+
+  
+});
+</script>
+</body>
+</html>

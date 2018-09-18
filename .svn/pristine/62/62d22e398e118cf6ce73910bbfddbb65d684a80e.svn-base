@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>列表页</title>
+
+<script type="text/javascript" src='dist/loadcss.js'></script>
+
+</head>
+<body class="cdq-body">
+  <!-- 面包屑 start-->
+  <div class="cdq-breadcrumb-box">
+    <div class="pull-right">
+      <button type="button" class="layui-btn layui-btn-primary layui-btn-sm min-width-80">返回</button>
+    </div>
+    <span class="layui-breadcrumb visible">
+      <a href="">首页</a><span lay-separator>&gt;</span>
+      <a><cite>详细页</cite></a>
+    </span>
+  </div>
+  <!-- 面包屑 start-->
+
+
+  <!-- 内容主体区域 start-->
+  <div class="cdq-content">
+
+    <div class="box box-border-radius padding-l10 padding-r10 padding-t20 padding-b20">
+      <div class="layui-row layui-col-space20">
+        <div class="layui-col-sm4">
+          <div class="media">
+            <div class="media-side text-center padding-l10 padding-r20">
+              <img src="http://t.cn/RCzsdCq" width="120" height="120" class="layui-circle">
+              <div class="margin-t10">
+                <button type="button" class="layui-btn layui-btn-normal layui-btn-sm">设置设备照片</button>
+              </div>
+            </div>
+            <div class="media-body vertical-middle">
+              <dl class="text-word-break">
+                <dt class="f24">XXXXXX</dt>
+                <dd class="margin-t5">XXXXXXXXXXXXX</dd>
+                <dd class="margin-t5">XXXXXXXXXXXXXXX</dd>
+                <dd class="margin-t5">XXXXXXXXXXXXXXXX</dd>
+                <dd class="margin-t5">XXXXXXXXXX</dd>
+                <dd class="margin-t5">XXXXXXXXXXXXXXXXxxxxx</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="layui-col-sm8">
+          <table class="layui-table text-center border-none margin-none" height="160" lay-skin="row">
+            <tbody>
+              <tr class="no-bg">
+                <td class="border-left">
+                  <div class="f28 text-orange">XXXX</div>
+                  <div class="f16 margin-t10">XXXXXXX</div>
+                </td>
+                <td>
+                  <div class="f28 text-orange">XXXX</div>
+                  <div class="f16 margin-t10">XXXXXXX</div>
+                </td>
+                <td>
+                  <div class="f28 text-orange">XXXX</div>
+                  <div class="f16 margin-t10">XXXXXXX</div>
+                </td>
+                <td class="border-none">
+                  <div class="f28 text-orange">XXXX</div>
+                  <div class="f16 margin-t10">XXXXXXX</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white margin-b15">
+      <div class="layui-tab layui-tab-card bg-white">
+        <ul class="layui-tab-title">
+          <li class="layui-this">XXXXXXXXXXXXXX</li>
+          <li>XXXXXXXXXXXXXX</li>
+          <li>XXXXXXXXXXXXXX</li>
+        </ul>
+        <div class="layui-tab-content padding-none">
+          <div class="layui-tab-item layui-show">
+            <div class="padding15">
+              <div class="padding-b30">
+                <fieldset class="layui-elem-field layui-field-title">
+                  <legend class="f16 text-bold">列表样式</legend>
+                </fieldset>
+                <div class="margin-b10 media">
+                  <div class="media-side">
+                    <i class="fa fa-fw fa-exclamation-circle text-orange f28"></i>
+                  </div>
+                  <div class="media-body vertical-middle">
+                    描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                  </div>
+                </div>
+                <form class="layui-form">
+                  <div class="table-responsive">
+                    <table class="layui-table margin-none" table-no-hover>
+                      <colgroup>
+                        <col width="17%"></col>
+                        <col width="33%"></col>
+                        <col width="17%"></col>
+                        <col width="33%"></col>
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th class="text-center">
+                              字段
+                          </th>
+                          <td>xxxxxxxxxx</td>
+
+                          <th class="text-center">
+                              字段
+                          </th>
+                          <td>xxxxxxxxxx</td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">
+                              字段
+                          </th>
+                          <td>xxxxxxxxxx</td>
+
+                          <th class="text-center">
+                            <span required-mark>
+                              字段
+                            </span>
+                          </th>
+                          <td>xxxxxxxxxx</td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">
+                            <span required-mark>
+                              验证下拉
+                            </span>
+                          </th>
+                          <td>
+                            <select lay-verify="required" lay-search>
+                              <option value="">下拉菜单</option>
+                              <option value="010">layer</option>
+                              <option value="021">form</option>
+                            </select>
+                          </td>
+
+                          <th class="text-center">
+                            字段
+                          </th>
+                          <td>xxxxxxxxxx</td>
+                        </tr>
+
+                        <tr>
+                          <th class="text-center">
+                            <span required-mark>
+                              必填字段
+                            </span>
+                          </th>
+                          <td>
+                            <input type="text" lay-verify="required" autocomplete="off" class="layui-input">
+                          </td>
+
+                          <th class="text-center">
+                            <span required-mark>
+                              手机号
+                            </span>
+                          </th>
+                          <td>
+                            <input type="text" lay-verify="phone" autocomplete="off" class="layui-input">
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th class="text-center">
+                            <span required-mark>
+                              邮箱
+                            </span>
+                          </th>
+                          <td>
+                            <input type="text" lay-verify="email" autocomplete="off" class="layui-input">
+                          </td>
+
+                          <th class="text-center">
+                            <span required-mark>
+                              网址
+                            </span>
+                          </th>
+                          <td>
+                            <input type="text" lay-verify="url" autocomplete="off" class="layui-input">
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th class="text-center">
+                            <span required-mark>
+                              数字
+                            </span>
+                          </th>
+                          <td>
+                            <input type="text" lay-verify="number" autocomplete="off" class="layui-input">
+                          </td>
+
+                          <th class="text-center">
+                            <span required-mark>
+                              日期
+                            </span>
+                          </th>
+                          <td>
+                            <input type="text" lay-verify="date" autocomplete="off" class="layui-input">
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th class="text-center">
+                            <span required-mark>
+                              身份证
+                            </span>
+                          </th>
+                          <td>
+                            <input type="text" lay-verify="identity" autocomplete="off" class="layui-input">
+                          </td>
+
+                          <th class="text-center">
+                            <span required-mark>
+                              输入非特殊字符5到15个
+                            </span>
+                            <div class="gray9 f12">（不能包含~!@#$%^+*\&amp;/?|:.\&lt;\&gt;{}()';=）</div>
+                          </th>
+                          <td>
+                            <input type="text" lay-verify="verify-control" autocomplete="off" class="layui-input"
+                              data-regexp="s5-15"
+                              null-msg="请输入字符"
+                              error-msg="请输入5到15个字符"
+                            >
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th class="text-center">
+                            <span required-mark>
+                              输入5到15个任意字符
+                            </span>
+                          </th>
+                          <td>
+                            <input type="text" lay-verify="verify-control" autocomplete="off" class="layui-input"
+                              data-regexp="*5-15"
+                              null-msg="请输入任意字符"
+                              error-msg="请输入5到15个任意字符"
+                            >
+                          </td>
+
+                          <th class="text-center">
+                            <span required-mark>
+                              输入5到15个数字
+                            </span>
+                          </th>
+                          <td>
+                            <input type="text" lay-verify="verify-control" autocomplete="off" class="layui-input"
+                              data-regexp="n5-15"
+                              null-msg="请输入数字"
+                              error-msg="请输入5到15个数字"
+                            >
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th class="text-center">
+                            字段
+                          </th>
+                          <td colspan="3">
+                            <input type="text" class="layui-input full-width" placeholder="很长的输入框">
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">
+                            列表中带表格
+                          </th>
+                          <td colspan="3">
+                            <table class="layui-table text-center">
+                              <thead>
+                                <tr>
+                                  <th>xx</th>
+                                  <th>xxxx</th>
+                                  <th>xxxx</th>
+                                  <th>xxxx</th>
+                                  <th>xxxx</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <th>XXXXXXXXXXXXX</th>
+                                <td>XXXXXXXXX</td>
+                                <td>XXXXXXXXX</td>
+                                <td>XXXXXXXXX</td>
+                                <td>
+                                  <select lay-size="sm" lay-search>
+                                    <option value="">下拉菜单</option>
+                                    <option value="010">layer</option>
+                                    <option value="021">form</option>
+                                  </select>
+                                </td>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">
+                            列表中带表格
+                          </th>
+                          <td colspan="3" class="padding-none">
+                            <div style="margin:-1px;">
+                              <table class="layui-table text-center margin-none">
+                                <thead>
+                                  <tr>
+                                    <th>xx</th>
+                                    <th>xxxx</th>
+                                    <th>xxxx</th>
+                                    <th>xxxx</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <td>XXXXXXXXXXXXX</td>
+                                  <td>XXXXXXXXX</td>
+                                  <td>XXXXXXXXX</td>
+                                  <td>XXXXXXXXX</td>
+                                </tbody>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">
+                            超级文本框
+                          </th>
+                          <td colspan="3">
+                            <textarea placeholder="请输入内容" class="layui-textarea" rows="10"></textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">
+                            一个表格所行文字
+                          </th>
+                          <td>
+                            <ul>
+                              <li>
+                                XXXXXX：XXXXX <small class="gray9">（xxxx）</small>
+                              </li>
+                              <li>
+                                XXXXXX：XXXXX <small class="gray9">（xxxx）</small>
+                              </li>
+                              <li>
+                                XXXXXX：XXXXX <small class="gray9">（xxxx）</small>
+                              </li>
+                            </ul>
+                          </td>
+
+                          <th class="text-center">
+                            表格里面处理图片
+                          </th>
+                          <td class="text-center">
+                            <div class="inline-block">
+                              <div>
+                                <img src="dist/images/temp/timg.jpg" class="img-responsive" width="240" height="160">
+                              </div>
+                              <div class="margin-t10">
+                                <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid layui-btn-sm">
+                                  <i class="layui-icon">&#xe67c;</i>
+                                  上传图片
+                                </button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="text-center margin-t20">
+                    <button type="button" class="layui-btn layui-btn-normal min-width-100" lay-filter="form" lay-submit>
+                      提交验证
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="padding-b30">
+                <fieldset class="layui-elem-field layui-field-title">
+                  <legend class="f16 text-bold">图片样式（2张）</legend>
+                </fieldset>
+                <div class="margin-b10 media">
+                  <div class="media-side">
+                    <i class="fa fa-fw fa-exclamation-circle text-orange f28"></i>
+                  </div>
+                  <div class="media-body vertical-middle">
+                    描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                  </div>
+                </div>
+                <div class="layui-row layui-col-space20 margin-t20">
+                  <div class="layui-col-sm6">
+                    <div class="layui-row">
+                      <div class="layui-col-sm7 center-block float-none">
+                        <div>
+                          <img src="dist/images/temp/timg.jpg" class="img-responsive" width="100%" height="200">
+                        </div>
+                        <div class="margin-t10 text-center">
+                          <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid layui-btn-sm">
+                            <i class="layui-icon">&#xe67c;</i>
+                            上传图片
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layui-col-sm6">
+                    <div class="layui-row">
+                      <div class="layui-col-sm7 center-block float-none">
+                        <div>
+                          <img src="dist/images/temp/timg.jpg" class="img-responsive" width="100%" height="200">
+                        </div>
+                        <div class="margin-t10 text-center">
+                          文字文字文字文字文字文字文字文
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="padding-b30">
+                <fieldset class="layui-elem-field layui-field-title">
+                  <legend class="f16 text-bold">图片样式（1张）</legend>
+                </fieldset>
+                <div class="margin-b10 media">
+                  <div class="media-side">
+                    <i class="fa fa-fw fa-exclamation-circle text-orange f28"></i>
+                  </div>
+                  <div class="media-body vertical-middle">
+                    描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                  </div>
+                </div>
+                <div class="margin-t20 text-center">
+                  <div class="inline-block">
+                    <div>
+                      <img src="dist/images/temp/timg.jpg" class="img-responsive" width="300" height="200">
+                    </div>
+                    <div class="margin-t10 text-center">
+                      <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid layui-btn-sm">
+                        <i class="layui-icon">&#xe67c;</i>
+                        上传图片
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="padding-b30">
+                <fieldset class="layui-elem-field layui-field-title">
+                  <legend class="f16 text-bold">图片样式（选项）</legend>
+                </fieldset>
+                <div class="margin-b10 media">
+                  <div class="media-side">
+                    <i class="fa fa-fw fa-exclamation-circle text-orange f28"></i>
+                  </div>
+                  <div class="media-body vertical-middle">
+                    描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                  </div>
+                </div>
+                <div class="margin-t20">
+                    <div class="layui-row">
+                      <div class="layui-col-sm8 layui-col-sm-offset2">
+                        <div class="layui-tab layui-tab-card" overflow>
+                          <ul class="layui-tab-title">
+                            <li class="layui-this">XXXXXXXXXXXXXXXXXX</li>
+                            <li>XXXXXXXXXXXXXXXXXXXXXX</li>
+                          </ul>
+                          <div class="layui-tab-content padding-t20 padding-b20">
+                            <div class="layui-tab-item layui-show">
+                              <div class="text-center">
+                                <div class="inline-block">
+                                  <div>
+                                    <img src="dist/images/temp/timg.jpg" class="img-responsive" width="300" height="200">
+                                  </div>
+                                  <div class="margin-t10 text-center">
+                                    <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid layui-btn-sm">
+                                      <i class="layui-icon">&#xe67c;</i>
+                                      上传图片
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="layui-tab-item">2</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="padding-b30">
+                <fieldset class="layui-elem-field layui-field-title">
+                  <legend class="f16 text-bold">图片样式（图片+选项）</legend>
+                </fieldset>
+                <div class="margin-b10 media">
+                  <div class="media-side">
+                    <i class="fa fa-fw fa-exclamation-circle text-orange f28"></i>
+                  </div>
+                  <div class="media-body vertical-middle">
+                    描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                  </div>
+                </div>
+                <div class="layui-row layui-col-space20 margin-t20">
+                  <div class="layui-col-sm6">
+                    <div class="layui-row">
+                      <div class="layui-col-sm7 center-block float-none">
+                        <div>
+                          <img src="dist/images/temp/timg.jpg" class="img-responsive" width="100%" height="200">
+                        </div>
+                        <div class="margin-t10 text-center">
+                          <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid layui-btn-sm">
+                            上传图片
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layui-col-sm6">
+                    <div class="layui-row">
+                      <div class="layui-col-sm9 center-block float-none">
+                        <div class="layui-tab layui-tab-card margin-none" overflow>
+                          <ul class="layui-tab-title">
+                            <li class="layui-this">XXXXXXXXXXXXXXXXXX</li>
+                            <li>XXXXXXXXXXXXXXXXXXXXXX</li>
+                          </ul>
+                          <div class="layui-tab-content padding-t20 padding-b20">
+                            <div class="layui-tab-item layui-show">
+                              <div class="text-center">
+                                <div class="inline-block">
+                                  <div>
+                                    <img src="dist/images/temp/timg.jpg" class="img-responsive" width="300" height="200">
+                                  </div>
+                                  <div class="margin-t10 text-center">
+                                    <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid layui-btn-sm">
+                                      上传图片
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="layui-tab-item">2</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="padding-b30">
+                <fieldset class="layui-elem-field layui-field-title">
+                  <legend class="f16 text-bold">审核样式</legend>
+                </fieldset>
+                <div class="layui-form">
+                  <ul class="layui-timeline">
+                    <li class="layui-timeline-item">
+                      <i class="layui-icon layui-timeline-axis gray9">&#xe617;</i>
+                      <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title f16">
+                          <span>XXXXXX</span>
+                          <small class="gray9">2032-12-15 19:00</small>
+                        </h3>
+                      </div>
+                    </li>
+                    <li class="layui-timeline-item">
+                      <i class="layui-icon layui-timeline-axis text-orange">&#xe617;</i>
+                      <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title f16">
+                          <span class="text-orange">待审核</span>
+                        </h3>
+                        <div class="layui-col-sm8 float-none">
+                          <textarea placeholder="XXXXXXXXXXXXXXXXXXXXXXXX" class="layui-textarea" rows="5"></textarea>
+                          <div class="margin-t10">
+                            <button type="button" class="layui-btn layui-btn-normal">审核通过</button>
+                            <button type="button" class="layui-btn layui-btn-danger">审核不通过</button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="layui-timeline-item">
+                      <i class="layui-icon layui-timeline-axis text-green">&#xe617;</i>
+                      <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title f16">
+                          <span class="text-green">审核通过</span>
+                        </h3>
+                        <div class="layui-col-sm8 float-none">
+                          <textarea placeholder="XXXXXXXXXXXXXXXXXXXXXXXX" class="layui-textarea" rows="5">文字文字文字文字文字文字文字文字文字</textarea>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="layui-timeline-item">
+                      <i class="layui-icon layui-timeline-axis text-red">&#xe617;</i>
+                      <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title f16">
+                          <span class="text-red">审核不通过</span>
+                        </h3>
+                        <div class="layui-col-sm8 float-none">
+                          <textarea placeholder="XXXXXXXXXXXXXXXXXXXXXXXX" class="layui-textarea" rows="5">文字文字文字文字文字文字文字文字文字</textarea>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="padding-b30">
+                <fieldset class="layui-elem-field layui-field-title">
+                  <legend class="f16 text-bold">复杂图片排版</legend>
+                </fieldset>
+                <div class="layui-row layui-col-space20 margin-t20">
+                  <div class="layui-col-sm6">
+                    <div class="layui-row">
+                      <div class="layui-col-sm7 center-block float-none">
+                        <div>
+                          <img src="dist/images/temp/timg.jpg" class="img-responsive" width="100%" height="200">
+                        </div>
+                        <div class="margin-t10 text-center">
+                          文字文字文字文字
+                        </div>
+                        <div class="margin-t10 text-center">
+                          <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid layui-btn-sm">
+                            按钮
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layui-col-sm6">
+                    <div class="layui-row">
+                      <div class="layui-col-sm7 center-block float-none">
+                        <div class="box box-border-radius padding30">
+                          <img src="dist/images/temp/timg.jpg" class="img-responsive" width="100%" height="200">
+                        </div>
+                        <div class="margin-t10 text-center">
+                          文字文字文字文字文字文字文字文
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="margin-t20 text-center">
+                  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                </div>
+              </div>
+
+              <div class="padding-b30">
+                <fieldset class="layui-elem-field layui-field-title">
+                  <legend class="f16 text-bold">提示居中+按钮</legend>
+                </fieldset>
+                <div>
+                    <table style="margin:0 auto">
+                      <tr>
+                        <td>
+                          <i class="fa fa-fw fa-exclamation-circle text-orange f28"></i>
+                        </td>
+                        <td>
+                          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                      </tr>
+                    </table>
+
+                    <div class="layui-row">
+                      <div class="layui-col-xs6 layui-col-xs-offset3">
+                        <div class="media margin-t20">
+                          <div class="media-body vertical-middle">
+                            <input type="text" class="layui-input">
+                          </div>
+                          <div class="media-side padding-l15">
+                            <button type="button" class="layui-btn layui-btn-normal">
+                              按钮
+                            </button>
+                          </div>
+                        </div>
+
+                        <div class="margin-t20">
+                          <input type="text" class="layui-input">
+                        </div>
+
+                        <div class="margin-t20">
+                          <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid">
+                            按钮
+                          </button>
+                        </div>
+
+                        <div class="margin-t20">
+                          <button type="button" class="layui-btn layui-btn-danger layui-btn-fluid">
+                            按钮
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="padding-b30">
+                <fieldset class="layui-elem-field layui-field-title">
+                  <legend class="f16 text-bold">复杂表格</legend>
+                </fieldset>
+                <div class="table-responsive">
+                  <table class="layui-table text-center">
+                    <thead>
+                      <tr>
+                        <th>xx</th>
+                        <th>xx</th>
+                        <th>xx</th>
+                        <th>xx</th>
+                        <th>xx</th>
+                        <th>xx</th>
+                        <th>xx</th>
+                        <th>xx</th>
+                        <th>xx</th>
+                        <th>xx</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td rowspan="5">xx</td>
+                        <td rowspan="5">xx</td>
+                        <td rowspan="5">xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                      </tr>
+                      <tr>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                      </tr>
+                      <tr>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                      </tr>
+                      <tr>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                      </tr>
+                      <tr>
+                        <th>xx</th>
+                        <th>
+                          <span class="text-bold">xx</span>
+                        </th>
+                        <th>
+                          <span class="text-bold">xx</span>
+                        </th>
+                        <th>
+                          <span class="text-blue">xx</span>
+                        </th>
+                        <th>
+                          <span class="text-blue">xx</span>
+                        </th>
+                        <th>
+                          <span class="text-blue">xx</span>
+                        </th>
+                        <th>
+                          <span class="text-blue">xx</span>
+                        </th>
+                      </tr>
+
+
+                      <tr>
+                        <td rowspan="5">xx</td>
+                        <td rowspan="5">xx</td>
+                        <td rowspan="5">xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                      </tr>
+                      <tr>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                      </tr>
+                      <tr>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                      </tr>
+                      <tr>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                      </tr>
+                      <tr>
+                        <th>xx</th>
+                        <th>
+                          <span class="text-bold">xx</span>
+                        </th>
+                        <th>
+                          <span class="text-bold">xx</span>
+                        </th>
+                        <th>
+                          <span class="text-blue">xx</span>
+                        </th>
+                        <th>
+                          <span class="text-blue">xx</span>
+                        </th>
+                        <th>
+                          <span class="text-blue">xx</span>
+                        </th>
+                        <th>
+                          <span class="text-blue">xx</span>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="border-top">
+              <div class="padding10 text-right">
+                <button type="button" class="layui-btn layui-btn-normal min-width-100">
+                  按钮二
+                </button>
+                <button type="button" class="layui-btn layui-btn-danger min-width-100">
+                按钮按钮按钮
+              </button>
+              </div>
+            </div>
+          </div>
+          <div class="layui-tab-item">
+            <div class="padding10">2</div>
+          </div>
+          <div class="layui-tab-item">
+            <div class="padding10">3</div>
+          </div>
+        </div>
+      </div>
+      <div class="border-top">
+        <div class="padding10 text-right">
+          <button type="button" class="layui-btn layui-btn-normal min-width-100">
+            按钮二
+          </button>
+          <button type="button" class="layui-btn layui-btn-danger min-width-100">
+          按钮按钮按钮
+        </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- 内容主体区域 end-->
+
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['form'], function(){
+  var form = layui.form;
+});
+</script>
+</body>
+</html>

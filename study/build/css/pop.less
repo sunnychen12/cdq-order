@@ -1,0 +1,21 @@
+/*iframe 弹窗 */
+.pop-content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+}
+//的底部 工具条
+.pop-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color: #F8F8F8;
+    border-top: 1px solid #ddd;
+    +.pop-content{
+        bottom: 59px;
+    }
+}
