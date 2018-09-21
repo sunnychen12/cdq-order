@@ -710,7 +710,7 @@ layui.use(['element','raphael','slimScroll','laytpl'], function(){
     loadPage($(this).attr('href'));
   })
   //侧边 展开/收缩
-  .on('click', '.expand-control', function(event) {
+  .on('touchstart click', '.expand-control', function(event) {
     $('.act-page').toggleClass('act-side-close');
   });
 });
