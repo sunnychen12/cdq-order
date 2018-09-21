@@ -553,7 +553,13 @@
         </div>
       </div>
     </div>
+
+    <div class="expand-control">
+      <i class="layui-icon" data-control="close" title="关闭" style="display:block;">&#xe65b;</i>
+      <i class="layui-icon" data-control="open" title="打开">&#xe65a;</i>
+    </div>
   </div>
+
 </div>
 
 <script type="text/javascript" src='dist/loadjs.js'></script>
@@ -683,7 +689,7 @@ layui.use(['element','raphael','slimScroll','laytpl'], function(){
     $loading.hide();
   }
 
-  $(document)
+  $('.act-page')
   //点击加载页面
   .on('click','[data-ifm-url]',function(event){
     var ifmUrl=$(this).attr('data-ifm-url')
@@ -702,6 +708,10 @@ layui.use(['element','raphael','slimScroll','laytpl'], function(){
   .on('click', '[data-role="view-desc"]', function(event) {
     event.preventDefault();
     loadPage($(this).attr('href'));
+  })
+  //侧边 展开/收缩
+  .on('click', '.expand-control', function(event) {
+    $('.act-page').toggleClass('act-side-close');
   });
 });
 </script>
