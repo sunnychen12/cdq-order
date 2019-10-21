@@ -1,0 +1,47 @@
+<script>
+    $(function(){
+        //js脚本
+        $('.page').on('click','.toggle-holder',function () {
+
+            var $slideCnt=$(this).next('.slide-cnt');
+
+            $(this).toggleClass('expand');
+
+            $slideCnt.slideToggle(function(){
+                //console.log(3333)
+            })
+        })
+
+        //圆圈进度条
+        requirejs(['progressbar'],function (ProgressBar){
+            document.querySelectorAll('.cir-bar').forEach(function (item,index) {
+                var progress=item.getAttribute('data-progress');
+                var circle = new ProgressBar.Circle(item, {
+                    color: '#7a95f2',
+                    strokeWidth: 6,
+                    trailColor: '#bdccff',
+                    trailWidth: 4,
+                    text: {
+                        value: (progress-0)+'%',
+                        style: {
+                            position: 'absolute',
+                            left: '50%',
+                            top: '50%',
+                            padding: 0,
+                            margin: 0,
+                            fontSize:'.55rem',
+                            transform: {
+                                prefix: true,
+                                value: 'translate(-50%, -50%) scale(.7)'
+                            }
+                        },
+                        autoStyleContainer: true,
+
+                    },
+                });
+                circle.animate( (progress-0)/100 )
+            })
+
+        });
+    })
+</script>

@@ -1,0 +1,232 @@
+<div class="page-group">
+	<div class="page" id="page-course-study-index">
+		<header class="bar bar-nav">
+			<a class="icon icon-left pull-left back gray3"></a>
+			<div class="pull-right gray3">
+				<span class="ico-custom">&#xe900;</span>
+				<span class="icon icon-friends"></span>
+			</div>
+
+			<h1 class="title">营销基础</h1>
+		</header>
+		<div class="content">
+			<div class="bg-white">
+				<div class="padding_75rem">
+					<div class="score-blue-panel">
+						<div class="score-panel-header">
+							<div class="flex-box">
+								<div class="flex-item margin-r_5rem overflow-hidden">
+									<div class="progress">
+										<span style="width: 70%"></span>
+									</div>
+									<div class="last-study-txt margin-t_3rem text-ellipsis">
+										上次学到了：【视频活动】营销的基本概述
+									</div>
+								</div>
+								<div class="margin-l_75rem">
+									<a href="#" class="button button-round button-purple-o go-studying">继续学习</a>
+								</div>
+							</div>
+						</div>
+						<div class="flex-box score-panel-grid padding-t_5rem padding-b_5rem">
+							<div class="flex-item">
+								<div class="num">
+									10<small class="unit">次</small>
+								</div>
+								<div class="label-txt">学习次数</div>
+							</div>
+							<div class="flex-item">
+								<div class="num">
+									8<small class="unit">小时</small>
+								</div>
+								<div class="label-txt">学习时长</div>
+							</div>
+							<div class="flex-item">
+								<div class="num">
+									28<small class="unit">%</small>
+								</div>
+								<div class="label-txt">学习进度</div>
+							</div>
+							<div class="flex-item">
+								<div class="num">
+									3<small class="unit">分</small>
+								</div>
+								<div class="label-txt">学习成绩</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<ul class="list-unstyled bg-white section-list">
+					<li class="section-item">
+						<div class="toggle-holder expand">
+							<div class="flex-box flex-align-center flex-box-justify">
+								<div class="section-name">第一章</div>
+								<span class="icon icon-down"></span>
+							</div>
+						</div>
+						<div class="slide-cnt expand">
+							<ul class="list-unstyled list-cutstom parts-list">
+								<li class="list-cutstom-item parts-item">
+									<div class="toggle-holder expand">
+										<div class="flex-box flex-align-center flex-box-justify">
+											<div class="parts-name">第1节</div>
+											<span class="icon icon-down"></span>
+										</div>
+									</div>
+									<div class="slide-cnt expand">
+										<ul class="list-unstyled activities-list">
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[视频学习]XXXX的定义</span>
+													<div class="cir-bar" data-progress="30"></div>
+												</a>
+											</li>
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[文本学习]XXXX的定义</span>
+													<div class="cir-bar" data-progress="70"></div>
+												</a>
+											</li>
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[模拟测验]XXXX的定义</span>
+													<div class="cir-bar" data-progress="40"></div>
+												</a>
+											</li>
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[互动讨论]XXXX的定义</span>
+													<div class="cir-bar" data-progress="40"></div>
+												</a>
+											</li>
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[视频学习]XXXX的定义</span>
+													<div class="cir-bar" data-progress="10"></div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list-cutstom-item parts-item">
+									<div class="toggle-holder">
+										<div class="flex-box flex-align-center flex-box-justify">
+											<div class="parts-name">第2节</div>
+											<span class="icon icon-down"></span>
+										</div>
+									</div>
+									<div class="slide-cnt">
+										<ul class="list-unstyled activities-list">
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[视频学习]XXXX的定义</span>
+													<div class="cir-bar" data-progress="30"></div>
+												</a>
+											</li>
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[文本学习]XXXX的定义</span>
+													<div class="cir-bar" data-progress="70"></div>
+												</a>
+											</li>
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[模拟测验]XXXX的定义</span>
+													<div class="cir-bar" data-progress="40"></div>
+												</a>
+											</li>
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[互动讨论]XXXX的定义</span>
+													<div class="cir-bar" data-progress="40"></div>
+												</a>
+											</li>
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[视频学习]XXXX的定义</span>
+													<div class="cir-bar" data-progress="10"></div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="section-item">
+						<div class="toggle-holder expand">
+							<div class="flex-box flex-align-center flex-box-justify">
+								<div class="section-name">第二章</div>
+								<span class="icon icon-down"></span>
+							</div>
+						</div>
+						<div class="slide-cnt expand">
+							<ul class="list-unstyled list-cutstom parts-list">
+								<li class="list-cutstom-item parts-item">
+									<div class="toggle-holder expand">
+										<div class="flex-box flex-align-center flex-box-justify">
+											<div class="parts-name">第1节</div>
+											<span class="icon icon-down"></span>
+										</div>
+									</div>
+									<div class="slide-cnt expand">
+										<ul class="list-unstyled activities-list">
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[视频学习]XXXX的定义</span>
+													<div class="cir-bar" data-progress="30"></div>
+												</a>
+											</li>
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[文本学习]XXXX的定义</span>
+													<div class="cir-bar" data-progress="70"></div>
+												</a>
+											</li>
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[模拟测验]XXXX的定义</span>
+													<div class="cir-bar" data-progress="40"></div>
+												</a>
+											</li>
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[互动讨论]XXXX的定义</span>
+													<div class="cir-bar" data-progress="40"></div>
+												</a>
+											</li>
+											<li class="activities-item">
+												<a href="#" class="flex-box flex-align-center">
+													<span class="score">3分</span>
+													<span class="name flex-item">[视频学习]XXXX的定义</span>
+													<div class="cir-bar" data-progress="10"></div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</div>

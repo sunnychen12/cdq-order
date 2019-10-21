@@ -1,99 +1,93 @@
-
-<div class="box padding15">
-  <table class="layui-table border-none text-center margin-none" lay-skin="row" table-no-hover>
-    <colgroup>
-      <col width="30%"></col>
-      <col width="14%"></col>
-      <col width="14%"></col>
-      <col width="14%"></col>
-      <col width="14%"></col>
-      <col width="14%"></col>
-    </colgroup>
-    <tbody>
-      <tr>
-        <td>
-          <dl class="text-left">
-            <dt class="f24 margin-b5">课程名称</dt>
-            <dd>班级：班级名称</dd>
-            <dd>班主任：班主任名称</dd>
-          </dl>
-        </td>
-        <td>
-          <div class="text-green2 f32">
-            <span class="with-badge">
-              14
-              <b class="layui-badge layui-bg-orange">6</b>
-            </span>
-          </div>
-          <div>XXXXXXXX</div>
-        </td>
-        <td>
-          <div class="text-green2 f32">21</div>
-          <div>XXXXXXXX</div>
-        </td>
-        <td>
-          <div class="text-green2 f32">
-            <span class="with-badge">
-              5
-              <b class="layui-badge layui-bg-green">3</b>
-            </span>
-          </div>
-          <div>XXXXXXXX</div>
-        </td>
-        <td>
-          <div class="text-green2 f32">76</div>
-          <div>XXXXXXXX</div>
-        </td>
-        <td class="border-right-none">
-          <div class="text-green2 f32">16</div>
-          <div>XXXXXXXX</div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<table class="layui-table text-center margin-b20 no-bg" lay-skin="row" table-no-hover>
+  <colgroup>
+    <col>
+    <col width="12%">
+    <col width="12%">
+    <col width="12%">
+    <col width="12%">
+    <col width="15%">
+    <col width="15%">
+  </colgroup>
+  <tbody>
+    <tr>
+      <td>
+        <div class="f18 text-left">2019春 行政管理</div>
+        <ul class="f12 gray9 text-left">
+          <li>班级：XXXX班</li>
+          <li>班主任：张三</li>
+        </ul>
+      </td>
+      <td>
+        <div class="gray6 f28">
+          22
+        </div>
+        <div class="gray9 text-nowrap">通知公告</div>
+      </td>
+      <td>
+        <div class="gray6 f28">
+          5
+        </div>
+        <div class="gray9 text-nowrap">总课程</div>
+      </td>
+      <td>
+        <div class="gray6 f28">76</div>
+        <div class="gray9 text-nowrap">已学课程</div>
+      </td>
+      <td>
+        <div class="gray6 f28">76</div>
+        <div class="gray9 text-nowrap">总学分</div>
+      </td>
+      <td>
+        <div class="gray6 f28">76</div>
+        <div class="gray9 text-nowrap">最低毕业学分</div>
+      </td>
+      <td>
+        <div class="gray6 f28">16</div>
+        <div class="gray9 text-nowrap">最低毕业学分</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="box layui-form">
+    <div class="box-header">
+      <div class="layui-row">
+        <div class="layui-col-xs8">
+          <h2 class="f16 text-bold padding-t5">我的选课</h2>
+        </div>
+        <div class="layui-col-xs4">
+          <select lay-filter="select-course">
+            <option value="">请选择学期</option>
+            <option value="010">2019秋的选课</option>
+            <option value="021">2019春的选课</option>
+            <option value="0571">2018秋的选课</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="box-body padding-l30 padding-r30 padding-t20 padding-b20">
+      <div class="text-center">
+        <i class="fa fa-fw fa-exclamation-circle text-orange" style="font-size:50px;"></i>
+        <div class="f16">本学期正在选课中，预计2019年3月30号完成选课，开放学习！</div>
+      </div>
+    </div>
 </div>
-
-<div class="box">
-  <div class="layui-tab layui-tab-brief margin-none" lay-filter="tab-filter-2">
-    <ul class="layui-tab-title layui-tab-title-lg padding-l30" data-role="sub-tab">
-      <li class="layui-this">
-        标题切换
-        <span class="layui-badge no-bg padding-none f18 text-green">
-          <i class="fa fa-exclamation-circle"></i>
-        </span>
-      </li>
-      <li>
-        标题切换
-        <span class="layui-badge no-bg padding-none f18 text-orange">
-          <i class="fa fa-exclamation-circle"></i>
-        </span>
-      </li>
-      <li>
-        标题切换
-        <span class="layui-badge no-bg padding-none f18 text-orange">
-          <i class="fa fa-exclamation-circle"></i>
-        </span>
-      </li>
-      <li disabled>
-        标题切换
-        <span class="layui-badge no-bg padding-none f18 gray9">
-          <i class="fa fa-lock"></i>
-        </span>
-      </li>
-      <li disabled>
-        标题切换
-        <span class="layui-badge no-bg padding-none f18 gray9">
-          <i class="fa fa-lock"></i>
-        </span>
-      </li>
-      <li>
-        标题切换
-        <span class="layui-badge no-bg padding-none f18 text-orange">
-          <i class="fa fa-exclamation-circle"></i>
-        </span>
-      </li>
-    </ul>
-    <div class="layui-tab-content padding-l30 padding-r30 padding-t20 padding-b20">
+<div class="box layui-form">
+    <div class="box-header">
+      <div class="layui-row">
+        <div class="layui-col-xs8">
+          <h2 class="f16 text-bold padding-t5">我的选课</h2>
+        </div>
+        <div class="layui-col-xs4">
+          <select lay-filter="select-course">
+            <option value="">请选择学期</option>
+            <option value="010">2019秋的选课</option>
+            <option value="021">2019春的选课</option>
+            <option value="0571">2018秋的选课</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="box-body padding-l30 padding-r30 padding-t20 padding-b20">
       <div class="layui-tab-item layui-show">
         <div class="layui-bg-gray padding-t30 padding-b30">
           <table class="layui-table border-none text-center margin-none no-bg" lay-skin="row" table-no-hover>
@@ -347,20 +341,15 @@
           </ul>
         </div>
       </div>
-      <div class="layui-tab-item">2</div>
-      <div class="layui-tab-item">3</div>
-      <div class="layui-tab-item">4</div>
-      <div class="layui-tab-item">5</div>
-      <div class="layui-tab-item">6</div>
-    </div>
-  </div>     
+    </div>    
 </div>
 
 
 
 <script type="text/javascript">
-layui.use(['element'], function(){
-  var element = layui.element;
+layui.use(['element', 'form'], function(){
+  var element = layui.element,
+      form = layui.form;
   
 
   //侧边导航加载内容
@@ -387,8 +376,11 @@ layui.use(['element'], function(){
   }
 
 
-  element.on('tab(tab-filter-2)', function(data){
-    console.log(data);
+  //学期 下拉菜单
+  form.on('select(select-course)', function(data){
+      console.log(data.elem); //得到select原始DOM对象
+      console.log(data.value); //得到被选中的值
+      console.log(data.othis); //得到美化后的DOM对象
   });
   /*
     //自定义tab事件 start
@@ -439,6 +431,7 @@ layui.use(['element'], function(){
     });
   });
   
+  $(window).resize();
 });
 </script>
 </body>

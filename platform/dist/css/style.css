@@ -1,3 +1,124 @@
+[layui-admin-skin] .layui-header {
+  background-color: #23262E;
+}
+[layui-admin-skin] .layui-logo {
+  background-color: #23262E;
+  color: #009688;
+}
+[layui-admin-skin] .layui-side {
+  background-color: #393D49;
+}
+[layui-admin-skin] .layui-side .layui-nav-tree {
+  background: none;
+}
+[layui-admin-skin] .layui-side .layui-nav-tree .layui-nav-item a:hover {
+  background: none;
+}
+[layui-admin-skin='ocean'] .layui-header {
+  background-color: #1E9FFF;
+}
+[layui-admin-skin='ocean'] .layui-header .layui-nav-bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+[layui-admin-skin='ocean'] .layui-logo {
+  background-color: #0085E8;
+  color: #ddd;
+}
+[layui-admin-skin='ocean'] .layui-side {
+  background-color: #344058;
+}
+[layui-admin-skin='ocean'] .layui-side .layui-nav-tree .layui-nav-child dd.layui-this a {
+  background-color: #1E9FFF;
+}
+[layui-admin-skin='fashion-red'] .layui-header {
+  background-color: #AA3130;
+}
+[layui-admin-skin='fashion-red'] .layui-header .layui-nav-bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+[layui-admin-skin='fashion-red'] .layui-header .layui-nav .layui-this:after {
+  background-color: #ff5722;
+}
+[layui-admin-skin='fashion-red'] .layui-logo {
+  background-color: #16181d;
+  color: #ddd;
+}
+[layui-admin-skin='fashion-red'] .layui-side {
+  background-color: #20222a;
+}
+[layui-admin-skin='fashion-red'] .layui-side .layui-nav-tree .layui-nav-child dd.layui-this a {
+  background-color: #AA3130;
+}
+[layui-admin-skin='blue'] .layui-header {
+  background-color: #3c8dbc;
+}
+[layui-admin-skin='blue'] .layui-header .layui-nav-bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+[layui-admin-skin='blue'] .layui-logo {
+  background-color: #3884b0;
+  color: #ddd;
+}
+[layui-admin-skin='blue'] .layui-side {
+  background-color: #222d32;
+}
+[layui-admin-skin='blue'] .layui-side .layui-nav-tree .layui-nav-child dd.layui-this a {
+  background-color: #3c8dbc;
+}
+[layui-admin-skin='dark-blue'] .layui-header {
+  background-color: #031326;
+}
+[layui-admin-skin='dark-blue'] .layui-header .layui-nav-bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+[layui-admin-skin='dark-blue'] .layui-logo {
+  background-color: #020e1a;
+  color: #ddd;
+}
+[layui-admin-skin='dark-blue'] .layui-side {
+  background-color: #031326;
+}
+[layui-admin-skin='dark-blue'] .layui-side .layui-nav-tree .layui-nav-child dd.layui-this a {
+  background-color: #1E9FFF;
+}
+[layui-admin-skin='purple'] .layui-header {
+  background-color: #326bda;
+}
+[layui-admin-skin='purple'] .layui-header .layui-nav-bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+[layui-admin-skin='purple'] .layui-logo {
+  background-color: #255ecd;
+  color: #ddd;
+}
+[layui-admin-skin='purple'] .layui-side {
+  background-color: #031326;
+}
+[layui-admin-skin='purple'] .layui-side .layui-nav-tree .layui-nav-child dd.layui-this a {
+  background-color: #326bda;
+}
+[layui-admin-skin='green'] .layui-header {
+  background-color: #00877b;
+}
+[layui-admin-skin='green'] .layui-header .layui-nav-bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+[layui-admin-skin='green'] .layui-logo {
+  background-color: #00786d;
+  color: #ddd;
+}
+[layui-admin-skin='green'] .layui-side {
+  background-color: #282b33;
+}
+[layui-admin-skin='green'] .layui-side .layui-nav-tree .layui-nav-child dd.layui-this a {
+  background-color: #00877b;
+}
 /*例子
 .padding-l5{padding-left:5px !important;}
 .padding-r5{padding-right:5px !important;}

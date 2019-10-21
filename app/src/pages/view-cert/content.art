@@ -1,0 +1,22 @@
+<div class="page-group">
+	<div class="page" id="page-view-cert">
+		<header class="bar bar-nav">
+			<a class="icon icon-left pull-left back gray3"></a>
+			<h1 class="title">查看准考证</h1>
+		</header>
+		<div class="bar bar-footer bar-footer-reset">
+			<div class="flex-box flex-align-center full-height btn-group">
+				<a href="#" class="button button-round button-purple flex-item" onclick="downloadBase64File(event)">保存图片</a>
+			</div>
+		</div>
+		<div class="content bg-white padding_75rem">
+			<div class="artical text-center">
+				<!--<img src="static/images/exam-cert.png" alt="" data-role="fancyimg">
+				-->
+				<iframe src="print-cert-page.html" frameborder="0" height="200" width="100%" scrolling="yes" id="ifrm"></iframe>
+				<div class="margin-t_5rem text-blue" data-role="fancyimg">点击放大</div>
+			</div>
+		</div>
+	</div>
+
+</div>

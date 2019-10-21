@@ -1,0 +1,28 @@
+<div class="page-group">
+	<div class="page" id="page-a">
+		<header class="bar bar-nav">
+			<a class="icon icon-me pull-left"></a>
+			<h1 class="title">SUI Mobile</h1>
+		</header>
+
+		<div class="content">
+			<div id="app" v-cloak>
+				{{msg}}
+			</div>
+			<a href="aa.html">
+				测试
+			</a>
+
+			<a href="javascript:;" class="open-popup" data-popup=".popup-services">Open Services Popup </a>
+		</div>
+
+
+	</div>
+	<div class="popup popup-services">
+		<div class="content-block">
+			<p>Services</p>
+			<p><a href="javascript:;" class="close-popup">Close popup</a></p>
+			<p>Lorem ipsum dolor ...</p>
+		</div>
+	</div>
+</div>

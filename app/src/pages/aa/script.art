@@ -1,0 +1,31 @@
+<script>
+    $(function(){
+        /*new Vue({
+            el:'#app',
+            data:{
+                msg:'aa'
+            }
+        })*/
+
+        requirejs(['https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js'],function(){
+            //当要使用jquery时，重设回$变量为Zepto
+            window.$=Zepto;
+
+            //....其它业务
+
+        });
+
+        var popupHTML = `
+					<div class="popup">
+						<div class="position-relative full-height">
+							<div class="flex-box flex-vertical flex-box-justify-center full-height" style="background: #000">
+								<video class="video-player" src="http://www.runoob.com/try/demo_source/movie.mp4" x5-playsinline playsinline -webkit-playsinline controls></video>
+
+							</div>
+							<span class="ico-custom padding_75rem font-1rem position-absolute close-popup" style="color: #fff; right: 0; top: 0;">&#xe911;</span>
+						</div>
+					</div>
+				`
+        $.popup(popupHTML);
+    })
+</script>

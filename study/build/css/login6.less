@@ -1,0 +1,166 @@
+/*登录样式*/
+::-webkit-input-placeholder{
+	color: #b1b1b1;
+}    /* 使用webkit内核的浏览器 */
+:-moz-placeholder{color: #b1b1b1;}                  /* Firefox版本4-18 */
+::-moz-placeholder{color: #b1b1b1;}                  /* Firefox版本19+ */
+:-ms-input-placeholder{color: #b1b1b1;}           /* IE浏览器 */
+
+.login-wrapper{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 80px;
+	background: url(images/login6-1-bg.jpg) no-repeat center center #4b58f5;
+	background-size: 100% 100%;
+	overflow: hidden;
+	>.box-center{
+		max-width: 1400px;
+		width: 90%;
+	}
+}
+
+.login-footer{
+	height: 80px;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	color: #5a5a5a;
+	background: #fff;
+}
+
+.login-logo{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #fff;
+	img{
+		height: 30px;
+	}
+	span{
+		display: inline-block;
+		font-size: 20px;
+		vertical-align: middle;
+		border-left: 3px solid #fff;
+		padding-left: 10px;
+		margin-left: 10px;
+	}
+}
+
+.login-copyright{
+	width: 100%;
+	position: absolute;
+	color: #fff;
+	bottom: 30px;
+}
+
+.login-container{
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -250px;
+	box-sizing: border-box;
+	&:before{
+		content: '';
+		background: url(images/login6-2-bg.png) no-repeat;
+		position: absolute;
+		width: 609px;
+		height: 554px;
+		left: 0;
+		top: -20px;
+	}
+	.layui-form{
+		width: 489px;
+		float: right;
+		box-sizing: border-box;
+		height: 100%;
+		&:before,
+		&:after{
+			content: '';
+			height: 52px;
+			display: block;
+		}
+		&:before{
+			background: url(images/login6-1-top.png) no-repeat;
+		}
+		&:after{
+			background: url(images/login6-1-btm.png) no-repeat;
+		}
+	}
+	.layui-form-inner{
+		background: url(images/login6-1-mid.png) repeat-y;
+		padding: 0 60px;
+		height: 500-52*2px;
+	}
+}
+
+.login-title{
+	color: #333;
+	font-size: 26px;
+	padding: 25px 0 15px;
+}
+
+.login-btn{
+	background: #5753f5;
+	border-radius: 24px;
+	height: 48px;
+	//line-height: 38px;
+	color: #fff;
+	font-size: 18px;
+	box-sizing: border-box;
+	box-shadow: 0 0px 8px #5753f5;
+}
+
+[role="admin"]{
+	&.login-wrapper{
+		background-image: url(images/login6-4-bg.jpg);
+		background-color: #62dbbd;
+	}
+	.login-container{
+		&:before{
+			background-image: url(images/login6-3-bg.png)
+		}
+		.layui-form{
+			&:before{
+				background-image: url(images/login6-2-top.png) ;
+			}
+			&:after{
+				background-image: url(images/login6-2-btm.png);
+			}
+		}
+		.layui-form-inner{
+			background-image: url(images/login6-2-mid.png);
+		}
+	}
+	.login-btn{
+		background: #3dc1a4;
+		box-shadow: 0 0px 8px #62dbbd;
+	}
+}
+
+.login-form-group{
+	position: relative;
+	border-bottom: #ebebeb 1px solid;
+	margin: 30px 0;
+	padding-bottom: 5px;
+	.icomoon-icon{
+		position: absolute;
+		color: #999999;
+		font-size: 20px;
+		line-height: 1;
+		left: 5px;
+		top: 50%;
+		margin-top: -13px;
+		z-index: 2;
+		~ .layui-input{
+			padding-left: 33px;
+			border: 0 none;
+			font-size: 16px;
+		}
+	}
+	
+}

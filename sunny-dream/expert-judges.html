@@ -1,0 +1,43 @@
+<template>
+    <div class="main-content-inner">
+        <div class="cur-colum-header margin-b30">
+            <h2 class="cur-colum-title">{{$route.meta.name}}</h2>
+        </div>
+        <ul class="expert-judges-list list-unstyled">
+            <li v-for="item in (commonQueryArea ? expertJudges.branch : expertJudges.headquarters)" class="clearfix">
+                <div class="pic-cover">
+                    <img :src="item.pic" :alt="item.name">
+                    <div class="name pic-mark">
+                        <span>{{item.name}}</span>
+                    </div>
+                </div>
+                <div class="cnt">
+                    <div class="name">{{item.title}}</div>
+                    <div class="desc">{{item.desc}}</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</template>
+
+<script>
+    //vue component 设置，template 属性不需要设置，默认是用上方的模板
+    jsScript={
+        data: function() {
+            return {
+                expertJudges: {}
+            }
+        },
+        methods:{
+            getData: function () {
+                var vm=this;
+                require(['mockData.expertJudges'],function (data) {
+                    vm.expertJudges = data.expertJudges;
+                });
+            }
+        },
+        created: function () {
+            this.getData();
+        }
+    }
+</script>

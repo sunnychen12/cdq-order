@@ -1,0 +1,71 @@
+<div class="page-group">
+	<div class="page" id="page-online-student">
+		<header class="bar bar-nav">
+			<a class="icon icon-left pull-left back gray3"></a>
+			<h1 class="title">在线同学</h1>
+		</header>
+		<div class="content bg-white">
+			<div class="padding-l_75rem padding-r_75rem">
+				<ul class="list-unstyled list-cutstom info-item-list online-student-list padding-none">
+					<li class="list-cutstom-item">
+						<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+							<img src="static/images/news-img.jpg" alt="" class="img-cover">
+							<div class="name flex-item">张丽君</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+							<img src="static/images/news-img.jpg" alt="" class="img-cover">
+							<div class="name flex-item">张丽君</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+							<img src="static/images/news-img.jpg" alt="" class="img-cover">
+							<div class="name flex-item">张丽君</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+							<img src="static/images/news-img.jpg" alt="" class="img-cover">
+							<div class="name flex-item">张丽君</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+							<img src="static/images/news-img.jpg" alt="" class="img-cover">
+							<div class="name flex-item">张丽君</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+							<img src="static/images/news-img.jpg" alt="" class="img-cover">
+							<div class="name flex-item">张丽君</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+							<img src="static/images/news-img.jpg" alt="" class="img-cover">
+							<div class="name flex-item">张丽君</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+							<img src="static/images/news-img.jpg" alt="" class="img-cover">
+							<div class="name flex-item">张丽君</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>

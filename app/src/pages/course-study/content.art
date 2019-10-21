@@ -1,0 +1,142 @@
+<div class="page-group">
+	<div class="page" id="page-course-study">
+		<%
+		let barTab = require("@/common/bar-tab.art");
+		%><%= barTab({tab:1})%>
+
+		<%
+		let barTopNav = require("@/common/bar-top-nav.art");
+		%><%= barTopNav({tab:0})%>
+		<div class="content">
+			<div class="bg-white">
+				<div class="padding_75rem">
+					<div class="score-blue-panel">
+						<div class="score-panel-header">
+							<div class="term-name">
+								2018春季学期
+							</div>
+							<div class="time">2018/03/15 - 2018/07/31</div>
+						</div>
+						<div class="flex-box score-panel-grid padding-t_5rem padding-b_5rem">
+							<div class="flex-item">
+								<div class="num">10</div>
+								<div class="label-txt">选课总数</div>
+							</div>
+							<div class="flex-item">
+								<div class="num">8</div>
+								<div class="label-txt">已学课程</div>
+							</div>
+							<div class="flex-item">
+								<div class="num">28</div>
+								<div class="label-txt">总学分</div>
+							</div>
+							<div class="flex-item">
+								<div class="num">3</div>
+								<div class="label-txt">已获学分</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="padding-r_75rem padding-l_75rem padding-b_75rem">
+					<ul class="list-unstyled list-cutstom score-course-list with-no-line">
+						<li class="list-cutstom-item">
+							<a href="#" class="flex-box item-box">
+								<div class="img-box">
+									<div class="embed-responsive">
+										<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+									</div>
+								</div>
+								<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+									<h4>中国特色社会主义理论体系概论</h4>
+									<div class="flex-box flex-box flex-align-end">
+										<div class="info">
+											<div class="txt">学习次数：208</div>
+											<div class="txt">学习成绩：60</div>
+											<div class="txt">课程状态：<span class="text-blue">学习中</span></div>
+										</div>
+										<div class="flex-item label-group">
+											<label>2学分</label>
+											<label>省开</label>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="list-cutstom-item">
+							<a href="#" class="flex-box item-box">
+								<div class="img-box">
+									<div class="embed-responsive">
+										<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+									</div>
+								</div>
+								<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+									<h4>中国特色社会主义理论体系概论</h4>
+									<div class="flex-box flex-box flex-align-end">
+										<div class="info">
+											<div class="txt">学习次数：208</div>
+											<div class="txt">学习成绩：60</div>
+											<div class="txt">课程状态：<span class="text-blue">学习中</span></div>
+										</div>
+										<div class="flex-item label-group">
+											<label>2学分</label>
+											<label>省开</label>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="list-cutstom-item">
+							<a href="#" class="flex-box item-box">
+								<div class="img-box">
+									<div class="embed-responsive">
+										<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+									</div>
+								</div>
+								<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+									<h4>中国特色社会主义理论体系概论</h4>
+									<div class="flex-box flex-box flex-align-end">
+										<div class="info">
+											<div class="txt">学习次数：208</div>
+											<div class="txt">学习成绩：60</div>
+											<div class="txt">课程状态：<span class="text-blue">学习中</span></div>
+										</div>
+										<div class="flex-item label-group">
+											<label>2学分</label>
+											<label>省开</label>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="list-cutstom-item">
+							<a href="#" class="flex-box item-box">
+								<div class="img-box">
+									<div class="embed-responsive">
+										<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+									</div>
+									<div class="img-mark">
+										<span>课程暂未开放</span>
+									</div>
+								</div>
+								<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+									<h4>中国特色社会主义理论体系概论</h4>
+									<div class="flex-box flex-box flex-align-end">
+										<div class="info">
+											<div class="txt">学习次数：208</div>
+											<div class="txt">学习成绩：60</div>
+											<div class="txt">课程状态：<span class="gray9">未学习</span></div>
+										</div>
+										<div class="flex-item label-group">
+											<label>2学分</label>
+											<label>省开</label>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

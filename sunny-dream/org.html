@@ -1,0 +1,54 @@
+<template>
+    <div class="main-content-inner">
+        <div class="cur-colum-header margin-b30">
+            <h2 class="cur-colum-title">{{$route.meta.name}}</h2>
+        </div>
+        <div>
+            <h3 class="small-title">发起单位</h3>
+            <ul class="row list-unstyled text-gray-9 org-list">
+                <li class="col-sm-3" v-if="org" v-for="sUnit in org.sponsorUnit">
+                    {{sUnit.name}}
+                </li>
+            </ul>
+            <h3 class="small-title">主办单位</h3>
+            <ul class="row list-unstyled text-gray-9 org-list">
+                <li class="col-sm-4" v-if="org" v-for="sUnit in org.organizer">
+                    {{sUnit.name}}
+                </li>
+            </ul>
+            <h3 class="small-title">承办地区</h3>
+            <div>
+                <div class="hosting-area-item" v-if="org" v-for="hostingAreaItem in org.hostingArea">
+                    <div class="side">{{hostingAreaItem.province}}</div>
+                    <div class="cnt">
+                        <ul class="list-unstyled clearfix margin-bottom-none">
+                            <li v-for="item in hostingAreaItem.children">{{item.area}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    //vue component 设置，template 属性不需要设置，默认是用上方的模板
+    jsScript={
+        data: function() {
+            return {
+                org: false
+            }
+        },
+        methods:{
+            getData: function () {
+                var vm=this;
+                require(['mockData.org'],function (data) {
+                    vm.org = data.org;
+                });
+            }
+        },
+        created: function () {
+            this.getData();
+        }
+    }
+</script>

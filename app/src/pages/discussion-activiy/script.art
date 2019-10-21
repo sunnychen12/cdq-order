@@ -1,0 +1,38 @@
+<script>
+    $(function(){
+        //js脚本
+        $('[data-role="content"]').scroll(function () {
+            var self=this;
+            ;(function(method){
+                clearTimeout(method.timeout);
+                method.timeout = setTimeout(function() {
+                    method.call();
+                }, 100);
+            })(function(){
+                $('.swiper-container').height($(self).height()-$('.tabs-video').height())
+                //console.log(111)
+            });
+        })
+
+
+        requirejs(['sm-extend'],function (){
+            $('.swiper-container').show();
+            //内容滑动
+            var mySwiper = new $.Swiper('.swiper-container',{
+                onSlideChangeEnd : function(swiper) {
+
+                    $('.tabs-video li.item')
+                        .eq(mySwiper.activeIndex).addClass('actived')
+                        .siblings().removeClass('actived');
+                }
+            });
+
+            //选项卡
+            $('.tabs-video li.item').on('touchstart', function(event) {
+                var index=$(this).index();
+
+                mySwiper.slideTo(index);
+            });
+        });
+    })
+</script>

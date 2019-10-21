@@ -1,0 +1,41 @@
+<template>
+    <div class="main-content-inner">
+        <div class="cur-colum-header margin-b30">
+            <h2 class="cur-colum-title">{{$route.meta.name}}</h2>
+        </div>
+        <div v-for="wmItem in wonderfulMoment">
+            <h3 class="small-title">{{wmItem.cat}}</h3>
+            <ul class="row list-unstyled">
+                <li v-for="item in wmItem.children" class="col-sm-4 margin-t10">
+                    <img :src="item.pic" :alt="item.name" class="full-width">
+                    <div class="name margin-t10 f16 text-bold text-ellipsis">
+                        {{item.name}}
+                    </div>
+                    <div class="txt text-gray-9 margin-t5 text-ellipsis">{{item.summary}}</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</template>
+
+<script>
+    //vue component 设置，template 属性不需要设置，默认是用上方的模板
+    jsScript={
+        data: function() {
+            return {
+                wonderfulMoment: []
+            }
+        },
+        methods:{
+            getData: function () {
+                var vm=this;
+                require(['mockData.wonderfulMoment'],function (data) {
+                    vm.wonderfulMoment = data.wonderfulMoment;
+                });
+            }
+        },
+        created: function () {
+            this.getData();
+        }
+    }
+</script>

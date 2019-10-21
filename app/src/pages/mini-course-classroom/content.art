@@ -1,0 +1,124 @@
+<div class="page-group">
+	<div class="page" id="page-living-classroom">
+		<header class="bar bar-nav">
+			<a class="icon icon-left pull-left back gray3"></a>
+			<h1 class="title">素质教育</h1>
+		</header>
+		<div class="bar bar-header-secondary">
+			<div class="searchbar">
+				<a class="searchbar-cancel">取消</a>
+				<div class="search-input">
+					<label class="icon icon-search" for="search"></label>
+					<input type="search" id='search' placeholder='输入名称搜索'/>
+				</div>
+			</div>
+		</div>
+		<%
+		let barTab = require("@/common/bar-tab.art");
+		%><%= barTab({tab:1})%>
+		<div class="content">
+			<div class="padding-r_75rem padding-l_75rem padding-b_75rem padding-t_5rem bg-white margin-t_5rem">
+				<ul class="list-unstyled list-cutstom score-course-list mini-classroom-list margin-t_3rem">
+					<li class="list-cutstom-item">
+						<a href="living-broadcast-details.html" class="flex-box item-box">
+							<div class="img-box">
+								<div class="embed-responsive">
+									<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+								</div>
+							</div>
+							<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+								<h4>职场的生存之道</h4>
+								<div class="label-group">
+									<label>素质教育</label>
+								</div>
+								<div class="info">
+									<div class="txt">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
+								</div>
+
+							</div>
+						</a>
+					</li>
+                    <li class="list-cutstom-item">
+                        <a href="living-broadcast-details.html" class="flex-box item-box">
+                            <div class="img-box">
+                                <div class="embed-responsive">
+                                    <img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+                                <h4>职场的生存之道</h4>
+                                <div class="label-group">
+                                    <label>素质教育</label>
+                                </div>
+                                <div class="info">
+                                    <div class="txt">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-cutstom-item">
+                        <a href="living-broadcast-details.html" class="flex-box item-box">
+                            <div class="img-box">
+                                <div class="embed-responsive">
+                                    <img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+                                <h4>职场的生存之道</h4>
+                                <div class="label-group">
+                                    <label>素质教育</label>
+                                </div>
+                                <div class="info">
+                                    <div class="txt">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-cutstom-item">
+                        <a href="living-broadcast-details.html" class="flex-box item-box">
+                            <div class="img-box">
+                                <div class="embed-responsive">
+                                    <img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+                                <h4>职场的生存之道</h4>
+                                <div class="label-group">
+                                    <label>素质教育</label>
+                                </div>
+                                <div class="info">
+                                    <div class="txt">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-cutstom-item">
+                        <a href="living-broadcast-details.html" class="flex-box item-box">
+                            <div class="img-box">
+                                <div class="embed-responsive">
+                                    <img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+                                <h4>职场的生存之道</h4>
+                                <div class="label-group">
+                                    <label>素质教育</label>
+                                </div>
+                                <div class="info">
+                                    <div class="txt">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+				</ul>
+			</div>
+		</div>
+
+
+	</div>
+
+</div>

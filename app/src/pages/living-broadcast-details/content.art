@@ -1,0 +1,249 @@
+<div class="page-group">
+	<div class="page" id="page-living-broadcast-details">
+		<div class="content bg-white">
+			<div class="flex-box flex-vertical full-height">
+				<div class="position-relative" style="background:#000;">
+					<video class="video-player" src="http://www.runoob.com/try/demo_source/movie.mp4"
+						   x5-playsinline
+						   playsinline
+						   -webkit-playsinline
+						   controls
+						   style="height:10rem;"
+					></video>
+
+					<div class="position-absolute full-width full-height video-mark">
+						<div class="flex-box flex-box-justify-center flex-vertical text-center padding_75rem full-height">
+							<div ><span class="ico-custom vertical-middle">&#xe90d;</span> <span class="font_75rem inline-block vertical-middle">直播暂未开始</span></div>
+							<div class="font_5rem margin-t_3rem">直播时间：2018-10-18 09:30~10:30</div>
+						</div>
+					</div>
+				</div>
+
+				<ul class="tabs-video list-unstyled flex-box">
+					<li class="item flex-item actived"><span>直播简介</span></li>
+                    <li class="item flex-item"><span>互动交流</span></li>
+                    <li class="item flex-item"><span>参与同学</span></li>
+				</ul>
+				<div class="flex-item bg-white" style="overflow-y: auto;">
+					<div class="swiper-container padding-none position-relative full-height" style="display: none">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide overflow-y-auto">
+								<div class="artical padding_75rem">
+									<div><h2 class="tit-with-border"><span class="font_65rem">直播名称</span></h2></div>
+									<div class="gray6 margin-t_3rem">人文英语1（第一讲）</div>
+
+									<div class="margin-t_7rem"><h2 class="tit-with-border"><span class="font_65rem">主讲教师</span></h2></div>
+									<div class="margin-t_3rem"><u class="text-blue open-popup" data-popup=".popup-teacher-detail">陈伯利</u></div>
+
+									<div class="margin-t_7rem"><h2 class="tit-with-border"><span class="font_65rem">直播时间</span></h2></div>
+									<div class="gray6 margin-t_3rem">06-18 19:30~21:15
+										<span class="text-orange">（待开始，1天后开始）</span>
+									</div>
+
+									<div class="margin-t_7rem"><h2 class="tit-with-border"><span class="font_65rem">直播简介</span></h2></div>
+									<div class="gray6 margin-t_3rem">
+										本次由多年资深英语教学经验的陈老师，为大家讲述人
+										文英语1的第一章知识点、重难点内容。本次由多年资
+										深英语教学经验的陈老师，为大家讲述人文英语1的第
+										一章知识点、重难点内容。
+									</div>
+								</div>
+
+							</div>
+                            <div class="swiper-slide overflow-y-auto">
+								<div class="bar bar-footer bar-footer-reset">
+									<div class="flex-box full-height flex-align-center comment-bar">
+										<div class="flex-item">
+											<textarea name="" placeholder="我来说一说..."></textarea>
+										</div>
+										<div class="margin-l_5rem">
+											<button type="button" class="button button-round">发送</button>
+										</div>
+									</div>
+								</div>
+								<div class="content">
+									<div class="padding-t_75rem padding-b_75rem">
+										<ul class="list-unstyled comments-list">
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+                            </div>
+                            <div class="swiper-slide overflow-y-auto">
+								<div class="padding_75rem">
+									<ul class="list-unstyled list-cutstom info-item-list online-student-list padding-none">
+										<li class="list-cutstom-item">
+											<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+												<img src="static/images/news-img.jpg" alt="" class="img-cover">
+												<div class="flex-item">
+													<div class="name">张丽君</div>
+													<div class="gray9 font_5rem">行政管理</div>
+												</div>
+												<span class="font_5rem gray9">02-26 15:34</span>
+											</a>
+										</li>
+										<li class="list-cutstom-item">
+											<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+												<img src="static/images/news-img.jpg" alt="" class="img-cover">
+												<div class="flex-item">
+													<div class="name">张丽君</div>
+													<div class="gray9 font_5rem">行政管理</div>
+												</div>
+												<span class="font_5rem gray9">02-26 15:34</span>
+											</a>
+										</li>
+										<li class="list-cutstom-item">
+											<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+												<img src="static/images/news-img.jpg" alt="" class="img-cover">
+												<div class="flex-item">
+													<div class="name">张丽君</div>
+													<div class="gray9 font_5rem">行政管理</div>
+												</div>
+												<span class="font_5rem gray9">02-26 15:34</span>
+											</a>
+										</li>
+										<li class="list-cutstom-item">
+											<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+												<img src="static/images/news-img.jpg" alt="" class="img-cover">
+												<div class="flex-item">
+													<div class="name">张丽君</div>
+													<div class="gray9 font_5rem">行政管理</div>
+												</div>
+												<span class="font_5rem gray9">02-26 15:34</span>
+											</a>
+										</li>
+										<li class="list-cutstom-item">
+											<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+												<img src="static/images/news-img.jpg" alt="" class="img-cover">
+												<div class="flex-item">
+													<div class="name">张丽君</div>
+													<div class="gray9 font_5rem">行政管理</div>
+												</div>
+												<span class="font_5rem gray9">02-26 15:34</span>
+											</a>
+										</li>
+										<li class="list-cutstom-item">
+											<a href="#" class="flex-box flex-align-center list-cutstom-item-in">
+												<img src="static/images/news-img.jpg" alt="" class="img-cover">
+												<div class="flex-item">
+													<div class="name">张丽君</div>
+													<div class="gray9 font_5rem">行政管理</div>
+												</div>
+												<span class="font_5rem gray9">02-26 15:34</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-teacher-detail">
+		<header class="bar bar-nav">
+			<a class="icon icon-left pull-left close-popup gray3"></a>
+			<h1 class="title">教师介绍</h1>
+		</header>
+		<div class="bar bar-footer bar-footer-reset">
+			<div class="flex-box flex-align-center full-height btn-group">
+				<button type="button" class="button button-round button-purple flex-item close-popup">关闭</button>
+			</div>
+		</div>
+		<div class="content">
+			<div class="padding_75rem">
+				<ul class="list-unstyled list-cutstom info-item-list teacher-list padding-none">
+					<li class="list-cutstom-item">
+						<a href="#" class="flex-box list-cutstom-item-in">
+							<img src="static/images/news-img.jpg" alt="" class="img-cover">
+							<div class="flex-item">
+								<div class="name">陈海金</div>
+								<div class="txt">
+									<p>任教专业：婚姻家庭法、经济法</p>
+									<p>教学资历：中共党员、中山大学学士，现任私立华联学院行政教师，具有法学助教职称</p>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</div>

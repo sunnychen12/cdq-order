@@ -1,0 +1,252 @@
+<div class="page-group">
+	<div class="page" id="page-level-3-page">
+		<header class="bar bar-nav">
+			<a class="icon icon-left pull-left back gray3"></a>
+			<h1 class="title">我的班级</h1>
+		</header>
+
+		<div class="content bg-white infinite-scroll" data-distance="100">
+			<div class="padding_75rem">
+				<div class="score-blue-panel">
+					<div class="score-panel-header">
+						<div class="flex-box flex-align-center" id="picker-input">
+							<div class="term-name flex-item">
+								2018春季工商管理班
+							</div>
+							<small class="icon icon-caret line-height-1"></small>
+						</div>
+					</div>
+					<div class="flex-box score-panel-grid padding-t_5rem padding-b_5rem">
+						<div class="flex-item">
+							<div class="num">109</div>
+							<div class="label-txt">班级人数</div>
+						</div>
+						<div class="flex-item">
+							<div class="num">8</div>
+							<div class="label-txt">在线</div>
+						</div>
+						<div class="flex-item">
+							<div class="num">28</div>
+							<div class="label-txt">离线</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="margin-t_3rem searchbar row">
+					<div class="search-input col-85">
+						<input type="search" id="search" placeholder="输入关键字...">
+					</div>
+					<a class="button button-fill button-primary col-15"><span class="icon icon-search"></span></a>
+				</div>
+
+				<div class="row student-list">
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item offline">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+					<div class="col-25 item">
+						<a href="my-class-details.html">
+							<div class="embed-responsive">
+								<img class="embed-responsive-item" src="static/images/stu-cover.png">
+							</div>
+							<div class="name">
+								李志豪
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!-- preloader -->
+				<div class="infinite-scroll-preloader">
+					<div class="preloader"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

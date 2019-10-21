@@ -1,0 +1,107 @@
+<script>
+    $(function(){
+        $("#picker-input").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+                <button class="button button-link pull-left close-picker">取消</button>\
+                <button class="button button-link pull-right" data-tab="sure">确定</button>\
+                <h1 class="title">请选择</h1>\
+                </header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['2018春季工商管理班 1', '2018春季工商管理2班 2'],//选中的值的数组
+                    displayValues: ['2018春季工商管理班', '2018春季工商管理2班']//选择的选项的label数组
+                }
+            ],
+            onOpen:function (picker) {
+                // 点击确定选中的选项
+                picker.container.on('click', '[data-tab="sure"]', function (event) {
+                    console.log(picker.value, picker.displayValue)
+                    picker.input.find('.term-name').text(picker.displayValue)
+                    $.closeModal(picker.container);
+                })
+            }
+        });
+
+        ;(function(){
+            // 加载flag
+            var loading = false;
+            // 总记录数
+            var totalItems = 60;
+            // 每页加载的记录数
+            var pageSize = 20;
+            // 当前页码
+            var currentPage=0;
+            // 总页数
+            var totalPages=0;
+
+            if(totalItems % pageSize==0){
+                totalPages=totalItems / pageSize;
+            } else {
+                totalPages=parseInt(totalItems / pageSize) + 1;
+            }
+
+            // 添加记录
+            function addItems() {
+                ++currentPage;
+
+                var lastIndex=0;
+
+                if(currentPage == totalPages){
+                    lastIndex = totalItems;
+                } else {
+                    lastIndex = currentPage * pageSize;
+                }
+
+                // 生成新条目的HTML
+                var html = [];
+                for (var i = (currentPage -1) * pageSize; i < lastIndex; i++) {
+                    html.push (
+                        '<div class="col-25 item" data-order="'+i+'">'
+                            + '<a href="my-class-details.html">'
+                                + '<div class="embed-responsive">'
+                                    + '<img class="embed-responsive-item" src="static/images/stu-cover.png">'
+                                + '</div>'
+                                + '<div class="name">'
+                                    + '李志豪'
+                                + '</div>'
+                            + '</a>'
+                        + '</div>'
+                    );
+                }
+                // 添加新条目
+                $('.student-list').append(html.join(''));
+            }
+            //预先加载20条
+            addItems();
+
+            // 注册'infinite'事件处理函数
+            $(document).on('infinite', '.content',function() {
+                // 如果正在加载，则退出
+                if (loading) return;
+
+                // 设置flag
+                loading = true;
+
+                // 模拟1s的加载过程
+                setTimeout(function() {
+                    // 重置加载flag
+                    loading = false;
+
+                    if (currentPage >= totalPages) {
+                        // 加载完毕，则注销无限加载事件，以防不必要的加载
+                        $.detachInfiniteScroll($('.content'));
+                        // 删除加载提示符
+                        $('.infinite-scroll-preloader').remove();
+                        return;
+                    }
+
+                    // 添加新条目
+                    addItems();
+                    //容器发生改变,如果是js滚动，需要刷新滚动
+                    $.refreshScroller();
+                }, 1000);
+            });
+        })();
+    })
+</script>

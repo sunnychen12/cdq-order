@@ -1,0 +1,50 @@
+<template>
+    <div class="main-box inner-page-container">
+        <div class="inner-page-title-bar">
+            <div class="container padding-t30">
+                <div class="pull-right padding-t20">
+                    <button type="button" class="navbar-toggle side-menu-toggle" data-toggle="collapse" data-target="#side-bar" data-id="side-menu-toggle">
+                        <span class="sr-only">侧边导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <h2 class="side-menu-title">
+                    <i :class="['icon', parentRoute.meta.icon]"></i>
+                    <span class="inline-block">{{parentRoute.meta.name}}</span>
+                </h2>
+            </div>
+        </div>
+        <div class="container padding-b30">
+            <side-bar></side-bar>
+            <div class="main-content">
+                <router-view></router-view>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script id="js">
+    //vue component 设置，template 属性不需要设置，默认是用上方的模板
+    jsScript={
+        data: function() {
+            return {
+            }
+        },
+        computed:{
+            parentRoute: function () {
+                var matched=this.$route.matched;
+
+                return matched[1]
+            }
+        },
+        components:{
+            'side-bar': function (resolve, reject) {
+                require(['utils'], function (utils) {
+                    utils.loadTemplate(resolve, reject, 'components/side-bar.html')
+                })
+            }
+        }
+    }
+</script>

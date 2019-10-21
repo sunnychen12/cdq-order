@@ -1,0 +1,15 @@
+<script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script>
+    var print=document.getElementById('print');
+    html2canvas(print).then(function(canvas) {
+        var imgURL=canvas.toDataURL("image/png");
+        var img=document.getElementById('myIMG');
+        img.setAttribute("src",imgURL);
+        img.style.width='100%';
+        print.style.display='none';
+        setTimeout(function () {
+           frameElement.style.height=img.clientHeight+'px'
+        },0)
+
+    });
+</script>

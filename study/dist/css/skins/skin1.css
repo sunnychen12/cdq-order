@@ -1,0 +1,293 @@
+.text-red-skin {
+  color: #ff7572;
+}
+.text-blue-skin {
+  color: #23b7e5;
+}
+.text-purple-skin {
+  color: #6c6fbf;
+}
+.bg-purple-skin {
+  background: #6c6fbf;
+}
+.bg-red-skin {
+  background: #ff5c7b;
+}
+.bg-blue-skin {
+  background: #23b7e5;
+}
+.bg-orange-skin {
+  background: #fd987a;
+}
+.bg-gray-skin {
+  background: #f6f8f9;
+}
+.bg-gray2-skin {
+  background: #b6b6b6;
+}
+.site-header {
+  background-color: #393b6b;
+}
+.site-tree {
+  background-color: #393b6b;
+}
+.side-tree-menu {
+  padding: 0;
+}
+.side-tree-menu > li {
+  transition: background-color 0.1s ease-out;
+}
+.side-tree-menu > li.cur,
+.side-tree-menu > li:hover {
+  margin: 0px;
+  background-color: #8285d6;
+}
+.side-tree-menu > li.cur:after,
+.side-tree-menu > li:hover:after,
+.side-tree-menu > li.cur:before,
+.side-tree-menu > li:hover:before {
+  display: none;
+}
+.side-tree-menu > li.cur u:after,
+.side-tree-menu > li:hover u:after,
+.side-tree-menu > li.cur u:before,
+.side-tree-menu > li:hover u:before {
+  display: none;
+}
+.side-tree-menu > li a {
+  color: #ccc;
+}
+.side-tree-menu > li span {
+  border-bottom: 0 none;
+}
+.layui-tab-card > .layui-tab-title-lg {
+  border-bottom-color: #7a7ed3;
+  position: relative;
+  z-index: 2;
+}
+.layui-tab-card > .layui-tab-title-lg .layui-this {
+  color: #7a7ed3;
+}
+.layui-tab-card > .layui-tab-title-lg .layui-this:after {
+  border-top-color: #7a7ed3 !important;
+  border-right-color: #7a7ed3;
+  border-left-color: #7a7ed3;
+}
+.layui-tab-brief > .layui-tab-title-lg .layui-this {
+  color: #7a7ed3;
+}
+.layui-tab-brief > .layui-tab-title-lg .layui-this:after {
+  border-bottom-color: #7a7ed3;
+}
+.course-header-panel {
+  box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  background-color: #fff;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  position: relative;
+}
+.course-header-panel:before,
+.course-header-panel:after {
+  content: '';
+  position: absolute;
+  height: 25px;
+  width: 5px;
+  background-color: #eee;
+  bottom: -25px;
+}
+.course-header-panel:before {
+  left: -5px;
+}
+.course-header-panel:after {
+  right: -5px;
+}
+.course-header-panel .pull-left {
+  line-height: 190px;
+  padding: 0 30px;
+  width: 270px;
+  box-sizing: border-box;
+}
+.course-header-panel.chp-1 {
+  margin: 0;
+  box-shadow: none;
+}
+.course-header-panel.chp-1:before,
+.course-header-panel.chp-1:after {
+  display: none;
+}
+.content-vertical-middle > .inner {
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+}
+.badge-skin {
+  line-height: 20px;
+  height: 20px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #fff;
+  display: inline-block;
+  padding: 0 10px;
+}
+.course-list-2 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.course-list-2 > .item {
+  width: 33.33%;
+  float: left;
+  box-sizing: border-box;
+  padding: 15px 10px;
+}
+.course-list-2 a {
+  display: block;
+}
+.course-list-2 a img {
+  width: 100%;
+  height: 180px;
+  vertical-align: middle;
+}
+.course-list-2 .info-box {
+  border: #f0f0f0 1px solid;
+  border-top: 0 none;
+}
+.course-list-2 .info-box .head {
+  position: relative;
+  padding: 10px;
+  overflow: hidden;
+}
+.course-list-2 .info-box .head:after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  height: 1px;
+  background-color: #f0f0f0;
+}
+.course-list-2 .info-box .head .name {
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.course-list-2 .info-box .head .info-label {
+  overflow: hidden;
+  font-size: 0;
+  white-space: nowrap;
+}
+.course-list-2 .info-box .head .info-label > li {
+  background-color: #ff5e7b;
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  display: inline-block;
+  height: 16px;
+  padding: 0 10px;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin: 0 3px;
+}
+.course-list-2 .info-box .info-status {
+  padding: 15px 0;
+}
+.course-list-2 .info-box .info-status > .item {
+  width: 20%;
+  height: 31px;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  border-left: #dddddd 1px solid;
+}
+.course-list-2 .info-box .info-status > .item:first-child {
+  border-left: 0 none;
+}
+.course-list-2 .info-box .info-status > .item .txt1,
+.course-list-2 .info-box .info-status > .item .txt2 {
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+}
+.course-list-2 .info-box .info-status > .item .txt1 {
+  font-size: 14px;
+  color: #454545;
+}
+.course-list-2 .info-box .info-status > .item .txt1.purse {
+  color: #6165fa;
+}
+.course-list-2 .info-box .info-status > .item .txt2 {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+.course-list-2 .info-box .info-status > .item .entry-study {
+  display: none;
+  font-size: 12px;
+  background-color: #6165fa;
+  color: #fff;
+  position: absolute;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 3px;
+  width: 100%;
+  top: 8px;
+  left: 0;
+  text-align: center;
+  transform: scale(0.9);
+}
+.course-list-2 .info-box .info-status > .item:hover .entry-study {
+  display: block;
+}
+.course-list-2 .info-box .info-status > .item:hover .entry-study ~ .txt1,
+.course-list-2 .info-box .info-status > .item:hover .entry-study ~ .txt2 {
+  display: none;
+}
+.filter-list > .layui-btn.actived {
+  background-color: #6c6fbf;
+}
+.layui-field-title {
+  border: 0 none;
+}
+.layui-field-title legend {
+  margin-left: 0;
+  border-left: 5px #8285d6 solid;
+  line-height: 1.2;
+  color: #8285d6;
+  font-size: 20px !important;
+  font-weight: normal !important;
+}
+.live-detail-label {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.address-list .online-txt {
+  color: #ff7572;
+  margin-left: 5px;
+}
+.address-list .offline-txt {
+  color: #999999;
+  margin-left: 5px;
+}
+.notes-list > .item .layui-badge {
+  background: #ff5c7b;
+}
+.notes-list > .item .layui-badge.layui-btn-gray {
+  background-color: #c2c2c2;
+}
+.layui-btn-purp-skin1 {
+  background: #6c6fbf;
+}
+.tbl-status td {
+  padding: 0 8px;
+}
+.tbl-status .content-vertical-middle {
+  height: 130px;
+  line-height: 130px;
+  border-radius: 5px;
+}
+.tbl-status.tbl-status-h1 .content-vertical-middle {
+  height: 150px;
+  line-height: 150px;
+  border-radius: 10px;
+}

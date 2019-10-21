@@ -1,0 +1,61 @@
+<script>
+    $(function(){
+        //js脚本
+        //获取生成的图片的base64地址的方法: window.frames['ifrm'].contentDocument.getElementById('myIMG').src
+        //查看准考证大图
+        requirejs(['sm-extend'],function (){
+            $('.page').on('click','[data-role="fancyimg"]',function () {
+
+                //var imgSrc=$(this).attr('src');
+                var imgSrc=window.frames['ifrm'].contentDocument.getElementById('myIMG').src;
+                $.photoBrowser({
+                    photos : [
+                        {
+                            url: imgSrc,
+                            //caption: 'Caption 1 Text'
+                        }
+                    ],
+                    //navbar: false,
+                    theme: 'dark',
+                    toolbarTemplate: [
+                        '<nav class="bar bar-tab">',
+                        '<a class="tab-item photo-browser-close-link" href="#">关闭</a>',
+                        '<a class="tab-item active photo-browser-close-link external border-left" onclick="downloadBase64File(event)" href="#">保存下载</a>',
+                        '</nav>'].join(''),
+                    type: 'standalone'
+                }).open();
+            })
+
+        });
+
+        //下载图片方法
+        function downloadFile(content, fileName) { //下载base64图片
+            var base64ToBlob = function(code) {
+                let parts = code.split(';base64,');
+                let contentType = parts[0].split(':')[1];
+                let raw = window.atob(parts[1]);
+                let rawLength = raw.length;
+                let uInt8Array = new Uint8Array(rawLength);
+                for(let i = 0; i < rawLength; ++i) {
+                    uInt8Array[i] = raw.charCodeAt(i);
+                }
+                return new Blob([uInt8Array], {
+                    type: contentType
+                });
+            };
+            let aLink = document.createElement('a');
+            let blob = base64ToBlob(content); //new Blob([content]);
+            let evt = document.createEvent("HTMLEvents");
+            evt.initEvent("click", true, true); //initEvent 不加后两个参数在FF下会报错  事件类型，是否冒泡，是否阻止浏览器的默认行为
+            aLink.download = fileName;
+            aLink.href = URL.createObjectURL(blob);
+            aLink.click();
+        }
+
+        //调用
+        window.downloadBase64File=function(event){
+            event.preventDefault();
+            downloadFile(window.frames['ifrm'].contentDocument.getElementById('myIMG').src, 'xxx.png');
+        }
+    })
+</script>

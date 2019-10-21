@@ -1,46 +1,81 @@
 <div class="page-group">
-	<div class="page" id="page-a">
+	<div class="page" id="page-level-2-page">
 		<header class="bar bar-nav">
-			<a class="icon icon-me pull-left"></a>
-			<h1 class="title">SUI Mobile</h1>
+			<a class="icon icon-left pull-left back gray3"></a>
+			<h1 class="title">校园活动</h1>
 		</header>
 
 		<div class="content">
-			<div id="app" v-cloak>
-				{{msg}}
-			</div>
-			<a href="aa.html">
-				测试
-			</a>
-
-			<a href="javascript:;" class="open-popup" data-popup=".popup-services">Open Services Popup </a>
+			<ul class="list-unstyled list-cutstom bg-white info-item-list page-nav margin-t_5rem">
+				<li class="list-cutstom-item">
+					<a href="level-3-page.html" class="flex-box list-cutstom-item-in">
+						<div class="flex-item txt">
+							<span class="name has-note">走进国开</span>
+						</div>
+						<span class="icon icon-right"></span>
+					</a>
+				</li>
+				<li class="list-cutstom-item">
+					<a href="level-3-page.html" class="flex-box list-cutstom-item-in">
+						<div class="flex-item txt">
+							<span class="name has-note">学校简介</span>
+						</div>
+						<span class="icon icon-right"></span>
+					</a>
+				</li>
+				<li class="list-cutstom-item">
+					<a href="level-3-page.html" class="flex-box list-cutstom-item-in">
+						<div class="flex-item txt">
+							<span class="name has-note">办学理念</span>
+						</div>
+						<span class="icon icon-right"></span>
+					</a>
+				</li>
+				<li class="list-cutstom-item">
+					<a href="#" class="flex-box list-cutstom-item-in">
+						<div class="flex-item txt">
+							<span class="name has-note">学校领导</span>
+						</div>
+						<span class="icon icon-right"></span>
+					</a>
+				</li>
+				<li class="list-cutstom-item">
+					<a href="#" class="flex-box list-cutstom-item-in">
+						<div class="flex-item txt">
+							<span class="name has-note">机构设置</span>
+						</div>
+						<span class="icon icon-right"></span>
+					</a>
+				</li>
+				<li class="list-cutstom-item has-note">
+					<a href="#" class="flex-box list-cutstom-item-in">
+						<div class="flex-item txt">
+							<span class="name has-note">教师团队</span>
+						</div>
+						<span class="icon icon-right"></span>
+					</a>
+				</li>
+				<li class="list-cutstom-item">
+					<a href="#" class="flex-box list-cutstom-item-in">
+						<div class="flex-item txt">
+							<span class="name has-note">学校荣誉</span>
+						</div>
+						<span class="icon icon-right"></span>
+					</a>
+				</li>
+			</ul>
+			<ul class="list-unstyled list-cutstom bg-white info-item-list page-nav margin-t_5rem">
+				<li class="list-cutstom-item">
+					<a href="#" class="flex-box list-cutstom-item-in">
+						<div class="flex-item txt">
+							<span class="name">联系我们</span>
+						</div>
+						<span class="icon icon-right"></span>
+					</a>
+				</li>
+			</ul>
 		</div>
 
 
 	</div>
-	<div class="popup popup-services">
-		<div class="content-block">
-			<p>Services</p>
-			<p><a href="javascript:;" class="close-popup">Close popup</a></p>
-			<p>Lorem ipsum dolor ...</p>
-		</div>
-	</div>
-	<script>
-        $(function(){
-            new Vue({
-                el:'#app',
-                data:{
-                    msg:'aa'
-                }
-            })
-
-			requirejs(['https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js'],function(){
-			    //当要使用jquery时，重设回$变量为Zepto
-                window.$=Zepto;
-
-				//....其它业务
-
-			});
-        })
-	</script>
 </div>

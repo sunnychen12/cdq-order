@@ -1,0 +1,34 @@
+@import "media.less";
+@import "flex-box.less";
+@import "embed-responsive.less";
+@import "form.less";
+@import "animate.less";
+
+//链接元素
+.as-link{
+	&:active{
+		background-color: #f2f2f2;
+	}
+}
+
+//列表
+.list-cutstom{
+	>.list-cutstom-item{
+		padding: .8rem 0;
+		position: relative;
+		&:after{
+			content: ' ';
+			height: 1px;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			left: 0;
+			background:@border-color;
+		}
+		&:last-child{
+			&:after{
+				display: none;
+			}
+		}
+	}
+}

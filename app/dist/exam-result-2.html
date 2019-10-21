@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>XXX平台</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+
+  <link rel="stylesheet" href="static/css/sm.min.css">
+  <link rel="stylesheet" href="static/css/main.css">
+
+  <script type='text/javascript' src='static/js/zepto.min.js'></script>
+  <script type='text/javascript' src='static/js/vue.min.js'></script>
+
+</head>
+<body>
+<div class="page-group">
+	<div class="page" id="page-exam-result-2">
+		<header class="bar bar-nav">
+			<a class="icon icon-left pull-left back gray3"></a>
+			<h1 class="title">模拟测试</h1>
+		</header>
+		<div class="bar bar-footer bar-footer-reset">
+			<div class="flex-box flex-align-center full-height btn-group">
+				<button type="button" class="button button-round button-purple flex-item">查看答题结果明细</button>
+			</div>
+		</div>
+		<div class="content bg-white">
+			<div class="padding_75rem">
+				<div class="text-center text-red">
+					<span class="ico-custom" style="font-size: 3.5rem">&#xe911;</span>
+					<div style="font-size: 1.2rem;margin-top: .3rem">得分45 通过测试</div>
+				</div>
+				<div class="text-center font_5rem" style="color: #728ca3">
+					当前测试目前最高得分是：95分   做题次数剩余：无限次
+				</div>
+
+				<div class="card card-panel no-shadow margin-t-1rem">
+					<div class="card-header">
+						<div class="font_5rem">
+							单项选题（答对 <span class="text-green">10</span> 题，答错 <span class="text-red">10</span> 题，得 <span class="text-green">20</span> 分）
+						</div>
+					</div>
+					<div class="card-content padding-t_75rem padding-b_75rem">
+						<ul class="list-unstyled clearfix ans-card-list xs">
+							<li class="right">1</li>
+							<li class="wrong">2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+							<li>11</li>
+							<li>12</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card-panel no-shadow margin-t-1rem">
+					<div class="card-header">
+						<div class="font_5rem">
+							多项选题（答对 <span class="text-green">10</span> 题，答错 <span class="text-red">10</span> 题，得 <span class="text-green">20</span> 分）
+						</div>
+					</div>
+					<div class="card-content padding-t_75rem padding-b_75rem">
+						<ul class="list-unstyled clearfix ans-card-list xs">
+							<li class="right">1</li>
+							<li class="wrong">2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+							<li>11</li>
+							<li>12</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<script type='text/javascript' src='static/js/sm.min.js'></script>
+<script type='text/javascript' src='static/require.js'></script>
+<script type='text/javascript' src='static/js/app.js'></script>
+<script>
+    $(function(){
+        //js脚本
+
+        //答题卡的显示处理
+        setTimeout(function () {
+            var $card=$('.ans-card-list')
+                , cardWith=$card.width()-1
+                , $items=$card.children()
+                , $item=$items.eq(0)
+                , itemWidth=$item.outerWidth(true)+1
+                , counts=$items.length;
+
+            var w=0, m=0;
+            for (var i = 1; i <= counts; i++) {
+                w=itemWidth*i;
+                if(w>cardWith){
+                    m=i;
+                    break;
+                }
+            }
+
+            if(m>0){
+                $card.css('padding-left', (cardWith-itemWidth*(m-1))/2 );
+            }
+        },0)
+    })
+</script>
+</body>
+</html>

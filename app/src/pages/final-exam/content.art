@@ -1,0 +1,239 @@
+<div class="page-group">
+	<div class="page" id="page-final-exam">
+		<%
+		let barTab = require("@/common/bar-tab.art");
+		%><%= barTab({tab:1})%>
+
+		<%
+		let barTopNav = require("@/common/bar-top-nav.art");
+		%><%= barTopNav({tab:2})%>
+
+		<div class="content">
+			<div class="padding-l_75rem padding-r_75rem bg-white">
+				<ul class="list-unstyled final-exam-list">
+					<li class="item">
+						<div class="toggle-holder expand">
+							<div class="flex-box flex-box-justify flex-align-center">
+								<h3 class="item-name">2018秋期末考试正式计划</h3>
+								<span class="icon icon-down"></span>
+							</div>
+						</div>
+						<div class="slide-cnt expand">
+							<div class="panel-box">
+								<div class="panel-tbl">
+									<table width="100%">
+										<tbody>
+											<tr>
+												<td class="label">
+													考试时间
+												</td>
+												<td class="txt">
+													2018/11/05 - 2018/11/21
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													预约方式
+												</td>
+												<td class="txt">
+													集中预约
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													网考时间
+												</td>
+												<td class="txt">
+													2018/12/21 - 2019/01/06
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													笔试时间
+												</td>
+												<td class="txt">
+													2018/12/21 - 2019/01/06
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													机考时间
+												</td>
+												<td class="txt">
+													2018/12/21 - 2019/01/06
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													形考截止时间
+												</td>
+												<td class="txt">
+													2019/01/06
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													成绩登记截止时间
+												</td>
+												<td class="txt">
+													2019/01/06
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="padding-l_75rem padding-r_75rem bg-white margin-t_5rem">
+				<ul class="list-unstyled final-exam-list">
+					<li class="item">
+						<div class="toggle-holder expand">
+							<div class="flex-box flex-box-justify flex-align-center">
+								<h3 class="item-name">我的考试（7）</h3>
+								<span class="icon icon-down"></span>
+							</div>
+						</div>
+						<div class="slide-cnt expand">
+							<div class="panel-box">
+								<div class="flex-box panel-box-header">
+									<h4 class="name flex-item margin-r_5rem">园林植物病虫害防治</h4>
+									<a href="view-cert.html" class="button button-blue button-xs">查看准考证</a>
+								</div>
+								<div class="panel-tbl">
+									<table width="100%">
+										<tbody>
+											<tr>
+												<td class="label">
+													考试方式
+												</td>
+												<td class="txt">
+													笔试
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													考试时间
+												</td>
+												<td class="txt">
+													2019/01/05 08:30-09:30
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													考试成绩
+												</td>
+												<td class="txt">
+													--
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													状态
+												</td>
+												<td class="txt">
+													<span class="text-orange">考试中</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="panel-box">
+								<div class="flex-box panel-box-header">
+									<h4 class="name flex-item margin-r_5rem">国家开放大学学习指南</h4>
+									<span class="button button-blue button-xs">进入形考</span>
+								</div>
+								<div class="panel-tbl">
+									<table width="100%">
+										<tbody>
+											<tr>
+												<td class="label">
+													考试方式
+												</td>
+												<td class="txt">
+													中央形考
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													考试时间
+												</td>
+												<td class="txt">
+													2019/01/05 08:30-09:30
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													考试成绩
+												</td>
+												<td class="txt">
+													--
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													状态
+												</td>
+												<td class="txt">
+													<span class="text-orange">考试中</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="panel-box">
+								<div class="flex-box panel-box-header">
+									<h4 class="name flex-item margin-r_5rem">基础会计</h4>
+									<span class="button button-blue button-xs" data-role="view-desc">考试说明</span>
+								</div>
+								<div class="panel-tbl">
+									<table width="100%">
+										<tbody>
+											<tr>
+												<td class="label">
+													考试方式
+												</td>
+												<td class="txt">
+													远程网考
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													考试时间
+												</td>
+												<td class="txt">
+													2019/01/05 08:30-09:30
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													考试成绩
+												</td>
+												<td class="txt">
+													--
+												</td>
+											</tr>
+											<tr>
+												<td class="label">
+													状态
+												</td>
+												<td class="txt">
+													<span class="text-orange">考试中</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</div>

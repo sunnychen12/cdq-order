@@ -1,0 +1,13 @@
+<nav class="bar-top-nav">
+    <div class="flex-box flex-align-center full-height">
+        <a href="#" class="item ${tab==0?'active':''}">
+            <span>课程学习</span>
+        </a>
+        <a href="#" class="item ${tab==1?'active':''}">
+            <span>直播课堂</span>
+        </a>
+        <a href="#" class="item ${tab==2?'active':''}">
+            <span>期末考试</span>
+        </a>
+    </div>
+</nav>

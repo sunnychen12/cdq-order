@@ -9,6 +9,7 @@
 				<a href="#" class="button button-round button-purple flex-item">查看资料</a>
 				<a href="#" class="button button-round button-purple flex-item">查看信息</a>
 				<a href="#" class="button button-round button-purple flex-item">查看签名</a>
+				<a href="#" class="button button-round button-purple flex-item">查看通知书</a>
 			</div>
 		</div>
 		<div class="content">
@@ -121,7 +122,7 @@
 							<span class="name">资料状态</span>
 						</div>
 						<div class="info-right">
-							<span class="text-red">提交中</span>
+							<span class="text-green">审核通过</span>
 						</div>
 					</div>
 				</li>
@@ -140,9 +141,4 @@
 
 
 	</div>
-	<script>
-        $(function(){
-            //js脚本
-        })
-	</script>
 </div>

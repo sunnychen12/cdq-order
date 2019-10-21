@@ -1,0 +1,544 @@
+<div class="page-group">
+	<div class="page" id="page-level-3-page">
+		<header class="bar bar-nav">
+			<a class="icon icon-left pull-left back gray3"></a>
+			<h1 class="title">我的班级</h1>
+		</header>
+
+		<div class="content bg-white">
+				<div class="padding_75rem">
+					<div class="border padding_75rem">
+						<div class="media">
+							<div class="media-side padding-r_75rem vertical-top">
+								<img src="static/images/stu-cover.png" width="90">
+								<a href="#" class="button button-blue">XXXX</a>
+							</div>
+							<div class="media-body vertical-top">
+								<ul class="list-unstyled font_65rem">
+									<li><strong>学生姓名</strong>：李志豪</li>
+									<li><strong>学生姓名</strong>：李志豪</li>
+									<li><strong>学生姓名</strong>：李志豪</li>
+									<li><strong>学生姓名</strong>：李志豪</li>
+									<li><strong>学生姓名</strong>：李志豪</li>
+									<li><strong>学生姓名</strong>：李志豪</li>
+									<li><strong>学生姓名</strong>：李志豪</li>
+									<li><strong>学生姓名</strong>：李志豪</li>
+									<li><strong>学生姓名</strong>：李志豪</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="buttons-tab">
+					<a href="#tab1" class="tab-link active button">TA的学情</a>
+					<a href="#tab2" class="tab-link button">TA的成绩</a>
+				</div>
+				<div class="tabs">
+					<div id="tab1" class="tab active">
+						<div class="padding_75rem">
+							<div class="score-blue-panel">
+								<div class="score-panel-header">
+									<div class="flex-box flex-align-center" id="picker-input">
+										<div class="term-name flex-item">
+											2018春季工商管理班
+										</div>
+										<small class="icon icon-caret line-height-1"></small>
+									</div>
+									<div class="time">2018/03/15 - 2018/07/31</div>
+								</div>
+								<div class="flex-box score-panel-grid padding-t_5rem padding-b_5rem">
+									<div class="flex-item">
+										<div class="num">10</div>
+										<div class="label-txt">选课总数</div>
+									</div>
+									<div class="flex-item">
+										<div class="num">8</div>
+										<div class="label-txt">已学课程</div>
+									</div>
+									<div class="flex-item">
+										<div class="num">28</div>
+										<div class="label-txt">总学分</div>
+									</div>
+									<div class="flex-item">
+										<div class="num">3</div>
+										<div class="label-txt">已获学分</div>
+									</div>
+								</div>
+							</div>
+							<div class="padding-t_75rem padding-b_75rem">
+								<ul class="list-unstyled list-cutstom score-course-list with-no-line">
+									<li class="list-cutstom-item">
+										<a href="#" class="flex-box item-box">
+											<div class="img-box">
+												<div class="embed-responsive">
+													<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+												</div>
+											</div>
+											<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+												<h4>中国特色社会主义理论体系概论</h4>
+												<div class="flex-box flex-box flex-align-end">
+													<div class="info">
+														<div class="txt">学习次数：208</div>
+														<div class="txt">学习成绩：60</div>
+														<div class="txt">课程状态：<span class="text-blue">学习中</span></div>
+													</div>
+													<div class="flex-item label-group">
+														<label>2学分</label>
+														<label>省开</label>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="list-cutstom-item">
+										<a href="#" class="flex-box item-box">
+											<div class="img-box">
+												<div class="embed-responsive">
+													<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+												</div>
+											</div>
+											<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+												<h4>中国特色社会主义理论体系概论</h4>
+												<div class="flex-box flex-box flex-align-end">
+													<div class="info">
+														<div class="txt">学习次数：208</div>
+														<div class="txt">学习成绩：60</div>
+														<div class="txt">课程状态：<span class="text-blue">学习中</span></div>
+													</div>
+													<div class="flex-item label-group">
+														<label>2学分</label>
+														<label>省开</label>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="list-cutstom-item">
+										<a href="#" class="flex-box item-box">
+											<div class="img-box">
+												<div class="embed-responsive">
+													<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+												</div>
+											</div>
+											<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+												<h4>中国特色社会主义理论体系概论</h4>
+												<div class="flex-box flex-box flex-align-end">
+													<div class="info">
+														<div class="txt">学习次数：208</div>
+														<div class="txt">学习成绩：60</div>
+														<div class="txt">课程状态：<span class="text-blue">学习中</span></div>
+													</div>
+													<div class="flex-item label-group">
+														<label>2学分</label>
+														<label>省开</label>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="list-cutstom-item">
+										<a href="#" class="flex-box item-box">
+											<div class="img-box">
+												<div class="embed-responsive">
+													<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+												</div>
+												<div class="img-mark">
+													<span>课程暂未开放</span>
+												</div>
+											</div>
+											<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+												<h4>中国特色社会主义理论体系概论</h4>
+												<div class="flex-box flex-box flex-align-end">
+													<div class="info">
+														<div class="txt">学习次数：208</div>
+														<div class="txt">学习成绩：60</div>
+														<div class="txt">课程状态：<span class="gray9">未学习</span></div>
+													</div>
+													<div class="flex-item label-group">
+														<label>2学分</label>
+														<label>省开</label>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="tab2" class="tab">
+						<div class="">
+							<div class="padding_75rem bg-white border-bottom">
+								<h2 class="tit-with-border">成绩信息</h2>
+								<div class="score-blue-panel margin-t_3rem padding-t-1rem padding-b-1rem">
+									<div class="flex-box score-panel-grid">
+										<div class="flex-item">
+											<div class="num">21</div>
+											<div class="label-txt">总课程</div>
+										</div>
+										<div class="flex-item">
+											<div class="num">13</div>
+											<div class="label-txt">已学课程</div>
+										</div>
+										<div class="flex-item">
+											<div class="num">76</div>
+											<div class="label-txt">总学分</div>
+										</div>
+										<div class="flex-item">
+											<div class="num">13</div>
+											<div class="label-txt">已获学分</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<ul class="list-unstyled list-cutstom bg-white score-all-terms">
+								<li class="list-cutstom-item score-list-group">
+									<div class="score-term-toggle flex-box flex-align-center flex-box-justify expand">
+										<h3>第1学期</h3>
+										<span class="icon icon-down"></span>
+									</div>
+									<div class="slide-cnt expand">
+										<ul class="list-unstyled list-cutstom score-course-list">
+											<li class="list-cutstom-item">
+												<a href="#" class="flex-box item-box">
+													<div class="img-box">
+														<div class="embed-responsive">
+															<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+														</div>
+														<span class="status-label bg-green">已通过</span>
+													</div>
+													<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+														<h4>计算机应用基础（00815）</h4>
+														<div class="flex-box flex-box flex-align-end">
+															<div class="info">
+																<div class="txt">学习成绩：99</div>
+																<div class="txt">考试成绩：100</div>
+																<div class="txt">总成绩：100</div>
+															</div>
+															<div class="flex-item label-group">
+																<label>2学分</label>
+																<label>公共基础课</label>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="list-cutstom-item">
+												<a href="#" class="flex-box item-box">
+													<div class="img-box">
+														<div class="embed-responsive">
+															<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+														</div>
+														<span class="status-label bg-red">未通过</span>
+													</div>
+													<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+														<h4>计算机应用基础（00815）</h4>
+														<div class="flex-box flex-box flex-align-end">
+															<div class="info">
+																<div class="txt">学习成绩：99</div>
+																<div class="txt">考试成绩：100</div>
+																<div class="txt">总成绩：100</div>
+															</div>
+															<div class="flex-item label-group">
+																<label>2学分</label>
+																<label>公共基础课</label>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="list-cutstom-item">
+												<a href="#" class="flex-box item-box">
+													<div class="img-box">
+														<div class="embed-responsive">
+															<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+														</div>
+														<span class="status-label bg-purple">学习中</span>
+													</div>
+													<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+														<h4>计算机应用基础（00815）</h4>
+														<div class="flex-box flex-box flex-align-end">
+															<div class="info">
+																<div class="txt">学习成绩：99</div>
+																<div class="txt">考试成绩：100</div>
+																<div class="txt">总成绩：100</div>
+															</div>
+															<div class="flex-item label-group">
+																<label>2学分</label>
+																<label>公共基础课</label>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list-cutstom-item score-list-group">
+									<div class="score-term-toggle flex-box flex-align-center flex-box-justify">
+										<h3>第2学期</h3>
+										<span class="icon icon-down"></span>
+									</div>
+									<div class="slide-cnt">
+										<ul class="list-unstyled list-cutstom score-course-list">
+											<li class="list-cutstom-item">
+												<a href="#" class="flex-box item-box">
+													<div class="img-box">
+														<div class="embed-responsive">
+															<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+														</div>
+													</div>
+													<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+														<h4>计算机应用基础（00815）</h4>
+														<div class="flex-box flex-box flex-align-end">
+															<div class="info">
+																<div class="txt">学习成绩：99</div>
+																<div class="txt">考试成绩：100</div>
+																<div class="txt">总成绩：100</div>
+															</div>
+															<div class="flex-item label-group">
+																<label>2学分</label>
+																<label>公共基础课</label>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="list-cutstom-item">
+												<a href="#" class="flex-box item-box">
+													<div class="img-box">
+														<div class="embed-responsive">
+															<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+														</div>
+													</div>
+													<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+														<h4>计算机应用基础（00815）</h4>
+														<div class="flex-box flex-box flex-align-end">
+															<div class="info">
+																<div class="txt">学习成绩：99</div>
+																<div class="txt">考试成绩：100</div>
+																<div class="txt">总成绩：100</div>
+															</div>
+															<div class="flex-item label-group">
+																<label>2学分</label>
+																<label>公共基础课</label>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="list-cutstom-item">
+												<a href="#" class="flex-box item-box">
+													<div class="img-box">
+														<div class="embed-responsive">
+															<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+														</div>
+													</div>
+													<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+														<h4>计算机应用基础（00815）</h4>
+														<div class="flex-box flex-box flex-align-end">
+															<div class="info">
+																<div class="txt">学习成绩：99</div>
+																<div class="txt">考试成绩：100</div>
+																<div class="txt">总成绩：100</div>
+															</div>
+															<div class="flex-item label-group">
+																<label>2学分</label>
+																<label>公共基础课</label>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list-cutstom-item score-list-group">
+									<div class="score-term-toggle flex-box flex-align-center flex-box-justify">
+										<h3>第3学期</h3>
+										<span class="icon icon-down"></span>
+									</div>
+									<div class="slide-cnt">
+										<ul class="list-unstyled list-cutstom score-course-list">
+											<li class="list-cutstom-item">
+												<a href="#" class="flex-box item-box">
+													<div class="img-box">
+														<div class="embed-responsive">
+															<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+														</div>
+													</div>
+													<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+														<h4>计算机应用基础（00815）</h4>
+														<div class="flex-box flex-box flex-align-end">
+															<div class="info">
+																<div class="txt">学习成绩：99</div>
+																<div class="txt">考试成绩：100</div>
+																<div class="txt">总成绩：100</div>
+															</div>
+															<div class="flex-item label-group">
+																<label>2学分</label>
+																<label>公共基础课</label>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="list-cutstom-item">
+												<a href="#" class="flex-box item-box">
+													<div class="img-box">
+														<div class="embed-responsive">
+															<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+														</div>
+													</div>
+													<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+														<h4>计算机应用基础（00815）</h4>
+														<div class="flex-box flex-box flex-align-end">
+															<div class="info">
+																<div class="txt">学习成绩：99</div>
+																<div class="txt">考试成绩：100</div>
+																<div class="txt">总成绩：100</div>
+															</div>
+															<div class="flex-item label-group">
+																<label>2学分</label>
+																<label>公共基础课</label>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="list-cutstom-item">
+												<a href="#" class="flex-box item-box">
+													<div class="img-box">
+														<div class="embed-responsive">
+															<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+														</div>
+													</div>
+													<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+														<h4>计算机应用基础（00815）</h4>
+														<div class="flex-box flex-box flex-align-end">
+															<div class="info">
+																<div class="txt">学习成绩：99</div>
+																<div class="txt">考试成绩：100</div>
+																<div class="txt">总成绩：100</div>
+															</div>
+															<div class="flex-item label-group">
+																<label>2学分</label>
+																<label>公共基础课</label>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+
+							<div class="margin-t_5rem bg-white">
+								<div class="padding-l_75rem padding-r_75rem padding-t_5rem padding-b_5rem border-bottom">
+									<h2 class="tit-with-border">学分信息</h2>
+								</div>
+								<ul class="list-unstyled list-cutstom score-all-terms">
+									<li class="list-cutstom-item score-list-group">
+										<div class="score-term-toggle flex-box flex-align-center flex-box-justify expand with-no-line">
+											<h3>
+												公共基础课
+												<span class="text-red">（未满足毕业条件）</span>
+											</h3>
+											<span class="icon icon-down"></span>
+										</div>
+										<div class="slide-cnt expand">
+											<div class="flex-box">
+												<div class="flex-item grid-info">
+													<div class="num">21</div>
+													<div class="label">模块总学分</div>
+												</div>
+												<div class="flex-item grid-info">
+													<div class="num">13</div>
+													<div class="label">最低毕业学分</div>
+												</div>
+												<div class="flex-item grid-info">
+													<div class="num">76</div>
+													<div class="label">模块中央电大
+														考试最低学分</div>
+												</div>
+												<div class="flex-item grid-info">
+													<div class="num">13</div>
+													<div class="label">已获学分</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="list-cutstom-item score-list-group">
+										<div class="score-term-toggle flex-box flex-align-center flex-box-justify with-no-line">
+											<h3>
+												专业基础课
+												<span class="text-green">（已满足毕业条件）</span>
+											</h3>
+											<span class="icon icon-down"></span>
+										</div>
+										<div class="slide-cnt">
+											<div class="flex-box">
+												<div class="flex-item grid-info">
+													<div class="num">21</div>
+													<div class="label">模块总学分</div>
+												</div>
+												<div class="flex-item grid-info">
+													<div class="num">13</div>
+													<div class="label">最低毕业学分</div>
+												</div>
+												<div class="flex-item grid-info">
+													<div class="num">76</div>
+													<div class="label">模块中央电大
+														考试最低学分</div>
+												</div>
+												<div class="flex-item grid-info">
+													<div class="num">13</div>
+													<div class="label">已获学分</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="list-cutstom-item score-list-group">
+										<div class="score-term-toggle flex-box flex-align-center flex-box-justify with-no-line">
+											<h3>
+												专业核心课
+												<span class="text-red">（未满足毕业条件）</span>
+											</h3>
+											<span class="icon icon-down"></span>
+										</div>
+										<div class="slide-cnt">
+											<div class="flex-box">
+												<div class="flex-item grid-info">
+													<div class="num">21</div>
+													<div class="label">模块总学分</div>
+												</div>
+												<div class="flex-item grid-info">
+													<div class="num">13</div>
+													<div class="label">最低毕业学分</div>
+												</div>
+												<div class="flex-item grid-info">
+													<div class="num">76</div>
+													<div class="label">模块中央电大
+														考试最低学分</div>
+												</div>
+												<div class="flex-item grid-info">
+													<div class="num">13</div>
+													<div class="label">已获学分</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+		</div>
+	</div>
+</div>

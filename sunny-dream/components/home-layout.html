@@ -1,0 +1,33 @@
+<template>
+    <div data-role="template-container">
+        <site-header></site-header>
+
+        <router-view></router-view>
+
+        <site-footer></site-footer>
+    </div>
+</template>
+
+<script>
+    //vue component 设置，template 属性不需要设置，默认是用上方的模板
+    jsScript={
+        data: function() {
+            return {
+            }
+        },
+        methods:{
+        },
+        components:{
+            'site-header': function (resolve, reject) {
+                require(['utils'], function (utils) {
+                    utils.loadTemplate(resolve, reject, 'components/site-header.html')
+                })
+            },
+            'site-footer': function (resolve, reject) {
+                require(['utils'], function (utils) {
+                    utils.loadTemplate(resolve, reject, 'components/site-footer.html')
+                })
+            }
+        }
+    }
+</script>

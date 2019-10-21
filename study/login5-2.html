@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="ie67"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if gte IE 9]><html><![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>管理登录平台</title>
+<script type="text/javascript" src='dist/loadcss.js'></script>
+<link rel="stylesheet" href="dist/css/login5.css">
+</head>
+<body>
+<div class="login-wrapper" role="admin">
+  <!--<div class="login-logo">
+    <img src="dist/images/login-logo.png">
+    <span>XXXX分校</span>
+  </div>-->
+  <div class="login-container">
+    <form class="layui-form">
+      <div class="text-center login-title margin-t10">管理登录平台</div>
+      <div class="margin-t30 login-form-group">
+        <i class="icomoon-icon">&#xe902;</i>
+        <input type="text" class="layui-input" lay-verType="tips" autocomplete="off" lay-verify="verify-control" placeholder="请输入学号或身份证号"
+          data-regexp="*1"
+          null-msg="请输入学号或身份证号"
+        >
+      </div>
+      <div class="margin-t15 login-form-group">
+        <i class="icomoon-icon">&#xe900;</i>
+        <input type="password" class="layui-input" lay-verType="tips" autocomplete="off" lay-verify="verify-control" placeholder="请输入密码"
+          data-regexp="*1"
+          null-msg="请输入密码"
+        >
+      </div>
+      <div class="media margin-t15">
+        <div class="media-body">
+          <div class="login-form-group">
+            <i class="icomoon-icon">&#xe901;</i>
+            <input type="password" class="layui-input" lay-verType="tips" autocomplete="off" lay-verify="verify-control" placeholder="请输入验证码"
+              data-regexp="*1"
+              null-msg="请输入验证码"
+            >
+          </div>
+        </div>
+        <div class="media-side vertical-top padding-l15">
+          <img src="dist/images/temp/login2-qrcode.png" height="38" role="button">
+        </div>
+      </div>
+
+      <div class="margin-t25">
+        <button class="layui-btn layui-btn-fluid login-btn" lay-submit>登录</button>
+      </div>
+    </form>
+  </div>
+  <!--
+  <div class="login-copyright text-center">
+    <div>主办单位：国家开放大学（广州）XXXX分校</div>
+    <div class="margin-t10">
+        <img src="dist/images/icp-icon.png" class="margin-r5">
+        粤ICP备17125036号-1
+    </div>
+  </div>-->
+</div>
+<div class="login-footer">
+  <div class="box-center full-height">
+    <div class="media full-height">
+      <div class="media-body vertical-middle text-center gray9">
+        <span class="margin-r30">
+          主办单位：广东省广州市XXXXXXXXXX
+        </span>
+        <span class="margin-l30">
+          <img src="dist/images/icp-icon.png" class="margin-r5">
+          粤ICP备17125036号-1
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src='dist/loadjs.js'></script>
+<script type="text/javascript">
+layui.use(['util','form'], function(){
+  var util = layui.util
+      , form = layui.form;
+
+});
+</script>
+</body>
+</html>

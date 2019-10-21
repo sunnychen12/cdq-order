@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>XXX平台</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+
+  <link rel="stylesheet" href="static/css/sm.min.css">
+  <link rel="stylesheet" href="static/css/main.css">
+
+  <script type='text/javascript' src='static/js/zepto.min.js'></script>
+  <script type='text/javascript' src='static/js/vue.min.js'></script>
+
+</head>
+<body>
+<div class="page-group">
+	<div class="page" id="page-exam-answer-details">
+		<header class="bar bar-nav">
+			<a class="icon icon-left pull-left back gray3"></a>
+			<span class="ico-custom pull-right open-popup" data-popup=".popup-card">&#xe90f;</span>
+			<h1 class="title">00:67:31</h1>
+		</header>
+		<div class="bar bar-footer bar-footer-reset">
+			<div class="flex-box flex-align-center full-height btn-group">
+				<button type="button" class="button button-round button-gray flex-item ">上一题</button>
+				<button type="button" class="button button-round button-purple flex-item">下一题</button>
+			</div>
+		</div>
+		<div class="content bg-white padding_75rem">
+			<div class="text-blue">
+				<span class="font-1rem">2</span><span class="font_55rem">/100</span>
+			</div>
+			<div class="font_65rem">
+				【单选题】婴幼儿保育与教育的教育对象除了0~3岁婴幼
+				儿之外，还包括（    ）。
+			</div>
+			<div class="practice-subject-sel-list">
+				<label class="checkbox-group flex-box flex-align-center">
+					<input type="radio" class="checkbox-control" name="r1" checked disabled>
+					<span class="checkbox-icon">
+						<i class="ico-custom">&#xe90e;</i>
+					</span>
+					<div class="flex-item checkbox-txt">
+						A.政府管理部门
+					</div>
+				</label>
+				<label class="checkbox-group flex-box flex-align-center">
+					<input type="radio" class="checkbox-control" name="r1" disabled>
+					<span class="checkbox-icon">
+						<i class="ico-custom">&#xe90e;</i>
+					</span>
+					<div class="flex-item checkbox-txt">
+						B.教养人
+					</div>
+				</label>
+				<label class="checkbox-group flex-box flex-align-center">
+					<input type="radio" class="checkbox-control" name="r1" disabled>
+					<span class="checkbox-icon">
+						<i class="ico-custom">&#xe90e;</i>
+					</span>
+					<div class="flex-item checkbox-txt">
+						C.早教教师
+					</div>
+				</label>
+				<label class="checkbox-group flex-box flex-align-center">
+					<input type="radio" class="checkbox-control" name="r1" disabled>
+					<span class="checkbox-icon">
+						<i class="ico-custom">&#xe90e;</i>
+					</span>
+					<div class="flex-item checkbox-txt">
+						D.社区自愿者
+					</div>
+				</label>
+			</div>
+
+			<div class="border-top margin-t_7rem padding-t_75rem">
+				<div class="">
+					<h2 class="tit-with-border">答题结果</h2>
+				</div>
+				<div class="text-green font_65rem">
+					本题正确答案为 A，你答对了
+				</div>
+
+				<div class="margin-t_7rem">
+					<h2 class="tit-with-border">得分</h2>
+				</div>
+				<div class="font_65rem">
+					2分
+				</div>
+
+				<div class="margin-t_7rem">
+					<h2 class="tit-with-border">解析</h2>
+				</div>
+				<div class="font_65rem">
+					文字文字文字文字文字文字文字文字文字文字文字文字
+					文字文字文字文字文字文字文字文字文字文字文字文字
+					文字文字文字文字文字文字文字文字文字文字文字
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-card">
+		<header class="bar bar-nav">
+			<a class="icon icon-left pull-left close-popup gray3"></a>
+			<h1 class="title">答题卡</h1>
+		</header>
+		<div class="bar bar-footer bar-footer-reset">
+			<div class="flex-box flex-align-center full-height btn-group">
+				<button type="button" class="button button-round button-gray flex-item close-popup">提交试卷</button>
+				<button type="button" class="button button-round button-purple flex-item close-popup">继续答题</button>
+			</div>
+		</div>
+		<div class="content">
+			<div class="padding_75rem">
+				<div class="font_75rem border-bottom padding-b_5rem margin-b_5rem">
+					<span class="text-blue">共100题</span>
+				</div>
+				<ul class="list-unstyled clearfix ans-card-list">
+					<li class="on">1</li>
+					<li class="on">2</li>
+					<li class="on">3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</div>
+<script type='text/javascript' src='static/js/sm.min.js'></script>
+<script type='text/javascript' src='static/require.js'></script>
+<script type='text/javascript' src='static/js/app.js'></script>
+<script>
+    $(function(){
+        //js脚本
+
+        //答题卡弹出事件
+        $('.popup-card').on('open',function () {
+            //答题卡的显示处理
+            var $card=$('.ans-card-list')
+                , cardWith=$card.width()-1
+                , $items=$card.children()
+                , $item=$items.eq(0)
+                , itemWidth=$item.outerWidth(true)+1
+                , counts=$items.length;
+
+            var w=0, m=0;
+            for (var i = 1; i <= counts; i++) {
+                w=itemWidth*i;
+                if(w>cardWith){
+                    m=i;
+                    break;
+                }
+            }
+
+            if(m>0){
+                $card.css('padding-left', (cardWith-itemWidth*(m-1))/2 );
+            }
+        })
+
+    })
+</script>
+</body>
+</html>

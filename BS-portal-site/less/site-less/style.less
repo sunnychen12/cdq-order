@@ -10,6 +10,7 @@
   color: #fff;
   padding: 10px 0;
   height: 93px;
+
   .navbar-header{
     margin-right:0;
   }
@@ -35,6 +36,16 @@
       max-width: 125px;
       text-overflow:ellipsis;
       overflow: hidden;
+    }
+  }
+  &.header2{
+    .navbar-brand{
+      .subtitle {
+        font-size: 16px;
+        color: #ccc;
+        max-width: none;
+        border-left: #c4ced6 1px solid;
+      }
     }
   }
 }
@@ -370,7 +381,7 @@
       font-size: 22px;
       padding-bottom: 25px;
       background: url(images/colum-tit.png) no-repeat bottom center;
-      width: 170px;
+      width: 300px;
     }
     &.colum-title-2{
       span{
@@ -472,6 +483,68 @@
   }
 }
 
+.sign-entry-list{
+  position: relative;
+  a{
+    display: block;
+  }
+  .row{
+    margin-left: -25px;
+    margin-right: -25px;
+    >div{
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  .image-responsive{
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  .sign-brand{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .bx-wrapper{
+    box-shadow:none;
+    border: 0 none;
+    margin: 0;
+  }
+  .bx-prev,
+  .bx-next{
+    position: absolute;
+    width: 69px;
+    height: 138px;
+    top: 50%;
+    margin-top: -69px;
+  }
+  .bx-prev{
+    background: url(images/prev.png) no-repeat;
+    left: -120px;
+  }
+  .bx-next{
+    background: url(images/next.png) no-repeat;
+    right: -120px;
+  }
+}
+
+@media (max-width:1280px){
+  .sign-entry-list{
+    .bx-prev,
+    .bx-next{
+      display: none;
+    }
+  }
+}
+
+.gray-colum {
+    background-color: #f9f9f9;
+}
+
+.school-intro{
+  line-height: 1.75;
+  font-size: 16px;
+  color: #999;
+}
 
 //login
 .login-index{

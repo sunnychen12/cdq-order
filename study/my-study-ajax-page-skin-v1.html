@@ -1,0 +1,54 @@
+
+<div class="layui-tab layui-tab-card margin-none border-none" lay-filter="side-tree-menu">
+  <ul class="layui-tab-title layui-tab-title-lg bg-white" data-id="tab-list">
+    <li class="layui-this" data-url="course-study-ajax-page-skin-v1.html">课程学习</li>
+    <li data-url="course-living-ajax-page-skin-v1.html">直播课堂</li>
+  </ul>
+  <div data-id="side-tree-menu-content">
+
+  </div>
+</div>
+
+
+<script type="text/javascript">
+layui.use(['element'], function(){
+  var element = layui.element;
+  var $container=$('[lay-filter="side-tree-menu"]');
+  var $curTab=$('[data-id="tab-list"] > .layui-this',$container);
+  
+  //侧边导航加载内容
+  function loadMenuCnt(url){
+    var $container=$('[data-id="side-tree-menu-content"]');
+    var $loading=$('[data-id="menu-content"] + .overlay');
+
+    $loading.show();
+    $.ajax({
+      url: url,
+      cache: false,
+      type: 'GET',
+      dataType: 'html',
+    })
+    .done(function(data) {
+      $container.html(data);
+    })
+    .fail(function() {
+      $container.html("功能建设中，敬请期待！");
+    })
+    .always(function(){
+      $loading.hide();
+    });
+  }
+
+  element.on('tab(side-tree-menu)', function(data){
+    loadMenuCnt($(this).data('url'));
+  });
+
+  
+
+  loadMenuCnt($curTab.data('url'));
+  //loadMenuCnt('course-living-ajax-page.html');
+  
+});
+</script>
+</body>
+</html>

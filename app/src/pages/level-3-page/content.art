@@ -1,86 +1,12 @@
 <div class="page-group">
-	<div class="page" id="page-a">
+	<div class="page" id="page-level-3-page">
 		<header class="bar bar-nav">
-			<a class="icon icon-left pull-left gray3"></a>
-			<h1 class="title">校园活动</h1>
+			<a class="icon icon-left pull-left back gray3"></a>
+			<h1 class="title">学校简介</h1>
 		</header>
 
-		<div class="content">
-			<ul class="list-unstyled list-cutstom bg-white page-nav margin-t_7rem">
-				<li class="list-cutstom-item">
-					<a href="#" class="flex-box">
-						<div class="flex-item txt">
-							<span class="name has-note">走进国开</span>
-						</div>
-						<span class="icon icon-right"></span>
-					</a>
-				</li>
-				<li class="list-cutstom-item">
-					<a href="#" class="flex-box">
-						<div class="flex-item txt">
-							<span class="name has-note">学校简介</span>
-						</div>
-						<span class="icon icon-right"></span>
-					</a>
-				</li>
-				<li class="list-cutstom-item">
-					<a href="#" class="flex-box">
-						<div class="flex-item txt">
-							<span class="name has-note">办学理念</span>
-						</div>
-						<span class="icon icon-right"></span>
-					</a>
-				</li>
-				<li class="list-cutstom-item">
-					<a href="#" class="flex-box">
-						<div class="flex-item txt">
-							<span class="name has-note">学校领导</span>
-						</div>
-						<span class="icon icon-right"></span>
-					</a>
-				</li>
-				<li class="list-cutstom-item">
-					<a href="#" class="flex-box">
-						<div class="flex-item txt">
-							<span class="name has-note">机构设置</span>
-						</div>
-						<span class="icon icon-right"></span>
-					</a>
-				</li>
-				<li class="list-cutstom-item has-note">
-					<a href="#" class="flex-box">
-						<div class="flex-item txt">
-							<span class="name has-note">教师团队</span>
-						</div>
-						<span class="icon icon-right"></span>
-					</a>
-				</li>
-				<li class="list-cutstom-item">
-					<a href="#" class="flex-box">
-						<div class="flex-item txt">
-							<span class="name has-note">学校荣誉</span>
-						</div>
-						<span class="icon icon-right"></span>
-					</a>
-				</li>
-			</ul>
-			<ul class="list-unstyled list-cutstom bg-white page-nav margin-t_7rem">
-				<li class="list-cutstom-item">
-					<a href="#" class="flex-box">
-						<div class="flex-item txt">
-							<span class="name">联系我们</span>
-						</div>
-						<span class="icon icon-right"></span>
-					</a>
-				</li>
-			</ul>
+		<div class="content padding_75rem bg-white">
+			<div class="artical overflow-x-hidden"><p style="text-indent:37px;"><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;">2016年9月27日，定锐职业技能培训有限公司在广州市白云区棠景街6号寓景大厦隆重举行开业典礼，白云区人大常委会副主任刘思成、原广州电大党委书记张晓华、广州电大副校长陈贵生等数十位受邀嘉宾共同出席了典礼，参观了开业剪彩仪式。</span></p><p style="text-indent: 37px;text-align: center;"><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;"><img src="http://learn-bee.oss-cn-shenzhen.aliyuncs.com/beelearn/20180801/49346cc47d2e48f7ad41bb6b63c3135e.jpg" title="" alt="开1.jpg"></span></p><p style="text-indent:37px"><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;">27日上午，我司的开业典礼准时举行，受邀嘉宾也陆续到场。洪亮震天的锣鼓声、欢腾活跃的舞龙狮以及缤纷绚丽的礼花，烘托出了一片喜气洋洋的气氛，精彩的舞狮更是使得现场十分热闹喜庆。典礼期间，嘉宾们先后参观了我司的工作环境及阅览了我司相关资质材料，对我司的工作环境、公司规模等表示认可和赞扬，并对我司给予深厚的期望。</span></p><p style="text-indent: 37px; text-align: center;"><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;"><img src="http://learn-bee.oss-cn-shenzhen.aliyuncs.com/beelearn/20180801/9f68c5adf9854d1484b9e55c719a32d6.jpg" title="" alt="开5.jpg"></span></p><p style="text-indent:37px"><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;"><br></span></p><p style="text-indent: 37px; text-align: center;"><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;"><img src="http://learn-bee.oss-cn-shenzhen.aliyuncs.com/beelearn/20180801/269d6edd6f234618b9e56d6fe2ce2a88.jpg" title="" alt="开3.jpg"></span></p><p style="text-indent:37px"><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;">在庆典仪式上，我司定雄武董事长与白云区人大常委会副主任刘思成、原广州电大党委书记张晓华及广州电大副校长陈贵生等三位嘉宾共同担任剪彩者，为我司进行开业剪彩，期间嘉宾掌声阵阵，礼花纷飞漫天，现场一片喜庆。接下来，定雄武董事长在庆典中致辞表示，非常感谢从百忙之中莅临我司参加开业庆典的各位嘉宾以及社会各界的朋友，同时也谢谢大家对我司的肯定，我们有能力也有信心把公司做大、做强。接下来我司一定不会辜负大家的期望，始终坚持“以人为本、诚信办学、规范办学、多元发展”的办学理念，努力打造一流的民办教育品牌，争取为社会培养更多的实用型人才。</span></p><p style="text-align: center;"><img src="http://learn-bee.oss-cn-shenzhen.aliyuncs.com/beelearn/20180801/1003c155ebfd42f39585cb5dea5dfcb9.jpg" title="" alt="开2.jpg"></p></div>
 		</div>
-
-
 	</div>
-	<script>
-        $(function(){
-
-        })
-	</script>
 </div>

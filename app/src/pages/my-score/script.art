@@ -1,0 +1,15 @@
+<script>
+    $(function(){
+        //js脚本
+        $('.page').on('click','.score-term-toggle',function () {
+
+            var $slideCnt=$(this).next('.slide-cnt');
+
+            $(this).toggleClass('expand');
+
+            $slideCnt.slideToggle(function(){
+                //console.log(3333)
+            })
+        })
+    })
+</script>

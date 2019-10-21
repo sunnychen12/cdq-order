@@ -1,14 +1,14 @@
 <div class="page-group">
-	<div class="page" id="page-student-records">
+	<div class="page" id="page-student-records-2">
 		<header class="bar bar-nav">
 			<a class="icon icon-left pull-left back gray3"></a>
 			<h1 class="title">我的学籍</h1>
 		</header>
 		<div class="bar bar-footer bar-footer-reset">
 			<div class="flex-box flex-align-center full-height btn-group">
-				<a href="#" class="button button-round button-purple flex-item">完善资料</a>
-				<a href="#" class="button button-round button-purple flex-item">完善信息</a>
-				<a href="#" class="button button-round button-purple flex-item">完善签名</a>
+				<a href="#" class="button button-round button-purple flex-item">查看资料</a>
+				<a href="#" class="button button-round button-purple flex-item">查看信息</a>
+				<a href="#" class="button button-round button-purple flex-item">查看签名</a>
 			</div>
 		</div>
 		<div class="content">
@@ -91,7 +91,7 @@
 							<span class="name">报名信息</span>
 						</div>
 						<div class="info-right">
-							<span class="text-red">未完善</span>
+							<span class="text-green">已完善</span>
 						</div>
 					</div>
 				</li>
@@ -101,7 +101,7 @@
 							<span class="name">证件材料</span>
 						</div>
 						<div class="info-right">
-							<span class="text-red">未完善</span>
+							<span class="text-green">已完成</span>
 						</div>
 					</div>
 				</li>
@@ -111,7 +111,7 @@
 							<span class="name">电子签名</span>
 						</div>
 						<div class="info-right">
-							<span class="text-red">未签名</span>
+							<span class="text-green">已签名</span>
 						</div>
 					</div>
 				</li>
@@ -140,9 +140,4 @@
 
 
 	</div>
-	<script>
-        $(function(){
-            //js脚本
-        })
-	</script>
 </div>

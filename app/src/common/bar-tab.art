@@ -1,0 +1,18 @@
+<nav class="bar bar-tab bar-tab-reset">
+            <a class="tab-item ${tab==0?'active':''}" href="index.html">
+                <span class="tab-icon tab-icon-home"></span>
+                <span class="tab-label">首页</span>
+            </a>
+            <a class="tab-item ${tab==1?'active':''}" href="course-study.html">
+                <span class="tab-icon tab-icon-study"></span>
+                <span class="tab-label">学习</span>
+            </a>
+            <a class="tab-item ${tab==2?'active':''}" href="#">
+                <span class="tab-icon tab-icon-msg"></span>
+                <span class="tab-label">消息</span>
+            </a>
+            <a class="tab-item ${tab==3?'active':''}" href="#">
+                <span class="tab-icon tab-icon-my"></span>
+                <span class="tab-label">我的</span>
+            </a>
+        </nav>

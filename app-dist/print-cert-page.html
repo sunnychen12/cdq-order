@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>XXX平台</title>
+    <link rel="stylesheet" href="static/css/sm.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+
+<div id="print" style="width: 780px;">
+	<div class="bg-white padding_75rem">
+		<table class="print-table">
+			<colgroup>
+				<col width="15%" />
+				<col width="62%">
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>姓名</th>
+					<td>李四</td>
+					<td rowspan="5">
+						<img src="static/images/stu-cover.png" alt="">
+					</td>
+				</tr>
+				<tr>
+					<th>学号</th>
+					<td>2134687958</td>
+				</tr>
+				<tr>
+					<th>所在学校</th>
+					<td>国家开放大学（广州）金沙洲分校</td>
+				</tr>
+				<tr>
+					<th>所在考点</th>
+					<td>高州农校</td>
+				</tr>
+				<tr>
+					<th>考点地址</th>
+					<td>广东茂名市高州xxxx</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table class="print-table margin-t_7rem">
+			<colgroup>
+				<col width="10%" />
+				<col width="15%" />
+				<col width="12%" />
+				<col width="12%" />
+				<col />
+				<col width="11%" />
+				<col width="12%" />
+				<col width="12%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>试卷号</th>
+					<th>考试科目</th>
+					<th>考试方式</th>
+					<th>考试形式</th>
+					<th>考试时间</th>
+					<th>考场</th>
+					<th>座位号</th>
+					<th>是否连考</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2359</td>
+					<td>草坪艺术</td>
+					<td>笔试</td>
+					<td>闭卷</td>
+					<td>2019-12-3 <br>08:30~10:30</td>
+					<td>504</td>
+					<td>3</td>
+					<td>否</td>
+				</tr>
+				<tr>
+					<td>2359</td>
+					<td>草坪艺术</td>
+					<td>笔试</td>
+					<td>闭卷</td>
+					<td>2019-12-3 <br>08:30~10:30</td>
+					<td>504</td>
+					<td>3</td>
+					<td>否</td>
+				</tr>
+				<tr>
+					<td>2359</td>
+					<td>草坪艺术</td>
+					<td>笔试</td>
+					<td>闭卷</td>
+					<td>2019-12-3 <br>08:30~10:30</td>
+					<td>504</td>
+					<td>3</td>
+					<td>否</td>
+				</tr>
+				<tr>
+					<td>2359</td>
+					<td>草坪艺术</td>
+					<td>笔试</td>
+					<td>闭卷</td>
+					<td>2019-12-3 <br>08:30~10:30</td>
+					<td>504</td>
+					<td>3</td>
+					<td>否</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="flex-box padding_75rem margin-t_7rem" style="background: #fdd4ab;color: #ff6600;">
+			<div style="font-size: .85rem">
+				<span class="ico-custom">&#xe90d;</span>
+			</div>
+
+			<div class="flex-item margin-l_5rem">
+				请仔细阅读以下几点考试注意事项<br>
+				1、考试开始30分钟后，考试不得进入考场，请准时参加考试！<br>
+				2、考生必须带齐准考证、身份证、学生证参加考试，否则不得进入考场<br>
+				3、准考证考生可以自行打印，用A4纸打印即可<br>
+				4、如果同一时间有多个科目连考的情况，请考完一科交卷后按科目的考试时间顺序继续进行一下科考试
+			</div>
+		</div>
+	</div>
+</div>
+
+<img src="" id="myIMG">
+<style type="text/css">
+	body{
+		overflow: auto;
+		background: #fff;
+	}
+	.print-table{
+		width: 100%;
+		border-collapse: collapse;
+		border: #e3e4ed 1px solid;
+		text-align: center;
+	}
+	.print-table th,
+	.print-table td{
+		border: #e3e4ed 1px solid;
+		padding: .3rem .5rem;
+		white-space: normal;
+	}
+	.print-table th{
+		font-weight: normal;
+		background: #f3f4fd;
+	}
+</style>
+
+<script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script>
+    var print=document.getElementById('print');
+    html2canvas(print).then(function(canvas) {
+        var imgURL=canvas.toDataURL("image/png");
+        var img=document.getElementById('myIMG');
+        img.setAttribute("src",imgURL);
+        img.style.width='100%';
+        print.style.display='none';
+        setTimeout(function () {
+           frameElement.style.height=img.clientHeight+'px'
+        },0)
+
+    });
+</script>
+
+</body>
+</html>

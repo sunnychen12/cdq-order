@@ -1,0 +1,153 @@
+<div class="page-group">
+	<div class="page" id="page-living-classroom">
+		<header class="bar bar-nav">
+			<a class="icon icon-left pull-left back gray3"></a>
+			<h1 class="title">直播课堂</h1>
+		</header>
+		<div class="bar bar-header-secondary">
+		  <div class="searchbar">
+			<a class="searchbar-cancel">取消</a>
+			<div class="search-input">
+			  <label class="icon icon-search" for="search"></label>
+			  <input type="search" id='search' placeholder='输入直播名称搜索'/>
+			</div>
+		  </div>
+		</div>
+		<%
+		let barTab = require("@/common/bar-tab.art");
+		%><%= barTab({tab:1})%>
+		<div class="content">
+			<div class="padding-r_75rem padding-l_75rem padding-b_75rem padding-t_5rem bg-white margin-t_5rem">
+				<h2 class="tit-with-border">近三天的直播</h2>
+				<ul class="list-unstyled list-cutstom score-course-list with-no-line margin-t_3rem">
+					<li class="list-cutstom-item">
+						<a href="living-broadcast-details.html" class="flex-box item-box">
+							<div class="img-box">
+								<div class="embed-responsive">
+									<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+								</div>
+							</div>
+							<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+								<h4>人文英语1（第三节）</h4>
+								<div class="flex-box flex-box flex-align-end">
+									<div class="info">
+										<div class="txt">主讲教师：陈伯利</div>
+										<div class="txt">直播时间：06-17 19:30~21:15</div>
+										<div class="txt"><span class="text-blue"> <i class="ico-custom vertical-middle font_65rem">&#xe90b;</i> 直播中</span> 160人在上课</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="living-broadcast-details.html" class="flex-box item-box">
+							<div class="img-box">
+								<div class="embed-responsive">
+									<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+								</div>
+							</div>
+							<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+								<h4>人文英语1（第三节）</h4>
+								<div class="flex-box flex-box flex-align-end">
+									<div class="info">
+										<div class="txt">主讲教师：陈伯利</div>
+										<div class="txt">直播时间：06-17 19:30~21:15</div>
+										<div class="txt"><span class="text-blue"> <i class="ico-custom vertical-middle font_65rem">&#xe90b;</i> 待开始</span> --人在上课</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="living-broadcast-details.html" class="flex-box item-box">
+							<div class="img-box">
+								<div class="embed-responsive">
+									<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+								</div>
+							</div>
+							<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+								<h4>人文英语1（第三节）</h4>
+								<div class="flex-box flex-box flex-align-end">
+									<div class="info">
+										<div class="txt">主讲教师：陈伯利</div>
+										<div class="txt">直播时间：06-17 19:30~21:15</div>
+										<div class="txt"><span class="text-blue"> <i class="ico-custom vertical-middle font_65rem">&#xe90b;</i> 录播中</span> 160人在上课</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="padding-r_75rem padding-l_75rem padding-b_75rem padding-t_5rem bg-white margin-t_5rem">
+				<div class="flex-box flex-box-justify">
+					<h2 class="tit-with-border">全部直播</h2>
+					<a href="#" class="ico-custom gray6">&#xe90c;</a>
+				</div>
+
+				<ul class="list-unstyled list-cutstom score-course-list with-no-line margin-t_3rem">
+					<li class="list-cutstom-item">
+						<a href="living-broadcast-details.html" class="flex-box item-box">
+							<div class="img-box">
+								<div class="embed-responsive">
+									<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+								</div>
+							</div>
+							<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+								<h4>人文英语1（第三节）</h4>
+								<div class="flex-box flex-box flex-align-end">
+									<div class="info">
+										<div class="txt">主讲教师：陈伯利</div>
+										<div class="txt">课堂节数：6</div>
+										<div class="txt">参与人次：3000</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="living-broadcast-details.html" class="flex-box item-box">
+							<div class="img-box">
+								<div class="embed-responsive">
+									<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+								</div>
+							</div>
+							<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+								<h4>人文英语1（第三节）</h4>
+								<div class="flex-box flex-box flex-align-end">
+									<div class="info">
+										<div class="txt">主讲教师：陈伯利</div>
+										<div class="txt">课堂节数：6</div>
+										<div class="txt">参与人次：3000</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="living-broadcast-details.html" class="flex-box item-box">
+							<div class="img-box">
+								<div class="embed-responsive">
+									<img src="static/images/news-img.jpg" class="embed-responsive-item" alt="">
+								</div>
+							</div>
+							<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
+								<h4>人文英语1（第三节）</h4>
+								<div class="flex-box flex-box flex-align-end">
+									<div class="info">
+										<div class="txt">主讲教师：陈伯利</div>
+										<div class="txt">课堂节数：6</div>
+										<div class="txt">参与人次：3000</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+	</div>
+
+</div>

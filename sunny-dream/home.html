@@ -1,0 +1,256 @@
+<template>
+    <div class="main-box">
+        <div class="banner" style="height:100px;overflow:hidden;position:relative;">
+            <ul class="bxslider list-unstyled">
+                <li><router-link :to="{name:'News'}"><img src="images/banner.jpg" class="full-width" /></router-link></li>
+                <li><router-link :to="{name:'News'}"><img src="images/banner.jpg" class="full-width" /></router-link></li>
+                <li><router-link :to="{name:'News'}"><img src="images/banner.jpg" class="full-width" /></router-link></li>
+            </ul>
+        </div>
+        <div class="container main">
+            <div class="row">
+                <div class="col-sm-9">
+                    <ul class="nav nav-tabs nav-tabs-header" role="tablist">
+                        <li class="active"><a href="#home" role="tab" data-toggle="tab">政策文件</a></li>
+                        <li><a href="#profile" role="tab" data-toggle="tab">新闻动态</a></li>
+                    </ul>
+                    <div class="tab-content margin-t20">
+                        <div class="tab-pane fade in active" id="home">
+                            <div class="rec-news clearfix">
+                                <div class="top-news-conver">
+                                    <router-link :to="{name:'News'}">
+                                        <img src="images/index-img11.jpg" alt="" v-if="commonQueryArea">
+                                        <img src="images/index-img1.jpg" alt="" v-else>
+                                    </router-link>
+                                </div>
+                                <div class="oh">
+                                    <ul class="news-list list-unstyled">
+                                        <li v-for="(news, index) in indexNews" :key="'indexNews'+index">
+                                            <span class="time">{{news.time}}</span>
+                                            <router-link :to="news.path" class="name">{{news.name}}</router-link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile">
+                            <div class="rec-news clearfix">
+                                <div class="top-news-conver">
+                                    <router-link :to="{name:'News'}">
+                                        <img src="images/index-img11.jpg" alt="" v-if="commonQueryArea">
+                                        <img src="images/index-img1.jpg" alt="" v-else>
+                                    </router-link>
+                                </div>
+                                <div class="oh">
+                                    <ul class="news-list list-unstyled">
+                                        <li v-for="(news, index) in indexNews" :key="'indexNews2'+index">
+                                            <span class="time">{{news.time}}</span>
+                                            <router-link :to="news.path" class="name">{{news.name}}</router-link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="colum-header">
+                        <h3 class="colum-title">登录入口</h3>
+                    </div>
+                    <div class="margin-t20">
+                        <div class="login-extr">
+                            <router-link :to="{name:'Verify'}" class="extr-1">
+                                地区登录
+                            </router-link>
+                            <router-link :to="{name:'Verify'}" class="extr-2">
+                                证书查验
+                            </router-link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="margin-t30" v-if="!commonQueryArea">
+                <div class="colum-header">
+                    <router-link to="/org" class="more">更多 ></router-link>
+                    <h3 class="colum-title">组织机构</h3>
+                </div>
+                <div class="margin-t20 areas">
+                    <div class="side">
+                        <span class="text-red title">全国各承办地区</span>
+                    </div>
+                    <div class="cnt">
+                        <div class="list-unstyled areas-list">
+                            <router-link v-for="(area, index) in areas" :key="'area'+index" :to="{name:'main', query: {area: area.title}}" target="_blank"><span>{{area.title}}地区</span></router-link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="margin-t30">
+                <div class="colum-header">
+                    <router-link to="/expert_judges" class="more">更多 ></router-link>
+                    <h3 class="colum-title">专家评委</h3>
+                </div>
+                <div class="margin-t10">
+                    <ul class="list-unstyled index-expert clearfix">
+                        <li v-for="(expert, index) in (commonQueryArea ? indexExpert.branch : indexExpert.headquarters)" :key="'expert'+index">
+                            <router-link :to="expert.path" class="pic-cover">
+                                <img :src="expert.pic" :alt="expert.name">
+                                <div class="name pic-mark"><span>{{expert.name}}</span></div>
+                            </router-link>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="margin-t30">
+                <div class="colum-header">
+                    <router-link to="/wonderful_moment" class="more">更多 ></router-link>
+                    <h3 class="colum-title">精彩时刻</h3>
+                </div>
+                <div class="margin-t10">
+                    <ul class="list-unstyled wonderful-moment row">
+                        <li class="col-xs-3 margin-t10" v-for="(wonderful, index) in indexWonderfulTime" :key="'wonderful'+index">
+                            <router-link :to="wonderful.path" class="pic-cover">
+                                <img :src="wonderful.pic" :alt="wonderful.name">
+                                <div class="name pic-mark"><span>{{wonderful.name}}</span></div>
+                            </router-link>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="margin-t30" v-if="commonQueryArea">
+                <div class="colum-header">
+                    <router-link to="/enroll" class="more">更多 ></router-link>
+                    <h3 class="colum-title">报名参赛</h3>
+                </div>
+                <div class="margin-t15">
+                    <div class="text-red f16 text-bold">指定报名点</div>
+                    <div class="margin-t10">
+                        <div class="signup-place-item clearfix">
+                            <div class="side">
+                                <div class="name">阳光乐园艺术培训</div>
+                            </div>
+                            <div class="cnt">
+                                <ul class="inner list-unstyled margin-bottom-none">
+                                    <li>
+                                        <i class="icon icon-0x39 margin-r10"></i> 报名地址：广东省广州市民众镇仁和路2号
+                                    </li>
+
+                                    <li class="margin-t10">
+                                        <i class="icon icon-30x39 margin-r10"></i> 咨询电话：0760-88266516
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="signup-place-item clearfix">
+                            <div class="side">
+                                <div class="name">橙天艺术培训</div>
+                            </div>
+                            <div class="cnt">
+                                <ul class="inner list-unstyled margin-bottom-none">
+                                    <li>
+                                        <i class="icon icon-0x39 margin-r10"></i> 报名地址：广东省广州市民众镇仁和路2号
+                                    </li>
+
+                                    <li class="margin-t10">
+                                        <i class="icon icon-30x39 margin-r10"></i> 咨询电话：0760-88266516
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="signup-place-item clearfix">
+                            <div class="side">
+                                <div class="name">小天使舞蹈培训</div>
+                            </div>
+                            <div class="cnt">
+                                <ul class="inner list-unstyled margin-bottom-none">
+                                    <li>
+                                        <i class="icon icon-0x39 margin-r10"></i> 报名地址：广东省广州市民众镇仁和路2号
+                                    </li>
+
+                                    <li class="margin-t10">
+                                        <i class="icon icon-30x39 margin-r10"></i> 咨询电话：0760-88266516
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="signup-place-item clearfix">
+                            <div class="side">
+                                <div class="name">艺舞舞蹈培训</div>
+                            </div>
+                            <div class="cnt">
+                                <ul class="inner list-unstyled margin-bottom-none">
+                                    <li>
+                                        <i class="icon icon-0x39 margin-r10"></i> 报名地址：广东省广州市民众镇仁和路2号
+                                    </li>
+
+                                    <li class="margin-t10">
+                                        <i class="icon icon-30x39 margin-r10"></i> 咨询电话：0760-88266516
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    //vue component 设置，template 属性不需要设置，默认是用上方的模板
+    jsScript={
+        data: function() {
+            return {
+                areas:[],
+                indexNews: [],
+                indexExpert:{},
+                indexWonderfulTime:[]
+            }
+        },
+        methods:{
+            getData: function () {
+                var vm=this;
+
+                require(['mockData.home'],function (data) {
+                    vm.areas = data.areas;
+                    vm.indexNews = data.indexNews;
+                    vm.indexExpert = data.indexExpert;
+                    vm.indexWonderfulTime = data.indexWonderfulTime;
+                });
+            }
+        },
+        created: function(){
+            this.getData();
+        },
+        mounted: function(){
+            var vm=this;
+            require(['bxslider'],function(){
+
+                //图片切换
+                $('.bxslider').bxSlider({
+                    wrapperClass:'bx-wrapper my-bx-wrapper no-shadow',
+                    infiniteLoop: true,
+                    preloadImages: 'all',
+                    auto:true,
+                    touchEnabled:false,
+                    autoHover:true,
+                    pager:true,
+                    speed: 800,
+                    onSlideAfter:function($slideElement, oldIndex, newIndex){
+                        $slideElement.closest('.bx-viewport').removeClass('click-disabled');
+                        this.startAuto();
+                    },
+                    onSlideBefore:function($slideElement, oldIndex, newIndex){
+                        $slideElement.closest('.bx-viewport').addClass('click-disabled');
+                    },
+                    onSliderLoad:function(){
+                        $('.banner').removeAttr('style')
+                    }
+                });
+            });
+        }
+    }
+</script>

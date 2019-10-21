@@ -1,0 +1,45 @@
+<template>
+    <div class="side-bar collapse" id="side-bar">
+        <div class="side-menu bg-white">
+            <ul class="nav side-menu-list">
+                <li>
+                    <router-link :to="{name:menu.name}" v-for="menu in menus" :key="menu.path" active-class="active">{{menu.meta.name}}</router-link>
+                </li>
+            </ul>
+        </div>
+    </div>
+</template>
+
+<script>
+    //内页侧边菜单
+    jsScript={
+        data: function() {
+            return {
+            }
+        },
+        computed:{
+            //查找一级菜单下的二级子菜单
+            menus: function(){
+                var result=[];
+                var allRoutes=this.$router.options.routes[0].children;
+                var matchedRoutes=this.$route.matched;
+                for (var i = 0; i < allRoutes.length; i++) {
+                    if(matchedRoutes[1].name===allRoutes[i].name){
+                        result=allRoutes[i].children;
+                        break;
+                    }
+                }
+                return result;
+            }
+        },
+        methods:{
+        },
+        created:function () {
+            //console.log(this.$router);
+            //如果是一级菜单，则跳转到其子菜单的第一个菜单
+            if(this.$route.matched.length===2 && this.menus.length>0){
+                this.$router.push({name: this.menus[0].name})
+            }
+        }
+    }
+</script>

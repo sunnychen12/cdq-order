@@ -6,7 +6,7 @@
 <title>XXXXXX平台</title>
 <script type="text/javascript" src='dist/loadcss.js'></script>
 </head>
-<body class="layui-layout-body">
+<body class="layui-layout-body" layui-admin-skin="">
 <div class="layui-layout layui-layout-admin">
   <div class="layui-header">
     <div class="layui-logo">
@@ -20,6 +20,11 @@
       <li class="layui-nav-item"><a href="">xxx菜单</a></li>
     </ul>
     <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item layui-hide-xs">
+            <a href="javascript:;" data-role="change-theme">
+              <i class="layui-icon layui-icon-theme"></i>
+            </a>
+          </li>
       <li class="layui-nav-item">
         <a href="javascript:;">
           <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
@@ -34,7 +39,7 @@
     </ul>
   </div>
   
-  <div class="layui-side layui-bg-black">
+  <div class="layui-side">
     <div class="layui-side-scroll">
       <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
       <ul class="layui-nav layui-nav-tree" data-role="side-menu">
@@ -114,6 +119,159 @@ function loadPage(url){
     $loading.hide();
   })
 }
+
+layui.use(['laytpl','layer'], function(){
+  var laytpl = layui.laytpl,
+      layer = layui.layer;
+  $('[data-role="change-theme"]').on('click', function(event) {
+    event.preventDefault();
+
+    var themes={
+      list:[
+        {
+          name:'blue',
+          layout:{
+            header:'#3c8dbc',
+            sidebar:'#222d32',
+            logoArea:'#3884b0',
+            footer:'',
+          }
+        },
+        {
+          name:'ocean',
+          layout:{
+            header:'#1E9FFF',
+            sidebar:'#344058',
+            logoArea:'#0085E8',
+            footer:'',
+          }
+        },
+        {
+          name:'fashion-red',
+          layout:{
+            header:'#AA3130',
+            sidebar:'#20222a',
+            logoArea:'#16181d',
+            footer:'',
+          }
+        },
+        {
+          name:'dark-blue',
+          layout:{
+            header:'#031326',
+            sidebar:'#031326',
+            logoArea:'#020e1a',
+            footer:'',
+          }
+        },
+        
+        {
+          name:'green',
+          layout:{
+            header:'#00877b',
+            sidebar:'#282b33',
+            logoArea:'#00786d',
+            footer:'',
+          }
+        },
+        {
+          name:'purple',
+          layout:{
+            header:'#326bda',
+            sidebar:'#031326',
+            logoArea:'#255ecd',
+            footer:'',
+          }
+        }
+      ]
+    }
+
+    var popHtml=laytpl($('#demo').html()).render(themes);
+
+    layer.open({
+      title: '配色方案'
+      ,content: popHtml
+      ,type:1
+      ,anim: 2
+      ,offset: 'rb'
+      ,btn:false
+      ,shade:0.01
+      ,shadeClose:true
+      ,area: ['300px']
+    });
+
+    //选中样式
+    $(document).on('click', '[data-role="theme-item"]', function(event) {
+      var theme=$(this).data('theme-name');
+      $(this).addClass('on').siblings().removeClass('on');
+      $('body').attr('layui-admin-skin', theme);
+      layer.msg('选中皮肤："'+theme+'"');
+    });
+  });
+});
 </script>
+
+<script id="demo" type="text/html">
+  <div class="padding20">
+    <ul class="layui-clear themes-list">
+      {{#  layui.each(d.list, function(index, item){ }}
+        <li data-role="theme-item" data-theme-name="{{ item.name }}" title="{{ item.name }}">
+          <div>
+            <span class="position-absolute full-width" style="
+              background-color:{{ item.layout.header }};
+              top:0;
+              left:0;
+              height:10px;
+            "><!--{{ item.layout.header }}--></span>
+
+            <span class="position-absolute" style="
+              background-color:{{ item.layout.logoArea }};
+              top:0;
+              left:0;
+              height:10px;
+              width:20px;
+            "><!--{{ item.layout.logoArea }}--></span>
+
+            <span class="position-absolute" style="
+              background-color:{{ item.layout.sidebar }};
+              top:10px;
+              bottom:0;
+              left:0;
+              width:20px;
+            "><!--{{ item.layout.sidebar }}--></span>
+          </div>
+        </li>
+      {{#  }); }}
+    </ul>
+  </div>
+</script>
+<style type="text/css">
+  .themes-list{
+    margin:-5px;
+  }
+  .themes-list > li{
+    padding:5px;
+    width:33.3333%;
+    float:left;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+  }
+  .themes-list > li.on:after,
+  .themes-list > li:hover:after{
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    right: 1px;
+    border:1px solid #5FB878;
+    content: '';
+    position:absolute;
+  }
+  .themes-list > li > div{
+    background-color: #f2f2f2;
+    height:50px;
+    position: relative;
+  }
+</style>
 </body>
 </html>

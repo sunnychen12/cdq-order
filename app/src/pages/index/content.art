@@ -1,0 +1,146 @@
+<div class="page-group">
+	<div class="page" id="page-index">
+		<%
+			let barTab = require("@/common/bar-tab.art");
+		%><%= barTab({tab:0})%>
+		<div class="content">
+			<div class="index-swiper">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#" class="embed-responsive">
+								<img src="static/images/i-banner1.jpg" class="embed-responsive-item">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="embed-responsive">
+								<img src="static/images/i-banner1.jpg" class="embed-responsive-item">
+							</a>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="search-bar flex-box flex-align-center">
+					<div class="flex-item search-bar-input">
+						<input type="text" placeholder="搜索">
+						<span class="icon icon-search"></span>
+					</div>
+					<div class="margin-l_5rem">
+						<a href="#" class="news-lates-tips has-news">
+							<span class="ico-custom">&#xe900;</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="menu-icons bg-white">
+				<a href="#" class="menu-icons-item">
+					<span class="ico-custom menu-1">&#xe904;</span>
+					<div class="txt">学校概况</div>
+				</a>
+				<a href="#" class="menu-icons-item">
+					<span class="ico-custom menu-2">&#xe905;</span>
+					<div class="txt">校园活动</div>
+				</a>
+				<a href="#" class="menu-icons-item">
+					<span class="ico-custom menu-3">&#xe906;</span>
+					<div class="txt">教务教学</div>
+				</a>
+				<a href="#" class="menu-icons-item">
+					<span class="ico-custom menu-4">&#xe907;</span>
+					<div class="txt">报读咨询</div>
+				</a>
+			</div>
+			<div class="index-news bg-white">
+				<h2 class="tit-with-border">校园视讯</h2>
+
+				<ul class="index-news-list list-unstyled">
+					<li class="item">
+						<a href="#" class="flex-box">
+							<div class="img-box">
+								<div class="embed-responsive">
+									<img src="static/images/news-img.jpg" alt="" class="embed-responsive-item">
+								</div>
+							</div>
+							<div class="flex-item flex-box flex-vertical flex-box-justify">
+								<div class="name">
+									疑似蔚来前员工爆料:集团正大肆裁员,一万辆交付是自导自演
+								</div>
+								<div class="info">
+									2018-3-22发布
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#" class="flex-box">
+							<div class="img-box">
+								<div class="embed-responsive">
+									<img src="static/images/news-img.jpg" alt="" class="embed-responsive-item">
+								</div>
+							</div>
+							<div class="flex-item flex-box flex-vertical flex-box-justify">
+								<div class="name">
+									疑似蔚来前员工爆料:集团正大肆裁员,一万辆交付是自导自演
+								</div>
+								<div class="info">
+									2018-3-22发布
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#" class="flex-box">
+							<div class="img-box">
+								<div class="embed-responsive">
+									<img src="static/images/news-img.jpg" alt="" class="embed-responsive-item">
+								</div>
+							</div>
+							<div class="flex-item flex-box flex-vertical flex-box-justify">
+								<div class="name">
+									疑似蔚来前员工爆料:集团正大肆裁员,一万辆交付是自导自演
+								</div>
+								<div class="info">
+									2018-3-22发布
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#" class="flex-box">
+							<div class="img-box">
+								<div class="embed-responsive">
+									<img src="static/images/news-img.jpg" alt="" class="embed-responsive-item">
+								</div>
+							</div>
+							<div class="flex-item flex-box flex-vertical flex-box-justify">
+								<div class="name">
+									疑似蔚来前员工爆料:集团正大肆裁员,一万辆交付是自导自演
+								</div>
+								<div class="info">
+									2018-3-22发布
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#" class="flex-box">
+							<div class="img-box">
+								<div class="embed-responsive">
+									<img src="static/images/news-img.jpg" alt="" class="embed-responsive-item">
+								</div>
+							</div>
+							<div class="flex-item flex-box flex-vertical flex-box-justify">
+								<div class="name">
+									疑似蔚来前员工爆料:集团正大肆裁员,一万辆交付是自导自演
+								</div>
+								<div class="info">
+									2018-3-22发布
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

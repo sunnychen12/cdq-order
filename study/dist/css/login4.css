@@ -1,0 +1,108 @@
+/*登录样式*/
+::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+/* 使用webkit内核的浏览器 */
+:-moz-placeholder {
+  color: #b1b1b1;
+}
+/* Firefox版本4-18 */
+::-moz-placeholder {
+  color: #b1b1b1;
+}
+/* Firefox版本19+ */
+:-ms-input-placeholder {
+  color: #b1b1b1;
+}
+/* IE浏览器 */
+.login-wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 80px;
+  background: url(images/login4-1-bg.jpg) no-repeat center center #0a63cb;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.login-footer {
+  height: 80px;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  color: #5a5a5a;
+  background: #fff;
+}
+.login-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+}
+.login-logo img {
+  height: 30px;
+}
+.login-logo span {
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: middle;
+  border-left: 3px solid #fff;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+.login-copyright {
+  width: 100%;
+  position: absolute;
+  color: #fff;
+  bottom: 30px;
+}
+.login-container {
+  width: 900px;
+  height: 430px;
+  position: absolute;
+  background: url(images/login4-1-1.jpg) no-repeat left center #ffffff;
+  left: 50%;
+  top: 50%;
+  margin: -215px 0 0 -450px;
+  box-sizing: border-box;
+  padding: 54px 54px 54px 530px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #4e4e4e;
+}
+.login-btn {
+  background: url(images/login4-1-btn-bg.jpg) repeat-x top;
+  border-radius: 5px;
+  border: 1px solid #f79017;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+[role="admin"].login-wrapper {
+  background-image: url(images/login4-2-bg.jpg);
+  background-color: #48c5bf;
+}
+[role="admin"] .login-container {
+  background-image: url(images/login4-2-1.jpg);
+}
+.login-form-group {
+  position: relative;
+  border-bottom: #ebebeb 1px solid;
+}
+.login-form-group .icomoon-icon {
+  position: absolute;
+  color: #999999;
+  font-size: 17px;
+  line-height: 1;
+  left: 12px;
+  top: 50%;
+  margin-top: -8px;
+  z-index: 2;
+}
+.login-form-group .icomoon-icon ~ .layui-input {
+  padding-left: 40px;
+}
+.login-form-group .layui-input {
+  border: 0 none;
+}

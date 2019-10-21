@@ -7,6 +7,7 @@
 */
 body {
   font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 body.inner-page-body {
   background-color: #f4f7fa;
@@ -97,6 +98,9 @@ a:hover {
 }
 .text-gray-9 {
   color: #999;
+}
+.gray {
+  color: #fff;
 }
 .text-no-bold {
   font-weight: normal !important;
@@ -529,6 +533,12 @@ a:hover {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.header.header2 .navbar-brand .subtitle {
+  font-size: 16px;
+  color: #ccc;
+  max-width: none;
+  border-left: #c4ced6 1px solid;
+}
 @media (max-width: 767px) {
   .header .navbar-brand {
     float: none;
@@ -904,7 +914,7 @@ a:hover {
   font-size: 22px;
   padding-bottom: 25px;
   background: url(images/colum-tit.png) no-repeat bottom center;
-  width: 170px;
+  width: 300px;
 }
 .colum-title.colum-title-2 span {
   background-image: url(images/colum-tit-2.png);
@@ -990,6 +1000,63 @@ a:hover {
 }
 .tips-box.green-tips {
   background-color: #d1f5d1;
+  color: #999;
+}
+.sign-entry-list {
+  position: relative;
+}
+.sign-entry-list a {
+  display: block;
+}
+.sign-entry-list .row {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+.sign-entry-list .row > div {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.sign-entry-list .image-responsive {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+.sign-entry-list .sign-brand {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sign-entry-list .bx-wrapper {
+  box-shadow: none;
+  border: 0 none;
+  margin: 0;
+}
+.sign-entry-list .bx-prev,
+.sign-entry-list .bx-next {
+  position: absolute;
+  width: 69px;
+  height: 138px;
+  top: 50%;
+  margin-top: -69px;
+}
+.sign-entry-list .bx-prev {
+  background: url(images/prev.png) no-repeat;
+  left: -120px;
+}
+.sign-entry-list .bx-next {
+  background: url(images/next.png) no-repeat;
+  right: -120px;
+}
+@media (max-width: 1280px) {
+  .sign-entry-list .bx-prev,
+  .sign-entry-list .bx-next {
+    display: none;
+  }
+}
+.gray-colum {
+  background-color: #f9f9f9;
+}
+.school-intro {
+  line-height: 1.75;
+  font-size: 16px;
   color: #999;
 }
 .login-index {

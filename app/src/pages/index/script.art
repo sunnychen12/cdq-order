@@ -1,0 +1,8 @@
+<script>
+    $(function(){
+        //加载所需模块，实现图片切换功能
+        requirejs(['sm-extend'],function (){
+            $(".swiper-container").swiper({autoplay:4000});
+        });
+    })
+</script>

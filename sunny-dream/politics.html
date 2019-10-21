@@ -1,0 +1,35 @@
+<template>
+    <div class="main-content-inner">
+        <div class="cur-colum-header margin-b30">
+            <h2 class="cur-colum-title">{{$route.meta.name}}</h2>
+        </div>
+        <ul class="news-list list-unstyled">
+            <li v-for="(news, index) in indexNews" :key="'indexNews'+index">
+                <span class="time">{{news.time}}</span>
+                <router-link :to="news.path" class="name">{{news.name}}</router-link>
+            </li>
+        </ul>
+    </div>
+</template>
+
+<script>
+    //vue component 设置，template 属性不需要设置，默认是用上方的模板
+    jsScript={
+        data: function() {
+            return {
+                indexNews: []
+            }
+        },
+        methods:{
+            getData: function () {
+                var vm=this;
+                require(['mockData.home'],function (data) {
+                    vm.indexNews = data.indexNews;
+                });
+            }
+        },
+        created: function () {
+            this.getData();
+        }
+    }
+</script>

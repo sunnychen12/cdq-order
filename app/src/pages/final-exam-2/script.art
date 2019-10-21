@@ -1,0 +1,58 @@
+<script>
+    $(function(){
+        //js脚本
+        $('.page')
+            .on('click','.toggle-holder',function () {
+
+                var $slideCnt=$(this).next('.slide-cnt');
+
+                $(this).toggleClass('expand');
+
+                $slideCnt.slideToggle(function(){
+                    //console.log(3333)
+                })
+            })
+            .on('click','[data-role="view-desc"]',function () {
+                $.modal({
+                    extraClass: 'reset-model text-left font_65rem',
+                    title:  '<div class="text-left">考试说明</div>',
+                    text: '远程网考在考试过程中需要使用电脑的摄像头对考试过程进行人脸识别抓拍，请找一台配备摄像头的电脑进行考试！',
+                    buttons: [
+                        {
+                            text: '我明白了',
+                            onClick: function() {
+
+                            }
+                        }
+                    ]
+                });
+            });
+
+
+        // 选择考试计划
+        $("#picker-input").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+                <button class="button button-link pull-left close-picker">取消</button>\
+                <button class="button button-link pull-right" data-tab="sure">确定</button>\
+                <h1 class="title">请选择</h1>\
+                </header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['2019秋期末考试正式计划 1', '2018秋期末考试正式计划 2'],//选中的值的数组
+                    displayValues: ['2019秋期末考试正式计划', '2018秋期末考试正式计划']//选择的选项的label数组
+                }
+            ],
+            onOpen:function (picker) {
+                // 点击确定选中的选项
+                picker.container.on('click', '[data-tab="sure"]', function (event) {
+                    console.log(picker.value, picker.displayValue)
+                    picker.input.find('.term-name span').text(picker.displayValue)
+                    $.closeModal(picker.container);
+                })
+            }
+        });
+
+
+    })
+</script>

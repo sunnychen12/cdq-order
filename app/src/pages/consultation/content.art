@@ -1,27 +1,89 @@
 <div class="page-group">
-	<div class="page" id="page-level-3-page">
+	<div class="page" id="page-consultation">
 		<header class="bar bar-nav">
 			<a class="icon icon-left pull-left back gray3"></a>
-			<h1 class="title">学校简介</h1>
+			<span class="ico-custom pull-right gray3">&#xe908;</span>
+			<h1 class="title">报读咨询</h1>
 		</header>
+		<div class="bar bar-footer bar-footer-reset">
+			<div class="flex-box flex-align-center full-height btn-group">
+				<a href="#" class="button button-round button-purple flex-item">我要报读</a>
+			</div>
+		</div>
+		<div class="content padding_75rem">
+			<div class="flex-box margin-r_75rem">
+				<i class="mf-icon"></i>
+				<div class="machine-ask flex-item margin-r_75rem">
+					同学，您好，我是智能小定，请
+					问有什么可以帮助您的？<br>
+					您可以通过下列的常见问题查找
+					您要的答案，如过小定帮不到您
+					的，请可以联系右上角的人工客
+					服，请见谅哦，小定将会加油成
+					长！
+				</div>
+			</div>
 
-		<div class="content">
-			<div class="artical margin-t_7rem padding_75rem bg-white">
-				<p>广州市xxx学校是国家开放大学（广州）、广州市广播电视大学的分校，成立于2016年，总部位于广州市白云区棠景街6号寓景大厦八楼，另设学生体验中心位于广州市白云区机场路585号鹏景大厦七楼，总面积约1000平方米。教学环境优雅，师资力量雄厚，在上级领导的大力支持下，经过全体教职工不懈努力，学校得到了全面快速发展。</p>
-				<div align="center">
-					<img src="static/images/i-banner1.jpg" alt="" class="img-responsive">
-				</div>
-				<p>xxx坚持特色办学，层次多元化，提供以国家开放大学及全国著名高校专、本科学历教育为主体的成人学历教育及各类职业资格证书培训；开展包括开放教育、网络教育、继续教育等在内的多种教育形式，建设具有覆盖全市延伸社会基层的开放教育办学体系，全方位地为社会培养人才。</p>
-				<div align="center">
-					<img src="static/images/i-banner1.jpg" alt="" class="img-responsive">
-				</div>
-				<p>xxx始终坚持“以人为本、诚信办学、规范办学、多元发展”的办学理念，以“打造一流的民办教育品牌”为目标。xxx年招收各类学生达到10000余人，为了满足社会人才的需求，还将大力发展继续教育和终身教育，为社会培养更多实用型人才。</p>
+			<div class="margin-t_7rem padding-t_5rem">
+				<ul class="list-unstyled list-cutstom bg-white info-item-list faq-list margin-t_7rem">
+					<li class="list-cutstom-item">
+						<a href="level-3-page.html" class="flex-box list-cutstom-item-in">
+							<div class="flex-item txt">
+								<span class="name">2018秋招生简章</span>
+							</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="level-3-page.html" class="flex-box list-cutstom-item-in">
+							<div class="flex-item txt">
+								<span class="name">报读专科需要什么条件</span>
+							</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="level-3-page.html" class="flex-box list-cutstom-item-in">
+							<div class="flex-item txt">
+								<span class="name">报读本科需要什么条件</span>
+							</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="#" class="flex-box list-cutstom-item-in">
+							<div class="flex-item txt">
+								<span class="name">报读有什么优惠活动？</span>
+							</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="#" class="flex-box list-cutstom-item-in">
+							<div class="flex-item txt">
+								<span class="name">报读专科多久能拿到毕业证？</span>
+							</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="#" class="flex-box list-cutstom-item-in">
+							<div class="flex-item txt">
+								<span class="name">国家开放大学学历含金量怎么样？</span>
+							</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+					<li class="list-cutstom-item">
+						<a href="#" class="flex-box list-cutstom-item-in">
+							<div class="flex-item txt">
+								<span class="name">我要报读该这么做？</span>
+							</div>
+							<span class="icon icon-right"></span>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
-	<script>
-        $(function(){
-			//js脚本
-        })
-	</script>
 </div>

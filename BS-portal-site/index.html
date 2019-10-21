@@ -238,8 +238,12 @@
           autoHover:true,
           pager:true,
           speed: 800,
-          onSlideAfter:function(){
+          onSlideAfter:function($slideElement, oldIndex, newIndex){
+            $slideElement.closest('.bx-viewport').removeClass('click-disabled');
             this.startAuto();
+          },
+          onSlideBefore:function($slideElement, oldIndex, newIndex){
+            $slideElement.closest('.bx-viewport').addClass('click-disabled');
           },
           onSliderLoad:function(){
             $('.banner').removeAttr('style')

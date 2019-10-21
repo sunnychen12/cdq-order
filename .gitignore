@@ -1,1 +1,5 @@
 .svn/
+.svn/wc.db
+*.db
+node_modules/
+原型与设计.zip

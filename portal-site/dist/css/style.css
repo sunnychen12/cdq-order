@@ -1484,3 +1484,31 @@ a:hover {
     font-size: 16.2px;
   }
 }
+.teacher-list > .item {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.teacher-list > .item:last-child {
+  margin-bottom: 0;
+}
+.teacher-list > .item .img-box {
+  float: left;
+}
+.teacher-list > .item .img-box img {
+  width: 100px;
+  height: 130px;
+  margin-right: 20px;
+}
+.teacher-list > .item .side {
+  overflow: hidden;
+  text-align: justify;
+}
+.teacher-list > .item .side h4 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.teacher-list > .item .side p {
+  margin: 0 0 10px;
+}

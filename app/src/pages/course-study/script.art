@@ -1,0 +1,42 @@
+<script>
+    $(function(){
+        //js脚本
+
+        //暂未开放学习 弹窗
+        /*$.modal({
+            extraClass: 'reset-model text-left font_65rem',
+            title:  '<div class="text-left">暂未开放</div>',
+            text: '此课程暂未开放，暂时无法学习，请留意后续开放通知，再试！',
+            buttons: [
+                {
+                    text: '确定',
+                    onClick: function() {
+
+                    }
+                }
+            ]
+        });*/
+
+        //学习提醒 弹窗
+        /*
+        $.modal({
+            extraClass: 'reset-model text-left font_65rem',
+            title:  '<div class="text-left">学习提醒</div>',
+            text: '目前此课程暂时没有手机版本，使用手机学习体验将很差，建议使用电脑登录学习平台进行学习！',
+            buttons: [
+                {
+                    text: '放弃',
+                    onClick: function() {
+
+                    }
+                },
+                {
+                    text: '确定',
+                    onClick: function() {
+
+                    }
+                }
+            ]
+        });*/
+    })
+</script>

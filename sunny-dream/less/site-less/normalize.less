@@ -1,0 +1,110 @@
+body{
+  	font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #222222;
+}
+
+a{
+	color: #222222;
+	&:hover{
+		color: @color-red;
+	}
+}
+/* font size */
+.f12{font-size:12px !important;}
+.f14{font-size:14px !important;}
+.f16{font-size:16px !important;}
+.f18{font-size:18px !important;}
+.f20{font-size:20px !important;}
+.f22{font-size:22px !important;}
+.f24{font-size:24px !important;}
+.f26{font-size:26px !important;}
+.f28{font-size:28px !important;}
+.f30{font-size:30px !important;}
+
+.vercial-middle{
+	vertical-align: middle;
+}
+.inline-block{
+	display: inline-block;
+	display: inline !ie;
+	zoom: 1 !ie;
+}
+.text-bold{
+	font-weight: bold;
+}
+.oh{
+	overflow: hidden;
+}
+.text-ellipsis{
+	white-space: nowrap;
+  	text-overflow:ellipsis;
+  	overflow: hidden;
+}
+
+.text-right{
+	text-align: right;
+}
+.full-width{
+	width: 100% !important;
+}
+.full-height{
+	height: 100% !important;
+}
+.bg-white{
+	background-color: #fff;
+}
+.bg-gray{
+	background-color: #fafafa;
+}
+.bg-none{
+	background: none !important;
+}
+.min-height-400{
+	min-height: 400px;
+}
+.float-none{
+	float: none !important;
+}
+.text-gray-5{
+	color: #555;
+}
+.text-gray-7{
+	color: #777;
+}
+.text-gray-9{
+	color: #999;
+}
+.text-red{
+	color: @color-red;
+}
+.line-height-1_75{
+	line-height: 1.75;
+}
+
+.no-shadow{
+	box-shadow: none !important;
+}
+/* padding */
+	//.padding-l5{padding-left:5px !important;}
+	//.padding-r5{padding-right:5px !important;}
+	//.padding-t5{padding-top:5px !important;}
+	//.padding-b5{padding-bottom:5px !important;}
+	//.padding5{padding:5px !important;}
+	.generate-spacing(padding);//生成类似以上的
+
+	.padding-none{padding: 0 !important;}
+	.padding-left-none{padding-left:0 !important}
+	.padding-right-none{padding-right:0 !important}
+	.padding-top-none{padding-top:0 !important}
+	.padding-bottom-none{padding-bottom:0 !important}
+
+/* margin */
+	.generate-spacing(margin);
+
+	.margin-none{margin:0 !important}
+	.margin-left-none{margin-left:0 !important}
+	.margin-right-none{margin-right:0 !important}
+	.margin-top-none{margin-top:0 !important}
+	.margin-bottom-none{margin-bottom:0 !important}
+
+

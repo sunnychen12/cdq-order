@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>XXX平台</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+
+  <link rel="stylesheet" href="static/css/sm.min.css">
+  <link rel="stylesheet" href="static/css/main.css">
+
+  <script type='text/javascript' src='static/js/zepto.min.js'></script>
+  <script type='text/javascript' src='static/js/vue.min.js'></script>
+
+</head>
+<body>
+<div class="page-group">
+	<div class="page" id="page-video-activiy">
+		<div class="content bg-white">
+			<div class="flex-box flex-vertical full-height">
+				<div class="position-relative" style="background:#000;">
+					<video class="video-player" src="http://www.runoob.com/try/demo_source/movie.mp4"
+						   x5-playsinline
+						   playsinline
+						   -webkit-playsinline
+						   controls
+						   style="height:10rem;"
+					></video>
+
+					<div class="position-absolute full-width full-height video-mark" style="display: none">
+						<div class="flex-box flex-align-end flex-box-justify padding_75rem full-height">
+							<div class="font_75rem replay">
+								<span class="icon icon-refresh"></span>
+								<span class="inline-block vertical-middle margin-l_3rem">重播</span>
+							</div>
+							<div class="count-time-secodes">5S</div>
+						</div>
+					</div>
+				</div>
+
+				<ul class="tabs-video list-unstyled flex-box">
+					<li class="item flex-item actived"><span>讲义</span></li>
+                    <li class="item flex-item"><span>评论</span></li>
+                    <li class="item flex-item"><span>笔记</span></li>
+				</ul>
+				<div class="flex-item bg-white" style="overflow-y: auto;">
+					<div class="swiper-container padding-none position-relative full-height" style="display: none">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide overflow-y-auto">
+								<div class="artical padding_75rem">
+									<div>亲爱的同学们，欢迎大家学习《金融法规》这门课程，接下来我们将通过以下几方面来系统的向大家介绍本课程。</div>
+									<p>　　金融法规是金融学专业的必修课，4学分，是为适应社会主义市场经济需要的，为培养应用型专业人才而开设的业务课。本课程要达到两个基本目的：第一，使学生能够比较全面地了解、掌握金融法学科的基本理论、基本原理和基础知识；第二，帮助金融机构的从业人员和相关人士完善金融法律知识结构，并为后续学习其它学科课程打下必要的法律基础。</p>
+									<p>　　金融法规是金融学专业的必修课，4学分，是为适应社会主义市场经济需要的，为培养应用型专业人才而开设的业务课。本课程要达到两个基本目的：第一，使学生能够比较全面地了解、掌握金融法学科的基本理论、基本原理和基础知识；第二，帮助金融机构的从业人员和相关人士完善金融法律知识结构，并为后续学习其它学科课程打下必要的法律基础。</p>
+									<p>　　金融法规是金融学专业的必修课，4学分，是为适应社会主义市场经济需要的，为培养应用型专业人才而开设的业务课。本课程要达到两个基本目的：第一，使学生能够比较全面地了解、掌握金融法学科的基本理论、基本原理和基础知识；第二，帮助金融机构的从业人员和相关人士完善金融法律知识结构，并为后续学习其它学科课程打下必要的法律基础。</p>
+									<p>　　金融法规是金融学专业的必修课，4学分，是为适应社会主义市场经济需要的，为培养应用型专业人才而开设的业务课。本课程要达到两个基本目的：第一，使学生能够比较全面地了解、掌握金融法学科的基本理论、基本原理和基础知识；第二，帮助金融机构的从业人员和相关人士完善金融法律知识结构，并为后续学习其它学科课程打下必要的法律基础。</p>
+								</div>
+
+							</div>
+                            <div class="swiper-slide overflow-y-auto">
+								<div class="bar bar-footer bar-footer-reset">
+									<div class="flex-box full-height flex-align-center comment-bar">
+										<div class="flex-item">
+											<textarea name="" placeholder="我来说一说..."></textarea>
+										</div>
+										<div class="margin-l_5rem">
+											<button type="button" class="button button-round">发送</button>
+										</div>
+									</div>
+								</div>
+								<div class="content">
+									<div class="padding-t_75rem padding-b_75rem">
+										<ul class="list-unstyled comments-list">
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+                            </div>
+                            <div class="swiper-slide overflow-y-auto">
+								<div class="bar bar-footer bar-footer-reset">
+									<div class="flex-box full-height flex-align-center comment-bar">
+										<div class="flex-item">
+											<textarea name="" placeholder="我的看法是这样子的XXXXXX"></textarea>
+										</div>
+										<div class="margin-l_5rem">
+											<button type="button" class="button button-round button-blue">记录</button>
+										</div>
+									</div>
+								</div>
+								<div class="content">
+									<div class="padding-t_75rem padding-b_75rem">
+										<ul class="list-unstyled comments-list">
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+															<span class="time-label">02:15</span>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+															<span class="time-label">02:15</span>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+															<span class="time-label">02:15</span>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+															<span class="time-label">02:15</span>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+											<li class="item">
+												<div class="flex-box">
+													<img src="static/images/news-img.jpg" alt="" class="img-cover">
+													<div class="flex-item">
+														<div class="flex-box">
+															<div class="flex-item">
+																<div class="name">李瑞龙</div>
+																<div class="time">02-26 15:34</div>
+															</div>
+															<span class="time-label">02:15</span>
+														</div>
+
+														<div class="txt">为了巩固学习过的知识，应小学一年级二班班主任的要求，去年年底过年前给家里的女儿购买了一套数学练习册，过年带回家给女儿寒假里做。</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<script type='text/javascript' src='static/js/sm.min.js'></script>
+<script type='text/javascript' src='static/require.js'></script>
+<script type='text/javascript' src='static/js/app.js'></script>
+<script>
+    $(function(){
+        //js脚本
+
+        //视频播放完毕
+        $('.video-player').on('ended',function () {
+            $('.video-mark').show()
+        });
+
+        //重播
+        $('.replay').on('click', function () {
+            $('.video-player').get(0).play();
+            $('.video-mark').hide();
+        })
+
+        requirejs(['sm-extend'],function (){
+            $('.swiper-container').show();
+            //内容滑动
+            var mySwiper = new $.Swiper('.swiper-container',{
+                onSlideChangeEnd : function(swiper) {
+
+                    $('.tabs-video li.item')
+                        .eq(mySwiper.activeIndex).addClass('actived')
+                        .siblings().removeClass('actived');
+                }
+            });
+
+            //选项卡
+            $('.tabs-video li.item').on('touchstart', function(event) {
+                var index=$(this).index();
+
+                mySwiper.slideTo(index);
+            });
+        });
+    })
+</script>
+</body>
+</html>

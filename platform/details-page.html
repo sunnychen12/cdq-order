@@ -905,7 +905,7 @@
                     <div class="layui-col-sm4 layui-col-md-offset4">
                         <div class="img-oper-box">
                           <!--
-                          <img src="dist/images/temp/timg.jpg" class="img-oper">
+                          <img src="http://learn-bee.oss-cn-shenzhen.aliyuncs.com/beelearn/20181009/4d12cc6e03ef4b1688df1e4c70e261db.jpg?x-oss-process=image/rotate,90/crop,x_298,y_104,w_1436,h_927/resize,h_4000,w_4000/auto-orient,1/rotate,0/crop,x_0,y_0,w_1920,h_1080/rotate,0/crop,x_0,y_0,w_1920,h_1080/rotate,0/crop,x_0,y_0,w_1920,h_1080/rotate,0/crop,x_0,y_0,w_1920,h_1080/rotate,0/crop,x_0,y_0,w_1920,h_1080/rotate,0/crop,x_0,y_0,w_1920,h_1080" class="img-oper">
                           -->
 
                           <div class="img-oper-holder">
@@ -1203,7 +1203,7 @@ layui.use(['form','layer','jqueryUI','cityselect','magnify','cropper','ajaxuploa
     var self=this;
     var $pic=$(this).siblings('.img-oper');
     var popbodyContent=[
-      '<div class="position-relative img-grid-main">',
+      '<div class="position-relative img-grid-main overlay-wrapper">',
           '<div class="img-process-container">',
               $pic.length>0?('<img src="'+$pic.attr('src')+'" class="process-image">'):'',
           '</div>',
@@ -1215,6 +1215,16 @@ layui.use(['form','layer','jqueryUI','cityselect','magnify','cropper','ajaxuploa
               '<i class="fa fa-fw fa-rotate-right img-tigger-btn" role="button" title="向右旋转" data-id="rotate-right"></i>',
             '</div>',
           '</div>',
+          '<div class="overlay" data-id="post-loading" style="display:none;">',
+            '<table width="100%" height="100%">',
+              '<tr>',
+                '<td class="vertical-middle text-center">',
+                  '<i class="layui-icon layui-anim layui-anim-rotate layui-anim-loop" style="font-size:40px;">&#xe63d;</i>',
+                  '<div data-id="p-txt"></div>',
+                '</td>',
+              '</tr>',
+            '</table>',
+          '</div>',
       '</div>',
     ]
 
@@ -1224,9 +1234,26 @@ layui.use(['form','layer','jqueryUI','cityselect','magnify','cropper','ajaxuploa
       ,area: ['600px', '500px']
       ,btn: ['确定', '取消']
       ,btn1: function(index, layero){
+        var $loading=$('[data-id="post-loading"]',layero);
+        $loading.show().find('[data-id="p-txt"]').text('图片处理中');
         //按钮【按钮二】的回调
         var $processImage=layero.find('.process-image');
         var src=$processImage.attr('src');
+
+        var data=$processImage.cropper('getData');
+        var imgUrl=src+'{5}/rotate,{0}/crop,x_{1},y_{2},w_{3},h_{4}{6}';
+        
+        imgUrl=imgUrl.format(
+          Math.round(data.rotate),
+          Math.round(data.x),
+          Math.round(data.y),
+          Math.round(data.width),
+          Math.round(data.height),
+          (imgUrl.indexOf('?x-oss-process=image')==-1?'?x-oss-process=image':''),
+          ( src.indexOf('/resize,h_4000,w_4000/auto-orient,1')==-1?'/resize,h_4000,w_4000/auto-orient,1':'' )
+        );
+        src = imgUrl;
+
         if($pic.length>0){
           $pic.attr('src',src);
         }
@@ -1234,7 +1261,12 @@ layui.use(['form','layer','jqueryUI','cityselect','magnify','cropper','ajaxuploa
           $(self).before('<img src="'+src+'" class="img-oper">');
         }
 
-        layer.close(index)
+        $(self).siblings('.img-oper').get(0).onload=function(){
+          $loading.hide();
+          layer.close(index);
+        };
+
+        
         //return false 开启该代码可禁止点击该按钮关闭
       }
       ,btn2: function(index, layero){
@@ -1254,22 +1286,49 @@ layui.use(['form','layer','jqueryUI','cityselect','magnify','cropper','ajaxuploa
                       action: './upload.php',
                       name: 'userfile',
                       onSubmit : function(file, ext){
-                          
+                          $('[data-id="post-loading"]',layero).show()
+                          .find('[data-id="p-txt"]').text('图片上传中...');
                       },
                       onComplete: function(file, response){//上传成功的函数；response代表服务器返回的数据
                         response=$.parseJSON(response);
           
                         var src=response.filepath;
+
+                        $('[data-id="post-loading"]',layero).find('[data-id="p-txt"]').text('图片初始化中...');
           
                         if($processImage.length==0){
-                          $('.img-process-container',layero).append('<img class="process-image" src="'+src+'">');
-                          $processImage=layero.find('.process-image')
+                          $('.img-process-container',layero).append('<img class="process-image" src="'+src+'?x-oss-process=image/resize,h_4000,w_4000/auto-orient,1">');
+                          $processImage=layero.find('.process-image');
+
+                          imgCropper($processImage);
                         }
                         else{
                           $processImage.attr('src',src).cropper('replace',src);
                         }
-          
-                        imgCropper($processImage);
+                        
+                        var def=$.Deferred(),
+                            def2=$.Deferred(), 
+                            def3=$.Deferred();
+                        //var $processImage2=layero.find('.process-image');
+
+                        $processImage[0].onload=function(){
+                          def2.resolve();
+                        }
+
+                        $processImage.next('img')[0].onload=function(){
+                          def3.resolve();
+                        }
+
+                        $.when(def2,def3)
+                        .done(function(){
+                          def.resolve();
+                        })
+
+                        def.done(function(){
+                          setTimeout(function(){
+                            $('[data-id="post-loading"]',layero).hide();
+                          },500);
+                        });
                         
                       }
                   });
@@ -1282,13 +1341,32 @@ layui.use(['form','layer','jqueryUI','cityselect','magnify','cropper','ajaxuploa
                   })
                   //图片重置
                   .on('click', '[data-id="reset"]', function(event) {
-                    layero.find('.process-image').cropper('reset')
+                    //$processImage.cropper('reset');
+
+                    $processImage.cropper('destroy');
+                    
+                    var src=$processImage.attr('src');
+                    src=src.replace(/(\?.*)$/,'');
+
+                    $processImage.attr('src',src+'?x-oss-process=image/resize,h_4000,w_4000/auto-orient,1');
+
+                    imgCropper($processImage);
+                    
                   });
                   
       }
     });
   });
 });
+
+/** 格式化输入字符串**/
+//用法: "hello{0}".format('world')；返回'hello world'
+String.prototype.format= function(){
+  var args = arguments;
+  return this.replace(/\{(\d+)\}/g,function(s,i){
+    return args[i];
+  });
+}
 </script>
 </body>
 </html>

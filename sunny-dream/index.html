@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <title>门户站</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="app">
+    <router-view></router-view>
+</div>
+<script src="js/module/jquery.min.js"></script>
+<script src="js/module/bootstrap.min.js"></script>
+<script src="js/require.js"></script>
+<script type="text/javascript">
+    require(['vue', 'router', 'store'],function(Vue, router, store){
+        //模式显示控制
+        Vue.mixin({
+            computed: {
+                commonQueryArea: function(){
+                    return this.$route.query.area || false;
+                }
+            }
+        });
+
+        new Vue({
+            el: '#app',
+            router: router,
+            store: store,
+            data: {
+            },
+            mounted:function(){
+            }
+        });
+
+    })
+</script>
+</body>
+</html>

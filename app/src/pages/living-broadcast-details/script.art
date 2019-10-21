@@ -1,0 +1,36 @@
+<script>
+    $(function(){
+        //js脚本
+
+        //视频播放完毕
+        $('.video-player').on('ended',function () {
+            $('.video-mark').show()
+        });
+
+        //重播
+        $('.replay').on('click', function () {
+            $('.video-player').get(0).play();
+            $('.video-mark').hide();
+        })
+
+        requirejs(['sm-extend'],function (){
+            $('.swiper-container').show();
+            //内容滑动
+            var mySwiper = new $.Swiper('.swiper-container',{
+                onSlideChangeEnd : function(swiper) {
+
+                    $('.tabs-video li.item')
+                        .eq(mySwiper.activeIndex).addClass('actived')
+                        .siblings().removeClass('actived');
+                }
+            });
+
+            //选项卡
+            $('.tabs-video li.item').on('touchstart', function(event) {
+                var index=$(this).index();
+
+                mySwiper.slideTo(index);
+            });
+        });
+    })
+</script>
