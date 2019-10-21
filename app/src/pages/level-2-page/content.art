@@ -1,0 +1,46 @@
+<div class="page-group">
+	<div class="page" id="page-a">
+		<header class="bar bar-nav">
+			<a class="icon icon-me pull-left"></a>
+			<h1 class="title">SUI Mobile</h1>
+		</header>
+
+		<div class="content">
+			<div id="app" v-cloak>
+				{{msg}}
+			</div>
+			<a href="aa.html">
+				测试
+			</a>
+
+			<a href="javascript:;" class="open-popup" data-popup=".popup-services">Open Services Popup </a>
+		</div>
+
+
+	</div>
+	<div class="popup popup-services">
+		<div class="content-block">
+			<p>Services</p>
+			<p><a href="javascript:;" class="close-popup">Close popup</a></p>
+			<p>Lorem ipsum dolor ...</p>
+		</div>
+	</div>
+	<script>
+        $(function(){
+            new Vue({
+                el:'#app',
+                data:{
+                    msg:'aa'
+                }
+            })
+
+			requirejs(['https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js'],function(){
+			    //当要使用jquery时，重设回$变量为Zepto
+                window.$=Zepto;
+
+				//....其它业务
+
+			});
+        })
+	</script>
+</div>
