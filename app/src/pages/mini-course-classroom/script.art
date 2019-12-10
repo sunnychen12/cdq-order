@@ -1,5 +1,44 @@
 <script>
     $(function(){
-        //js脚本
+		var $container=$('#search-area'), // 搜索区域
+			$search=$('#search'),	// 关键字搜索输入框
+			searchHTML=$container.html(), // 缓存搜索区域的原html代码
+            cacheKey='', // 缓存上次输入的搜索关键字
+            keyIndex=0; // 搜索结果数组的索引
+        $('#search-input').submit(function(event){
+            event.preventDefault();
+            
+            var key=$.trim($search.val()); //搜索关键字
+            var reg=new RegExp(key,'gi'); // 正则匹配
+            var matArr=searchHTML.match(reg); // 匹配结果的数组
+
+			// 如果输入的内容为空，或者匹配结果为空，则恢复原样
+            if(key && matArr.length>0){
+                if(keyIndex < matArr.length-1){
+					// 如果搜索的关键字有更换
+                    if(key!=cacheKey){
+                        cacheKey=key
+                        keyIndex=0
+                        $container.html(searchHTML.replace(reg, function(mat, index){
+                            return '<span class="mark-word" style="background:yellow;">'+mat+'</span>'
+                        }))
+                    }
+                    
+					// 目标滚动元素
+                    var $targetEle=$('.mark-word').eq(keyIndex++);
+					
+					// 滚动到目前元素位置
+                    $container.scrollTop($container.scrollTop() + $targetEle.offset().top - $container.offset().top)
+
+					// 如果已是最后一项匹配的结果，则重置索引
+                    if(keyIndex==matArr.length-1){
+                        keyIndex=0;
+                    }
+                }
+            } else {
+                $container.html(searchHTML)
+            }
+
+        })
     })
 </script>

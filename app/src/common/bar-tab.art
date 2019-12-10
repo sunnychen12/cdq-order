@@ -7,11 +7,11 @@
                 <span class="tab-icon tab-icon-study"></span>
                 <span class="tab-label">学习</span>
             </a>
-            <a class="tab-item ${tab==2?'active':''}" href="#">
+            <a class="tab-item ${tab==2?'active':''}" href="consultation.html">
                 <span class="tab-icon tab-icon-msg"></span>
                 <span class="tab-label">消息</span>
             </a>
-            <a class="tab-item ${tab==3?'active':''}" href="#">
+            <a class="tab-item ${tab==3?'active':''}" href="my-score.html">
                 <span class="tab-icon tab-icon-my"></span>
                 <span class="tab-label">我的</span>
             </a>

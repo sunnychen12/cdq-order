@@ -27,10 +27,10 @@
 		<div class="bar bar-header-secondary">
 			<div class="searchbar">
 				<a class="searchbar-cancel">取消</a>
-				<div class="search-input">
+				<form action="" class="search-input" id="search-input">
 					<label class="icon icon-search" for="search"></label>
-					<input type="search" id='search' placeholder='输入名称搜索'/>
-				</div>
+					<input type="search" id='search' autocomplete="off" placeholder='输入名称搜索'/>
+				</form>
 			</div>
 		</div>
 		<nav class="bar bar-tab bar-tab-reset">
@@ -51,7 +51,7 @@
                 <span class="tab-label">我的</span>
             </a>
         </nav>
-		<div class="content">
+		<div class="content" id="search-area">
 			<div class="padding-r_75rem padding-l_75rem padding-b_75rem padding-t_5rem bg-white margin-t_5rem">
 				<ul class="list-unstyled list-cutstom score-course-list mini-classroom-list margin-t_3rem">
 					<li class="list-cutstom-item">
@@ -62,12 +62,12 @@
 								</div>
 							</div>
 							<div class="flex-item info-box flex-box flex-vertical flex-box-justify">
-								<h4>职场的生存之道</h4>
+								<h4>职场的生存之道0</h4>
 								<div class="label-group">
 									<label>素质教育</label>
 								</div>
 								<div class="info">
-									<div class="txt">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
+									<div class="txt">简介简介简介简介0简介简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
 								</div>
 
 							</div>
@@ -81,12 +81,12 @@
                                 </div>
                             </div>
                             <div class="flex-item info-box flex-box flex-vertical flex-box-justify">
-                                <h4>职场的生存之道</h4>
+                                <h4>职场的生存之道1</h4>
                                 <div class="label-group">
                                     <label>素质教育</label>
                                 </div>
                                 <div class="info">
-                                    <div class="txt">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
+                                    <div class="txt">简介简介简介简介简介0简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
                                 </div>
 
                             </div>
@@ -100,12 +100,12 @@
                                 </div>
                             </div>
                             <div class="flex-item info-box flex-box flex-vertical flex-box-justify">
-                                <h4>职场的生存之道</h4>
+                                <h4>职场的生存之道2</h4>
                                 <div class="label-group">
                                     <label>素质教育</label>
                                 </div>
                                 <div class="info">
-                                    <div class="txt">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
+                                    <div class="txt">简介简介简介简介简介0简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
                                 </div>
 
                             </div>
@@ -119,12 +119,12 @@
                                 </div>
                             </div>
                             <div class="flex-item info-box flex-box flex-vertical flex-box-justify">
-                                <h4>职场的生存之道</h4>
+                                <h4>职场的生存之道3</h4>
                                 <div class="label-group">
                                     <label>素质教育</label>
                                 </div>
                                 <div class="info">
-                                    <div class="txt">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
+                                    <div class="txt">简介简介简介简介0简介简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
                                 </div>
 
                             </div>
@@ -138,12 +138,12 @@
                                 </div>
                             </div>
                             <div class="flex-item info-box flex-box flex-vertical flex-box-justify">
-                                <h4>职场的生存之道</h4>
+                                <h4>职场的生存之道4</h4>
                                 <div class="label-group">
                                     <label>素质教育</label>
                                 </div>
                                 <div class="info">
-                                    <div class="txt">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
+                                    <div class="txt">简介简介简介简介简介0简介简介简介简介简介简介简介简介简介简介简介介简介介简介介简介介简介介简</div>
                                 </div>
 
                             </div>
@@ -152,8 +152,6 @@
 				</ul>
 			</div>
 		</div>
-
-
 	</div>
 
 </div>
@@ -163,7 +161,46 @@
 <script type='text/javascript' src='static/js/app.js'></script>
 <script>
     $(function(){
-        //js脚本
+		var $container=$('#search-area'), // 搜索区域
+			$search=$('#search'),	// 关键字搜索输入框
+			searchHTML=$container.html(), // 缓存搜索区域的原html代码
+            cacheKey='', // 缓存上次输入的搜索关键字
+            keyIndex=0; // 搜索结果数组的索引
+        $('#search-input').submit(function(event){
+            event.preventDefault();
+            
+            var key=$.trim($search.val()); //搜索关键字
+            var reg=new RegExp(key,'gi'); // 正则匹配
+            var matArr=searchHTML.match(reg); // 匹配结果的数组
+
+			// 如果输入的内容为空，或者匹配结果为空，则恢复原样
+            if(key && matArr.length>0){
+                if(keyIndex < matArr.length-1){
+					// 如果搜索的关键字有更换
+                    if(key!=cacheKey){
+                        cacheKey=key
+                        keyIndex=0
+                        $container.html(searchHTML.replace(reg, function(mat, index){
+                            return '<span class="mark-word" style="background:yellow;">'+mat+'</span>'
+                        }))
+                    }
+                    
+					// 目标滚动元素
+                    var $targetEle=$('.mark-word').eq(keyIndex++);
+					
+					// 滚动到目前元素位置
+                    $container.scrollTop($container.scrollTop() + $targetEle.offset().top - $container.offset().top)
+
+					// 如果已是最后一项匹配的结果，则重置索引
+                    if(keyIndex==matArr.length-1){
+                        keyIndex=0;
+                    }
+                }
+            } else {
+                $container.html(searchHTML)
+            }
+
+        })
     })
 </script>
 </body>
